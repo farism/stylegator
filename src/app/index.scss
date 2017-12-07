@@ -1,0 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+@import './styles/normalize.scss';
+@import './styles/markdown.scss';
+@import './styles/highlight.scss';
+
+:global {
+  html,
+  body {
+    color: #4d4d4d;
+    font-family: Roboto;
+    height: 100%;
+    min-height: 100%;
+  }
+
+  #app {
+    height: 100%;
+    min-height: 100%;
+  }
+
+  .react-live-error {
+    background-color: #d33d3d;
+    color: #fff;
+    padding: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+}
