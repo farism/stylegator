@@ -15,21 +15,48 @@ const wrapStaticCode = content =>
 
 const isInteractive = content => content.match(INTERACTIVE_TAG)
 
-const Code = ({ content }) => (
-  <div className={styles['code']}>
-    {isInteractive(content) ? (
-      <LiveProvider code={stripCodeTag(content)}>
-        <div>
-          <LivePreview />
-        </div>
-        <LiveEditor />
-        <LiveError />
-      </LiveProvider>
-    ) : (
-      <Static {...{ content: wrapStaticCode(content) }} />
-    )}
-  </div>
-)
+class Code extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { expanded: false }
+  }
+
+  render() {
+    const { content } = this.props
+    const { expanded } = this.state
+
+    return (
+      <div>
+        {isInteractive(content) ? (
+          <div className={styles['code']}>
+            <LiveProvider code={stripCodeTag(content)}>
+              <div
+                {...{
+                  className: styles['code-editor-toggle'],
+                  onClick: () => this.setState({ expanded: !expanded }),
+                  title: expanded ? 'Hide Code' : 'Show Code',
+                }}
+              >
+                {expanded ? '</>' : '< >'}
+              </div>
+              <div className={styles['code-preview']}>
+                <LivePreview />
+              </div>
+              {expanded && (
+                <div className={styles['code-editor']}>
+                  <LiveEditor />
+                </div>
+              )}
+              <LiveError />
+            </LiveProvider>
+          </div>
+        ) : (
+          <Static {...{ content: wrapStaticCode(content) }} />
+        )}
+      </div>
+    )
+  }
+}
 
 Code.propTypes = {
   content: PropTypes.string,

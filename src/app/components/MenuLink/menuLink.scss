@@ -1,0 +1,12 @@
+.menu-link {
+  color: #4d4d4d;
+  display: inline-block;
+  padding-left: 36px;
+  text-decoration: none;
+
+  &:global {
+    &.active {
+      color: #9e5db4;
+    }
+  }
+}

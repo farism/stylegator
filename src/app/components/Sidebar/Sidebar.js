@@ -9,7 +9,7 @@ const Sidebar = ({ logo, partials, sections }) => {
   return (
     <div className={styles['sidebar']}>
       <Logo {...{ src: logo }} />
-      <Menu {...{ sections }} />
+      <Menu {...{ partials, sections }} />
     </div>
   )
 }
