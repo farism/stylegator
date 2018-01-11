@@ -1,17 +1,17 @@
 .search {
   box-sizing: border-box;
-  height: 120px;
-  background: #9e5db4;
+  position: relative;
 
   input {
-    background: none;
+    background: #fff;
     border: none;
+    border-radius: 2px;
     box-sizing: border-box;
-    color: #fff;
-    font-size: 40px;
-    height: 100%;
-    padding: 16px;
-    width: 100%;
+    color: #333;
+    font-size: 14px;
+    height: 32px;
+    margin: 0 20px;
+    padding: 0 36px 0 16px;
 
     &:focus {
       outline: none;
@@ -20,5 +20,12 @@
     &::placeholder {
       color: #d9d9d9;
     }
+  }
+
+  svg {
+    margin-top: -5px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
   }
 }

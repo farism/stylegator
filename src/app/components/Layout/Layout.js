@@ -4,15 +4,12 @@ import PropTypes from 'prop-types'
 import styles from './layout.scss'
 
 const Layout = ({ children, logo, partials, sections }) => {
-  const { content: Content, search: Search, sidebar: Sidebar } = partials
+  const { content: Content, sidebar: Sidebar } = partials
 
   return (
     <div className={styles['layout']}>
       <Sidebar {...{ logo, partials, sections }} />
-      <Content {...{ partials }}>
-        <Search />
-        {children}
-      </Content>
+      <Content {...{ partials }}>{children}</Content>
     </div>
   )
 }
@@ -20,7 +17,6 @@ const Layout = ({ children, logo, partials, sections }) => {
 Layout.propTypes = {
   partials: PropTypes.shape({
     content: PropTypes.func.isRequired,
-    search: PropTypes.func.isRequired,
     sidebar: PropTypes.func.isRequired,
   }).isRequired,
   sections: PropTypes.array,

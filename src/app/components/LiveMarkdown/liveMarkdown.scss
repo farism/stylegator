@@ -1,14 +1,14 @@
-.code {
+.live-markdown {
   margin-top: 30px;
   position: relative;
 }
 
-.code-preview {
+.live-markdown-preview {
   border: 1px solid #d9d9d9;
   padding: 15px;
 }
 
-.code-editor {
+.live-markdown-editor {
   position: relative;
 
   :global {
@@ -18,7 +18,7 @@
   }
 }
 
-.code-editor-toggle {
+.live-markdown-editor-toggle {
   border-width: 0 1px 1px 1px;
   border-color: #d9d9d9;
   border-style: solid;
@@ -26,5 +26,10 @@
   padding: 5px 10px;
   position: absolute;
   top: 100%;
+  transition: 0.2s;
   right: 0;
+
+  &:hover {
+    background: #efefef;
+  }
 }

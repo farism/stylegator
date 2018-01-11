@@ -6,7 +6,7 @@ import { inPath } from '../../utils'
 
 import styles from './menu.scss'
 
-const MenuList = ({ partials, sections }) => {
+const MenuList = ({ depth, partials, sections }) => {
   const { menuLink: MenuLink } = partials
 
   return (
@@ -14,9 +14,11 @@ const MenuList = ({ partials, sections }) => {
       {sections.map(section => {
         return (
           <li>
-            <MenuLink {...{ partials, section }} />
+            <MenuLink {...{ depth, partials, section }} />
             {inPath(section.path) && section.sections ? (
-              <MenuList {...{ partials, sections: section.sections }} />
+              <MenuList
+                {...{ partials, sections: section.sections, depth: depth + 1 }}
+              />
             ) : null}
           </li>
         )
@@ -28,7 +30,7 @@ const MenuList = ({ partials, sections }) => {
 const Menu = ({ partials, sections }) => {
   return (
     <div className={styles['menu']}>
-      <MenuList {...{ partials, sections }} />
+      <MenuList {...{ depth: 0, partials, sections }} />
     </div>
   )
 }

@@ -7,14 +7,16 @@ import { buildRoutes, setSlugs, makeGlobal } from '../../utils'
 import {
   Content,
   Layout,
+  LiveMarkdown,
   Logo,
-  Markdown,
   Menu,
   MenuIcon,
   MenuLink,
   Page,
+  Props,
   Search,
   Sidebar,
+  StaticMarkdown,
 } from '../'
 
 import styles from './styleguider.scss'
@@ -44,15 +46,17 @@ Styleguider.propTypes = {
   logo: PropTypes.string,
   partials: PropTypes.shape({
     content: PropTypes.func.isRequired,
+    layout: PropTypes.func.isRequired,
+    liveMarkdown: PropTypes.func.isRequired,
     logo: PropTypes.func.isRequired,
-    markdown: PropTypes.func.isRequired,
     menu: PropTypes.func.isRequired,
     menuIcon: PropTypes.func.isRequired,
     menuLink: PropTypes.func.isRequired,
     page: PropTypes.func.isRequired,
+    props: PropTypes.func.isRequired,
     search: PropTypes.func.isRequired,
     sidebar: PropTypes.func.isRequired,
-    layout: PropTypes.func.isRequired,
+    staticMarkdown: PropTypes.func.isRequired,
   }),
   sections: PropTypes.array,
 }
@@ -61,15 +65,17 @@ Styleguider.defaultProps = {
   components: {},
   partials: {
     content: Content,
+    layout: Layout,
+    liveMarkdown: LiveMarkdown,
     logo: Logo,
-    markdown: Markdown,
     menu: Menu,
     menuIcon: MenuIcon,
     menuLink: MenuLink,
     page: Page,
+    props: Props,
     search: Search,
     sidebar: Sidebar,
-    layout: Layout,
+    staticMarkdown: StaticMarkdown,
   },
   sections: [],
 }

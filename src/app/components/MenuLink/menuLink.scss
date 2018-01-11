@@ -1,12 +1,26 @@
 .menu-link {
-  color: #4d4d4d;
+  box-sizing: border-box;
+  color: #fff;
   display: inline-block;
-  padding-left: 36px;
+  padding: 6px 36px 6px 20px;
   text-decoration: none;
+  width: 100%;
 
   &:global {
-    &.active {
-      color: #9e5db4;
+    &.depth-0 {
+      font-size: 18px;
+    }
+
+    &.active:not(.depth-0) {
+      color: #fff;
+      background: #9a4eb4;
+    }
+  }
+
+  svg {
+    path,
+    rect {
+      fill: #fff;
     }
   }
 }

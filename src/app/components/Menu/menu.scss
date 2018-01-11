@@ -1,5 +1,5 @@
 .menu {
-  padding: 20px;
+  margin-top: 40px;
 
   ul {
     list-style: none;
@@ -8,8 +8,8 @@
   }
 
   > ul {
-    ul {
-      li {
+    > li {
+      ul {
         margin-top: 15px;
       }
     }

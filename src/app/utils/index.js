@@ -1,4 +1,5 @@
 export { default as buildRoutes } from './buildRoutes'
+export { default as getAttributes } from './getAttributes'
 export { default as inPath } from './inPath'
 export { default as makeGlobal } from './makeGlobal'
 export { default as pageLoader } from './pageLoader'
