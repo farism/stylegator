@@ -24,6 +24,7 @@ module.exports = {
   handler: function(argv) {
     require('../../src/cli')
       .dev(argv)
-      .catch(e => {})
+      .then(console.log)
+      .catch(console.error)
   },
 }

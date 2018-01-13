@@ -17,6 +17,15 @@ const {
   sourceMaps,
 } = require('webpack-blocks')
 
+// require config
+const userConfig = (modulePath => {
+  try {
+    return require(modulePath)
+  } catch (e) {
+    return false
+  }
+})(path.resolve(process.cwd(), './stylegator.config'))
+
 const raw = () => {
   return (context, { merge }) =>
     merge({
@@ -25,15 +34,6 @@ const raw = () => {
       },
     })
 }
-
-// require config
-const userConfig = (modulePath => {
-  try {
-    return require(modulePath)
-  } catch (e) {
-    return false
-  }
-})(path.resolve(process.cwd(), './styleguider.config'))
 
 const htmlPluginOptions = ({ title, template }) => {
   const opts = {}
@@ -47,26 +47,28 @@ const htmlPluginOptions = ({ title, template }) => {
   return opts
 }
 
-module.exports = (environment = 'production') =>
-  createConfig([
-    entryPoint(path.resolve(process.cwd(), './src/index.js')),
-    babel(),
-    match('*.md', [raw()]),
-    match('*.scss', [
-      css.modules({
-        localIdentName: '[local]--[hash:base64:5]',
-      }),
-      sass(),
-    ]),
-    match(['*.gif', '*.jpg', '*.jpeg', '*.png'], [file()]),
-    addPlugins([new HtmlWebpackPlugin(htmlPluginOptions(userConfig))]),
-    setOutput({ path: path.resolve(process.cwd(), 'build') }),
-    setEnv({ NODE_ENV: environment }),
-    env('development', [setOutput({ filename: '[name].js' }), sourceMaps()]),
-    env('production', [setOutput({ filename: '[name].[hash].js' })]),
-    customConfig({
-      resolveLoader: {
-        modules: [path.resolve(__dirname, 'node_modules')],
-      },
+module.exports = createConfig([
+  entryPoint(path.resolve(process.cwd(), './src/index.js')),
+  babel(),
+  match('*.md', [raw()]),
+  match('*.scss', [
+    css.modules({
+      localIdentName: '[local]--[hash:base64:5]',
     }),
-  ])
+    sass(),
+  ]),
+  match(['*.gif', '*.jpg', '*.jpeg', '*.png'], [file()]),
+  addPlugins([new HtmlWebpackPlugin(htmlPluginOptions(userConfig))]),
+  setOutput({ path: path.resolve(process.cwd(), 'build') }),
+  env('production', [setOutput({ filename: '[name].[hash].js' })]),
+  env('development', [
+    setOutput({ filename: '[name].js' }),
+    devServer({ port: 8080 }),
+    sourceMaps(),
+  ]),
+  customConfig({
+    resolveLoader: {
+      modules: [path.resolve(__dirname, 'node_modules')],
+    },
+  }),
+])

@@ -1,26 +1,19 @@
+const execa = require('execa')
 const path = require('path')
 const webpack = require('webpack')
-const WebpackDevServer = require('webpack-dev-server')
-
-const config = require('../../webpack.config.js')
 
 const dev = () => {
-  console.log('starting styleguider...')
+  const proc = execa(
+    './node_modules/.bin/webpack-dev-server',
+    ['--config=./node_modules/stylegator/webpack.config.js'],
+    {
+      env: { NODE_ENV: 'development' },
+    }
+  )
 
-  return new Promise((resolve, reject) => {
-    new WebpackDevServer(webpack(config('development')), {
-      hot: true,
-      quiet: true,
-    }).listen('8080', 'localhost', err => {
-      if (err) {
-        console.error(e)
-        reject(err)
-      } else {
-        console.log('styleguider started on http://localhost:8080')
-        resolve()
-      }
-    })
-  })
+  proc.stdout.pipe(process.stdout)
+
+  return proc
 }
 
 module.exports = dev

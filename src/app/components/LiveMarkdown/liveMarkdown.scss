@@ -1,5 +1,5 @@
 .live-markdown {
-  margin-top: 30px;
+  margin-bottom: 46px;
   position: relative;
 }
 
@@ -19,11 +19,15 @@
 }
 
 .live-markdown-editor-toggle {
+  align-items: center;
   border-width: 0 1px 1px 1px;
   border-color: #d9d9d9;
   border-style: solid;
+  box-sizing: border-box;
   cursor: pointer;
-  padding: 5px 10px;
+  display: flex;
+  height: 30px;
+  padding: 0 10px;
   position: absolute;
   top: 100%;
   transition: 0.2s;

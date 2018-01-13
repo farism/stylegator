@@ -1,5 +1,5 @@
 {
-  "name": "styleguider",
+  "name": "stylegator",
   "version": "0.1.0",
   "description": "styleguide static generator for html and js",
   "main": "src/index.js",
@@ -7,13 +7,11 @@
     "type": "git",
     "url": "git+https://github.com/farism/styleguider.git"
   },
-  "keywords": [
-    "cli"
-  ],
+  "keywords": ["cli"],
   "author": "Faris Mustafa <farismmk@gmail.com>",
   "license": "MIT",
   "bin": {
-    "styleguider": "./bin/cli.js"
+    "stylegator": "./bin/cli.js"
   },
   "scripts": {
     "build": "yarn build:cli",
@@ -22,27 +20,25 @@
     "test": "jest"
   },
   "dependencies": {
-    "check-types": "^7.3.0",
-    "ora": "^1.3.0",
-    "react": "^16.2.0",
-    "react-router-dom": "^4.2.2"
-  },
-  "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "friendly-errors-webpack-plugin": "^1.6.1",
     "highlight.js": "^9.12.0",
     "html-webpack-plugin": "^2.30.1",
     "marked": "^0.3.7",
     "raw-loader": "^0.5.1",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^3.1.3",
     "react-live": "^1.7.1",
+    "react-router-dom": "^4.2.2",
+    "react": "^16.2.0",
     "slugify": "^1.2.6",
-    "webpack": "^3.10.0",
-    "webpack-blocks": "^1.0.0-rc.2"
+    "webpack-blocks": "^1.0.0-rc.2",
+    "webpack-dev-server": "^2.10.1",
+    "webpack": "^3.10.0"
   },
   "engineStrict": true,
   "engines": {

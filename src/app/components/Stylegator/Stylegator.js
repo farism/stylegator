@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import { HashRouter, Switch } from 'react-router-dom'
 
@@ -19,14 +20,14 @@ import {
   StaticMarkdown,
 } from '../'
 
-import styles from './styleguider.scss'
+import styles from './stylegator.scss'
 
-const Styleguider = ({ components, logo, partials, sections: oldSections }) => {
+const Stylegator = ({ components, logo, partials, sections: oldSections }) => {
   makeGlobal(components)
 
-  const { layout: Layout } = partials
-
   const sections = setSlugs(oldSections)
+
+  const { layout: Layout } = partials
 
   return (
     <div className={styles['styleguider']}>
@@ -41,7 +42,7 @@ const Styleguider = ({ components, logo, partials, sections: oldSections }) => {
   )
 }
 
-Styleguider.propTypes = {
+Stylegator.propTypes = {
   components: PropTypes.shape({}),
   logo: PropTypes.string,
   partials: PropTypes.shape({
@@ -61,7 +62,7 @@ Styleguider.propTypes = {
   sections: PropTypes.array,
 }
 
-Styleguider.defaultProps = {
+Stylegator.defaultProps = {
   components: {},
   partials: {
     content: Content,
@@ -80,4 +81,4 @@ Styleguider.defaultProps = {
   sections: [],
 }
 
-export default Styleguider
+export default Stylegator

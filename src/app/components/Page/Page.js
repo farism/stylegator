@@ -1,47 +1,42 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { getAttributes } from '../../utils'
+import { getAttributes, getPageSections } from '../../utils'
 import { LiveMarkdown, Props, StaticMarkdown } from '../'
 import styles from './page.scss'
 
-const stripSectionTag = content => content.replace(/\[(.*)\]/, '')
-
-const getPageSections = content =>
-  content
-    .replace(/```(.+)\s/g, '```[$1]')
-    .split('```')
-    .map(str => str.trim())
-    .filter(str => str)
-
-const getPageSection = partials => content => {
+const getPageSection = partials => section => {
   const {
     staticMarkdown: StaticMarkdown,
     liveMarkdown: LiveMarkdown,
     props: Props,
   } = partials
 
-  const sectionTag = content.match(/\[(.*)\]/)
+  let tag = section.match(/^\[(.*)\]/)
+  const content = section.replace(/^\[(.*)\]/, '')
 
-  if (sectionTag) {
-    switch (sectionTag[1]) {
-      case 'html':
-        return <StaticMarkdown {...{ content: stripSectionTag(content) }} />
+  if (tag) {
+    tag = tag[1]
+
+    switch (tag) {
       case 'code':
-        return <LiveMarkdown {...{ content: stripSectionTag(content) }} />
+        return <LiveMarkdown {...{ content }} />
       case 'props':
-        const component = getAttributes(stripSectionTag(content)).component
-        const props = (window[component] || {}).props
-
-        console.log(props)
-
-        return <Props {...{ props }} />
+        return (
+          <Props
+            {...{
+              props: (window[getAttributes(content).component] || {}).propInfo,
+            }}
+          />
+        )
       default:
-        return null
+        return (
+          <StaticMarkdown {...{ content: `\`\`\`${tag}\n${content}\`\`\`` }} />
+        )
     }
   }
 
-  return null
+  return <StaticMarkdown {...{ content }} />
 }
 
 const Page = ({ content, partials }) => (

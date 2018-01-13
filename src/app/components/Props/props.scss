@@ -1,2 +1,61 @@
 .props {
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding: 15px;
+  width: 100%;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  thead {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  th {
+    padding: 0 15px 5px 0;
+    text-align: left;
+  }
+
+  td {
+    padding: 10px 40px 10px 0;
+    vertical-align: top;
+
+    &.name,
+    &.type,
+    &.default,
+    &.required {
+      font-family: monospace;
+      font-size: 14px;
+    }
+
+    &.name {
+      color: #9cc223;
+    }
+
+    &.type {
+      color: #c2707e;
+    }
+
+    &.required {
+      color: #859cc1;
+    }
+
+    &.description {
+      width: 100%;
+
+      .meta {
+        span {
+          border-radius: 3px;
+          background: #f3f3f3;
+          display: inline-block;
+          font-family: monospace;
+          margin-top: 20px;
+          padding: 5px;
+        }
+      }
+    }
+  }
 }
