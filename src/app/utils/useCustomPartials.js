@@ -13,7 +13,7 @@ import {
   StaticMarkdown,
 } from '../components'
 
-export default partials =>
+export default (partials = {}) =>
   Object.assign(
     {},
     {

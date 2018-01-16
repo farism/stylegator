@@ -3,46 +3,43 @@ import ReactDOM from 'react-dom'
 import { useCustomPartials, pageLoader, Stylegator } from 'stylegator'
 
 import logo from './assets/logo.png'
-import Logo from './partials/Logo'
-import MenuIcon from './partials/MenuIcon'
 import Button from './react/Button'
 
 const sections = [
   {
-    icon: 'introduction',
     title: 'Introduction',
-    sections: [
-      {
-        title: 'Overview & Faq',
-        loader: pageLoader(() => import('./sections/introduction/overview.md')),
-      },
-    ],
+    loader: pageLoader(() => import('./sections/introduction.md')),
   },
   {
-    icon: 'elements',
-    title: 'Elements',
-    sections: [
-      {
-        title: 'Avatar',
-        loader: pageLoader(() => import('./sections/elements/avatar.md')),
-      },
-      {
-        title: 'Button',
-        loader: pageLoader(() => import('./sections/elements/button.md')),
-      },
-    ],
+    title: 'Getting Started',
+    loader: pageLoader(() => import('./sections/getting-started.md')),
   },
   {
-    icon: 'layouts',
-    title: 'Layouts',
+    title: 'Authoring Content',
+    loader: pageLoader(() => import('./sections/authoring-content.md')),
+  },
+  {
+    title: 'Configuration',
+    loader: pageLoader(() => import('./sections/configuration.md')),
+  },
+  {
+    title: 'Guides',
     sections: [
       {
-        title: 'Avatar',
-        loader: pageLoader(() => import('./sections/elements/avatar.md')),
+        title: 'Custom Partials',
+        loader: pageLoader(() => import('./sections/guides/partials.md')),
       },
       {
-        title: 'Button',
-        loader: pageLoader(() => import('./sections/elements/button.md')),
+        title: 'Static Content',
+        loader: pageLoader(() => import('./sections/guides/static.md')),
+      },
+      {
+        title: 'React Content',
+        loader: pageLoader(() => import('./sections/guides/react.md')),
+      },
+      {
+        title: 'Globals',
+        loader: pageLoader(() => import('./sections/guides/globals.md')),
       },
     ],
   },
@@ -50,13 +47,8 @@ const sections = [
 
 const components = { Button }
 
-const partials = useCustomPartials({
-  logo: Logo,
-  menuIcon: MenuIcon,
-})
-
 ReactDOM.render(
-  <Stylegator {...{ partials, components, sections, logo }} />,
+  <Stylegator {...{ components, sections, logo }} />,
   document.getElementById('app')
 )
 

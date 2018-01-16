@@ -3,22 +3,12 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import { HashRouter, Switch } from 'react-router-dom'
 
-import { buildRoutes, setSlugs, makeGlobal } from '../../utils'
-
 import {
-  Content,
-  Layout,
-  LiveMarkdown,
-  Logo,
-  Menu,
-  MenuIcon,
-  MenuLink,
-  Page,
-  Props,
-  Search,
-  Sidebar,
-  StaticMarkdown,
-} from '../'
+  buildRoutes,
+  setSlugs,
+  makeGlobal,
+  useCustomPartials,
+} from '../../utils'
 
 import styles from './stylegator.scss'
 
@@ -64,20 +54,7 @@ Stylegator.propTypes = {
 
 Stylegator.defaultProps = {
   components: {},
-  partials: {
-    content: Content,
-    layout: Layout,
-    liveMarkdown: LiveMarkdown,
-    logo: Logo,
-    menu: Menu,
-    menuIcon: MenuIcon,
-    menuLink: MenuLink,
-    page: Page,
-    props: Props,
-    search: Search,
-    sidebar: Sidebar,
-    staticMarkdown: StaticMarkdown,
-  },
+  partials: useCustomPartials(),
   sections: [],
 }
 
