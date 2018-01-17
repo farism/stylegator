@@ -1,6 +1,6 @@
 export default content =>
   content
-    .replace(/```(.+)\s/g, '```[$1]')
-    .split('```')
+    .replace(/^```(.+)\s/gm, '```{$1}')
+    .split(/^```/gm)
     .map(str => str.trim())
     .filter(str => str)

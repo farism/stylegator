@@ -1,42 +1,34 @@
-# Styleguider [![npm version](https://badge.fury.io/js/styleguider.svg)](https://badge.fury.io/js/styleguider) [![Travis CI](https://api.travis-ci.org/farism/styleguider.svg?branch=master)](https://travis-ci.org/farism/styleguider) [![Coverage Status](https://coveralls.io/repos/github/farism/styleguider/badge.svg?branch=specs)](https://coveralls.io/github/farism/styleguider?branch=specs) [![Greenkeeper badge](https://badges.greenkeeper.io/farism/styleguider.svg)](https://greenkeeper.io/)
+# Styleguider [![npm version](https://badge.fury.io/js/stylegator.svg)](https://badge.fury.io/js/stylegator) [![Travis CI](https://api.travis-ci.org/farism/stylegator.svg?branch=master)](https://travis-ci.org/farism/stylegator) [![Coverage Status](https://coveralls.io/repos/github/farism/stylegator/badge.svg?branch=specs)](https://coveralls.io/github/farism/stylegator?branch=specs) [![Greenkeeper badge](https://badges.greenkeeper.io/farism/stylegator.svg)](https://greenkeeper.io/)
 
 ### Getting Started
 
 ```sh
 # Installation
 
-yarn add styleguider
-npm install styleguider
+yarn add stylegator
+npm install stylegator
 
 # Create a new project
 
-styleguider init my-app && cd my-app
+stylegator init my-app && cd my-app
 
-# Start the styleguider dev server
+# Start the stylegator dev server
 
-styleguider dev
+stylegator dev
 
 # Build the project for production
 
-styleguider build
+stylegator build
 ```
-
-Please see the [cli usage](https://github.com/farism/styleguider/blob/master/guides/cli-usage.md) for a full list of options
-
 
 ### Configuration
 
-Project configuration is available through an `.styleguiderrc` or `.styleguider.json` file:
+Project configuration is available through an `stylegator.config.js` file:
 
-```json
+```js
 {
-  "build": {
-    "html": "index.prod.hbs"
-  },
-  "dev": {
-    "port": 3000,
-    "html": "index.dev.hbs"
-  }
+  "template": "src/index.html",
+  "title": "My App"
 }
 ```
 

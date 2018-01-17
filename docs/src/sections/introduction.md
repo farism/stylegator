@@ -1,6 +1,6 @@
 # Introduction
 
-Stylegator is a tool designed to aide in the building of documentation websites. Using markdown, users can intuitively author content for any type of project.
+Stylegator is a tool designed to aide in the building of documentation websites. Using markdown, users can intuitively author content for any type of project. In fact, the documentation for Stylegator was made with Stylegator!
 
 # Features
 
@@ -10,4 +10,4 @@ Stylegator is a tool designed to aide in the building of documentation websites.
 
 # Contributing
 
-Stylegator is open source. You can contribute on [Github]()
+Stylegator is open source. You can contribute on [Github](https://github.com/farism/stylegator)

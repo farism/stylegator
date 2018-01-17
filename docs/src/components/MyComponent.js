@@ -1,21 +1,21 @@
 import React from 'react'
 import PropTypes, { withPropDocs } from 'prop-types-docs'
 
-const Button = ({ children }) => <button>{children}</button>
+const MyComponent = ({ children }) => <div>My Component!</div>
 
 export default withPropDocs({
-  name: 'Button',
+  name: 'MyComponent',
   props: {
     foo: {
       type: PropTypes.string,
-      description: 'this is foo',
       required: false,
       default: 'bar',
+      description: 'This is a foo',
     },
     person: PropTypes.shape({
       name: {
         type: PropTypes.string,
-        description: 'Their name',
+        description: 'The name',
       },
       age: PropTypes.shape({
         min: {
@@ -45,4 +45,4 @@ export default withPropDocs({
       description: 'This should be a pong',
     },
   },
-})(Button)
+})(MyComponent)

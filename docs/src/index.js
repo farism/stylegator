@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { useCustomPartials, pageLoader, Stylegator } from 'stylegator'
 
 import logo from './assets/logo.png'
-import Button from './react/Button'
+import MyComponent from './components/MyComponent'
 
 const sections = [
   {
@@ -37,15 +37,11 @@ const sections = [
         title: 'React Content',
         loader: pageLoader(() => import('./sections/guides/react.md')),
       },
-      {
-        title: 'Globals',
-        loader: pageLoader(() => import('./sections/guides/globals.md')),
-      },
     ],
   },
 ]
 
-const components = { Button }
+const components = { MyComponent }
 
 ReactDOM.render(
   <Stylegator {...{ components, sections, logo }} />,

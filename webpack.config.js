@@ -1,4 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const WebpackCleanupPlugin = require('webpack-cleanup-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const path = require('path')
 const {
   addPlugins,
@@ -58,7 +60,11 @@ module.exports = createConfig([
     sass(),
   ]),
   match(['*.gif', '*.jpg', '*.jpeg', '*.png'], [file()]),
-  addPlugins([new HtmlWebpackPlugin(htmlPluginOptions(userConfig))]),
+  addPlugins([
+    new WebpackCleanupPlugin(),
+    new CopyWebpackPlugin([{ from: './src/assets', to: 'src/assets' }]),
+    new HtmlWebpackPlugin(htmlPluginOptions(userConfig)),
+  ]),
   setOutput({ path: path.resolve(process.cwd(), 'build') }),
   env('production', [setOutput({ filename: '[name].[hash].js' })]),
   env('development', [

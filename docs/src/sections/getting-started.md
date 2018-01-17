@@ -43,7 +43,27 @@ Stylegator expects an index file to live at `src/index.js`. This will be used as
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Stylegator } from 'stylegator'
+import { pageLoader, Stylegator } from 'stylegator'
 
-ReactDOM.render(<Stylegator />, document.getElementById('app'))
+const sections = [
+  {
+    title: 'Hello World',
+    loader: pageLoader(() => import('./sections/hello-world.md')),
+  },
+]
+
+ReactDOM.render(
+  <Stylegator sections={sections} />,
+  document.getElementById('app')
+)
 ```
+
+# Author some content
+
+```md
+// src/sections/hello-world.md
+
+# Hello World!
+```
+
+See the [Authoring Content](#authoring-content) section for more information.

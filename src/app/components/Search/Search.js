@@ -25,7 +25,7 @@ const Icon = () => (
 
 const Search = ({}) => (
   <div className={styles['search']}>
-    <input {...{ placeholder: 'Search CORE CSS' }} />
+    <input {...{ placeholder: 'Filter' }} />
     <Icon />
   </div>
 )

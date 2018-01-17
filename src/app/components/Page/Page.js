@@ -12,8 +12,8 @@ const getPageSection = partials => section => {
     props: Props,
   } = partials
 
-  let tag = section.match(/^\[(.*)\]/)
-  const content = section.replace(/^\[(.*)\]/, '')
+  let tag = section.match(/\{([a-zA-Z]*)\}/)
+  const content = section.replace(/\{[a-zA-Z]*\}/, '')
 
   if (tag) {
     tag = tag[1]
@@ -41,6 +41,7 @@ const getPageSection = partials => section => {
 
 const Page = ({ content, partials }) => (
   <div className={styles['page']}>
+    {console.log(getPageSections(content))}
     {getPageSections(content).map(getPageSection(partials))}
   </div>
 )
