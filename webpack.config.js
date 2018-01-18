@@ -19,10 +19,16 @@ const {
   sourceMaps,
 } = require('webpack-blocks')
 
+const defaults = {
+  srcDir: 'src',
+  entryPoint: 'index.js',
+  outDir: 'build',
+}
+
 // require config
 const userConfig = (modulePath => {
   try {
-    return require(modulePath)
+    return Object.assign({}, defaults, require(modulePath))
   } catch (e) {
     return false
   }
@@ -37,36 +43,52 @@ const raw = () => {
     })
 }
 
-const htmlPluginOptions = ({ title, template }) => {
+const htmlPluginOptions = ({ srcDir, title, template }) => {
   const opts = {}
+
   if (title) {
     opts.title = title
   }
+
   if (template) {
-    opts.template = template
+    opts.template = `${srcDir}/${template}`
   }
 
   return opts
 }
 
 module.exports = createConfig([
-  entryPoint(path.resolve(process.cwd(), './src/index.js')),
-  babel(),
+  entryPoint(
+    path.resolve(process.cwd(), userConfig.srcDir, userConfig.entryPoint)
+  ),
+  babel({
+    presets: ['env', 'react'],
+    plugins: ['syntax-dynamic-import'],
+  }),
   match('*.md', [raw()]),
   match('*.scss', [
-    css.modules({
-      localIdentName: '[local]--[hash:base64:5]',
-    }),
+    css.modules({ localIdentName: '[local]--[hash:base64:5]' }),
     sass(),
   ]),
-  match(['*.gif', '*.jpg', '*.jpeg', '*.png'], [file()]),
+  match(['*.gif', '*.jpg', '*.jpeg', '*.png', '*.svg'], [file()]),
   addPlugins([
-    new WebpackCleanupPlugin(),
-    new CopyWebpackPlugin([{ from: './src/assets', to: 'src/assets' }]),
     new HtmlWebpackPlugin(htmlPluginOptions(userConfig)),
+    new WebpackCleanupPlugin(),
+    new CopyWebpackPlugin([
+      {
+        from: `${userConfig.srcDir}/assets`,
+        to: `assets`,
+      },
+    ]),
   ]),
-  setOutput({ path: path.resolve(process.cwd(), 'build') }),
-  env('production', [setOutput({ filename: '[name].[hash].js' })]),
+  setOutput({
+    path: path.resolve(process.cwd(), userConfig.buildDir),
+  }),
+  env('production', [
+    setOutput({
+      filename: '[name].[hash].js',
+    }),
+  ]),
   env('development', [
     setOutput({ filename: '[name].js' }),
     devServer({ port: 8080 }),
@@ -74,7 +96,7 @@ module.exports = createConfig([
   ]),
   customConfig({
     resolveLoader: {
-      modules: [path.resolve(__dirname, 'node_modules')],
+      modules: [path.resolve(process.cwd(), 'node_modules')],
     },
   }),
 ])

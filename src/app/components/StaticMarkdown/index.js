@@ -1,1 +1,3 @@
-export { default } from './StaticMarkdown'
+import StaticMarkdown from './StaticMarkdown'
+
+export default StaticMarkdown

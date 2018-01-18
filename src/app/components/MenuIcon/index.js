@@ -1,1 +1,3 @@
-export { default } from './MenuIcon'
+import MenuIcon from './MenuIcon'
+
+export default MenuIcon

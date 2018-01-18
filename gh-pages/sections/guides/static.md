@@ -21,9 +21,9 @@ results in:
 ## images
 
 ```md
-![alt text](src/assets/logo.png)
+![alt text](assets/logo.png)
 ```
 
 results in:
 
-![alt text](src/assets/logo.png)
+![alt text](assets/logo.png)

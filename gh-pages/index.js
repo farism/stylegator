@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { useCustomPartials, pageLoader, Stylegator } from 'stylegator'
+import { useCustomPartials, pageLoader, Stylegator } from '../src/app'
 
 import logo from './assets/logo.png'
 import MyComponent from './components/MyComponent'

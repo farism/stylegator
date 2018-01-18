@@ -16,6 +16,8 @@
     "stylegator": "./bin/cli.js"
   },
   "scripts": {
+    "dev": "stylegator dev",
+    "build": "NODE_ENV=production stylegator build",
     "test": "jest"
   },
   "dependencies": {
@@ -29,6 +31,7 @@
     "highlight.js": "^9.12.0",
     "html-webpack-plugin": "^2.30.1",
     "marked": "^0.3.7",
+    "prop-types-docs": "^0.1.1",
     "raw-loader": "^0.5.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

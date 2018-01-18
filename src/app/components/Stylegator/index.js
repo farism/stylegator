@@ -1,1 +1,3 @@
-export { default } from './Stylegator'
+import Stylegator from './Stylegator'
+
+export default Stylegator

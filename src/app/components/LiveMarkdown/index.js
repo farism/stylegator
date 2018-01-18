@@ -1,1 +1,3 @@
-export { default } from './LiveMarkdown'
+import LiveMarkdown from './LiveMarkdown'
+
+export default LiveMarkdown
