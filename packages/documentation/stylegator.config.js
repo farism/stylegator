@@ -1,3 +1,6 @@
 module.exports = {
-  title: 'Stylegator Documentation',
+  buildDir: '../../docs',
+  html: {
+    title: 'Stylegator Documentation',
+  },
 }

@@ -10,7 +10,7 @@ module.exports = {
       .help('help')
   },
   handler: function(argv) {
-    require('../../lib/cli')
+    require('../../src/cli')
       .dev(argv)
       .then(console.log)
       .catch(console.error)

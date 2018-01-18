@@ -1,17 +1,16 @@
-const execa = require('execa')
+const path = require('path')
+const Webpack = require('webpack')
+const WebpackDevServer = require('webpack-dev-server')
 
-const dev = () => {
-  const proc = execa(
-    'npx',
-    ['webpack-dev-server', '--config=webpack.config.js'],
-    { env: { NODE_ENV: 'development' } }
-  )
+const userOptions = require(path.resolve('stylegator.config'))
+const webpackConfig = require('../webpack.config')
 
-  proc.stdout.pipe(process.stdout)
-
-  proc.stderr.pipe(process.stderr)
-
-  return proc
-}
-
-module.exports = dev
+module.exports = () =>
+  new Promise((resolve, reject) => {
+    const compiler = Webpack(webpackConfig(userOptions))
+    const devServerOptions = Object.assign({}, webpackConfig.devServer)
+    const server = new WebpackDevServer(compiler, devServerOptions)
+    server.listen(8080, '127.0.0.1', () => {
+      console.log('Starting server on http://localhost:8080')
+    })
+  })

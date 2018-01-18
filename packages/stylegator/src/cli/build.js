@@ -1,10 +1,12 @@
+const path = require('path')
 const webpack = require('webpack')
 
-const config = require('../../webpack.config.js')
+const userOptions = require(path.resolve('stylegator.config'))
+const webpackConfig = require('../webpack.config.js')
 
 const build = () =>
   new Promise((resolve, reject) => {
-    webpack(config, (err, stats) => {
+    webpack(webpackConfig(userOptions), (err, stats) => {
       resolve('Stylegator built!')
     })
   })
