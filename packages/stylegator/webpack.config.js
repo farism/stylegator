@@ -21,8 +21,9 @@ const {
 
 const defaults = {
   srcDir: 'src',
+  buildDir: 'build',
   entryPoint: 'index.js',
-  outDir: 'build',
+  template: 'index.html',
 }
 
 // require config
@@ -57,6 +58,8 @@ const htmlPluginOptions = ({ srcDir, title, template }) => {
   return opts
 }
 
+console.log(userConfig)
+
 module.exports = createConfig([
   entryPoint(
     path.resolve(process.cwd(), userConfig.srcDir, userConfig.entryPoint)
@@ -74,12 +77,12 @@ module.exports = createConfig([
   addPlugins([
     new HtmlWebpackPlugin(htmlPluginOptions(userConfig)),
     new WebpackCleanupPlugin(),
-    new CopyWebpackPlugin([
-      {
-        from: `${userConfig.srcDir}/assets`,
-        to: `assets`,
-      },
-    ]),
+    // new CopyWebpackPlugin([
+    //   {
+    //     from: `${userConfig.srcDir}/assets`,
+    //     to: `assets`,
+    //   },
+    // ]),
   ]),
   setOutput({
     path: path.resolve(process.cwd(), userConfig.buildDir),

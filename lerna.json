@@ -1,0 +1,23 @@
+{
+  "lerna": "2.7.1",
+  "version": "0.2.0",
+  "npmClient": "yarn",
+  "parallel": true,
+  "message": "[ci skip] publish %s",
+  "useWorkspaces": true,
+  "changelog": {
+    "repo": "farism/stylegator",
+    "ignoreCommitters": [
+      "renovate"
+    ],
+    "labels": {
+      "Tag: Breaking Change": ":boom: Breaking Change",
+      "Tag: Bug Fix": ":bug: Bug Fix",
+      "Tag: Dependencies": ":books: Dependencies",
+      "Tag: Enhancement": ":nail_care: Enhancement",
+      "Tag: New Feature": ":rocket: New Feature",
+      "Tag: Internal": ":house: Internal"
+    },
+    "cacheDir": ".changelog"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@stylegator/documentation",
+  "version": "0.2.0",
+  "description": "documentation for Stylegator",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farism/stylegator.git"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "Faris Mustafa <farismmk@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "stylegator dev",
+    "build": "NODE_ENV=production stylegator build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@stylegator/stylegator": "0.2.0"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.10.2"
+  }
+}

@@ -1,11 +1,9 @@
 const execa = require('execa')
-const path = require('path')
-const webpack = require('webpack')
 
 const dev = () => {
   const proc = execa(
-    './node_modules/.bin/webpack-dev-server',
-    ['--config=webpack.config.js'],
+    'npx',
+    ['webpack-dev-server', '--config=webpack.config.js'],
     { env: { NODE_ENV: 'development' } }
   )
 
