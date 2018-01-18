@@ -16,9 +16,6 @@
     "stylegator": "./bin/cli.js"
   },
   "scripts": {
-    "build": "yarn build:cli",
-    "build:cli": "NODE_ENV=production babel src/cli -d lib",
-    "prepublishOnly": "npm run build",
     "test": "jest"
   },
   "dependencies": {
