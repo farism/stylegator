@@ -11,17 +11,11 @@ Partials can be any regular React component:
 
 import React from 'react'
 
-const Logo = ({ src }) => (
-  <a href="http://google.com">
+export default ({ src }) => (
+  <a href="/">
     <img src={src} />
   </a>
 )
-
-Logo.propTypes = {}
-
-Logo.defaultProps = {}
-
-export default Logo
 ```
 
 ## Giving the partial to Stylegator
