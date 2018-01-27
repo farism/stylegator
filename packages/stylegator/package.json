@@ -16,7 +16,6 @@
     "stylegator": "./bin/cli.js"
   },
   "scripts": {
-    "build": "webpack",
     "test": "jest"
   },
   "dependencies": {

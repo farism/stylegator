@@ -6,15 +6,8 @@ import logo from '../../assets/logo.png'
 
 const Logo = ({ src = logo }) => (
   <a className={styles['logo']} href="#/">
-    <span
-      className={styles['image']}
-      {...{ style: { backgroundImage: `url(${src})` } }}
-    />
+    <img className={styles['image']} src={src} />
   </a>
 )
-
-Logo.propTypes = {}
-
-Logo.defaultProps = {}
 
 export default Logo
