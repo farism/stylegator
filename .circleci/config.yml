@@ -19,6 +19,9 @@ jobs:
       - run:
           name: Run Yarn
           command: yarn
+      - run:
+          name: Build Packages
+          command: yarn build
       - save_cache:
           key: dependency-cache
           paths:
