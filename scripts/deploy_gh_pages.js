@@ -7,8 +7,6 @@ const cwd = path.join(process.cwd(), 'tmp/gh-pages')
 
 ;(async () => {
   const target = process.argv.slice(2)[0]
-  console.log(target)
-  return
   const remote = await exec('git config remote.origin.url')
   await exec(`mkdirp ${cwd}`)
   await exec(
