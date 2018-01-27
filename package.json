@@ -11,7 +11,7 @@
     "dev": "lerna run dev",
     "precommit": "lerna run lint-staged",
     "deploy:next": "lerna-deploy --type=next",
-    "deploy:stable": "lerna-deploy --type=next",
+    "deploy:stable": "lerna-deploy --type=stable",
     "deploy:ghpages": "node scripts/deploy_gh_pages",
     "pretty": "lerna run pretty",
     "test": "lerna run test"
