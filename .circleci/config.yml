@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:9.3.0
+      - image: circleci/node:9.4-stretch
     steps:
       - checkout
       - run:
@@ -12,8 +12,16 @@ jobs:
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
             curl -o- -L https://yarnpkg.com/install.sh | bash
       - run:
+          name: Sign in to Github
+          command: |
+            git config --global user.email "farismmk@gmail.com";
+            git config --global user.name "Faris Mustafa"
+      - run:
           name: Run Yarn
           command: yarn
+      - run:
+          name: Build Packages
+          command: yarn build
       - save_cache:
           key: dependency-cache
           paths:
