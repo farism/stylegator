@@ -1,28 +1,22 @@
 {
   "private": true,
   "devDependencies": {
-    "execa": "0.9.0",
-    "fs-extra": "5.0.0",
-    "get-stdin": "5.0.1",
-    "github": "13.1.0",
+    "execa-pro": "^1.0.2",
     "husky": "0.14.3",
     "lerna": "2.7.1",
-    "lerna-changelog": "0.7.0",
-    "lerna-changelog-helpers": "0.4.1",
-    "semver": "5.5.0"
+    "lerna-git-flow-deploy": "^0.5.1",
+    "semver": "5.5.0",
+    "tmp": "^0.0.33"
   },
   "scripts": {
     "build": "lerna run --no-parallel build",
     "dev": "lerna run dev",
-    "changelog:all": "lerna-changelog-helpers --all > CHANGELOG.md",
-    "create-prerelease-pr": "node scripts/create_prerelease_pr.js",
     "precommit": "lerna run lint-staged",
-    "publish:prerelease": "node scripts/publish.js prerelease",
-    "publish:stable": "node scripts/publish.js stable",
+    "deploy:next": "lerna-deploy --type=next",
+    "deploy:stable": "lerna-deploy --type=next",
+    "deploy:ghpages": "node scripts/deploy_gh_pages",
     "pretty": "lerna run pretty",
-    "release:gh": "lerna-changelog-helpers | node scripts/create_gh_release.js",
-    "test": "lerna run test",
-    "deploy:documentation": "scripts/deploy_to_gh_pages.sh"
+    "test": "lerna run test"
   },
   "workspaces": [
     "packages/*"

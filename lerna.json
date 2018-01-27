@@ -7,9 +7,7 @@
   "useWorkspaces": true,
   "changelog": {
     "repo": "farism/stylegator",
-    "ignoreCommitters": [
-      "renovate"
-    ],
+    "ignoreCommitters": ["renovate"],
     "labels": {
       "Tag: Breaking Change": ":boom: Breaking Change",
       "Tag: Bug Fix": ":bug: Bug Fix",
@@ -19,5 +17,34 @@
       "Tag: Internal": ":house: Internal"
     },
     "cacheDir": ".changelog"
+  },
+  "deploys": {
+    "repo": "farism/stylegator",
+    "semver": {
+      "major": [":boom: Breaking Change"],
+      "minor": [":nail_care: Enhancement", ":rocket: New Feature"],
+      "patch": [":bug: Bug Fix", ":house: Internal", ":books: Dependencies"]
+    },
+    "gitflow": {
+      "master": "master",
+      "develop": "develop"
+    },
+    "types": {
+      "stable": {
+        "tag": "latest",
+        "publish": {
+          "stable": true,
+          "npm": true,
+          "git": true
+        }
+      },
+      "next": {
+        "preid": "rc",
+        "tag": "next",
+        "publish": {
+          "npm": true
+        }
+      }
+    }
   }
 }

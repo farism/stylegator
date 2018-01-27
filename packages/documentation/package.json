@@ -8,14 +8,14 @@
     "type": "git",
     "url": "git+https://github.com/farism/stylegator.git"
   },
-  "keywords": [
-    "cli"
-  ],
+  "keywords": ["cli"],
   "author": "Faris Mustafa <farismmk@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "stylegator dev",
-    "build": "NODE_ENV=production stylegator build",
+    "build": "yarn build:stylegator && yarn build:404",
+    "build:404": "cp src/404.html build/404.html",
+    "build:stylegator": "NODE_ENV=production stylegator build",
     "test": "jest"
   },
   "dependencies": {

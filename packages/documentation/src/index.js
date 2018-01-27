@@ -6,8 +6,7 @@ import {
   Stylegator,
 } from '@stylegator/stylegator'
 
-import logo from './assets/logo.png'
-import MyComponent from './components/MyComponent'
+import Logo from './partials/Logo'
 
 const sections = [
   {
@@ -45,10 +44,14 @@ const sections = [
   },
 ]
 
-const components = { MyComponent }
+const components = {}
+
+const partials = useCustomPartials({
+  logo: Logo,
+})
 
 ReactDOM.render(
-  <Stylegator {...{ components, sections, logo }} />,
+  <Stylegator {...{ components, partials, sections }} />,
   document.getElementById('app')
 )
 
