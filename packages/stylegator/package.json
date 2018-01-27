@@ -14,6 +14,8 @@
     "stylegator": "./bin/cli.js"
   },
   "scripts": {
+    "lint-staged": "lint-staged",
+    "pretty": "prettier --write --no-semi --single-quote --trailing-comma es5",
     "test": "jest"
   },
   "dependencies": {

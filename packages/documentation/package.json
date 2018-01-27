@@ -18,6 +18,8 @@
     "build": "yarn build:stylegator && yarn build:404",
     "build:404": "cp src/404.html build/404.html",
     "build:stylegator": "NODE_ENV=production stylegator build",
+    "lint-staged": "lint-staged",
+    "pretty": "prettier --write --no-semi --single-quote --trailing-comma es5",
     "test": "jest"
   },
   "dependencies": {
