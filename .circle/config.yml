@@ -1,28 +1,23 @@
 version: 2
-
 jobs:
   build:
     docker:
       - image: circleci/node:9.3.0
     steps:
       - checkout
-
       - run:
           name: Setup Machine
           command: |
             echo 'export PATH=${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin' >> $BASH_ENV;
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
             curl -o- -L https://yarnpkg.com/install.sh | bash
-
       - run:
           name: Run Yarn
           command: yarn
-
       - save_cache:
           key: dependency-cache
           paths:
             - ~/.cache/yarn
-
       - deploy:
           name: Deploying
           command: |
