@@ -1,13 +1,15 @@
 {
   "lerna": "2.7.1",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "npmClient": "yarn",
   "parallel": true,
   "message": "[ci skip] publish %s",
   "useWorkspaces": true,
   "changelog": {
     "repo": "farism/stylegator",
-    "ignoreCommitters": ["renovate"],
+    "ignoreCommitters": [
+      "renovate"
+    ],
     "labels": {
       "Tag: Breaking Change": ":boom: Breaking Change",
       "Tag: Bug Fix": ":bug: Bug Fix",
@@ -21,9 +23,18 @@
   "deploys": {
     "repo": "farism/stylegator",
     "semver": {
-      "major": [":boom: Breaking Change"],
-      "minor": [":nail_care: Enhancement", ":rocket: New Feature"],
-      "patch": [":bug: Bug Fix", ":house: Internal", ":books: Dependencies"]
+      "major": [
+        ":boom: Breaking Change"
+      ],
+      "minor": [
+        ":nail_care: Enhancement",
+        ":rocket: New Feature"
+      ],
+      "patch": [
+        ":bug: Bug Fix",
+        ":house: Internal",
+        ":books: Dependencies"
+      ]
     },
     "gitflow": {
       "master": "master",
