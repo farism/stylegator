@@ -41,7 +41,6 @@ const getPageSection = partials => section => {
 
 const Page = ({ content, partials }) => (
   <div className={styles['page']}>
-    {console.log(getPageSections(content))}
     {getPageSections(content).map(getPageSection(partials))}
   </div>
 )
