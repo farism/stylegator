@@ -34,7 +34,6 @@ jobs:
             if [ "${CIRCLE_BRANCH}" == "develop" ]; then
               npm run deploy:next
               npm run deploy:documentation next
-              npm run deploy:s3
             elif [ "${CIRCLE_BRANCH}" == "master" ]; then
               npm run deploy:stable
               npm run deploy:documentation
