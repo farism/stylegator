@@ -1,5 +1,4 @@
 version: 2
-
 jobs:
   build:
     docker:
@@ -12,29 +11,20 @@ jobs:
             echo 'export PATH=${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin' >> $BASH_ENV;
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
             curl -o- -L https://yarnpkg.com/install.sh | bash
-            gem install percy-capybara
-            gem install poltergeist
-      - run:
-          name: Sign in to Github as CircleCI Bot
-          command: |
-            git config --global user.email "farismmk@gmail.com";
-            git config --global user.name "Faris Mustafa"
       - run:
           name: Run Yarn
           command: yarn
-
       - save_cache:
           key: dependency-cache
           paths:
             - ~/.cache/yarn
-
       - deploy:
           name: Deploying
           command: |
             if [ "${CIRCLE_BRANCH}" == "develop" ]; then
               npm run deploy:next
-              npm run deploy:documentation next
+              npm run deploy:ghpages next
             elif [ "${CIRCLE_BRANCH}" == "master" ]; then
               npm run deploy:stable
-              npm run deploy:documentation
+              npm run deploy:ghpages
             fi
