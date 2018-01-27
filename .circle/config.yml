@@ -14,13 +14,11 @@ jobs:
             curl -o- -L https://yarnpkg.com/install.sh | bash
             gem install percy-capybara
             gem install poltergeist
-
       - run:
           name: Sign in to Github as CircleCI Bot
           command: |
             git config --global user.email "farismmk@gmail.com";
             git config --global user.name "Faris Mustafa"
-
       - run:
           name: Run Yarn
           command: yarn
@@ -31,34 +29,12 @@ jobs:
             - ~/.cache/yarn
 
       - deploy:
-          name: Deploying Prerelease
+          name: Deploying
           command: |
             if [ "${CIRCLE_BRANCH}" == "develop" ]; then
-                git fetch --prune origin
-                git checkout prerelease 2>/dev/null || git checkout -b prerelease
-                git merge develop --no-edit
-                npm run publish:prerelease
-                git add --all
-                git commit -m "deploying prerelease"
-                git push -u origin prerelease
-                git push --tags
-                yarn create-prerelease-pr
-                yarn deploy:documentation next
-            fi
-
-      - deploy:
-          name: Deploying Production
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-                npm run publish:stable
-                yarn changelog:all
-                git add --all
-                git commit -m "[ci skip] deploying production"
-                git push -u origin master
-                git push --tags
-                yarn release:gh
-                yarn deploy:documentation
-                git checkout develop
-                git merge master -m "[ci skip] backfill master"
-                git push -u origin develop
+              npm run deploy:next
+              npm run deploy:ghpages next
+            elif [ "${CIRCLE_BRANCH}" == "master" ]; then
+              npm run deploy:stable
+              npm run deploy:ghpages
             fi
