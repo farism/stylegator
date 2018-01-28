@@ -5,7 +5,7 @@ import { getAttributes, getPageSections } from '../../utils'
 import { LiveMarkdown, Props, StaticMarkdown } from '../'
 import styles from './page.scss'
 
-const getPageSection = partials => section => {
+const getPageSection = (partials, section) => {
   const {
     staticMarkdown: StaticMarkdown,
     liveMarkdown: LiveMarkdown,
@@ -41,7 +41,9 @@ const getPageSection = partials => section => {
 
 const Page = ({ content, partials }) => (
   <div className={styles['page']}>
-    {getPageSections(content).map(getPageSection(partials))}
+    {getPageSections(content).map((section, i) => (
+      <div key={i}>{getPageSection(partials, section)}</div>
+    ))}
   </div>
 )
 

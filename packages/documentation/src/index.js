@@ -50,11 +50,14 @@ const partials = useCustomPartials({
   logo: Logo,
 })
 
-ReactDOM.render(
-  <Stylegator {...{ components, partials, sections }} />,
-  document.getElementById('app')
-)
+const render = () =>
+  ReactDOM.render(
+    <Stylegator {...{ components, partials, sections }} />,
+    document.getElementById('app')
+  )
 
 if (module.hot) {
-  module.hot.accept()
+  module.hot.accept(render)
 }
+
+render()
