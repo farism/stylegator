@@ -39,7 +39,7 @@
     "webpack": "3.10.0",
     "webpack-blocks": "1.0.0-rc.2",
     "webpack-cleanup-plugin": "0.5.1",
-    "webpack-dev-server": "2.10.1"
+    "webpack-dev-server": "2.11.1"
   },
   "devDependencies": {
     "copy-webpack-plugin": "4.3.1",
