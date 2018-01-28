@@ -95,6 +95,9 @@ useCustomPartials({
   // The sidebar containing the logo, search, and menu
   sidebar,
 
+  // The responsive sidebar toggle
+  sidebarToggle,
+
   // The component used to render static gfm code blocks
   staticMarkdown,
 })

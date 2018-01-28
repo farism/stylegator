@@ -1,4 +1,6 @@
 export { default as buildRoutes } from './buildRoutes'
+export { default as filterSections } from './filterSections'
+export { default as flattenSections } from './flattenSections'
 export { default as getAttributes } from './getAttributes'
 export { default as getPageSections } from './getPageSections'
 export { default as inPath } from './inPath'

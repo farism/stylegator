@@ -16,7 +16,7 @@ const MenuLink = ({ depth, section, partials }) => {
       }}
     >
       <MenuIcon {...{ section }} />
-      {section.title}
+      <span dangerouslySetInnerHTML={{ __html: section.title }} />
     </NavLink>
   )
 }
