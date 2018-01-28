@@ -4152,7 +4152,7 @@ lerna-changelog@^0.7.0:
     string.prototype.padend "^3.0.0"
     yargs "^6.6.0"
 
-lerna-git-flow-deploy@^0.5.2:
+lerna-git-flow-deploy@0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/lerna-git-flow-deploy/-/lerna-git-flow-deploy-0.5.2.tgz#5ebd659d918fb076d1f5d9786ad19fb4f55f20f4"
   dependencies:
