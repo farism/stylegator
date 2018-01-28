@@ -1,4 +1,4 @@
-webpackJsonp([4],{
+webpackJsonp([6],{
 
 /***/ "./src/sections/getting-started.md":
 /***/ (function(module, exports) {

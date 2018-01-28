@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f4d51bf696ea399f3faa"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "fdc2e2c4fe0a7534fca6"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -684,7 +684,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		7: 0
+/******/ 		9: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -2745,6 +2745,23 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Filter/filter.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".filter--2sF-n {\n  box-sizing: border-box;\n  position: relative; }\n  .filter--2sF-n input {\n    background: #fff;\n    border: none;\n    border-radius: 2px;\n    box-sizing: border-box;\n    color: #333;\n    font-size: 14px;\n    height: 48px;\n    padding: 0 48px 0 16px;\n    width: 100%; }\n    .filter--2sF-n input:focus {\n      outline: none; }\n    .filter--2sF-n input::placeholder {\n      color: #d9d9d9; }\n  .filter--2sF-n svg {\n    margin-top: -5px;\n    position: absolute;\n    right: 30px;\n    top: 50%; }\n", ""]);
+
+// exports
+exports.locals = {
+	"filter": "filter--2sF-n"
+};
+
+/***/ }),
+
 /***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Layout/layout.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2753,11 +2770,13 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".layout--7fQf8 {\n  height: 100%;\n  padding-left: 250px; }\n", ""]);
+exports.push([module.i, ".layout--7fQf8 {\n  height: 100%;\n  padding-left: 250px;\n  position: relative; }\n\n.toggle--1CNwH {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 50px;\n  height: 50px;\n  background: #f00;\n  transition: 0.3s transform; }\n  .toggle--1CNwH.open--285Ax {\n    transform: translateX(250px); }\n\n@media only screen and (max-width: 720px) {\n  .layout--7fQf8 {\n    padding-left: 0; } }\n", ""]);
 
 // exports
 exports.locals = {
-	"layout": "layout--7fQf8"
+	"layout": "layout--7fQf8",
+	"toggle": "toggle--1CNwH",
+	"open": "open--285Ax"
 };
 
 /***/ }),
@@ -2842,7 +2861,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".menu-link--31gxL {\n  box-sizing: border-box;\n  color: #333;\n  display: inline-block;\n  font-size: 15px;\n  padding: 16px 36px 16px 20px;\n  text-decoration: none;\n  width: 100%; }\n  .menu-link--31gxL.depth-0 {\n    font-size: 18px; }\n  .menu-link--31gxL.active {\n    background: #fff;\n    color: #f47e42; }\n  .menu-link--31gxL svg path,\n  .menu-link--31gxL svg rect {\n    fill: #fff; }\n", ""]);
+exports.push([module.i, ".menu-link--31gxL {\n  box-sizing: border-box;\n  color: #333;\n  display: inline-block;\n  font-size: 15px;\n  padding: 16px 36px 16px 16px;\n  text-decoration: none;\n  width: 100%;\n  transition: 0.2s background; }\n  .menu-link--31gxL.depth-0 {\n    font-size: 16px; }\n  .menu-link--31gxL.active {\n    background: #fff;\n    color: #aeca3f; }\n  .menu-link--31gxL svg path,\n  .menu-link--31gxL svg rect {\n    fill: #fff; }\n\n.fuzzy-match {\n  font-weight: bold;\n  color: #aeca3f; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -2892,23 +2911,6 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Search/search.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".search--s8Uzx {\n  box-sizing: border-box;\n  position: relative; }\n  .search--s8Uzx input {\n    background: #fff;\n    border: none;\n    border-radius: 2px;\n    box-sizing: border-box;\n    color: #333;\n    font-size: 14px;\n    height: 48px;\n    padding: 0 48px 0 16px;\n    width: 100%; }\n    .search--s8Uzx input:focus {\n      outline: none; }\n    .search--s8Uzx input::placeholder {\n      color: #d9d9d9; }\n  .search--s8Uzx svg {\n    margin-top: -5px;\n    position: absolute;\n    right: 30px;\n    top: 50%; }\n", ""]);
-
-// exports
-exports.locals = {
-	"search": "search--s8Uzx"
-};
-
-/***/ }),
-
 /***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Sidebar/sidebar.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2917,11 +2919,34 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".sidebar--153TF {\n  background: #f9f9f9;\n  box-sizing: border-box;\n  height: 100%;\n  left: 0;\n  overflow-y: scroll;\n  position: fixed;\n  width: 250px; }\n", ""]);
+exports.push([module.i, ".sidebar--153TF {\n  background: #f9f9f9;\n  box-sizing: border-box;\n  height: 100%;\n  left: 0;\n  overflow-y: scroll;\n  position: fixed;\n  width: 250px;\n  transition: 0.3s transform; }\n  .sidebar--153TF.open--3QcvO {\n    transform: translateX(0) !important; }\n\n@media only screen and (max-width: 720px) {\n  .sidebar--153TF {\n    transform: translateX(-250px); } }\n", ""]);
 
 // exports
 exports.locals = {
-	"sidebar": "sidebar--153TF"
+	"sidebar": "sidebar--153TF",
+	"open": "open--3QcvO"
+};
+
+/***/ }),
+
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/SidebarToggle/sidebarToggle.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".toggle--1i_no {\n  background: #fff;\n  cursor: pointer;\n  height: 50px;\n  left: 0;\n  margin: 0 auto;\n  position: fixed;\n  top: 0;\n  transition: all 0.3s ease;\n  width: 50px; }\n  .toggle--1i_no.open--14FNY {\n    transform: translateX(250px); }\n    .toggle--1i_no.open--14FNY:hover .top--SdNu3 {\n      transform: rotateZ(-45deg) translateX(-10px) translateY(-3px); }\n    .toggle--1i_no.open--14FNY:hover .middle--1dgfJ {\n      width: 15px; }\n    .toggle--1i_no.open--14FNY:hover .bottom--1z5de {\n      transform: rotateZ(45deg) translateX(-10px) translateY(3px); }\n  .toggle--1i_no:hover .bar--2-LEn {\n    width: 20px; }\n  .toggle--1i_no:hover .top--SdNu3 {\n    transform: rotateZ(45deg) translateX(10px) translateY(-3px); }\n  .toggle--1i_no:hover .middle--1dgfJ {\n    width: 15px; }\n  .toggle--1i_no:hover .bottom--1z5de {\n    transform: rotateZ(-45deg) translateX(10px) translateY(3px); }\n  .toggle--1i_no .bar--2-LEn {\n    background: #000;\n    display: block;\n    height: 4px;\n    margin: 7px auto;\n    transition: all 0.3s ease;\n    width: 30px; }\n\n@media only screen and (min-width: 720px) {\n  .toggle--1i_no {\n    display: none; } }\n", ""]);
+
+// exports
+exports.locals = {
+	"toggle": "toggle--1i_no",
+	"open": "open--14FNY",
+	"top": "top--SdNu3",
+	"middle": "middle--1dgfJ",
+	"bottom": "bottom--1z5de",
+	"bar": "bar--2-LEn"
 };
 
 /***/ }),
@@ -3800,6 +3825,157 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("../../node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "../../node_modules/fuzzy/lib/fuzzy.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+ * Fuzzy
+ * https://github.com/myork/fuzzy
+ *
+ * Copyright (c) 2012 Matt York
+ * Licensed under the MIT license.
+ */
+
+(function() {
+
+var root = this;
+
+var fuzzy = {};
+
+// Use in node or in browser
+if (true) {
+  module.exports = fuzzy;
+} else {
+  root.fuzzy = fuzzy;
+}
+
+// Return all elements of `array` that have a fuzzy
+// match against `pattern`.
+fuzzy.simpleFilter = function(pattern, array) {
+  return array.filter(function(str) {
+    return fuzzy.test(pattern, str);
+  });
+};
+
+// Does `pattern` fuzzy match `str`?
+fuzzy.test = function(pattern, str) {
+  return fuzzy.match(pattern, str) !== null;
+};
+
+// If `pattern` matches `str`, wrap each matching character
+// in `opts.pre` and `opts.post`. If no match, return null
+fuzzy.match = function(pattern, str, opts) {
+  opts = opts || {};
+  var patternIdx = 0
+    , result = []
+    , len = str.length
+    , totalScore = 0
+    , currScore = 0
+    // prefix
+    , pre = opts.pre || ''
+    // suffix
+    , post = opts.post || ''
+    // String to compare against. This might be a lowercase version of the
+    // raw string
+    , compareString =  opts.caseSensitive && str || str.toLowerCase()
+    , ch;
+
+  pattern = opts.caseSensitive && pattern || pattern.toLowerCase();
+
+  // For each character in the string, either add it to the result
+  // or wrap in template if it's the next string in the pattern
+  for(var idx = 0; idx < len; idx++) {
+    ch = str[idx];
+    if(compareString[idx] === pattern[patternIdx]) {
+      ch = pre + ch + post;
+      patternIdx += 1;
+
+      // consecutive characters should increase the score more than linearly
+      currScore += 1 + currScore;
+    } else {
+      currScore = 0;
+    }
+    totalScore += currScore;
+    result[result.length] = ch;
+  }
+
+  // return rendered string if we have a match for every char
+  if(patternIdx === pattern.length) {
+    // if the string is an exact match with pattern, totalScore should be maxed
+    totalScore = (compareString === pattern) ? Infinity : totalScore;
+    return {rendered: result.join(''), score: totalScore};
+  }
+
+  return null;
+};
+
+// The normal entry point. Filters `arr` for matches against `pattern`.
+// It returns an array with matching values of the type:
+//
+//     [{
+//         string:   '<b>lah' // The rendered string
+//       , index:    2        // The index of the element in `arr`
+//       , original: 'blah'   // The original element in `arr`
+//     }]
+//
+// `opts` is an optional argument bag. Details:
+//
+//    opts = {
+//        // string to put before a matching character
+//        pre:     '<b>'
+//
+//        // string to put after matching character
+//      , post:    '</b>'
+//
+//        // Optional function. Input is an entry in the given arr`,
+//        // output should be the string to test `pattern` against.
+//        // In this example, if `arr = [{crying: 'koala'}]` we would return
+//        // 'koala'.
+//      , extract: function(arg) { return arg.crying; }
+//    }
+fuzzy.filter = function(pattern, arr, opts) {
+  if(!arr || arr.length === 0) {
+    return [];
+  }
+  if (typeof pattern !== 'string') {
+    return arr;
+  }
+  opts = opts || {};
+  return arr
+    .reduce(function(prev, element, idx, arr) {
+      var str = element;
+      if(opts.extract) {
+        str = opts.extract(element);
+      }
+      var rendered = fuzzy.match(pattern, str, opts);
+      if(rendered != null) {
+        prev[prev.length] = {
+            string: rendered.rendered
+          , score: rendered.score
+          , index: idx
+          , original: element
+        };
+      }
+      return prev;
+    }, [])
+
+    // Sort by score. Browsers are inconsistent wrt stable/unstable
+    // sorting, so force stable by using the index in the case of tie.
+    // See http://ofb.net/~sethml/is-sort-stable.html
+    .sort(function(a,b) {
+      var compare = b.score - a.score;
+      if(compare) return compare;
+      return a.index - b.index;
+    });
+};
+
+
+}());
+
+
 
 /***/ }),
 
@@ -26379,6 +26555,164 @@ process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 process.umask = function() { return 0; };
+
+
+/***/ }),
+
+/***/ "../../node_modules/prop-types-docs/src/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+const PropTypes = __webpack_require__("../../node_modules/prop-types/index.js")
+
+const getComponentPropTypes = props =>
+  Object.keys(props).reduce(
+    (acc, key) =>
+      Object.assign({}, acc, {
+        [key]: props[key].required
+          ? props[key].type.req()
+          : props[key].type.fn(),
+      }),
+    {}
+  )
+
+const getComponentDefaultProps = props =>
+  Object.keys(props).reduce(
+    (acc, key) => Object.assign({}, acc, { [key]: props[key].default }),
+    {}
+  )
+
+const withPropDocs = ({
+  name = '',
+  description = '',
+  props = {},
+}) => Component => {
+  Component.displayName = name
+  Component.description = description
+  Component.propInfo = props
+  Component.propTypes = getComponentPropTypes(props)
+  Component.defaultProps = getComponentDefaultProps(props)
+
+  return Component
+}
+
+const array = {
+  name: 'array',
+  fn: () => PropTypes.array,
+  req: () => PropTypes.array.isRequired,
+}
+
+const bool = {
+  name: 'boolean',
+  fn: () => PropTypes.bool,
+  req: () => PropTypes.bool.isRequired,
+}
+
+const func = {
+  name: 'function',
+  fn: () => PropTypes.func,
+  req: () => PropTypes.bool.isRequired,
+}
+
+const number = {
+  name: 'number',
+  fn: () => PropTypes.number,
+  req: () => PropTypes.number.isRequired,
+}
+
+const object = {
+  name: 'object',
+  fn: () => PropTypes.object,
+  req: () => PropTypes.object.isRequired,
+}
+
+const string = {
+  name: 'string',
+  fn: () => PropTypes.string,
+  req: () => PropTypes.string.isRequired,
+}
+
+const symbol = {
+  name: 'symbol',
+  fn: () => PropTypes.symbol,
+  req: () => PropTypes.symbol.isRequired,
+}
+
+const node = {
+  name: 'node',
+  fn: () => PropTypes.node,
+  req: fn => PropTypes.node.isRequired,
+}
+
+const element = {
+  name: 'element',
+  fn: () => PropTypes.element,
+  req: fn => PropTypes.element.isRequired,
+}
+
+const oneOf = arr => ({
+  arr,
+  name: 'oneOf',
+  fn: () => PropTypes.oneOf(arr),
+  req: () => PropTypes.oneOf(arr).isRequired,
+})
+
+const oneOfType = types => ({
+  types,
+  name: 'oneOfType',
+  fn: () => PropTypes.oneOfType(types.map(type => type.fn())),
+  req: () => PropTypes.oneOfType(types.map(type => type.fn())).isRequired,
+})
+
+const instanceOf = type => ({
+  name: 'instanceOf',
+  fn: () => PropTypes.instanceOf(type),
+  req: () => PropTypes.instanceOf(type).isRequired,
+  type,
+})
+
+const arrayOf = type => ({
+  type,
+  name: 'arrayOf',
+  fn: () => PropTypes.arrayOf(type.fn()),
+  req: () => PropTypes.arrayOf(type.fn()).isRequired,
+})
+
+const objectOf = type => ({
+  type,
+  name: 'objectOf',
+  fn: () => PropTypes.objectOf(type.fn()),
+  req: () => PropTypes.objectOf(type.fn()).isRequired,
+})
+
+const shape = props => ({
+  props,
+  type: {
+    name: 'shape',
+    fn: () => PropTypes.shape(getComponentPropTypes(props)),
+    req: () => PropTypes.shape(getComponentPropTypes(props)).isRequired,
+  },
+})
+
+module.exports = {
+  array,
+  bool,
+  func,
+  number,
+  object,
+  string,
+  symbol,
+  node,
+  element,
+  oneOf,
+  oneOfType,
+  instanceOf,
+  arrayOf,
+  objectOf,
+  shape,
+  getComponentPropTypes,
+  getComponentDefaultProps,
+  withPropDocs,
+}
 
 
 /***/ }),
@@ -62031,7 +62365,7 @@ exports.default = _Content2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/components/Layout/Layout.js":
+/***/ "../stylegator/src/app/components/Filter/Filter.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62049,32 +62383,194 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
+var _filter = __webpack_require__("../stylegator/src/app/components/Filter/filter.scss");
+
+var _filter2 = _interopRequireDefault(_filter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Icon = function Icon() {
+  return _react2.default.createElement(
+    'svg',
+    { width: '12px', height: '12px', viewBox: '0 0 12 12' },
+    _react2.default.createElement(
+      'g',
+      { stroke: 'none', strokeWidth: '1', fill: 'none', fillRule: 'evenodd' },
+      _react2.default.createElement(
+        'g',
+        { transform: 'translate(-279.000000, -110.000000)' },
+        _react2.default.createElement(
+          'g',
+          { transform: 'translate(73.000000, 100.000000)' },
+          _react2.default.createElement(
+            'g',
+            { transform: 'translate(204.000000, 8.000000)' },
+            _react2.default.createElement(
+              'g',
+              null,
+              _react2.default.createElement(
+                'g',
+                { transform: 'translate(2.000000, 2.000000)', stroke: '#808080' },
+                _react2.default.createElement('circle', { cx: '5', cy: '5', r: '4.5' }),
+                _react2.default.createElement('path', { d: 'M8.5,8.5 L11.5,11.5', strokeLinecap: 'square' })
+              ),
+              _react2.default.createElement('rect', { x: '0', y: '0', width: '16', height: '16' })
+            )
+          )
+        )
+      )
+    )
+  );
+};
+
+var Filter = function Filter(_ref) {
+  var onInput = _ref.onInput;
+  return _react2.default.createElement(
+    'div',
+    { className: _filter2.default['filter'] },
+    _react2.default.createElement('input', { onInput: onInput, placeholder: 'Filter' }),
+    _react2.default.createElement(Icon, null)
+  );
+};
+
+Filter.propTypes = {};
+
+Filter.defaultProps = {};
+
+exports.default = Filter;
+
+/***/ }),
+
+/***/ "../stylegator/src/app/components/Filter/filter.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Filter/filter.scss");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__("../../node_modules/style-loader/lib/addStyles.js")(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Filter/filter.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Filter/filter.scss");
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "../stylegator/src/app/components/Filter/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Filter = __webpack_require__("../stylegator/src/app/components/Filter/Filter.js");
+
+var _Filter2 = _interopRequireDefault(_Filter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Filter2.default;
+
+/***/ }),
+
+/***/ "../stylegator/src/app/components/Layout/Layout.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("../../node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _layout = __webpack_require__("../stylegator/src/app/components/Layout/layout.scss");
 
 var _layout2 = _interopRequireDefault(_layout);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Layout = function Layout(_ref) {
-  var children = _ref.children,
-      logo = _ref.logo,
-      partials = _ref.partials,
-      sections = _ref.sections;
-  var Content = partials.content,
-      Sidebar = partials.sidebar;
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Layout = function (_React$Component) {
+  _inherits(Layout, _React$Component);
+
+  function Layout(props) {
+    _classCallCheck(this, Layout);
+
+    var _this = _possibleConstructorReturn(this, (Layout.__proto__ || Object.getPrototypeOf(Layout)).call(this, props));
+
+    _this.state = {};
+    return _this;
+  }
+
+  _createClass(Layout, [{
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var open = this.state.sidebarOpen;
+      var _props = this.props,
+          children = _props.children,
+          logo = _props.logo,
+          partials = _props.partials,
+          sections = _props.sections;
+      var Content = partials.content,
+          Sidebar = partials.sidebar,
+          SidebarToggle = partials.sidebarToggle;
 
 
-  return _react2.default.createElement(
-    'div',
-    { className: _layout2.default['layout'] },
-    _react2.default.createElement(Sidebar, { logo: logo, partials: partials, sections: sections }),
-    _react2.default.createElement(
-      Content,
-      { partials: partials },
-      children
-    )
-  );
-};
+      return _react2.default.createElement(
+        'div',
+        { className: _layout2.default['layout'] },
+        _react2.default.createElement(SidebarToggle, { open: open, onClick: function onClick() {
+            return _this2.setState({ sidebarOpen: !open });
+          } }),
+        _react2.default.createElement(Sidebar, { logo: logo, partials: partials, sections: sections, open: open }),
+        _react2.default.createElement(
+          Content,
+          { partials: partials },
+          children
+        )
+      );
+    }
+  }]);
+
+  return Layout;
+}(_react2.default.Component);
 
 Layout.propTypes = {
   partials: _propTypes2.default.shape({
@@ -62444,20 +62940,23 @@ var MenuList = function MenuList(_ref) {
         'li',
         { key: i },
         _react2.default.createElement(MenuLink, { depth: depth, partials: partials, section: section }),
-        (0, _utils.inPath)(section.path) && section.sections ? _react2.default.createElement(MenuList, { partials: partials, sections: section.sections, depth: depth + 1 }) : null
+        (0, _utils.inPath)(section.path) && section.sections ? _react2.default.createElement(MenuList, { depth: depth + 1, partials: partials, sections: section.sections }) : null
       );
     })
   );
 };
 
 var Menu = function Menu(_ref2) {
-  var partials = _ref2.partials,
+  var filter = _ref2.filter,
+      partials = _ref2.partials,
       sections = _ref2.sections;
+
+  var menuSections = filter ? (0, _utils.filterSections)(filter, (0, _utils.flattenSections)(sections)) : sections;
 
   return _react2.default.createElement(
     'div',
     { className: _menu2.default['menu'] },
-    _react2.default.createElement(MenuList, { depth: 0, partials: partials, sections: sections })
+    _react2.default.createElement(MenuList, { depth: 0, partials: partials, sections: menuSections })
   );
 };
 
@@ -62655,7 +63154,7 @@ var MenuLink = function MenuLink(_ref) {
       to: '' + section.path
     },
     _react2.default.createElement(MenuIcon, { section: section }),
-    section.title
+    _react2.default.createElement('span', { dangerouslySetInnerHTML: { __html: section.title } })
   );
 };
 
@@ -62869,6 +63368,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _react = __webpack_require__("../../node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
@@ -62949,19 +63450,19 @@ var BaseColumns = function BaseColumns(_ref6) {
       depth = _ref6$depth === undefined ? 0 : _ref6$depth;
   return [_react2.default.createElement(
     ColName,
-    { depth: depth },
+    _extends({ key: 'name' }, { depth: depth }),
     name
   ), _react2.default.createElement(
     ColType,
-    null,
+    { key: 'type' },
     prop.type.name
   ), _react2.default.createElement(
     ColRequired,
-    null,
+    { key: 'required' },
     prop.required
   ), _react2.default.createElement(
     ColDefault,
-    null,
+    { key: 'default' },
     prop.default
   )];
 };
@@ -63100,8 +63601,8 @@ var Shape = function Shape(_ref12) {
       prop = _ref12.prop,
       _ref12$depth = _ref12.depth,
       depth = _ref12$depth === undefined ? 0 : _ref12$depth;
-  return [_react2.default.createElement(Primitive, { name: name, prop: prop, depth: depth })].concat(Object.keys(prop.props).map(function (name) {
-    return _react2.default.createElement(Row, { depth: depth + 1, name: name, prop: prop.props[name] });
+  return [_react2.default.createElement(Primitive, _extends({ key: 'primitive' }, { name: name, prop: prop, depth: depth }))].concat(Object.keys(prop.props).map(function (name, i) {
+    return _react2.default.createElement(Row, { key: i, depth: depth + 1, name: name, prop: prop.props[name] });
   }));
 };
 
@@ -63172,8 +63673,8 @@ var Props = function Props(_ref14) {
       _react2.default.createElement(
         'tbody',
         null,
-        Object.keys(props).map(function (name) {
-          return _react2.default.createElement(Row, { name: name, prop: props[name] });
+        Object.keys(props).map(function (name, i) {
+          return _react2.default.createElement(Row, { key: i, name: name, prop: props[name] });
         })
       )
     )
@@ -63246,137 +63747,6 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/components/Search/Search.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__("../../node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _search = __webpack_require__("../stylegator/src/app/components/Search/search.scss");
-
-var _search2 = _interopRequireDefault(_search);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
-
-var Icon = function Icon() {
-  return _react2.default.createElement(
-    'svg',
-    { width: '12px', height: '12px', viewBox: '0 0 12 12' },
-    _react2.default.createElement(
-      'g',
-      { stroke: 'none', strokeWidth: '1', fill: 'none', fillRule: 'evenodd' },
-      _react2.default.createElement(
-        'g',
-        { transform: 'translate(-279.000000, -110.000000)' },
-        _react2.default.createElement(
-          'g',
-          { transform: 'translate(73.000000, 100.000000)' },
-          _react2.default.createElement(
-            'g',
-            { transform: 'translate(204.000000, 8.000000)' },
-            _react2.default.createElement(
-              'g',
-              null,
-              _react2.default.createElement(
-                'g',
-                { transform: 'translate(2.000000, 2.000000)', stroke: '#808080' },
-                _react2.default.createElement('circle', { cx: '5', cy: '5', r: '4.5' }),
-                _react2.default.createElement('path', { d: 'M8.5,8.5 L11.5,11.5', strokeLinecap: 'square' })
-              ),
-              _react2.default.createElement('rect', { x: '0', y: '0', width: '16', height: '16' })
-            )
-          )
-        )
-      )
-    )
-  );
-};
-
-var Search = function Search(_ref) {
-  _objectDestructuringEmpty(_ref);
-
-  return _react2.default.createElement(
-    'div',
-    { className: _search2.default['search'] },
-    _react2.default.createElement('input', { placeholder: 'Filter' }),
-    _react2.default.createElement(Icon, null)
-  );
-};
-
-Search.propTypes = {};
-
-Search.defaultProps = {};
-
-exports.default = Search;
-
-/***/ }),
-
-/***/ "../stylegator/src/app/components/Search/index.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _Search = __webpack_require__("../stylegator/src/app/components/Search/Search.js");
-
-var _Search2 = _interopRequireDefault(_Search);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _Search2.default;
-
-/***/ }),
-
-/***/ "../stylegator/src/app/components/Search/search.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Search/search.scss");
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__("../../node_modules/style-loader/lib/addStyles.js")(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(true) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Search/search.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Search/search.scss");
-			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
 /***/ "../stylegator/src/app/components/Sidebar/Sidebar.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -63386,6 +63756,8 @@ if(true) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__("../../node_modules/react/index.js");
 
@@ -63401,29 +63773,60 @@ var _sidebar2 = _interopRequireDefault(_sidebar);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Sidebar = function Sidebar(_ref) {
-  var logo = _ref.logo,
-      partials = _ref.partials,
-      sections = _ref.sections;
-  var Logo = partials.logo,
-      Menu = partials.menu,
-      Search = partials.search;
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Sidebar = function (_React$Component) {
+  _inherits(Sidebar, _React$Component);
+
+  function Sidebar(props) {
+    _classCallCheck(this, Sidebar);
+
+    var _this = _possibleConstructorReturn(this, (Sidebar.__proto__ || Object.getPrototypeOf(Sidebar)).call(this, props));
+
+    _this.state = { filter: '' };
+    return _this;
+  }
+
+  _createClass(Sidebar, [{
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var filter = this.state.filter;
+      var _props = this.props,
+          logo = _props.logo,
+          open = _props.open,
+          partials = _props.partials,
+          sections = _props.sections;
+      var Filter = partials.filter,
+          Logo = partials.logo,
+          Menu = partials.menu;
 
 
-  return _react2.default.createElement(
-    'div',
-    { className: _sidebar2.default['sidebar'] },
-    _react2.default.createElement(Logo, { src: logo }),
-    _react2.default.createElement(Search, null),
-    _react2.default.createElement(Menu, { partials: partials, sections: sections })
-  );
-};
+      return _react2.default.createElement(
+        'div',
+        { className: _sidebar2.default['sidebar'] + ' ' + (open ? _sidebar2.default['open'] : '') },
+        _react2.default.createElement(Logo, { src: logo }),
+        _react2.default.createElement(Filter, { onInput: function onInput(e) {
+            return _this2.setState({ filter: e.target.value });
+          } }),
+        _react2.default.createElement(Menu, { filter: filter, partials: partials, sections: sections })
+      );
+    }
+  }]);
+
+  return Sidebar;
+}(_react2.default.Component);
 
 Sidebar.propTypes = {
   partials: _propTypes2.default.shape({
+    filter: _propTypes2.default.func.isRequired,
     logo: _propTypes2.default.func.isRequired,
-    menu: _propTypes2.default.func.isRequired,
-    search: _propTypes2.default.func.isRequired
+    menu: _propTypes2.default.func.isRequired
   }).isRequired,
   sections: _propTypes2.default.array
 };
@@ -63478,6 +63881,106 @@ if(true) {
 	if(!content.locals) {
 		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Sidebar/sidebar.scss", function() {
 			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Sidebar/sidebar.scss");
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "../stylegator/src/app/components/SidebarToggle/SidebarToggle.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__("../../node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _sidebarToggle = __webpack_require__("../stylegator/src/app/components/SidebarToggle/sidebarToggle.scss");
+
+var _sidebarToggle2 = _interopRequireDefault(_sidebarToggle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SidebarToggle = function SidebarToggle(_ref) {
+  var open = _ref.open,
+      onClick = _ref.onClick;
+
+  return _react2.default.createElement(
+    'div',
+    {
+      onClick: onClick,
+      className: _sidebarToggle2.default['toggle'] + ' ' + (open ? _sidebarToggle2.default['open'] : '')
+    },
+    _react2.default.createElement('div', { className: _sidebarToggle2.default['bar'] + ' ' + _sidebarToggle2.default['top'] }),
+    _react2.default.createElement('div', { className: _sidebarToggle2.default['bar'] + ' ' + _sidebarToggle2.default['middle'] }),
+    _react2.default.createElement('div', { className: _sidebarToggle2.default['bar'] + ' ' + _sidebarToggle2.default['bottom'] })
+  );
+};
+
+SidebarToggle.propTypes = {};
+
+SidebarToggle.defaultProps = {};
+
+exports.default = SidebarToggle;
+
+/***/ }),
+
+/***/ "../stylegator/src/app/components/SidebarToggle/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _SidebarToggle = __webpack_require__("../stylegator/src/app/components/SidebarToggle/SidebarToggle.js");
+
+var _SidebarToggle2 = _interopRequireDefault(_SidebarToggle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _SidebarToggle2.default;
+
+/***/ }),
+
+/***/ "../stylegator/src/app/components/SidebarToggle/sidebarToggle.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/SidebarToggle/sidebarToggle.scss");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__("../../node_modules/style-loader/lib/addStyles.js")(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/SidebarToggle/sidebarToggle.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/SidebarToggle/sidebarToggle.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -63635,14 +64138,17 @@ var Stylegator = function Stylegator(_ref) {
   var components = _ref.components,
       logo = _ref.logo,
       partials = _ref.partials,
-      oldSections = _ref.sections;
+      sections = _ref.sections,
+      showAppendix = _ref.showAppendix;
 
   (0, _utils.makeGlobal)(components);
 
-  var sections = (0, _utils.setSlugs)(oldSections);
-
   var Layout = partials.layout;
 
+
+  var routeSections = (0, _utils.setSlugs)(sections);
+
+  var layoutSections = showAppendix ? routeSections.concat([{ title: 'Appendix', path: '/appendix' }]) : routeSections;
 
   return _react2.default.createElement(
     'div',
@@ -63655,8 +64161,8 @@ var Stylegator = function Stylegator(_ref) {
         null,
         _react2.default.createElement(
           Layout,
-          { logo: logo, partials: partials, sections: sections },
-          (0, _utils.buildRoutes)(partials, sections)
+          { logo: logo, partials: partials, sections: layoutSections },
+          (0, _utils.buildRoutes)(partials, routeSections)
         )
       )
     )
@@ -63668,6 +64174,7 @@ Stylegator.propTypes = {
   logo: _propTypes2.default.string,
   partials: _propTypes2.default.shape({
     content: _propTypes2.default.func.isRequired,
+    filter: _propTypes2.default.func.isRequired,
     layout: _propTypes2.default.func.isRequired,
     liveMarkdown: _propTypes2.default.func.isRequired,
     logo: _propTypes2.default.func.isRequired,
@@ -63676,8 +64183,8 @@ Stylegator.propTypes = {
     menuLink: _propTypes2.default.func.isRequired,
     page: _propTypes2.default.func.isRequired,
     props: _propTypes2.default.func.isRequired,
-    search: _propTypes2.default.func.isRequired,
     sidebar: _propTypes2.default.func.isRequired,
+    sidebarToggle: _propTypes2.default.func.isRequired,
     staticMarkdown: _propTypes2.default.func.isRequired
   }),
   sections: _propTypes2.default.array
@@ -63764,6 +64271,15 @@ Object.defineProperty(exports, 'Content', {
   }
 });
 
+var _Filter = __webpack_require__("../stylegator/src/app/components/Filter/index.js");
+
+Object.defineProperty(exports, 'Filter', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_Filter).default;
+  }
+});
+
 var _Layout = __webpack_require__("../stylegator/src/app/components/Layout/index.js");
 
 Object.defineProperty(exports, 'Layout', {
@@ -63836,21 +64352,21 @@ Object.defineProperty(exports, 'Props', {
   }
 });
 
-var _Search = __webpack_require__("../stylegator/src/app/components/Search/index.js");
-
-Object.defineProperty(exports, 'Search', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_Search).default;
-  }
-});
-
 var _Sidebar = __webpack_require__("../stylegator/src/app/components/Sidebar/index.js");
 
 Object.defineProperty(exports, 'Sidebar', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_Sidebar).default;
+  }
+});
+
+var _SidebarToggle = __webpack_require__("../stylegator/src/app/components/SidebarToggle/index.js");
+
+Object.defineProperty(exports, 'SidebarToggle', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_SidebarToggle).default;
   }
 });
 
@@ -63962,6 +64478,8 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__("../../node_modules/react-router-dom/es/index.js");
 
+var _ = __webpack_require__("../stylegator/src/app/utils/index.js");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var buildRoute = function buildRoute(partials, _ref) {
@@ -63972,6 +64490,16 @@ var buildRoute = function buildRoute(partials, _ref) {
     key: title,
     path: path,
     component: loader(partials)
+  });
+};
+
+var buildAppendix = function buildAppendix(partials) {
+  return _react2.default.createElement(_reactRouterDom.Route, {
+    key: 'Appendix',
+    path: '/appendix',
+    component: (0, _.pageLoader)(function () {
+      return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, "../stylegator/src/app/assets/__appendix.md"));
+    })(partials)
   });
 };
 
@@ -63997,8 +64525,53 @@ var buildRoutes = function buildRoutes(partials, sections) {
 };
 
 exports.default = function (partials, sections) {
-  return buildRoutes(partials, sections).concat([buildRedirect({ title: 'home', path: '/', sections: sections })]);
+  return buildRoutes(partials, sections).concat([buildAppendix(partials), buildRedirect({ title: 'home', path: '/', sections: sections })]);
 };
+
+/***/ }),
+
+/***/ "../stylegator/src/app/utils/filterSections.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _fuzzy = __webpack_require__("../../node_modules/fuzzy/lib/fuzzy.js");
+
+var _fuzzy2 = _interopRequireDefault(_fuzzy);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = function (filter, sections) {
+  return _fuzzy2.default.filter(filter, sections, {
+    pre: '<span class="fuzzy-match">',
+    post: '</span>',
+    extract: function extract(section) {
+      return section.title;
+    }
+  }).map(function (match) {
+    return Object.assign({}, match.original, { title: match.string });
+  });
+};
+
+/***/ }),
+
+/***/ "../stylegator/src/app/utils/flattenSections.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var flattenSections = function flattenSections(sections) {
+  return sections.reduce(function (acc, section) {
+    return section.sections ? acc.concat([section]).concat(flattenSections(section.sections)) : acc.concat([section]);
+  }, []);
+};
+
+exports.default = flattenSections;
 
 /***/ }),
 
@@ -64078,6 +64651,24 @@ Object.defineProperty(exports, 'buildRoutes', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_buildRoutes).default;
+  }
+});
+
+var _filterSections = __webpack_require__("../stylegator/src/app/utils/filterSections.js");
+
+Object.defineProperty(exports, 'filterSections', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_filterSections).default;
+  }
+});
+
+var _flattenSections = __webpack_require__("../stylegator/src/app/utils/flattenSections.js");
+
+Object.defineProperty(exports, 'flattenSections', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_flattenSections).default;
   }
 });
 
@@ -64295,6 +64886,7 @@ exports.default = function () {
   var partials = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   return Object.assign({}, {
     content: _components.Content,
+    filter: _components.Filter,
     layout: _components.Layout,
     liveMarkdown: _components.LiveMarkdown,
     logo: _components.Logo,
@@ -64303,8 +64895,8 @@ exports.default = function () {
     menuLink: _components.MenuLink,
     page: _components.Page,
     props: _components.Props,
-    search: _components.Search,
     sidebar: _components.Sidebar,
+    sidebarToggle: _components.SidebarToggle,
     staticMarkdown: _components.StaticMarkdown
   }, partials);
 };
@@ -64330,6 +64922,81 @@ module.exports = __webpack_require__.p + "860f824643c3d9986438d983fe72b7ce.png";
 
 /***/ }),
 
+/***/ "./src/components/MyComponent.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__("../../node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypesDocs = __webpack_require__("../../node_modules/prop-types-docs/src/index.js");
+
+var _propTypesDocs2 = _interopRequireDefault(_propTypesDocs);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var MyComponent = function MyComponent(_ref) {
+  var children = _ref.children;
+  return _react2.default.createElement(
+    'div',
+    null,
+    'My Component!'
+  );
+};
+
+exports.default = (0, _propTypesDocs.withPropDocs)({
+  name: 'MyComponent',
+  props: {
+    foo: {
+      type: _propTypesDocs2.default.string,
+      required: false,
+      default: 'bar',
+      description: 'This is a foo'
+    },
+    person: _propTypesDocs2.default.shape({
+      name: {
+        type: _propTypesDocs2.default.string,
+        description: 'The name'
+      },
+      age: _propTypesDocs2.default.shape({
+        min: {
+          type: _propTypesDocs2.default.number,
+          description: 'Min age'
+        },
+        max: {
+          type: _propTypesDocs2.default.number,
+          description: 'Max age'
+        }
+      })
+    }),
+    bar: {
+      type: _propTypesDocs2.default.oneOf(['red', 'blue']),
+      description: 'This should be an enum'
+    },
+    bing: {
+      type: _propTypesDocs2.default.oneOfType([_propTypesDocs2.default.string, _propTypesDocs2.default.number]),
+      description: 'This should be a bing'
+    },
+    ping: {
+      type: _propTypesDocs2.default.arrayOf(_propTypesDocs2.default.string),
+      description: 'This should be a ping'
+    },
+    pong: {
+      type: _propTypesDocs2.default.objectOf(_propTypesDocs2.default.number),
+      description: 'This should be a pong'
+    }
+  }
+})(MyComponent);
+
+/***/ }),
+
 /***/ "./src/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -64350,56 +65017,65 @@ var _Logo = __webpack_require__("./src/partials/Logo/index.js");
 
 var _Logo2 = _interopRequireDefault(_Logo);
 
+var _MyComponent = __webpack_require__("./src/components/MyComponent.js");
+
+var _MyComponent2 = _interopRequireDefault(_MyComponent);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var sections = [{
   title: 'Introduction',
   loader: (0, _stylegator.pageLoader)(function () {
-    return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, "./src/sections/introduction.md"));
+    return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, "./src/sections/introduction.md"));
   })
 }, {
   title: 'Getting Started',
   loader: (0, _stylegator.pageLoader)(function () {
-    return __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, "./src/sections/getting-started.md"));
+    return __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, "./src/sections/getting-started.md"));
   })
 }, {
   title: 'Authoring Content',
   loader: (0, _stylegator.pageLoader)(function () {
-    return __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, "./src/sections/authoring-content.md"));
+    return __webpack_require__.e/* import() */(8).then(__webpack_require__.bind(null, "./src/sections/authoring-content.md"));
   })
 }, {
   title: 'Configuration',
   loader: (0, _stylegator.pageLoader)(function () {
-    return __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, "./src/sections/configuration.md"));
+    return __webpack_require__.e/* import() */(7).then(__webpack_require__.bind(null, "./src/sections/configuration.md"));
   })
 }, {
   title: 'Guides',
   sections: [{
     title: 'Custom Partials',
     loader: (0, _stylegator.pageLoader)(function () {
-      return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, "./src/sections/guides/partials.md"));
+      return __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, "./src/sections/guides/partials.md"));
     })
   }, {
     title: 'Static Content',
     loader: (0, _stylegator.pageLoader)(function () {
-      return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, "./src/sections/guides/static.md"));
+      return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, "./src/sections/guides/static.md"));
     })
   }, {
     title: 'React Content',
     loader: (0, _stylegator.pageLoader)(function () {
-      return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, "./src/sections/guides/react.md"));
+      return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, "./src/sections/guides/react.md"));
+    })
+  }, {
+    title: 'The Appendix',
+    loader: (0, _stylegator.pageLoader)(function () {
+      return __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, "./src/sections/guides/appendix.md"));
     })
   }]
 }];
 
-var components = {};
+var components = { MyComponent: _MyComponent2.default };
 
 var partials = (0, _stylegator.useCustomPartials)({
   logo: _Logo2.default
 });
 
 var render = function render() {
-  return _reactDom2.default.render(_react2.default.createElement(_stylegator.Stylegator, { components: components, partials: partials, sections: sections }), document.getElementById('app'));
+  return _reactDom2.default.render(_react2.default.createElement(_stylegator.Stylegator, { components: components, partials: partials, sections: sections, showAppendix: true }), document.getElementById('app'));
 };
 
 if (true) {
