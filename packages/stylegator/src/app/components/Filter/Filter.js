@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './search.scss'
+import styles from './filter.scss'
 
 const Icon = () => (
   <svg width="12px" height="12px" viewBox="0 0 12 12">
@@ -23,15 +23,15 @@ const Icon = () => (
   </svg>
 )
 
-const Search = ({}) => (
-  <div className={styles['search']}>
-    <input {...{ placeholder: 'Filter' }} />
+const Filter = ({ onInput }) => (
+  <div className={styles['filter']}>
+    <input {...{ onInput, placeholder: 'Filter' }} />
     <Icon />
   </div>
 )
 
-Search.propTypes = {}
+Filter.propTypes = {}
 
-Search.defaultProps = {}
+Filter.defaultProps = {}
 
-export default Search
+export default Filter

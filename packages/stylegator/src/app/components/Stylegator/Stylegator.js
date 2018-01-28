@@ -12,19 +12,23 @@ import {
 
 import styles from './stylegator.scss'
 
-const Stylegator = ({ components, logo, partials, sections: oldSections }) => {
+const Stylegator = ({ components, logo, partials, sections, showAppendix }) => {
   makeGlobal(components)
 
-  const sections = setSlugs(oldSections)
-
   const { layout: Layout } = partials
+
+  const routeSections = setSlugs(sections)
+
+  const layoutSections = showAppendix
+    ? routeSections.concat([{ title: 'Appendix', path: '/appendix' }])
+    : routeSections
 
   return (
     <div className={styles['styleguider']}>
       <HashRouter>
         <Switch>
-          <Layout {...{ logo, partials, sections }}>
-            {buildRoutes(partials, sections)}
+          <Layout {...{ logo, partials, sections: layoutSections }}>
+            {buildRoutes(partials, routeSections)}
           </Layout>
         </Switch>
       </HashRouter>
@@ -37,6 +41,7 @@ Stylegator.propTypes = {
   logo: PropTypes.string,
   partials: PropTypes.shape({
     content: PropTypes.func.isRequired,
+    filter: PropTypes.func.isRequired,
     layout: PropTypes.func.isRequired,
     liveMarkdown: PropTypes.func.isRequired,
     logo: PropTypes.func.isRequired,
@@ -45,8 +50,8 @@ Stylegator.propTypes = {
     menuLink: PropTypes.func.isRequired,
     page: PropTypes.func.isRequired,
     props: PropTypes.func.isRequired,
-    search: PropTypes.func.isRequired,
     sidebar: PropTypes.func.isRequired,
+    sidebarToggle: PropTypes.func.isRequired,
     staticMarkdown: PropTypes.func.isRequired,
   }),
   sections: PropTypes.array,

@@ -7,6 +7,7 @@ import {
 } from '@stylegator/stylegator'
 
 import Logo from './partials/Logo'
+import MyComponent from './components/MyComponent'
 
 const sections = [
   {
@@ -40,11 +41,15 @@ const sections = [
         title: 'React Content',
         loader: pageLoader(() => import('./sections/guides/react.md')),
       },
+      {
+        title: 'The Appendix',
+        loader: pageLoader(() => import('./sections/guides/appendix.md')),
+      },
     ],
   },
 ]
 
-const components = {}
+const components = { MyComponent }
 
 const partials = useCustomPartials({
   logo: Logo,
@@ -52,7 +57,7 @@ const partials = useCustomPartials({
 
 const render = () =>
   ReactDOM.render(
-    <Stylegator {...{ components, partials, sections }} />,
+    <Stylegator {...{ components, partials, sections, showAppendix: true }} />,
     document.getElementById('app')
   )
 

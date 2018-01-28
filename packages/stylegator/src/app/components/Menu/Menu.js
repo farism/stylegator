@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router-dom'
 
-import { inPath } from '../../utils'
+import { filterSections, flattenSections, inPath } from '../../utils'
 
 import styles from './menu.scss'
 
@@ -17,7 +17,7 @@ const MenuList = ({ depth, partials, sections }) => {
             <MenuLink {...{ depth, partials, section }} />
             {inPath(section.path) && section.sections ? (
               <MenuList
-                {...{ partials, sections: section.sections, depth: depth + 1 }}
+                {...{ depth: depth + 1, partials, sections: section.sections }}
               />
             ) : null}
           </li>
@@ -27,10 +27,14 @@ const MenuList = ({ depth, partials, sections }) => {
   )
 }
 
-const Menu = ({ partials, sections }) => {
+const Menu = ({ filter, partials, sections }) => {
+  const menuSections = filter
+    ? filterSections(filter, flattenSections(sections))
+    : sections
+
   return (
     <div className={styles['menu']}>
-      <MenuList {...{ depth: 0, partials, sections }} />
+      <MenuList {...{ depth: 0, partials, sections: menuSections }} />
     </div>
   )
 }

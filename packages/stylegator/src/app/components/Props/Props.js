@@ -30,10 +30,12 @@ const ColDescription = ({ children }) => (
 )
 
 const BaseColumns = ({ name, prop, depth = 0 }) => [
-  <ColName {...{ depth }}>{name}</ColName>,
-  <ColType>{prop.type.name}</ColType>,
-  <ColRequired>{prop.required}</ColRequired>,
-  <ColDefault>{prop.default}</ColDefault>,
+  <ColName key="name" {...{ depth }}>
+    {name}
+  </ColName>,
+  <ColType key="type">{prop.type.name}</ColType>,
+  <ColRequired key="required">{prop.required}</ColRequired>,
+  <ColDefault key="default">{prop.default}</ColDefault>,
 ]
 
 const Primitive = ({ name, prop, depth = 0 }) => (
@@ -92,9 +94,9 @@ const ObjectOf = ({ name, prop, depth = 0 }) => (
 )
 
 const Shape = ({ name, prop, depth = 0 }) =>
-  [<Primitive {...{ name, prop, depth }} />].concat(
-    Object.keys(prop.props).map(name => (
-      <Row depth={depth + 1} name={name} prop={prop.props[name]} />
+  [<Primitive key="primitive" {...{ name, prop, depth }} />].concat(
+    Object.keys(prop.props).map((name, i) => (
+      <Row key={i} depth={depth + 1} name={name} prop={prop.props[name]} />
     ))
   )
 
@@ -128,7 +130,9 @@ const Props = ({ component, props }) => (
         </tr>
       </thead>
       <tbody>
-        {Object.keys(props).map(name => <Row name={name} prop={props[name]} />)}
+        {Object.keys(props).map((name, i) => (
+          <Row key={i} name={name} prop={props[name]} />
+        ))}
       </tbody>
     </table>
   </div>

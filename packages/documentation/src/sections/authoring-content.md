@@ -1,6 +1,6 @@
 # Authoring Content
 
-You can author a variety of different types of content using stylegator. Pretty much any [GFM](https://github.github.com/gfm/) is supported via [`react-markdown`](https://github.com/rexxars/react-markdown).
+You can author a variety of different types of content using stylegator. Most [github flavored markdown](https://github.github.com/gfm/) is supported via [`react-markdown`](https://github.com/rexxars/react-markdown).
 
 In order to add a section of content, you must declare it in the `sections` that are provided to the top level `<Stylegator />` component, e.g.
 

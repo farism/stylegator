@@ -3,15 +3,31 @@ import PropTypes from 'prop-types'
 
 import styles from './layout.scss'
 
-const Layout = ({ children, logo, partials, sections }) => {
-  const { content: Content, sidebar: Sidebar } = partials
+class Layout extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
 
-  return (
-    <div className={styles['layout']}>
-      <Sidebar {...{ logo, partials, sections }} />
-      <Content {...{ partials }}>{children}</Content>
-    </div>
-  )
+  render() {
+    const open = this.state.sidebarOpen
+    const { children, logo, partials, sections } = this.props
+    const {
+      content: Content,
+      sidebar: Sidebar,
+      sidebarToggle: SidebarToggle,
+    } = partials
+
+    return (
+      <div className={styles['layout']}>
+        <SidebarToggle
+          {...{ open, onClick: () => this.setState({ sidebarOpen: !open }) }}
+        />
+        <Sidebar {...{ logo, partials, sections, open }} />
+        <Content {...{ partials }}>{children}</Content>
+      </div>
+    )
+  }
 }
 
 Layout.propTypes = {

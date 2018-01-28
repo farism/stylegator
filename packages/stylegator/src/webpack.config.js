@@ -19,6 +19,8 @@ const {
   sourceMaps,
 } = require('webpack-blocks')
 
+const AppendixPlugin = require('./webpackAppendixPlugin')
+
 const raw = () => {
   return (context, { merge }) =>
     merge({
@@ -69,6 +71,7 @@ module.exports = ({
       ]),
       new webpack.NamedModulesPlugin(),
       new webpack.HotModuleReplacementPlugin(),
+      new AppendixPlugin(),
     ]),
     setOutput({
       path: path.resolve(process.cwd(), buildDir),

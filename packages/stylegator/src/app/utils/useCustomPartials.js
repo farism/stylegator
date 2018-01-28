@@ -1,5 +1,6 @@
 import {
   Content,
+  Filter,
   Layout,
   LiveMarkdown,
   Logo,
@@ -8,8 +9,8 @@ import {
   MenuLink,
   Page,
   Props,
-  Search,
   Sidebar,
+  SidebarToggle,
   StaticMarkdown,
 } from '../components'
 
@@ -18,6 +19,7 @@ export default (partials = {}) =>
     {},
     {
       content: Content,
+      filter: Filter,
       layout: Layout,
       liveMarkdown: LiveMarkdown,
       logo: Logo,
@@ -26,8 +28,8 @@ export default (partials = {}) =>
       menuLink: MenuLink,
       page: Page,
       props: Props,
-      search: Search,
       sidebar: Sidebar,
+      sidebarToggle: SidebarToggle,
       staticMarkdown: StaticMarkdown,
     },
     partials
