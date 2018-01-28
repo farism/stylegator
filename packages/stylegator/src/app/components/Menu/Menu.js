@@ -11,9 +11,9 @@ const MenuList = ({ depth, partials, sections }) => {
 
   return (
     <ul>
-      {sections.map(section => {
+      {sections.map((section, i) => {
         return (
-          <li>
+          <li key={i}>
             <MenuLink {...{ depth, partials, section }} />
             {inPath(section.path) && section.sections ? (
               <MenuList
