@@ -2,13 +2,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const path = require('path')
+const webpack = require('webpack')
 const {
   addPlugins,
   babel,
   createConfig,
   css,
   customConfig,
-  devServer,
   entryPoint,
   env,
   file,
@@ -67,6 +67,8 @@ module.exports = ({
           to: `assets`,
         },
       ]),
+      new webpack.NamedModulesPlugin(),
+      new webpack.HotModuleReplacementPlugin(),
     ]),
     setOutput({
       path: path.resolve(process.cwd(), buildDir),
@@ -76,9 +78,5 @@ module.exports = ({
         filename: '[name].[hash].js',
       }),
     ]),
-    env('development', [
-      setOutput({ filename: '[name].js' }),
-      devServer({ port: 8080 }),
-      sourceMaps(),
-    ]),
+    env('development', [setOutput({ filename: '[name].js' }), sourceMaps()]),
   ])

@@ -56,6 +56,10 @@ ReactDOM.render(
   <Stylegator sections={sections} />,
   document.getElementById('app')
 )
+
+if (module.hot) {
+  module.hot.accept()
+}
 ```
 
 # Author some content
