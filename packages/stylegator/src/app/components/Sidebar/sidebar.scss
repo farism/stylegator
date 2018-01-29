@@ -1,19 +1,11 @@
-$width: 250px;
-
 .sidebar {
   background: #f9f9f9;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   left: 0;
   overflow-y: scroll;
-  position: fixed;
-  width: $width;
-  transition: 0.3s transform;
-  transform: translateX(-$width);
-}
-
-@media only screen and (min-width: 768px) and (min-device-width: 768px) {
-  .sidebar {
-    transform: translateX(0);
-  }
+  position: relative;
+  width: 100%;
 }

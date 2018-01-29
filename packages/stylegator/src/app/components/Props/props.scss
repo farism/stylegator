@@ -2,6 +2,7 @@
   border: 1px solid #d9d9d9;
   box-sizing: border-box;
   margin-bottom: 16px;
+  overflow-x: scroll;
   padding: 15px;
   width: 100%;
 
@@ -45,6 +46,7 @@
 
     &.description {
       width: 100%;
+      min-width: 250px;
 
       .meta {
         span {

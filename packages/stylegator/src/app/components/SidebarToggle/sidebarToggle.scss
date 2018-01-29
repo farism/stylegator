@@ -1,62 +1,17 @@
 .toggle {
-  background: #fff;
   cursor: pointer;
-  height: 50px;
-  left: 0;
   margin: 0 auto;
-  position: fixed;
-  top: 0;
-  transition: all 0.3s ease;
-  width: 50px;
-
-  &.open {
-    // transform: translateX(250px);
-
-    &:hover {
-      .top {
-        transform: rotateZ(-45deg) translateX(-10px) translateY(-3px);
-      }
-
-      .middle {
-        width: 15px;
-      }
-
-      .bottom {
-        transform: rotateZ(45deg) translateX(-10px) translateY(3px);
-      }
-    }
-  }
-
-  &:hover {
-    .bar {
-      width: 20px;
-    }
-
-    .top {
-      transform: rotateZ(45deg) translateX(10px) translateY(-3px);
-    }
-
-    .middle {
-      width: 15px;
-    }
-
-    .bottom {
-      transform: rotateZ(-45deg) translateX(10px) translateY(3px);
-    }
-  }
+  padding: 30px;
 
   .bar {
-    background: #000;
+    background: #fff;
     display: block;
     height: 4px;
-    margin: 7px auto;
     transition: all 0.3s ease;
     width: 30px;
-  }
-}
 
-@media only screen and (min-width: 768px) and (min-device-width: 768px) {
-  .sidebar {
-    // display: none;
+    + .bar {
+      margin-top: 6px;
+    }
   }
 }

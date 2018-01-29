@@ -41,6 +41,7 @@ Stylegator.propTypes = {
   logo: PropTypes.string,
   partials: PropTypes.shape({
     content: PropTypes.func.isRequired,
+    credits: PropTypes.func.isRequired,
     filter: PropTypes.func.isRequired,
     layout: PropTypes.func.isRequired,
     liveMarkdown: PropTypes.func.isRequired,
@@ -49,6 +50,7 @@ Stylegator.propTypes = {
     menuIcon: PropTypes.func.isRequired,
     menuLink: PropTypes.func.isRequired,
     page: PropTypes.func.isRequired,
+    pageHeader: PropTypes.func.isRequired,
     props: PropTypes.func.isRequired,
     sidebar: PropTypes.func.isRequired,
     sidebarToggle: PropTypes.func.isRequired,

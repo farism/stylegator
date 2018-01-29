@@ -65,6 +65,9 @@ useCustomPartials({
   // The right content area containing the Page
   content,
 
+  // The credits text that sticks to the bottom of the sidebar
+  credits,
+
   // The wrapper component
   layout,
 
@@ -85,6 +88,9 @@ useCustomPartials({
 
   // The component responsible for rendering out a section
   page,
+
+  // The header component at the top of each page
+  pageHeader,
 
   // The props table output by using the "props" directive
   props,

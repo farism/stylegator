@@ -39,18 +39,26 @@ const getPageSection = (partials, section) => {
   return <StaticMarkdown {...{ content }} />
 }
 
-const Page = ({ content, partials }) => (
-  <div className={styles['page']}>
-    {getPageSections(content).map((section, i) => (
-      <div key={i}>{getPageSection(partials, section)}</div>
-    ))}
-  </div>
-)
+const Page = ({ content, title, partials }) => {
+  const { pageHeader: PageHeader } = partials
+
+  return (
+    <div className={styles['page']}>
+      <PageHeader {...{ title }} />
+      <div className={styles['page-content']}>
+        {getPageSections(content).map((section, i) => (
+          <div key={i}>{getPageSection(partials, section)}</div>
+        ))}
+      </div>
+    </div>
+  )
+}
 
 Page.propTypes = {
   content: PropTypes.string,
   partials: PropTypes.shape({
     liveMarkdown: PropTypes.func.isRequired,
+    pageHeader: PropTypes.func.isRequired,
     props: PropTypes.func.isRequired,
     staticMarkdown: PropTypes.func.isRequired,
   }).isRequired,

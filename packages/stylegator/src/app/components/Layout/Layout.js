@@ -6,11 +6,13 @@ import styles from './layout.scss'
 class Layout extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {
+      open: false,
+    }
   }
 
   render() {
-    const open = this.state.sidebarOpen
+    const open = this.state.open
     const { children, logo, partials, sections } = this.props
     const {
       content: Content,
@@ -20,11 +22,19 @@ class Layout extends React.Component {
 
     return (
       <div className={`${styles['layout']} ${open ? styles['open'] : ''}`}>
-        <SidebarToggle
-          {...{ open, onClick: () => this.setState({ sidebarOpen: !open }) }}
+        <div className={styles['layout-toggle']}>
+          <SidebarToggle onClick={() => this.setState({ open: !open })} />
+        </div>
+        <div
+          className={styles['layout-scrim']}
+          onClick={() => this.setState({ open: false })}
         />
-        <Sidebar {...{ logo, partials, sections, open }} />
-        <Content {...{ partials }}>{children}</Content>
+        <div className={styles['layout-sidebar']}>
+          <Sidebar {...{ logo, partials, sections, open }} />
+        </div>
+        <div className={styles['layout-content']}>
+          <Content {...{ partials }}>{children}</Content>
+        </div>
       </div>
     )
   }

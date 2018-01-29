@@ -1,5 +1,6 @@
 import {
   Content,
+  Credits,
   Filter,
   Layout,
   LiveMarkdown,
@@ -8,6 +9,7 @@ import {
   MenuIcon,
   MenuLink,
   Page,
+  PageHeader,
   Props,
   Sidebar,
   SidebarToggle,
@@ -17,8 +19,10 @@ import {
 export default (partials = {}) =>
   Object.assign(
     {},
+
     {
       content: Content,
+      credits: Credits,
       filter: Filter,
       layout: Layout,
       liveMarkdown: LiveMarkdown,
@@ -27,6 +31,7 @@ export default (partials = {}) =>
       menuIcon: MenuIcon,
       menuLink: MenuLink,
       page: Page,
+      pageHeader: PageHeader,
       props: Props,
       sidebar: Sidebar,
       sidebarToggle: SidebarToggle,
