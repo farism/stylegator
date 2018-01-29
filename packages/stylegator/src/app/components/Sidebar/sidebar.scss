@@ -9,14 +9,11 @@ $width: 250px;
   position: fixed;
   width: $width;
   transition: 0.3s transform;
-
-  &.open {
-    transform: translateX(0) !important;
-  }
+  transform: translateX(-$width);
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (min-width: 768px) and (min-device-width: 768px) {
   .sidebar {
-    transform: translateX(-$width);
+    transform: translateX(0);
   }
 }
