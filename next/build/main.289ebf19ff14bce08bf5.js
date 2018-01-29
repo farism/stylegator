@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a28c08fc6251a3c667a1"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "289ebf19ff14bce08bf5"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -78140,12 +78140,16 @@ var Menu = function Menu(_ref) {
   var filter = _ref.filter,
       partials = _ref.partials,
       sections = _ref.sections,
+      showAppendix = _ref.showAppendix,
       _ref$theme$filterColo = _ref.theme.filterColor,
       filterColor = _ref$theme$filterColo === undefined ? 'red' : _ref$theme$filterColo;
-  var MenuList = partials.MenuList;
+  var MenuLink = partials.MenuLink,
+      MenuList = partials.MenuList;
 
 
-  var filteredSections = filter ? (0, _utils.filterSections)(filterColor, filter, (0, _utils.flattenSections)(sections)) : sections;
+  var withAppendix = showAppendix ? sections.concat({ title: 'Appendix', path: '/appendix' }) : sections;
+
+  var filteredSections = filter ? (0, _utils.filterSections)(filterColor, filter, (0, _utils.flattenSections)(withAppendix)) : withAppendix;
 
   return _react2.default.createElement(
     'div',
@@ -79223,8 +79227,7 @@ var Sidebar = function (_React$Component) {
       var _props = this.props,
           logo = _props.logo,
           open = _props.open,
-          partials = _props.partials,
-          sections = _props.sections;
+          partials = _props.partials;
       var Credits = partials.Credits,
           Filter = partials.Filter,
           Logo = partials.Logo,
@@ -79238,7 +79241,7 @@ var Sidebar = function (_React$Component) {
         _react2.default.createElement(Filter, { onInput: function onInput(e) {
             return _this2.setState({ filter: e.target.value });
           } }),
-        _react2.default.createElement(Menu, { filter: filter, sections: sections }),
+        _react2.default.createElement(Menu, { filter: filter }),
         _react2.default.createElement(Credits, null)
       );
     }
@@ -79550,33 +79553,18 @@ var _reactRouterDom = __webpack_require__("../../node_modules/react-router-dom/e
 
 var _recompose = __webpack_require__("../../node_modules/recompose/es/Recompose.js");
 
-var _ramda = __webpack_require__("../../node_modules/ramda/es/index.js");
-
-var R = _interopRequireWildcard(_ramda);
-
 var _stylegator = __webpack_require__("../stylegator/src/app/partials/Stylegator/stylegator.scss");
 
 var _stylegator2 = _interopRequireDefault(_stylegator);
 
-var _ = __webpack_require__("../stylegator/src/app/partials/index.js");
-
-var defaultPartials = _interopRequireWildcard(_);
-
 var _utils = __webpack_require__("../stylegator/src/app/utils/index.js");
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var funcIsRequired = R.map(function (c) {
-  return _propTypes2.default.func.isRequired;
-});
 
 var Stylegator = function Stylegator(_ref) {
   var logo = _ref.logo,
       partials = _ref.partials,
-      sections = _ref.sections,
-      showAppendix = _ref.showAppendix;
+      sections = _ref.sections;
   var Layout = partials.Layout;
 
 
@@ -79602,8 +79590,9 @@ var Stylegator = function Stylegator(_ref) {
 Stylegator.propTypes = {
   components: _propTypes2.default.shape({}),
   logo: _propTypes2.default.string,
-  partials: _propTypes2.default.shape(funcIsRequired(defaultPartials)),
+  partials: _utils.defaultPartials,
   sections: _propTypes2.default.array,
+  showAppendix: _propTypes2.default.bool,
   theme: _propTypes2.default.shape({})
 };
 
@@ -79611,13 +79600,15 @@ Stylegator.defaultProps = {
   components: {},
   partials: (0, _utils.useCustomPartials)(),
   sections: [],
+  showAppendix: true,
   theme: {}
 };
 
 exports.default = (0, _recompose.withContext)({
   components: _propTypes2.default.shape({}),
-  partials: _propTypes2.default.shape(funcIsRequired(defaultPartials)),
+  partials: _utils.defaultPartials,
   sections: _propTypes2.default.array,
+  showAppendix: _propTypes2.default.bool,
   theme: _propTypes2.default.shape({})
 }, function (_ref2) {
   var _ref2$components = _ref2.components,
@@ -79626,12 +79617,15 @@ exports.default = (0, _recompose.withContext)({
       partials = _ref2$partials === undefined ? {} : _ref2$partials,
       _ref2$sections = _ref2.sections,
       sections = _ref2$sections === undefined ? [] : _ref2$sections,
+      _ref2$showAppendix = _ref2.showAppendix,
+      showAppendix = _ref2$showAppendix === undefined ? true : _ref2$showAppendix,
       _ref2$theme = _ref2.theme,
       theme = _ref2$theme === undefined ? {} : _ref2$theme;
   return {
-    sections: (0, _utils.setSlugs)(sections),
     components: (0, _utils.makeGlobal)(components),
     partials: partials,
+    sections: (0, _utils.setSlugs)(sections),
+    showAppendix: showAppendix,
     theme: theme
   };
 })(Stylegator);
@@ -80017,6 +80011,7 @@ exports.default = function (Component) {
     components: _propTypes2.default.shape({}),
     partials: _propTypes2.default.shape({}),
     sections: _propTypes2.default.array,
+    showAppendix: _propTypes2.default.bool,
     theme: _propTypes2.default.shape({})
   })(Component);
 };
