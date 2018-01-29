@@ -8,7 +8,7 @@ const buildRoute = (partials, { title, path, loader }) => (
     {...{
       key: title,
       path,
-      component: loader(partials),
+      component: loader(title, partials),
     }}
   />
 )
@@ -18,7 +18,10 @@ const buildAppendix = partials => (
     {...{
       key: 'Appendix',
       path: '/appendix',
-      component: pageLoader(() => import('../assets/__appendix.md'))(partials),
+      component: pageLoader(() => import('../assets/__appendix.md'))(
+        'Appendix',
+        partials
+      ),
     }}
   />
 )

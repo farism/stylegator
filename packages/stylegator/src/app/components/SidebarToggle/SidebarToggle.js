@@ -3,12 +3,9 @@ import PropTypes from 'prop-types'
 
 import styles from './sidebarToggle.scss'
 
-const SidebarToggle = ({ open, onClick }) => {
+const SidebarToggle = ({ onClick }) => {
   return (
-    <div
-      onClick={onClick}
-      className={`${styles['toggle']} ${open ? styles['open'] : ''}`}
-    >
+    <div onClick={onClick} className={styles['toggle']}>
       <div className={`${styles['bar']} ${styles['top']}`} />
       <div className={`${styles['bar']} ${styles['middle']}`} />
       <div className={`${styles['bar']} ${styles['bottom']}`} />

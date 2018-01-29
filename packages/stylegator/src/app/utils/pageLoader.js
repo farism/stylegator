@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { Page } from '../components'
 
-export default loader => partials => {
+export default loader => (title, partials) => {
   class PageLoader extends React.Component {
     constructor(props) {
       super(props)
@@ -21,7 +21,7 @@ export default loader => partials => {
     }
 
     render() {
-      return <Page {...{ partials, content: this.state.content }} />
+      return <Page {...{ partials, title, content: this.state.content }} />
     }
   }
 

@@ -86,6 +86,9 @@ useCustomPartials({
   // The component responsible for rendering out a section
   page,
 
+  // The header component at the top of each page
+  pageHeader,
+
   // The props table output by using the "props" directive
   props,
 
