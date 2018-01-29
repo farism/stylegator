@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Page } from '../components'
+import { getContext } from './'
 
-export default loader => (title, partials) => {
+export default loader => title => {
   class PageLoader extends React.Component {
     constructor(props) {
       super(props)
@@ -21,7 +21,9 @@ export default loader => (title, partials) => {
     }
 
     render() {
-      return <Page {...{ partials, title, content: this.state.content }} />
+      const { Page } = this.props.partials
+
+      return <Page {...{ title, content: this.state.content }} />
     }
   }
 
@@ -29,5 +31,5 @@ export default loader => (title, partials) => {
 
   PageLoader.defaultProps = {}
 
-  return PageLoader
+  return getContext(PageLoader)
 }

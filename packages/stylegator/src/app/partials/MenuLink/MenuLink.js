@@ -4,14 +4,19 @@ import { NavLink } from 'react-router-dom'
 
 const styles = require('./menuLink.scss')
 
-const MenuLink = ({ depth, section, partials }) => {
-  const { menuIcon: MenuIcon } = partials
+const MenuLink = ({
+  depth,
+  section,
+  partials,
+  theme: { linkBgColor = '#fff', linkColor = 'red' },
+}) => {
+  const { MenuIcon } = partials
 
   return (
     <NavLink
       {...{
         className: `${styles['menu-link']} depth-${depth}`,
-        activeClassName: 'active',
+        activeStyle: { background: linkBgColor, color: linkColor },
         to: `${section.path}`,
       }}
     >

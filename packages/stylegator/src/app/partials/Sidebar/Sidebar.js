@@ -12,18 +12,13 @@ class Sidebar extends React.Component {
   render() {
     const filter = this.state.filter
     const { logo, open, partials, sections } = this.props
-    const {
-      credits: Credits,
-      filter: Filter,
-      logo: Logo,
-      menu: Menu,
-    } = partials
+    const { Credits, Filter, Logo, Menu } = partials
 
     return (
       <div className={`${styles['sidebar']} ${open ? styles['open'] : ''}`}>
         <Logo {...{ src: logo }} />
         <Filter onInput={e => this.setState({ filter: e.target.value })} />
-        <Menu {...{ filter, partials, sections }} />
+        <Menu {...{ filter, sections }} />
         <Credits />
       </div>
     )
@@ -32,10 +27,10 @@ class Sidebar extends React.Component {
 
 Sidebar.propTypes = {
   partials: PropTypes.shape({
-    credits: PropTypes.func.isRequired,
-    filter: PropTypes.func.isRequired,
-    logo: PropTypes.func.isRequired,
-    menu: PropTypes.func.isRequired,
+    Credits: PropTypes.func.isRequired,
+    Filter: PropTypes.func.isRequired,
+    Logo: PropTypes.func.isRequired,
+    Menu: PropTypes.func.isRequired,
   }).isRequired,
   sections: PropTypes.array,
 }

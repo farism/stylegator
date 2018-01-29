@@ -1,0 +1,29 @@
+.page-header {
+  align-items: center;
+  background: #333;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  font-size: 32px;
+  margin-bottom: 30px;
+  min-height: 120px;
+  padding: 80px 30px 30px;
+  transition: 0.3s padding;
+}
+
+.page-header-github {
+  margin: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  path {
+    fill: #fff;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-device-width: 768px) {
+  .page-header {
+    padding: 30px 90px 30px 30px;
+  }
+}

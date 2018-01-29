@@ -22,8 +22,8 @@ const Github = () => (
 
 const PageHeader = ({ title }) => (
   <div className={styles['page-header']}>
-    <Github />
     {title}
+    <Github />
   </div>
 )
 

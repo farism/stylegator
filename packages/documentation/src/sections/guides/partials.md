@@ -32,7 +32,7 @@ Using this, we can import our own partials and override the default ones:
 import Logo from './src/partials/Logo'
 
 const partials = useCustompartials({
-  logo: Logo
+  Logo,
 })
 ```
 
@@ -46,7 +46,7 @@ import { useCustomPartials, Stylegator } from 'stylegator'
 import Logo from './src/partials/Logo'
 
 const partials = useCustomPartials({
-  logo: Logo
+  Logo,
 })
 
 const sections = []
@@ -63,48 +63,48 @@ ReactDOM.render(
 ```js
 useCustomPartials({
   // The right content area containing the Page
-  content,
+  Content,
 
   // The credits text that sticks to the bottom of the sidebar
-  credits,
+  Credits,
 
   // The wrapper component
-  layout,
+  Layout,
 
   // The react-live markdown interactive sample output by using the "code" directive
-  liveMarkdown,
+  LiveMarkdown,
 
   // The logo showing at the top left
-  logo,
+  Logo,
 
   // The menu containing navigation links
-  menu,
+  Menu,
 
   // Menu icon
-  menuIcon,
+  MenuIcon,
 
   // Menu navigation links
-  menuLink,
+  MenuLink,
 
   // The component responsible for rendering out a section
-  page,
+  Page,
 
   // The header component at the top of each page
-  pageHeader,
+  PageHeader,
 
   // The props table output by using the "props" directive
-  props,
+  Props,
 
   // The navigation filter input box
-  search,
+  Search,
 
   // The sidebar containing the logo, search, and menu
-  sidebar,
+  Sidebar,
 
   // The responsive sidebar toggle
-  sidebarToggle,
+  SidebarToggle,
 
   // The component used to render static gfm code blocks
-  staticMarkdown,
+  StaticMarkdown,
 })
 ```

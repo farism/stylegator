@@ -6,11 +6,7 @@ import { LiveMarkdown, Props, StaticMarkdown } from '../'
 import styles from './page.scss'
 
 const getPageSection = (partials, section) => {
-  const {
-    staticMarkdown: StaticMarkdown,
-    liveMarkdown: LiveMarkdown,
-    props: Props,
-  } = partials
+  const { StaticMarkdown, LiveMarkdown, Props } = partials
 
   let tag = section.match(/\{([a-zA-Z]*)\}/)
   const content = section.replace(/\{[a-zA-Z]*\}/, '')
@@ -40,7 +36,7 @@ const getPageSection = (partials, section) => {
 }
 
 const Page = ({ content, title, partials }) => {
-  const { pageHeader: PageHeader } = partials
+  const { PageHeader } = partials
 
   return (
     <div className={styles['page']}>
@@ -57,10 +53,10 @@ const Page = ({ content, title, partials }) => {
 Page.propTypes = {
   content: PropTypes.string,
   partials: PropTypes.shape({
-    liveMarkdown: PropTypes.func.isRequired,
-    pageHeader: PropTypes.func.isRequired,
-    props: PropTypes.func.isRequired,
-    staticMarkdown: PropTypes.func.isRequired,
+    LiveMarkdown: PropTypes.func.isRequired,
+    PageHeader: PropTypes.func.isRequired,
+    Props: PropTypes.func.isRequired,
+    StaticMarkdown: PropTypes.func.isRequired,
   }).isRequired,
 }
 

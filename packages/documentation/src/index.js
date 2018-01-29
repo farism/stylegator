@@ -7,6 +7,7 @@ import {
 } from '@stylegator/stylegator'
 
 import Logo from './partials/Logo'
+import PageHeader from './partials/PageHeader'
 import MyComponent from './components/MyComponent'
 
 const sections = [
@@ -52,12 +53,20 @@ const sections = [
 const components = { MyComponent }
 
 const partials = useCustomPartials({
-  logo: Logo,
+  Logo,
+  PageHeader,
 })
+
+const theme = {
+  linkColor: '#aeca3f',
+  filterColor: '#aeca3f',
+}
 
 const render = () =>
   ReactDOM.render(
-    <Stylegator {...{ components, partials, sections, showAppendix: true }} />,
+    <Stylegator
+      {...{ components, partials, sections, showAppendix: true, theme }}
+    />,
     document.getElementById('app')
   )
 
