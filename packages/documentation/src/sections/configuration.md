@@ -1,5 +1,3 @@
-# Configuration
-
 Stylegator can be configured through the `stylegator.config.js` file.
 
 The following is an annotated configuration object:

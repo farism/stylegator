@@ -5,7 +5,7 @@ import styles from './credits.scss'
 
 const Credits = ({ children }) => (
   <div className={styles['credits']}>
-    <span>Powered by</span>
+    <span>Created with</span>
     <a href="https://farism.github.io/stylegator" target="_blank">
       Stylegator
     </a>

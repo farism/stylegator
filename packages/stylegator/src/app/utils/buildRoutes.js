@@ -3,24 +3,23 @@ import { Redirect, Route } from 'react-router-dom'
 
 import { pageLoader } from './'
 
-const buildRoute = (partials, { title, path, loader }) => (
+const buildRoute = ({ title, path, loader }) => (
   <Route
     {...{
       key: title,
       path,
-      component: loader(title, partials),
+      component: loader(title),
     }}
   />
 )
 
-const buildAppendix = partials => (
+const buildAppendix = () => (
   <Route
     {...{
       key: 'Appendix',
       path: '/appendix',
       component: pageLoader(() => import('../assets/__appendix.md'))(
-        'Appendix',
-        partials
+        'Appendix'
       ),
     }}
   />
@@ -37,19 +36,19 @@ const buildRedirect = ({ title, path, loader, sections }) => (
   />
 )
 
-const buildRoutes = (partials, sections) =>
+const buildRoutes = sections =>
   sections.reduce(
     (acc, section) =>
       section.sections
         ? acc
-            .concat(buildRoutes(partials, section.sections))
+            .concat(buildRoutes(section.sections))
             .concat([buildRedirect(section)])
-        : acc.concat([buildRoute(partials, section)]),
+        : acc.concat([buildRoute(section)]),
     []
   )
 
-export default (partials, sections) =>
-  buildRoutes(partials, sections).concat([
-    buildAppendix(partials),
+export default sections =>
+  buildRoutes(sections).concat([
+    buildAppendix(),
     buildRedirect({ title: 'home', path: '/', sections: sections }),
   ])

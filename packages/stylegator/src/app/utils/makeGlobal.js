@@ -1,2 +1,7 @@
-export default (obj = {}) =>
-  Object.keys(obj).forEach(key => ((window || {})[key] = obj[key]))
+import * as R from 'ramda'
+
+export default R.mapObjIndexed((val, key) => {
+  window[key] = val
+
+  return val
+})

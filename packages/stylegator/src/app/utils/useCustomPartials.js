@@ -1,41 +1,7 @@
-import {
-  Content,
-  Credits,
-  Filter,
-  Layout,
-  LiveMarkdown,
-  Logo,
-  Menu,
-  MenuIcon,
-  MenuLink,
-  Page,
-  PageHeader,
-  Props,
-  Sidebar,
-  SidebarToggle,
-  StaticMarkdown,
-} from '../components'
+import * as R from 'ramda'
 
-export default (partials = {}) =>
-  Object.assign(
-    {},
+import { getContext } from './'
+import * as defaultPartials from '../partials'
 
-    {
-      content: Content,
-      credits: Credits,
-      filter: Filter,
-      layout: Layout,
-      liveMarkdown: LiveMarkdown,
-      logo: Logo,
-      menu: Menu,
-      menuIcon: MenuIcon,
-      menuLink: MenuLink,
-      page: Page,
-      pageHeader: PageHeader,
-      props: Props,
-      sidebar: Sidebar,
-      sidebarToggle: SidebarToggle,
-      staticMarkdown: StaticMarkdown,
-    },
-    partials
-  )
+export default (customPartials = {}) =>
+  R.map(getContext, Object.assign({}, defaultPartials, customPartials))

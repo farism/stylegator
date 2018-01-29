@@ -14,26 +14,22 @@ class Layout extends React.Component {
   render() {
     const open = this.state.open
     const { children, logo, partials, sections } = this.props
-    const {
-      content: Content,
-      sidebar: Sidebar,
-      sidebarToggle: SidebarToggle,
-    } = partials
+    const { Content, Sidebar, SidebarToggle } = partials
 
     return (
       <div className={`${styles['layout']} ${open ? styles['open'] : ''}`}>
-        <div className={styles['layout-toggle']}>
+        {/* <div className={styles['layout-toggle']}>
           <SidebarToggle onClick={() => this.setState({ open: !open })} />
         </div>
         <div
           className={styles['layout-scrim']}
           onClick={() => this.setState({ open: false })}
-        />
+        /> */}
         <div className={styles['layout-sidebar']}>
-          <Sidebar {...{ logo, partials, sections, open }} />
+          <Sidebar {...{ logo, open }} />
         </div>
         <div className={styles['layout-content']}>
-          <Content {...{ partials }}>{children}</Content>
+          <Content>{children}</Content>
         </div>
       </div>
     )
@@ -41,10 +37,6 @@ class Layout extends React.Component {
 }
 
 Layout.propTypes = {
-  partials: PropTypes.shape({
-    content: PropTypes.func.isRequired,
-    sidebar: PropTypes.func.isRequired,
-  }).isRequired,
   sections: PropTypes.array,
 }
 

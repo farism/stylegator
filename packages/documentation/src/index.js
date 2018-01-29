@@ -52,12 +52,16 @@ const sections = [
 const components = { MyComponent }
 
 const partials = useCustomPartials({
-  logo: Logo,
+  Logo,
 })
+
+const theme = {}
 
 const render = () =>
   ReactDOM.render(
-    <Stylegator {...{ components, partials, sections, showAppendix: true }} />,
+    <Stylegator
+      {...{ components, partials, sections, showAppendix: true, theme }}
+    />,
     document.getElementById('app')
   )
 

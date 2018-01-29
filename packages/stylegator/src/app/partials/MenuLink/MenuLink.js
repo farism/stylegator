@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const styles = require('./menuLink.scss')
 
 const MenuLink = ({ depth, section, partials }) => {
-  const { menuIcon: MenuIcon } = partials
+  const { MenuIcon } = partials
 
   return (
     <NavLink
