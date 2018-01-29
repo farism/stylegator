@@ -10,13 +10,18 @@ const Menu = ({
   filter,
   partials,
   sections,
+  showAppendix,
   theme: { filterColor = 'red' },
 }) => {
-  const { MenuList } = partials
+  const { MenuLink, MenuList } = partials
+
+  const withAppendix = showAppendix
+    ? sections.concat({ title: 'Appendix', path: '/appendix' })
+    : sections
 
   const filteredSections = filter
-    ? filterSections(filterColor, filter, flattenSections(sections))
-    : sections
+    ? filterSections(filterColor, filter, flattenSections(withAppendix))
+    : withAppendix
 
   return (
     <div className={styles['menu']}>

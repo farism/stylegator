@@ -1,1 +1,1 @@
-module.exports = require('../../src/cli/build')
+module.exports = require('../../lib/cli/build')

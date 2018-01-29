@@ -1,1 +1,1 @@
-module.exports = require('../../src/cli/dev')
+module.exports = require('../../lib/cli/dev')
