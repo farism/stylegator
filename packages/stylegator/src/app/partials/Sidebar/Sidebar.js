@@ -11,14 +11,14 @@ class Sidebar extends React.Component {
 
   render() {
     const filter = this.state.filter
-    const { logo, open, partials, sections } = this.props
+    const { logo, open, partials } = this.props
     const { Credits, Filter, Logo, Menu } = partials
 
     return (
       <div className={`${styles['sidebar']} ${open ? styles['open'] : ''}`}>
         <Logo {...{ src: logo }} />
         <Filter onInput={e => this.setState({ filter: e.target.value })} />
-        <Menu {...{ filter, sections }} />
+        <Menu {...{ filter }} />
         <Credits />
       </div>
     )

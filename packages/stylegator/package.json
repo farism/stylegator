@@ -16,6 +16,8 @@
     "stylegator": "./bin/cli.js"
   },
   "scripts": {
+    "build": "babel src -d lib --copy-files",
+    "dev": "babel src -d lib --copy-files --watch",
     "lint-staged": "lint-staged",
     "pretty": "prettier --write --no-semi --single-quote --trailing-comma es5",
     "test": "jest"

@@ -3,20 +3,17 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import { HashRouter, Switch } from 'react-router-dom'
 import { withContext } from 'recompose'
-import * as R from 'ramda'
 
 import styles from './stylegator.scss'
-import * as defaultPartials from '../'
 import {
   buildRoutes,
-  setSlugs,
+  defaultPartials,
   makeGlobal,
+  setSlugs,
   useCustomPartials,
 } from '../../utils'
 
-const funcIsRequired = R.map(c => PropTypes.func.isRequired)
-
-const Stylegator = ({ logo, partials, sections, showAppendix }) => {
+const Stylegator = ({ logo, partials, sections }) => {
   const { Layout } = partials
 
   return (
@@ -33,8 +30,9 @@ const Stylegator = ({ logo, partials, sections, showAppendix }) => {
 Stylegator.propTypes = {
   components: PropTypes.shape({}),
   logo: PropTypes.string,
-  partials: PropTypes.shape(funcIsRequired(defaultPartials)),
+  partials: defaultPartials,
   sections: PropTypes.array,
+  showAppendix: PropTypes.bool,
   theme: PropTypes.shape({}),
 }
 
@@ -42,20 +40,29 @@ Stylegator.defaultProps = {
   components: {},
   partials: useCustomPartials(),
   sections: [],
+  showAppendix: true,
   theme: {},
 }
 
 export default withContext(
   {
     components: PropTypes.shape({}),
-    partials: PropTypes.shape(funcIsRequired(defaultPartials)),
+    partials: defaultPartials,
     sections: PropTypes.array,
+    showAppendix: PropTypes.bool,
     theme: PropTypes.shape({}),
   },
-  ({ components = {}, partials = {}, sections = [], theme = {} }) => ({
-    sections: setSlugs(sections),
+  ({
+    components = {},
+    partials = {},
+    sections = [],
+    showAppendix = true,
+    theme = {},
+  }) => ({
     components: makeGlobal(components),
     partials,
+    sections: setSlugs(sections),
+    showAppendix,
     theme,
   })
 )(Stylegator)
