@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const StatsWriterPlugin = require('webpack-stats-plugin').StatsWriterPlugin
 const path = require('path')
 const webpack = require('webpack')
 const {

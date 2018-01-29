@@ -1,52 +1,58 @@
 const path = require('path')
+const { RawSource } = require('webpack-sources')
+const ModuleFileHelpers = require('webpack/lib/ModuleFilenameHelpers')
 
-const NODE_MODULES = 'node_modules'
-const APPENDIX_ID = '__appendix.md'
-
-function AppendixPlugin(opts) {
-  this.opts = Object.assign({}, opts || {})
+function AppendixPlugin(options = {}) {
+  this.options = Object.assign({}, options)
 }
 
-let i = 0
-
 AppendixPlugin.prototype.apply = function(compiler) {
-  compiler.plugin('emit', (compilation, compileCallback) => {
-    const appendix = compilation.modules
-      .filter(module => {
-        return (
-          module.id &&
-          !module.id.includes(NODE_MODULES) &&
-          !module.id.includes(APPENDIX_ID) &&
-          path.extname(module.id) === '.md'
-        )
-      })
-      .sort((a, b) => {
-        if (a.index < b.index) {
-          return -1
-        } else if (a.index > b.index) {
-          return 1
-        } else {
-          return 0
-        }
-      })
-      .map(module => {
-        return module._source._value
-          .replace(/module\.exports = "/, '')
-          .replace(/"(\W*)?$/, '')
-      })
-      .reduce((acc, val) => `${acc}${val}`, '')
+  compiler.plugin('compilation', (compilation, params) => {
+    compilation.plugin('optimize-chunk-assets', (chunks, callback) => {
+      const sorted = chunks.sort((chunk1, chunk2) => {
+        const a = chunk1.mapModules(m => m.index)[0]
+        const b = chunk2.mapModules(m => m.index)[0]
 
-    Object.values(compilation.assets).forEach(asset => {
-      const child = asset.children && asset.children[0]
-      if (child && child._value.includes(APPENDIX_ID)) {
-        child._value = child._value.replace(
-          /module\.exports = "(.*)?"/,
-          `module.exports = "${appendix}"`
-        )
-      }
+        return a < b ? -1 : a > b ? 1 : 0
+      })
+
+      const files = chunks.reduce(
+        (acc, chunk) => acc.concat(chunk.files || []),
+        []
+      )
+
+      const appendix = sorted.reduce((acc, chunk) => {
+        let contents = ''
+
+        chunk.forEachModule(m => {
+          if (m.rawRequest && m.rawRequest.endsWith('.md')) {
+            contents += m
+              .source()
+              .source()
+              .replace('module.exports = "', '')
+              .replace(/"$/, '')
+          }
+        })
+
+        return acc + contents
+      }, '')
+
+      sorted.forEach(chunk => {
+        chunk.forEachModule(({ rawRequest }) => {
+          if (rawRequest && rawRequest.endsWith('__appendix.md')) {
+            const file = chunk.files[0]
+            const source = compilation.assets[file].source()
+            const newSource = source.replace(
+              /module\.exports = ".*?"/,
+              `module.exports = "${appendix}"`
+            )
+            compilation.assets[file] = new RawSource(newSource)
+          }
+        })
+      })
+
+      callback()
     })
-
-    compileCallback()
   })
 }
 

@@ -24,7 +24,7 @@ const Stylegator = ({ components, logo, partials, sections, showAppendix }) => {
     : routeSections
 
   return (
-    <div className={styles['styleguider']}>
+    <div className={styles['stylegator']}>
       <HashRouter>
         <Switch>
           <Layout {...{ logo, partials, sections: layoutSections }}>

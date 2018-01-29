@@ -10,7 +10,7 @@
   width: 50px;
 
   &.open {
-    transform: translateX(250px);
+    // transform: translateX(250px);
 
     &:hover {
       .top {
@@ -55,8 +55,8 @@
   }
 }
 
-@media only screen and (min-width: 720px) {
-  .toggle {
-    display: none;
+@media only screen and (min-width: 768px) and (min-device-width: 768px) {
+  .sidebar {
+    // display: none;
   }
 }

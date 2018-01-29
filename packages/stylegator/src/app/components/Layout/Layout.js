@@ -19,7 +19,7 @@ class Layout extends React.Component {
     } = partials
 
     return (
-      <div className={styles['layout']}>
+      <div className={`${styles['layout']} ${open ? styles['open'] : ''}`}>
         <SidebarToggle
           {...{ open, onClick: () => this.setState({ sidebarOpen: !open }) }}
         />
