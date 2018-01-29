@@ -65,6 +65,9 @@ useCustomPartials({
   // The right content area containing the Page
   content,
 
+  // The credits text that sticks to the bottom of the sidebar
+  credits,
+
   // The wrapper component
   layout,
 
