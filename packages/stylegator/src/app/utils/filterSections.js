@@ -1,9 +1,9 @@
 import fuzzy from 'fuzzy'
 
-module.exports = (filter, sections) =>
+module.exports = (color, filter, sections) =>
   fuzzy
     .filter(filter, sections, {
-      pre: '<span class="fuzzy-match">',
+      pre: `<span style="font-weight:bold; color:${color}"}>`,
       post: '</span>',
       extract: section => section.title,
     })

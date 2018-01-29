@@ -4,12 +4,12 @@ import PropTypes from 'prop-types'
 import styles from './menuList.scss'
 import { inPath } from '../../utils'
 
-const MenuList = ({ depth, partials, sections }) => {
+const MenuList = ({ depth, partials, sections, filteredSections }) => {
   const { MenuLink } = partials
 
   return (
     <ul>
-      {sections.map((section, i) => {
+      {filteredSections.map((section, i) => {
         return (
           <li key={i}>
             <MenuLink {...{ depth, section }} />
@@ -17,8 +17,8 @@ const MenuList = ({ depth, partials, sections }) => {
               <MenuList
                 {...{
                   depth: depth + 1,
+                  filteredSections: section.sections,
                   partials,
-                  sections: section.sections,
                 }}
               />
             ) : null}

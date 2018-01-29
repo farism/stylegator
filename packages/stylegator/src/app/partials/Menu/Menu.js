@@ -6,16 +6,21 @@ import { filterSections, flattenSections } from '../../utils'
 
 import styles from './menu.scss'
 
-const Menu = ({ filter, partials, sections }) => {
+const Menu = ({
+  filter,
+  partials,
+  sections,
+  theme: { filterColor = 'red' },
+}) => {
   const { MenuList } = partials
 
-  const menuSections = filter
-    ? filterSections(filter, flattenSections(sections))
+  const filteredSections = filter
+    ? filterSections(filterColor, filter, flattenSections(sections))
     : sections
 
   return (
     <div className={styles['menu']}>
-      <MenuList {...{ depth: 0, partials, sections: menuSections }} />
+      <MenuList {...{ depth: 0, partials, filteredSections }} />
     </div>
   )
 }

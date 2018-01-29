@@ -7,6 +7,7 @@ import {
 } from '@stylegator/stylegator'
 
 import Logo from './partials/Logo'
+import PageHeader from './partials/PageHeader'
 import MyComponent from './components/MyComponent'
 
 const sections = [
@@ -53,9 +54,13 @@ const components = { MyComponent }
 
 const partials = useCustomPartials({
   Logo,
+  PageHeader,
 })
 
-const theme = {}
+const theme = {
+  linkColor: '#aeca3f',
+  filterColor: '#aeca3f',
+}
 
 const render = () =>
   ReactDOM.render(

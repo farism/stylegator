@@ -1,6 +1,6 @@
 .menu-link {
   box-sizing: border-box;
-  color: #333;
+  color: #000;
   display: inline-block;
   font-size: 15px;
   padding: 16px 36px 16px 16px;
@@ -12,11 +12,6 @@
     &.depth-0 {
       font-size: 16px;
     }
-
-    &.active {
-      background: #fff;
-      color: #aeca3f;
-    }
   }
 
   svg {
@@ -24,12 +19,5 @@
     rect {
       fill: #fff;
     }
-  }
-}
-
-:global {
-  .fuzzy-match {
-    font-weight: bold;
-    color: #aeca3f;
   }
 }

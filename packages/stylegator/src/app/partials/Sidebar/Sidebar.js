@@ -18,7 +18,7 @@ class Sidebar extends React.Component {
       <div className={`${styles['sidebar']} ${open ? styles['open'] : ''}`}>
         <Logo {...{ src: logo }} />
         <Filter onInput={e => this.setState({ filter: e.target.value })} />
-        <Menu {...{ filter, partials, sections }} />
+        <Menu {...{ filter, sections }} />
         <Credits />
       </div>
     )

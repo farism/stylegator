@@ -18,13 +18,13 @@ class Layout extends React.Component {
 
     return (
       <div className={`${styles['layout']} ${open ? styles['open'] : ''}`}>
-        {/* <div className={styles['layout-toggle']}>
+        <div className={styles['layout-toggle']}>
           <SidebarToggle onClick={() => this.setState({ open: !open })} />
         </div>
         <div
           className={styles['layout-scrim']}
           onClick={() => this.setState({ open: false })}
-        /> */}
+        />
         <div className={styles['layout-sidebar']}>
           <Sidebar {...{ logo, open }} />
         </div>
