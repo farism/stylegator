@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4ab0f38675e05208e160"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "655878c8980506b316f5"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -2745,6 +2745,23 @@ exports.locals = {
 
 /***/ }),
 
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Credits/credits.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".credits--DY1CL {\n  align-items: flex-end;\n  align-self: center;\n  display: flex;\n  flex: 1 0 auto;\n  padding: 50px 0 10px 0; }\n  .credits--DY1CL a {\n    margin-left: 5px;\n    color: #aeca3f; }\n", ""]);
+
+// exports
+exports.locals = {
+	"credits": "credits--DY1CL"
+};
+
+/***/ }),
+
 /***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Filter/filter.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2770,11 +2787,15 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".layout--7fQf8 {\n  box-sizing: border-box;\n  height: 100%;\n  padding-left: 0;\n  transition: 0.3s all;\n  width: 100%; }\n  .layout--7fQf8.open--285Ax {\n    transform: translateX(250px); }\n\n@media only screen and (min-width: 768px) and (min-device-width: 768px) {\n  .layout--7fQf8 {\n    padding-left: 250px;\n    transform: translateX(0) !important; } }\n", ""]);
+exports.push([module.i, ".layout--7fQf8 {\n  height: 100%;\n  position: relative;\n  width: 100%; }\n  .layout--7fQf8 .layout-content--2mjM4 {\n    margin-top: 0;\n    position: relative;\n    z-index: 1; }\n  .layout--7fQf8 .layout-toggle--1pkyJ {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 2; }\n  .layout--7fQf8 .layout-scrim--Fba1Y {\n    background: #000;\n    height: 100%;\n    left: -100%;\n    opacity: 0;\n    position: fixed;\n    top: 0;\n    width: 100%;\n    transition: 0.2s opacity;\n    z-index: 2; }\n  .layout--7fQf8 .layout-sidebar--1_eWr {\n    height: 100%;\n    left: 0;\n    position: fixed;\n    top: 0;\n    transform: translateX(-250px);\n    width: 250px;\n    z-index: 3; }\n  .layout--7fQf8 .layout-toggle--1pkyJ,\n  .layout--7fQf8 .layout-content--2mjM4,\n  .layout--7fQf8 .layout-sidebar--1_eWr {\n    transition: 0.3s transform; }\n  .layout--7fQf8.open--285Ax .layout-scrim--Fba1Y {\n    left: 0;\n    opacity: 0.5; }\n  .layout--7fQf8.open--285Ax .layout-sidebar--1_eWr {\n    transform: translateX(0); }\n  .layout--7fQf8.open--285Ax .layout-content--2mjM4 {\n    transform: translateX(250px); }\n\n@media only screen and (min-width: 768px) and (min-device-width: 768px) {\n  .layout--7fQf8 .layout-content--2mjM4 {\n    padding-left: 250px;\n    transform: translate(0) !important; }\n  .layout--7fQf8 .layout-sidebar--1_eWr {\n    transform: translateX(0); } }\n", ""]);
 
 // exports
 exports.locals = {
 	"layout": "layout--7fQf8",
+	"layout-content": "layout-content--2mjM4",
+	"layout-toggle": "layout-toggle--1pkyJ",
+	"layout-scrim": "layout-scrim--Fba1Y",
+	"layout-sidebar": "layout-sidebar--1_eWr",
 	"open": "open--285Ax"
 };
 
@@ -2808,7 +2829,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".logo--2idvd {\n  border-bottom: 1px solid #d9d9d9;\n  box-sizing: border-box;\n  display: block;\n  height: 120px;\n  padding: 15px 20px; }\n\n.image--15OCd {\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: contain;\n  display: block;\n  height: 100%;\n  width: 100%; }\n", ""]);
+exports.push([module.i, ".logo--2idvd {\n  border-bottom: 1px solid #d9d9d9;\n  box-sizing: border-box;\n  display: block;\n  flex: 0 0 auto;\n  height: 120px;\n  padding: 15px 20px; }\n\n.image--15OCd {\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: contain;\n  display: block;\n  height: 100%;\n  width: 100%; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -2877,12 +2898,29 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".page--3e8N8 {\n  padding: 25px 50px; }\n\n.section--3CUzU {\n  padding-bottom: 30px; }\n", ""]);
+exports.push([module.i, ".page-content--WGv6R {\n  padding: 0 30px 50px 30px; }\n", ""]);
 
 // exports
 exports.locals = {
-	"page": "page--3e8N8",
-	"section": "section--3CUzU"
+	"page-content": "page-content--WGv6R"
+};
+
+/***/ }),
+
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/PageHeader/pageHeader.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".page-header--3KhHU {\n  background: #6ba038;\n  color: #fff;\n  font-size: 32px;\n  padding: 80px 30px 30px;\n  transition: 0.3s padding; }\n\n.page-header-github--1lN5t {\n  margin: 30px;\n  position: absolute;\n  right: 0;\n  top: 0; }\n  .page-header-github--1lN5t path {\n    fill: #fff; }\n\n@media only screen and (min-width: 768px) and (min-device-width: 768px) {\n  .page-header--3KhHU {\n    padding: 30px 90px 30px 30px; } }\n", ""]);
+
+// exports
+exports.locals = {
+	"page-header": "page-header--3KhHU",
+	"page-header-github": "page-header-github--1lN5t"
 };
 
 /***/ }),
@@ -2895,7 +2933,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".props--18zNU {\n  border: 1px solid #d9d9d9;\n  box-sizing: border-box;\n  margin-bottom: 16px;\n  padding: 15px;\n  width: 100%; }\n  .props--18zNU table {\n    border-collapse: collapse;\n    width: 100%; }\n  .props--18zNU thead {\n    border-bottom: 1px solid #d9d9d9; }\n  .props--18zNU th {\n    padding: 0 15px 5px 0;\n    text-align: left; }\n  .props--18zNU td {\n    padding: 10px 40px 10px 0;\n    vertical-align: top; }\n    .props--18zNU td.name--3Ja8J, .props--18zNU td.type--2h4Bs, .props--18zNU td.default--PhC0J, .props--18zNU td.required--2aez5 {\n      font-family: monospace;\n      font-size: 14px; }\n    .props--18zNU td.name--3Ja8J {\n      color: #9cc223; }\n    .props--18zNU td.type--2h4Bs {\n      color: #c2707e; }\n    .props--18zNU td.required--2aez5 {\n      color: #859cc1; }\n    .props--18zNU td.description--16mDX {\n      width: 100%; }\n      .props--18zNU td.description--16mDX .meta--eipiA span {\n        border-radius: 3px;\n        background: #f3f3f3;\n        display: inline-block;\n        font-family: monospace;\n        margin-top: 20px;\n        padding: 5px; }\n", ""]);
+exports.push([module.i, ".props--18zNU {\n  border: 1px solid #d9d9d9;\n  box-sizing: border-box;\n  margin-bottom: 16px;\n  overflow-x: scroll;\n  padding: 15px;\n  width: 100%; }\n  .props--18zNU table {\n    border-collapse: collapse;\n    width: 100%; }\n  .props--18zNU thead {\n    border-bottom: 1px solid #d9d9d9; }\n  .props--18zNU th {\n    padding: 0 15px 5px 0;\n    text-align: left; }\n  .props--18zNU td {\n    padding: 10px 40px 10px 0;\n    vertical-align: top; }\n    .props--18zNU td.name--3Ja8J, .props--18zNU td.type--2h4Bs, .props--18zNU td.default--PhC0J, .props--18zNU td.required--2aez5 {\n      font-family: monospace;\n      font-size: 14px; }\n    .props--18zNU td.name--3Ja8J {\n      color: #9cc223; }\n    .props--18zNU td.type--2h4Bs {\n      color: #c2707e; }\n    .props--18zNU td.required--2aez5 {\n      color: #859cc1; }\n    .props--18zNU td.description--16mDX {\n      width: 100%;\n      min-width: 250px; }\n      .props--18zNU td.description--16mDX .meta--eipiA span {\n        border-radius: 3px;\n        background: #f3f3f3;\n        display: inline-block;\n        font-family: monospace;\n        margin-top: 20px;\n        padding: 5px; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -2918,7 +2956,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".sidebar--153TF {\n  background: #f9f9f9;\n  box-sizing: border-box;\n  height: 100%;\n  left: 0;\n  overflow-y: scroll;\n  position: fixed;\n  width: 250px;\n  transition: 0.3s transform;\n  transform: translateX(-250px); }\n\n@media only screen and (min-width: 768px) and (min-device-width: 768px) {\n  .sidebar--153TF {\n    transform: translateX(0); } }\n", ""]);
+exports.push([module.i, ".sidebar--153TF {\n  background: #f9f9f9;\n  box-sizing: border-box;\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  left: 0;\n  overflow-y: scroll;\n  position: relative;\n  width: 100%; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -2935,15 +2973,11 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".toggle--1i_no {\n  background: #fff;\n  cursor: pointer;\n  height: 50px;\n  left: 0;\n  margin: 0 auto;\n  position: fixed;\n  top: 0;\n  transition: all 0.3s ease;\n  width: 50px; }\n  .toggle--1i_no.open--14FNY:hover .top--SdNu3 {\n    transform: rotateZ(-45deg) translateX(-10px) translateY(-3px); }\n  .toggle--1i_no.open--14FNY:hover .middle--1dgfJ {\n    width: 15px; }\n  .toggle--1i_no.open--14FNY:hover .bottom--1z5de {\n    transform: rotateZ(45deg) translateX(-10px) translateY(3px); }\n  .toggle--1i_no:hover .bar--2-LEn {\n    width: 20px; }\n  .toggle--1i_no:hover .top--SdNu3 {\n    transform: rotateZ(45deg) translateX(10px) translateY(-3px); }\n  .toggle--1i_no:hover .middle--1dgfJ {\n    width: 15px; }\n  .toggle--1i_no:hover .bottom--1z5de {\n    transform: rotateZ(-45deg) translateX(10px) translateY(3px); }\n  .toggle--1i_no .bar--2-LEn {\n    background: #000;\n    display: block;\n    height: 4px;\n    margin: 7px auto;\n    transition: all 0.3s ease;\n    width: 30px; }\n", ""]);
+exports.push([module.i, ".toggle--1i_no {\n  cursor: pointer;\n  margin: 0 auto;\n  padding: 30px; }\n  .toggle--1i_no .bar--2-LEn {\n    background: #fff;\n    display: block;\n    height: 4px;\n    transition: all 0.3s ease;\n    width: 30px; }\n    .toggle--1i_no .bar--2-LEn + .bar--2-LEn {\n      margin-top: 6px; }\n", ""]);
 
 // exports
 exports.locals = {
 	"toggle": "toggle--1i_no",
-	"open": "open--14FNY",
-	"top": "top--SdNu3",
-	"middle": "middle--1dgfJ",
-	"bottom": "bottom--1z5de",
 	"bar": "bar--2-LEn"
 };
 
@@ -3004,7 +3038,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".logo--3WSjn {\n  border-bottom: 1px solid #d9d9d9;\n  box-sizing: border-box;\n  display: block;\n  height: 145px; }\n\n.image--855F4 {\n  left: 50%;\n  margin-left: -100px;\n  pointer-events: none;\n  position: absolute;\n  top: 0;\n  width: 200px;\n  z-index: 2; }\n", ""]);
+exports.push([module.i, ".logo--3WSjn {\n  border-bottom: 1px solid #d9d9d9;\n  box-sizing: border-box;\n  display: block;\n  flex: 0 0 auto;\n  height: 145px; }\n\n.image--855F4 {\n  left: 50%;\n  margin-left: -100px;\n  pointer-events: none;\n  position: absolute;\n  top: 0;\n  width: 200px;\n  z-index: 2; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -62363,6 +62397,108 @@ exports.default = _Content2.default;
 
 /***/ }),
 
+/***/ "../stylegator/src/app/components/Credits/Credits.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__("../../node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _credits = __webpack_require__("../stylegator/src/app/components/Credits/credits.scss");
+
+var _credits2 = _interopRequireDefault(_credits);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Credits = function Credits(_ref) {
+  var children = _ref.children;
+  return _react2.default.createElement(
+    'div',
+    { className: _credits2.default['credits'] },
+    _react2.default.createElement(
+      'span',
+      null,
+      'Powered by'
+    ),
+    _react2.default.createElement(
+      'a',
+      { href: 'https://farism.github.io/stylegator', target: '_blank' },
+      'Stylegator'
+    )
+  );
+};
+
+Credits.propTypes = {};
+
+Credits.defaultProps = {};
+
+exports.default = Credits;
+
+/***/ }),
+
+/***/ "../stylegator/src/app/components/Credits/credits.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Credits/credits.scss");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__("../../node_modules/style-loader/lib/addStyles.js")(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Credits/credits.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Credits/credits.scss");
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "../stylegator/src/app/components/Credits/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Credits = __webpack_require__("../stylegator/src/app/components/Credits/Credits.js");
+
+var _Credits2 = _interopRequireDefault(_Credits);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _Credits2.default;
+
+/***/ }),
+
 /***/ "../stylegator/src/app/components/Filter/Filter.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -62531,7 +62667,9 @@ var Layout = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (Layout.__proto__ || Object.getPrototypeOf(Layout)).call(this, props));
 
-    _this.state = {};
+    _this.state = {
+      open: false
+    };
     return _this;
   }
 
@@ -62540,7 +62678,7 @@ var Layout = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      var open = this.state.sidebarOpen;
+      var open = this.state.open;
       var _props = this.props,
           children = _props.children,
           logo = _props.logo,
@@ -62554,14 +62692,32 @@ var Layout = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: _layout2.default['layout'] + ' ' + (open ? _layout2.default['open'] : '') },
-        _react2.default.createElement(SidebarToggle, { open: open, onClick: function onClick() {
-            return _this2.setState({ sidebarOpen: !open });
-          } }),
-        _react2.default.createElement(Sidebar, { logo: logo, partials: partials, sections: sections, open: open }),
         _react2.default.createElement(
-          Content,
-          { partials: partials },
-          children
+          'div',
+          { className: _layout2.default['layout-toggle'] },
+          _react2.default.createElement(SidebarToggle, { onClick: function onClick() {
+              return _this2.setState({ open: !open });
+            } })
+        ),
+        _react2.default.createElement('div', {
+          className: _layout2.default['layout-scrim'],
+          onClick: function onClick() {
+            return _this2.setState({ open: false });
+          }
+        }),
+        _react2.default.createElement(
+          'div',
+          { className: _layout2.default['layout-sidebar'] },
+          _react2.default.createElement(Sidebar, { logo: logo, partials: partials, sections: sections, open: open })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: _layout2.default['layout-content'] },
+          _react2.default.createElement(
+            Content,
+            { partials: partials },
+            children
+          )
         )
       );
     }
@@ -63273,17 +63429,26 @@ var getPageSection = function getPageSection(partials, section) {
 
 var Page = function Page(_ref) {
   var content = _ref.content,
+      title = _ref.title,
       partials = _ref.partials;
+  var PageHeader = partials.pageHeader;
+
+
   return _react2.default.createElement(
     'div',
     { className: _page2.default['page'] },
-    (0, _utils.getPageSections)(content).map(function (section, i) {
-      return _react2.default.createElement(
-        'div',
-        { key: i },
-        getPageSection(partials, section)
-      );
-    })
+    _react2.default.createElement(PageHeader, { title: title }),
+    _react2.default.createElement(
+      'div',
+      { className: _page2.default['page-content'] },
+      (0, _utils.getPageSections)(content).map(function (section, i) {
+        return _react2.default.createElement(
+          'div',
+          { key: i },
+          getPageSection(partials, section)
+        );
+      })
+    )
   );
 };
 
@@ -63291,6 +63456,7 @@ Page.propTypes = {
   content: _propTypes2.default.string,
   partials: _propTypes2.default.shape({
     liveMarkdown: _propTypes2.default.func.isRequired,
+    pageHeader: _propTypes2.default.func.isRequired,
     props: _propTypes2.default.func.isRequired,
     staticMarkdown: _propTypes2.default.func.isRequired
   }).isRequired
@@ -63346,6 +63512,125 @@ if(true) {
 	if(!content.locals) {
 		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Page/page.scss", function() {
 			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/Page/page.scss");
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "../stylegator/src/app/components/PageHeader/PageHeader.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__("../../node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _pageHeader = __webpack_require__("../stylegator/src/app/components/PageHeader/pageHeader.scss");
+
+var _pageHeader2 = _interopRequireDefault(_pageHeader);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Github = function Github() {
+  return _react2.default.createElement(
+    'a',
+    { href: 'https://github.com/farism/stylegator', target: '_blank' },
+    _react2.default.createElement(
+      'svg',
+      {
+        className: _pageHeader2.default['page-header-github'],
+        height: '32',
+        version: '1.1',
+        viewBox: '0 0 16 16',
+        width: '32'
+      },
+      _react2.default.createElement('path', {
+        fillRule: 'evenodd',
+        d: 'M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z'
+      })
+    )
+  );
+};
+
+var PageHeader = function PageHeader(_ref) {
+  var title = _ref.title;
+  return _react2.default.createElement(
+    'div',
+    { className: _pageHeader2.default['page-header'] },
+    _react2.default.createElement(Github, null),
+    title
+  );
+};
+
+PageHeader.propTypes = {
+  title: _propTypes2.default.string
+};
+
+PageHeader.defaultProps = {
+  title: ''
+};
+
+exports.default = PageHeader;
+
+/***/ }),
+
+/***/ "../stylegator/src/app/components/PageHeader/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _PageHeader = __webpack_require__("../stylegator/src/app/components/PageHeader/PageHeader.js");
+
+var _PageHeader2 = _interopRequireDefault(_PageHeader);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _PageHeader2.default;
+
+/***/ }),
+
+/***/ "../stylegator/src/app/components/PageHeader/pageHeader.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/PageHeader/pageHeader.scss");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__("../../node_modules/style-loader/lib/addStyles.js")(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/PageHeader/pageHeader.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/components/PageHeader/pageHeader.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -63800,7 +64085,8 @@ var Sidebar = function (_React$Component) {
           open = _props.open,
           partials = _props.partials,
           sections = _props.sections;
-      var Filter = partials.filter,
+      var Credits = partials.credits,
+          Filter = partials.filter,
           Logo = partials.logo,
           Menu = partials.menu;
 
@@ -63812,7 +64098,8 @@ var Sidebar = function (_React$Component) {
         _react2.default.createElement(Filter, { onInput: function onInput(e) {
             return _this2.setState({ filter: e.target.value });
           } }),
-        _react2.default.createElement(Menu, { filter: filter, partials: partials, sections: sections })
+        _react2.default.createElement(Menu, { filter: filter, partials: partials, sections: sections }),
+        _react2.default.createElement(Credits, null)
       );
     }
   }]);
@@ -63822,6 +64109,7 @@ var Sidebar = function (_React$Component) {
 
 Sidebar.propTypes = {
   partials: _propTypes2.default.shape({
+    credits: _propTypes2.default.func.isRequired,
     filter: _propTypes2.default.func.isRequired,
     logo: _propTypes2.default.func.isRequired,
     menu: _propTypes2.default.func.isRequired
@@ -63914,15 +64202,11 @@ var _sidebarToggle2 = _interopRequireDefault(_sidebarToggle);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SidebarToggle = function SidebarToggle(_ref) {
-  var open = _ref.open,
-      onClick = _ref.onClick;
+  var onClick = _ref.onClick;
 
   return _react2.default.createElement(
     'div',
-    {
-      onClick: onClick,
-      className: _sidebarToggle2.default['toggle'] + ' ' + (open ? _sidebarToggle2.default['open'] : '')
-    },
+    { onClick: onClick, className: _sidebarToggle2.default['toggle'] },
     _react2.default.createElement('div', { className: _sidebarToggle2.default['bar'] + ' ' + _sidebarToggle2.default['top'] }),
     _react2.default.createElement('div', { className: _sidebarToggle2.default['bar'] + ' ' + _sidebarToggle2.default['middle'] }),
     _react2.default.createElement('div', { className: _sidebarToggle2.default['bar'] + ' ' + _sidebarToggle2.default['bottom'] })
@@ -64172,6 +64456,7 @@ Stylegator.propTypes = {
   logo: _propTypes2.default.string,
   partials: _propTypes2.default.shape({
     content: _propTypes2.default.func.isRequired,
+    credits: _propTypes2.default.func.isRequired,
     filter: _propTypes2.default.func.isRequired,
     layout: _propTypes2.default.func.isRequired,
     liveMarkdown: _propTypes2.default.func.isRequired,
@@ -64180,6 +64465,7 @@ Stylegator.propTypes = {
     menuIcon: _propTypes2.default.func.isRequired,
     menuLink: _propTypes2.default.func.isRequired,
     page: _propTypes2.default.func.isRequired,
+    pageHeader: _propTypes2.default.func.isRequired,
     props: _propTypes2.default.func.isRequired,
     sidebar: _propTypes2.default.func.isRequired,
     sidebarToggle: _propTypes2.default.func.isRequired,
@@ -64269,6 +64555,15 @@ Object.defineProperty(exports, 'Content', {
   }
 });
 
+var _Credits = __webpack_require__("../stylegator/src/app/components/Credits/index.js");
+
+Object.defineProperty(exports, 'Credits', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_Credits).default;
+  }
+});
+
 var _Filter = __webpack_require__("../stylegator/src/app/components/Filter/index.js");
 
 Object.defineProperty(exports, 'Filter', {
@@ -64338,6 +64633,15 @@ Object.defineProperty(exports, 'Page', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_Page).default;
+  }
+});
+
+var _PageHeader = __webpack_require__("../stylegator/src/app/components/PageHeader/index.js");
+
+Object.defineProperty(exports, 'PageHeader', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_PageHeader).default;
   }
 });
 
@@ -64487,7 +64791,7 @@ var buildRoute = function buildRoute(partials, _ref) {
   return _react2.default.createElement(_reactRouterDom.Route, {
     key: title,
     path: path,
-    component: loader(partials)
+    component: loader(title, partials)
   });
 };
 
@@ -64497,7 +64801,7 @@ var buildAppendix = function buildAppendix(partials) {
     path: '/appendix',
     component: (0, _.pageLoader)(function () {
       return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, "../stylegator/src/app/assets/__appendix.md"));
-    })(partials)
+    })('Appendix', partials)
   });
 };
 
@@ -64787,7 +65091,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 exports.default = function (loader) {
-  return function (partials) {
+  return function (title, partials) {
     var PageLoader = function (_React$Component) {
       _inherits(PageLoader, _React$Component);
 
@@ -64814,7 +65118,7 @@ exports.default = function (loader) {
       }, {
         key: 'render',
         value: function render() {
-          return _react2.default.createElement(_components.Page, { partials: partials, content: this.state.content });
+          return _react2.default.createElement(_components.Page, { partials: partials, title: title, content: this.state.content });
         }
       }]);
 
@@ -64884,6 +65188,7 @@ exports.default = function () {
   var partials = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   return Object.assign({}, {
     content: _components.Content,
+    credits: _components.Credits,
     filter: _components.Filter,
     layout: _components.Layout,
     liveMarkdown: _components.LiveMarkdown,
@@ -64892,6 +65197,7 @@ exports.default = function () {
     menuIcon: _components.MenuIcon,
     menuLink: _components.MenuLink,
     page: _components.Page,
+    pageHeader: _components.PageHeader,
     props: _components.Props,
     sidebar: _components.Sidebar,
     sidebarToggle: _components.SidebarToggle,
