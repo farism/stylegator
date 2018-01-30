@@ -5,8 +5,13 @@ import WebpackDevServer from 'webpack-dev-server'
 import webpackConfig from './webpack.config'
 
 export default argv => {
-  const { host, port } = argv
-  const serverConfig = { host, port, hot: true }
+  const { host, port, srcDir, contentBase } = argv
+  const serverConfig = {
+    host,
+    port,
+    hot: true,
+    contentBase: `${srcDir}/${contentBase}`,
+  }
   const compilerConfig = webpackConfig(argv)
   WebpackDevServer.addDevServerEntrypoints(compilerConfig, serverConfig)
   const compiler = webpack(compilerConfig)

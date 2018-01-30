@@ -16,6 +16,10 @@ export default {
       description: 'build output directory',
       default: 'build',
     },
+    'content-base': {
+      description: 'webpack static directory',
+      default: 'public',
+    },
     template: {
       description: 'html-webpack-plugin template file',
       default: 'index.html',

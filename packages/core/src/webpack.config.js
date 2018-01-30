@@ -43,7 +43,14 @@ const resolveUrl = () => (context, { merge }) =>
   })
 
 export default userConfig => {
-  const { srcDir, entryPoint: entry, buildDir, template, title } = {
+  const {
+    srcDir,
+    entryPoint: entry,
+    buildDir,
+    contentBase,
+    template,
+    title,
+  } = {
     ...defaultConfig,
     ...userConfig,
   }
@@ -69,7 +76,7 @@ export default userConfig => {
     ),
     addPlugins([
       new HtmlWebpackPlugin({ title, template: `${srcDir}/${template}` }),
-      new CopyWebpackPlugin([{ from: `${srcDir}/assets`, to: `assets` }]),
+      new CopyWebpackPlugin([{ from: `${srcDir}/${contentBase}`, to: `./` }]),
       new webpack.NamedModulesPlugin(),
       new webpack.HotModuleReplacementPlugin(),
       new AppendixPlugin(),

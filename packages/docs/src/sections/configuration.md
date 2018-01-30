@@ -15,6 +15,9 @@ module.exports = {
   // The build output directory
   buildDir: 'build',
 
+  // The static assets directory
+  contentBaes: 'public',
+
   // The path of the html template file - used by `html-webpack-plugin`
   template: 'index.html',
 
