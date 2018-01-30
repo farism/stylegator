@@ -30,7 +30,19 @@ const raw = () => {
     })
 }
 
-module.exports = userConfig => {
+const resolveUrl = () => (context, { merge }) =>
+  merge({
+    module: {
+      rules: [
+        Object.assign({
+          test: context.match.test,
+          use: ['style-loader', 'css-loader', 'resolve-url-loader'],
+        }),
+      ],
+    },
+  })
+
+export default userConfig => {
   const { srcDir, entryPoint: entry, buildDir, template, title } = {
     ...defaultConfig,
     ...userConfig,
@@ -38,18 +50,23 @@ module.exports = userConfig => {
 
   return createConfig([
     entryPoint(path.resolve(process.cwd(), srcDir, entry)),
-    match('*.md', [raw()]),
-    match('*.js', [
-      babel({
-        presets: ['env', 'react'],
-        plugins: ['syntax-dynamic-import', 'transform-object-rest-spread'],
-      }),
-    ]),
-    match('*.scss', [
-      css.modules({ localIdentName: '[local]--[hash:base64:5]' }),
-      sass(),
-    ]),
+    match(['*.md'], [raw()]),
+    match(['*.css'], [resolveUrl()]),
     match(['*.gif', '*.jpg', '*.jpeg', '*.png', '*.svg'], [file()]),
+    match(['*.eot', '*.ttf', '*.otf', '*.woff', '*.woff2'], [file()]),
+    match(
+      ['*.scss'],
+      [css.modules({ localIdentName: '[local]--[hash:base64:5]' }), sass()]
+    ),
+    match(
+      ['*.js', '*.jsx'],
+      [
+        babel({
+          presets: ['env', 'react'],
+          plugins: ['syntax-dynamic-import', 'transform-object-rest-spread'],
+        }),
+      ]
+    ),
     addPlugins([
       new HtmlWebpackPlugin({ title, template: `${srcDir}/${template}` }),
       new CopyWebpackPlugin([{ from: `${srcDir}/assets`, to: `assets` }]),
