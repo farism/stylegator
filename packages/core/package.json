@@ -1,5 +1,5 @@
 {
-  "name": "stylegator",
+  "name": "@stylegator/core",
   "version": "0.5.2",
   "description": "styleguide static generator for html and js",
   "main": "lib/index.js",
@@ -26,15 +26,28 @@
     "test": "jest"
   },
   "dependencies": {
-    "@stylegator/app": "^0.5.2",
-    "@stylegator/cli": "^0.5.2",
-    "@stylegator/core": "^0.5.2"
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "copy-webpack-plugin": "4.3.1",
+    "html-webpack-plugin": "2.30.1",
+    "raw-loader": "0.5.1",
+    "webpack": "3.10.0",
+    "webpack-blocks": "1.0.0-rc.2",
+    "webpack-dev-server": "2.11.1",
+    "webpack-sources": "^1.1.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1",
+    "husky": "0.14.3",
+    "lint-staged": "6.1.0",
+    "prettier": "1.10.2",
     "rimraf": "^2.6.2"
   }
 }

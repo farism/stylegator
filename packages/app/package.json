@@ -1,5 +1,5 @@
 {
-  "name": "stylegator",
+  "name": "@stylegator/app",
   "version": "0.5.2",
   "description": "styleguide static generator for html and js",
   "main": "lib/index.js",
@@ -14,27 +14,35 @@
   ],
   "author": "Faris Mustafa <farismmk@gmail.com>",
   "license": "MIT",
-  "bin": {
-    "stylegator": "./bin/cli.js"
-  },
   "scripts": {
-    "build": "yarn clean && babel src -d lib",
+    "build": "yarn clean && babel src -d lib --copy-files",
     "clean": "rimraf lib",
-    "dev": "babel src -d lib --watch",
+    "dev": "babel src -d lib --copy-files --watch",
     "lint-staged": "lint-staged",
     "pretty": "prettier --write --no-semi --single-quote --trailing-comma es5",
     "test": "jest"
   },
   "dependencies": {
-    "@stylegator/app": "^0.5.2",
-    "@stylegator/cli": "^0.5.2",
-    "@stylegator/core": "^0.5.2"
+    "fuzzy": "^0.1.3",
+    "highlight.js": "9.12.0",
+    "marked": "0.3.12",
+    "ramda": "^0.25.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-live": "1.9.2",
+    "react-router-dom": "4.2.2",
+    "recompose": "^0.26.0",
+    "slugify": "1.2.9"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1",
+    "husky": "0.14.3",
+    "lint-staged": "6.1.0",
+    "prettier": "1.10.2",
     "rimraf": "^2.6.2"
   }
 }

@@ -1,40 +1,36 @@
 {
-  "name": "stylegator",
+  "private": true,
+  "name": "@stylegator/docs",
   "version": "0.5.2",
-  "description": "styleguide static generator for html and js",
+  "description": "Stylegator main package",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/farism/stylegator.git"
   },
   "keywords": [
-    "cli",
-    "styleguide",
-    "static generator"
+    "cli"
   ],
   "author": "Faris Mustafa <farismmk@gmail.com>",
   "license": "MIT",
-  "bin": {
-    "stylegator": "./bin/cli.js"
-  },
   "scripts": {
-    "build": "yarn clean && babel src -d lib",
+    "dev": "stylegator dev",
+    "build": "yarn clean && yarn build:stylegator && yarn build:404",
+    "build:404": "cp src/404.html build/404.html",
+    "build:stylegator": "NODE_ENV=production stylegator build",
     "clean": "rimraf lib",
-    "dev": "babel src -d lib --watch",
     "lint-staged": "lint-staged",
     "pretty": "prettier --write --no-semi --single-quote --trailing-comma es5",
     "test": "jest"
   },
   "dependencies": {
-    "@stylegator/app": "^0.5.2",
-    "@stylegator/cli": "^0.5.2",
-    "@stylegator/core": "^0.5.2"
+    "prop-types-docs": "^0.1.1",
+    "stylegator": "^0.5.2"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
-    "babel-core": "6.26.0",
-    "babel-preset-env": "1.6.1",
-    "babel-preset-react": "6.24.1",
+    "husky": "0.14.3",
+    "lint-staged": "6.1.0",
+    "prettier": "1.10.2",
     "rimraf": "^2.6.2"
   }
 }
