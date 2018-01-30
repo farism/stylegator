@@ -27,7 +27,7 @@ Project configuration is available through an `stylegator.config.js` file:
 
 ```js
 {
-  "template": "src/index.html",
+  "template": "index.html",
   "title": "My App"
 }
 ```
