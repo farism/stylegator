@@ -14,9 +14,6 @@
   ],
   "author": "Faris Mustafa <farismmk@gmail.com>",
   "license": "MIT",
-  "bin": {
-    "stylegator": "./bin/cli.js"
-  },
   "scripts": {
     "build": "yarn clean && babel src -d lib",
     "clean": "rimraf lib",
