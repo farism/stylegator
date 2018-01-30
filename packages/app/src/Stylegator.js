@@ -12,11 +12,11 @@ import {
   useCustomPartials,
 } from './utils'
 
-const Stylegator = ({ logo, partials, sections }) => {
+const Stylegator = ({ basename, logo, partials, sections }) => {
   const { Layout } = partials
 
   return (
-    <HashRouter>
+    <HashRouter {...{ basename }}>
       <Switch>
         <Layout {...{ logo }}>{buildRoutes(setSlugs(sections))}</Layout>
       </Switch>
@@ -25,6 +25,7 @@ const Stylegator = ({ logo, partials, sections }) => {
 }
 
 Stylegator.propTypes = {
+  basename: PropTypes.string,
   components: PropTypes.shape({}),
   logo: PropTypes.string,
   partials: partialsPropTypes,
