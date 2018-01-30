@@ -12,6 +12,10 @@ export default {
       description: 'webpack entry point',
       default: 'index.js',
     },
+    'content-base': {
+      description: 'webpack static directory',
+      default: 'public',
+    },
     template: {
       description: 'html-webpack-plugin template file',
       default: 'index.html',

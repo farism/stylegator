@@ -27,6 +27,10 @@ const sections = [
     title: 'Guides',
     sections: [
       {
+        title: 'Directory Structure',
+        loader: pageLoader(() => import('./sections/guides/structure.md')),
+      },
+      {
         title: 'Custom Partials',
         loader: pageLoader(() => import('./sections/guides/partials.md')),
       },
