@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "289ebf19ff14bce08bf5"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "3f562ab0990806af0b83"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -2786,7 +2786,7 @@ var createChangeEmitter = exports.createChangeEmitter = function createChangeEmi
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/index.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/index.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -2801,7 +2801,7 @@ exports.push([module.i, "/*! normalize.css v7.0.0 | MIT License | github.com/nec
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Content/content.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Content/content.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -2809,16 +2809,16 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".content--2l7QF {\n  flex: 1 1 auto; }\n", ""]);
+exports.push([module.i, ".content--1NMjN {\n  flex: 1 1 auto; }\n", ""]);
 
 // exports
 exports.locals = {
-	"content": "content--2l7QF"
+	"content": "content--1NMjN"
 };
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Credits/credits.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Credits/credits.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -2826,16 +2826,16 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".credits--2Fooj {\n  align-items: flex-end;\n  display: flex;\n  flex: 1 0 auto;\n  padding: 50px 0 10px 15px; }\n  .credits--2Fooj a {\n    margin-left: 5px; }\n", ""]);
+exports.push([module.i, ".credits--2m_8M {\n  align-items: flex-end;\n  display: flex;\n  flex: 1 0 auto;\n  padding: 50px 0 10px 15px; }\n  .credits--2m_8M a {\n    margin-left: 5px; }\n", ""]);
 
 // exports
 exports.locals = {
-	"credits": "credits--2Fooj"
+	"credits": "credits--2m_8M"
 };
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Filter/filter.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Filter/filter.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -2843,16 +2843,16 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".filter--3uPEQ {\n  box-sizing: border-box;\n  position: relative; }\n  .filter--3uPEQ input {\n    background: #fff;\n    border: none;\n    border-radius: 2px;\n    box-sizing: border-box;\n    color: #333;\n    font-size: 14px;\n    height: 48px;\n    padding: 0 48px 0 16px;\n    width: 100%; }\n    .filter--3uPEQ input:focus {\n      outline: none; }\n    .filter--3uPEQ input::placeholder {\n      color: #d9d9d9; }\n  .filter--3uPEQ svg {\n    margin-top: -5px;\n    position: absolute;\n    right: 30px;\n    top: 50%; }\n", ""]);
+exports.push([module.i, ".filter--279-C {\n  box-sizing: border-box;\n  position: relative; }\n  .filter--279-C input {\n    background: #fff;\n    border: none;\n    border-radius: 2px;\n    box-sizing: border-box;\n    color: #333;\n    font-size: 14px;\n    height: 48px;\n    padding: 0 48px 0 16px;\n    width: 100%; }\n    .filter--279-C input:focus {\n      outline: none; }\n    .filter--279-C input::placeholder {\n      color: #d9d9d9; }\n  .filter--279-C svg {\n    margin-top: -5px;\n    position: absolute;\n    right: 30px;\n    top: 50%; }\n", ""]);
 
 // exports
 exports.locals = {
-	"filter": "filter--3uPEQ"
+	"filter": "filter--279-C"
 };
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Layout/layout.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Layout/layout.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -2860,21 +2860,21 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".layout--3srCa {\n  height: 100%;\n  position: relative;\n  width: 100%; }\n  .layout--3srCa .layout-content--2U2TV {\n    margin-top: 0;\n    position: relative;\n    z-index: 1; }\n  .layout--3srCa .layout-toggle--3vZz7 {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 2; }\n  .layout--3srCa .layout-scrim--u8qe2 {\n    background: #000;\n    height: 100%;\n    left: -100%;\n    opacity: 0;\n    position: fixed;\n    top: 0;\n    width: 100%;\n    transition: 0.2s opacity;\n    z-index: 2; }\n  .layout--3srCa .layout-sidebar--339IL {\n    height: 100%;\n    left: 0;\n    position: fixed;\n    top: 0;\n    transform: translateX(-250px);\n    width: 250px;\n    z-index: 3; }\n  .layout--3srCa .layout-toggle--3vZz7,\n  .layout--3srCa .layout-content--2U2TV,\n  .layout--3srCa .layout-sidebar--339IL {\n    transition: 0.3s transform; }\n  .layout--3srCa.open--MOjCw .layout-scrim--u8qe2 {\n    left: 0;\n    opacity: 0.5; }\n  .layout--3srCa.open--MOjCw .layout-sidebar--339IL {\n    transform: translateX(0); }\n  .layout--3srCa.open--MOjCw .layout-content--2U2TV {\n    transform: translateX(250px); }\n\n@media only screen and (min-width: 768px) and (min-device-width: 768px) {\n  .layout--3srCa .layout-content--2U2TV {\n    padding-left: 250px;\n    transform: translate(0) !important; }\n  .layout--3srCa .layout-sidebar--339IL {\n    transform: translateX(0); } }\n", ""]);
+exports.push([module.i, ".layout--1Vc-C {\n  height: 100%;\n  position: relative;\n  width: 100%; }\n  .layout--1Vc-C .layout-content--PpJ4F {\n    margin-top: 0;\n    position: relative;\n    z-index: 1; }\n  .layout--1Vc-C .layout-toggle--2yOuJ {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 2; }\n  .layout--1Vc-C .layout-scrim--11a4h {\n    background: #000;\n    height: 100%;\n    left: -100%;\n    opacity: 0;\n    position: fixed;\n    top: 0;\n    width: 100%;\n    transition: 0.2s opacity;\n    z-index: 2; }\n  .layout--1Vc-C .layout-sidebar--1pH_1 {\n    height: 100%;\n    left: 0;\n    position: fixed;\n    top: 0;\n    transform: translateX(-250px);\n    width: 250px;\n    z-index: 3; }\n  .layout--1Vc-C .layout-toggle--2yOuJ,\n  .layout--1Vc-C .layout-content--PpJ4F,\n  .layout--1Vc-C .layout-sidebar--1pH_1 {\n    transition: 0.3s transform; }\n  .layout--1Vc-C.open--3dkhh .layout-scrim--11a4h {\n    left: 0;\n    opacity: 0.5; }\n  .layout--1Vc-C.open--3dkhh .layout-sidebar--1pH_1 {\n    transform: translateX(0); }\n  .layout--1Vc-C.open--3dkhh .layout-content--PpJ4F {\n    transform: translateX(250px); }\n\n@media only screen and (min-width: 768px) and (min-device-width: 768px) {\n  .layout--1Vc-C .layout-content--PpJ4F {\n    padding-left: 250px;\n    transform: translate(0) !important; }\n  .layout--1Vc-C .layout-sidebar--1pH_1 {\n    transform: translateX(0); } }\n", ""]);
 
 // exports
 exports.locals = {
-	"layout": "layout--3srCa",
-	"layout-content": "layout-content--2U2TV",
-	"layout-toggle": "layout-toggle--3vZz7",
-	"layout-scrim": "layout-scrim--u8qe2",
-	"layout-sidebar": "layout-sidebar--339IL",
-	"open": "open--MOjCw"
+	"layout": "layout--1Vc-C",
+	"layout-content": "layout-content--PpJ4F",
+	"layout-toggle": "layout-toggle--2yOuJ",
+	"layout-scrim": "layout-scrim--11a4h",
+	"layout-sidebar": "layout-sidebar--1pH_1",
+	"open": "open--3dkhh"
 };
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/LiveMarkdown/liveMarkdown.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/LiveMarkdown/liveMarkdown.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -2882,19 +2882,19 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".live-markdown--3LXvB {\n  margin-bottom: 46px;\n  position: relative; }\n\n.live-markdown-preview--27na7 {\n  border: 1px solid #d9d9d9;\n  padding: 15px; }\n\n.live-markdown-editor--3xC6O {\n  position: relative; }\n  .live-markdown-editor--3xC6O .prism-code {\n    padding: 15px; }\n\n.live-markdown-editor-toggle--1zNjF {\n  align-items: center;\n  border-width: 0 1px 1px 1px;\n  border-color: #d9d9d9;\n  border-style: solid;\n  box-sizing: border-box;\n  cursor: pointer;\n  display: flex;\n  height: 30px;\n  padding: 0 10px;\n  position: absolute;\n  top: 100%;\n  transition: 0.2s;\n  right: 0; }\n  .live-markdown-editor-toggle--1zNjF:hover {\n    background: #efefef; }\n", ""]);
+exports.push([module.i, ".live-markdown--7Lr6y {\n  margin-bottom: 46px;\n  position: relative; }\n\n.live-markdown-preview--2HKWz {\n  border: 1px solid #d9d9d9;\n  padding: 15px; }\n\n.live-markdown-editor--1NJ3b {\n  position: relative; }\n  .live-markdown-editor--1NJ3b .prism-code {\n    padding: 15px; }\n\n.live-markdown-editor-toggle--3_cEC {\n  align-items: center;\n  border-width: 0 1px 1px 1px;\n  border-color: #d9d9d9;\n  border-style: solid;\n  box-sizing: border-box;\n  cursor: pointer;\n  display: flex;\n  height: 30px;\n  padding: 0 10px;\n  position: absolute;\n  top: 100%;\n  transition: 0.2s;\n  right: 0; }\n  .live-markdown-editor-toggle--3_cEC:hover {\n    background: #efefef; }\n", ""]);
 
 // exports
 exports.locals = {
-	"live-markdown": "live-markdown--3LXvB",
-	"live-markdown-preview": "live-markdown-preview--27na7",
-	"live-markdown-editor": "live-markdown-editor--3xC6O",
-	"live-markdown-editor-toggle": "live-markdown-editor-toggle--1zNjF"
+	"live-markdown": "live-markdown--7Lr6y",
+	"live-markdown-preview": "live-markdown-preview--2HKWz",
+	"live-markdown-editor": "live-markdown-editor--1NJ3b",
+	"live-markdown-editor-toggle": "live-markdown-editor-toggle--3_cEC"
 };
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Logo/logo.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Logo/logo.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -2902,17 +2902,17 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".logo--3WANK {\n  border-bottom: 1px solid #d9d9d9;\n  box-sizing: border-box;\n  display: block;\n  flex: 0 0 auto;\n  height: 120px;\n  padding: 15px 20px; }\n\n.image--vLqQn {\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: contain;\n  display: block;\n  height: 100%;\n  width: 100%; }\n", ""]);
+exports.push([module.i, ".logo--RXFzQ {\n  border-bottom: 1px solid #d9d9d9;\n  box-sizing: border-box;\n  display: block;\n  flex: 0 0 auto;\n  height: 120px;\n  padding: 15px 20px; }\n\n.image--200Gg {\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: contain;\n  display: block;\n  height: 100%;\n  width: 100%; }\n", ""]);
 
 // exports
 exports.locals = {
-	"logo": "logo--3WANK",
-	"image": "image--vLqQn"
+	"logo": "logo--RXFzQ",
+	"image": "image--200Gg"
 };
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Menu/menu.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Menu/menu.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -2920,16 +2920,16 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".menu--1yox5 ul {\n  list-style: none;\n  margin: 0;\n  padding: 0; }\n\n.menu--1yox5 > ul {\n  border-bottom: 1px solid #d9d9d9; }\n  .menu--1yox5 > ul > li {\n    border-top: 1px solid #d9d9d9; }\n", ""]);
+exports.push([module.i, ".menu--c4k7X ul {\n  list-style: none;\n  margin: 0;\n  padding: 0; }\n\n.menu--c4k7X > ul {\n  border-bottom: 1px solid #d9d9d9; }\n  .menu--c4k7X > ul > li {\n    border-top: 1px solid #d9d9d9; }\n", ""]);
 
 // exports
 exports.locals = {
-	"menu": "menu--1yox5"
+	"menu": "menu--c4k7X"
 };
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/MenuIcon/menuIcon.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/MenuIcon/menuIcon.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -2937,16 +2937,16 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".menu-icon--1KAJd {\n  display: inline-block;\n  margin-right: 20px;\n  position: relative;\n  top: 1px;\n  width: 16px; }\n", ""]);
+exports.push([module.i, ".menu-icon--3MWOa {\n  display: inline-block;\n  margin-right: 20px;\n  position: relative;\n  top: 1px;\n  width: 16px; }\n", ""]);
 
 // exports
 exports.locals = {
-	"menu-icon": "menu-icon--1KAJd"
+	"menu-icon": "menu-icon--3MWOa"
 };
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/MenuLink/menuLink.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/MenuLink/menuLink.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -2954,16 +2954,16 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".menu-link--2q-H2 {\n  box-sizing: border-box;\n  color: #000;\n  display: inline-block;\n  font-size: 15px;\n  padding: 16px 36px 16px 16px;\n  text-decoration: none;\n  width: 100%;\n  transition: 0.2s background; }\n  .menu-link--2q-H2.depth-0 {\n    font-size: 16px; }\n  .menu-link--2q-H2 svg path,\n  .menu-link--2q-H2 svg rect {\n    fill: #fff; }\n", ""]);
+exports.push([module.i, ".menu-link--1Q3cY {\n  box-sizing: border-box;\n  color: #000;\n  display: inline-block;\n  font-size: 15px;\n  padding: 16px 36px 16px 16px;\n  text-decoration: none;\n  width: 100%;\n  transition: 0.2s background; }\n  .menu-link--1Q3cY.depth-0 {\n    font-size: 16px; }\n  .menu-link--1Q3cY svg path,\n  .menu-link--1Q3cY svg rect {\n    fill: #fff; }\n", ""]);
 
 // exports
 exports.locals = {
-	"menu-link": "menu-link--2q-H2"
+	"menu-link": "menu-link--1Q3cY"
 };
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/MenuList/menuList.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/MenuList/menuList.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -2978,7 +2978,7 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Page/page.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Page/page.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -2986,16 +2986,16 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".page-content--qlQx4 {\n  padding: 0 30px 50px 30px; }\n", ""]);
+exports.push([module.i, ".page-content--243lk {\n  padding: 0 30px 50px 30px; }\n", ""]);
 
 // exports
 exports.locals = {
-	"page-content": "page-content--qlQx4"
+	"page-content": "page-content--243lk"
 };
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/PageHeader/pageHeader.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/PageHeader/pageHeader.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -3003,17 +3003,17 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".page-header--2WUel {\n  align-items: center;\n  background: #333;\n  box-sizing: border-box;\n  color: #fff;\n  display: flex;\n  font-size: 32px;\n  margin-bottom: 30px;\n  min-height: 120px;\n  padding: 80px 30px 30px;\n  transition: 0.3s padding; }\n\n.page-header-github--18NYU {\n  margin: 30px;\n  position: absolute;\n  right: 0;\n  top: 0; }\n  .page-header-github--18NYU path {\n    fill: #fff; }\n\n@media only screen and (min-width: 768px) and (min-device-width: 768px) {\n  .page-header--2WUel {\n    padding: 30px 90px 30px 30px; } }\n", ""]);
+exports.push([module.i, ".page-header--1EhBI {\n  align-items: center;\n  background: #333;\n  box-sizing: border-box;\n  color: #fff;\n  display: flex;\n  font-size: 32px;\n  margin-bottom: 30px;\n  min-height: 120px;\n  padding: 80px 30px 30px;\n  transition: 0.3s padding; }\n\n.page-header-github--2LdGG {\n  margin: 30px;\n  position: absolute;\n  right: 0;\n  top: 0; }\n  .page-header-github--2LdGG path {\n    fill: #fff; }\n\n@media only screen and (min-width: 768px) and (min-device-width: 768px) {\n  .page-header--1EhBI {\n    padding: 30px 90px 30px 30px; } }\n", ""]);
 
 // exports
 exports.locals = {
-	"page-header": "page-header--2WUel",
-	"page-header-github": "page-header-github--18NYU"
+	"page-header": "page-header--1EhBI",
+	"page-header-github": "page-header-github--2LdGG"
 };
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Props/props.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Props/props.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -3021,22 +3021,22 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".props--2yT8R {\n  border: 1px solid #d9d9d9;\n  box-sizing: border-box;\n  margin-bottom: 16px;\n  overflow-x: scroll;\n  padding: 15px;\n  width: 100%; }\n  .props--2yT8R table {\n    border-collapse: collapse;\n    width: 100%; }\n  .props--2yT8R thead {\n    border-bottom: 1px solid #d9d9d9; }\n  .props--2yT8R th {\n    padding: 0 15px 5px 0;\n    text-align: left; }\n  .props--2yT8R td {\n    padding: 10px 40px 10px 0;\n    vertical-align: top; }\n    .props--2yT8R td.name--8iCtD, .props--2yT8R td.type--Xodid, .props--2yT8R td.default--33Llq, .props--2yT8R td.required--1sfM2 {\n      font-family: monospace;\n      font-size: 14px; }\n    .props--2yT8R td.name--8iCtD {\n      color: #9cc223; }\n    .props--2yT8R td.type--Xodid {\n      color: #c2707e; }\n    .props--2yT8R td.required--1sfM2 {\n      color: #859cc1; }\n    .props--2yT8R td.description--3-CN6 {\n      width: 100%;\n      min-width: 250px; }\n      .props--2yT8R td.description--3-CN6 .meta--3KOII span {\n        border-radius: 3px;\n        background: #f3f3f3;\n        display: inline-block;\n        font-family: monospace;\n        margin-top: 20px;\n        padding: 5px; }\n", ""]);
+exports.push([module.i, ".props--2E5IZ {\n  border: 1px solid #d9d9d9;\n  box-sizing: border-box;\n  margin-bottom: 16px;\n  overflow-x: scroll;\n  padding: 15px;\n  width: 100%; }\n  .props--2E5IZ table {\n    border-collapse: collapse;\n    width: 100%; }\n  .props--2E5IZ thead {\n    border-bottom: 1px solid #d9d9d9; }\n  .props--2E5IZ th {\n    padding: 0 15px 5px 0;\n    text-align: left; }\n  .props--2E5IZ td {\n    padding: 10px 40px 10px 0;\n    vertical-align: top; }\n    .props--2E5IZ td.name--1fSx7, .props--2E5IZ td.type--2Ydsr, .props--2E5IZ td.default---1-_E, .props--2E5IZ td.required--3Mwux {\n      font-family: monospace;\n      font-size: 14px; }\n    .props--2E5IZ td.name--1fSx7 {\n      color: #9cc223; }\n    .props--2E5IZ td.type--2Ydsr {\n      color: #c2707e; }\n    .props--2E5IZ td.required--3Mwux {\n      color: #859cc1; }\n    .props--2E5IZ td.description--368bt {\n      width: 100%;\n      min-width: 250px; }\n      .props--2E5IZ td.description--368bt .meta--KQv6b span {\n        border-radius: 3px;\n        background: #f3f3f3;\n        display: inline-block;\n        font-family: monospace;\n        margin-top: 20px;\n        padding: 5px; }\n", ""]);
 
 // exports
 exports.locals = {
-	"props": "props--2yT8R",
-	"name": "name--8iCtD",
-	"type": "type--Xodid",
-	"default": "default--33Llq",
-	"required": "required--1sfM2",
-	"description": "description--3-CN6",
-	"meta": "meta--3KOII"
+	"props": "props--2E5IZ",
+	"name": "name--1fSx7",
+	"type": "type--2Ydsr",
+	"default": "default---1-_E",
+	"required": "required--3Mwux",
+	"description": "description--368bt",
+	"meta": "meta--KQv6b"
 };
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Sidebar/sidebar.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Sidebar/sidebar.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -3044,16 +3044,16 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".sidebar--3exUt {\n  background: #f9f9f9;\n  box-sizing: border-box;\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  left: 0;\n  overflow-y: scroll;\n  position: relative;\n  width: 100%; }\n", ""]);
+exports.push([module.i, ".sidebar--DRPNY {\n  background: #f9f9f9;\n  box-sizing: border-box;\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  left: 0;\n  overflow-y: scroll;\n  position: relative;\n  width: 100%; }\n", ""]);
 
 // exports
 exports.locals = {
-	"sidebar": "sidebar--3exUt"
+	"sidebar": "sidebar--DRPNY"
 };
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/SidebarToggle/sidebarToggle.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/SidebarToggle/sidebarToggle.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -3061,17 +3061,17 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".toggle--2ZFVT {\n  cursor: pointer;\n  margin: 0 auto;\n  padding: 30px; }\n  .toggle--2ZFVT .bar--3-u2I {\n    background: #fff;\n    display: block;\n    height: 4px;\n    transition: all 0.3s ease;\n    width: 30px; }\n    .toggle--2ZFVT .bar--3-u2I + .bar--3-u2I {\n      margin-top: 6px; }\n", ""]);
+exports.push([module.i, ".toggle--2pN2N {\n  cursor: pointer;\n  margin: 0 auto;\n  padding: 30px; }\n  .toggle--2pN2N .bar--3TFHz {\n    background: #fff;\n    display: block;\n    height: 4px;\n    transition: all 0.3s ease;\n    width: 30px; }\n    .toggle--2pN2N .bar--3TFHz + .bar--3TFHz {\n      margin-top: 6px; }\n", ""]);
 
 // exports
 exports.locals = {
-	"toggle": "toggle--2ZFVT",
-	"bar": "bar--3-u2I"
+	"toggle": "toggle--2pN2N",
+	"bar": "bar--3TFHz"
 };
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/StaticMarkdown/staticMarkdown.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/StaticMarkdown/staticMarkdown.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -3086,7 +3086,7 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Stylegator/stylegator.scss":
+/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Stylegator/stylegator.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -3094,11 +3094,11 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".stylegator--GhDXq {\n  height: 100%; }\n", ""]);
+exports.push([module.i, ".stylegator--3GGwS {\n  height: 100%; }\n", ""]);
 
 // exports
 exports.locals = {
-	"stylegator": "stylegator--GhDXq"
+	"stylegator": "stylegator--3GGwS"
 };
 
 /***/ }),
@@ -77279,14 +77279,14 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/assets/logo.png":
+/***/ "../stylegator/lib/app/assets/logo.png":
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "f2fad24fffc6f3f4efb0b06f6b287150.png";
 
 /***/ }),
 
-/***/ "../stylegator/src/app/index.js":
+/***/ "../stylegator/lib/app/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77296,7 +77296,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _partials = __webpack_require__("../stylegator/src/app/partials/index.js");
+var _partials = __webpack_require__("../stylegator/lib/app/partials/index.js");
 
 Object.keys(_partials).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
@@ -77308,7 +77308,7 @@ Object.keys(_partials).forEach(function (key) {
   });
 });
 
-var _utils = __webpack_require__("../stylegator/src/app/utils/index.js");
+var _utils = __webpack_require__("../stylegator/lib/app/utils/index.js");
 
 Object.keys(_utils).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
@@ -77320,17 +77320,17 @@ Object.keys(_utils).forEach(function (key) {
   });
 });
 
-__webpack_require__("../stylegator/src/app/index.scss");
+__webpack_require__("../stylegator/lib/app/index.scss");
 
 /***/ }),
 
-/***/ "../stylegator/src/app/index.scss":
+/***/ "../stylegator/lib/app/index.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/index.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/index.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -77344,8 +77344,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/index.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/index.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/index.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/index.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -77356,7 +77356,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Content/Content.js":
+/***/ "../stylegator/lib/app/partials/Content/Content.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77374,23 +77374,17 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _content = __webpack_require__("../stylegator/src/app/partials/Content/content.scss");
+var _content = __webpack_require__("../stylegator/lib/app/partials/Content/content.scss");
 
 var _content2 = _interopRequireDefault(_content);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var Content = function Content(_ref) {
   var children = _ref.children;
-  return _react2.default.createElement(
-    'div',
-    { className: _content2.default['content'] },
-    _react2.default.createElement(
-      'div',
-      null,
-      children
-    )
-  );
+  return _react2.default.createElement('div', { className: _content2.default['content'] }, _react2.default.createElement('div', null, children));
 };
 
 Content.propTypes = {};
@@ -77401,13 +77395,13 @@ exports.default = Content;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Content/content.scss":
+/***/ "../stylegator/lib/app/partials/Content/content.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Content/content.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Content/content.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -77421,8 +77415,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Content/content.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Content/content.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Content/content.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Content/content.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -77433,7 +77427,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Content/index.js":
+/***/ "../stylegator/lib/app/partials/Content/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77443,17 +77437,19 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Content = __webpack_require__("../stylegator/src/app/partials/Content/Content.js");
+var _Content = __webpack_require__("../stylegator/lib/app/partials/Content/Content.js");
 
 var _Content2 = _interopRequireDefault(_Content);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _Content2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Credits/Credits.js":
+/***/ "../stylegator/lib/app/partials/Credits/Credits.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77471,34 +77467,23 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _credits = __webpack_require__("../stylegator/src/app/partials/Credits/credits.scss");
+var _credits = __webpack_require__("../stylegator/lib/app/partials/Credits/credits.scss");
 
 var _credits2 = _interopRequireDefault(_credits);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var Credits = function Credits(_ref) {
   var children = _ref.children,
       _ref$theme$linkColor = _ref.theme.linkColor,
       linkColor = _ref$theme$linkColor === undefined ? 'red' : _ref$theme$linkColor;
-  return _react2.default.createElement(
-    'div',
-    { className: _credits2.default['credits'] },
-    _react2.default.createElement(
-      'span',
-      null,
-      'Created with'
-    ),
-    _react2.default.createElement(
-      'a',
-      {
-        href: 'https://farism.github.io/stylegator',
-        target: '_blank',
-        style: { color: linkColor }
-      },
-      'Stylegator'
-    )
-  );
+  return _react2.default.createElement('div', { className: _credits2.default['credits'] }, _react2.default.createElement('span', null, 'Created with'), _react2.default.createElement('a', {
+    href: 'https://farism.github.io/stylegator',
+    target: '_blank',
+    style: { color: linkColor }
+  }, 'Stylegator'));
 };
 
 Credits.propTypes = {};
@@ -77509,13 +77494,13 @@ exports.default = Credits;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Credits/credits.scss":
+/***/ "../stylegator/lib/app/partials/Credits/credits.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Credits/credits.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Credits/credits.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -77529,8 +77514,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Credits/credits.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Credits/credits.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Credits/credits.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Credits/credits.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -77541,7 +77526,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Credits/index.js":
+/***/ "../stylegator/lib/app/partials/Credits/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77551,17 +77536,19 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Credits = __webpack_require__("../stylegator/src/app/partials/Credits/Credits.js");
+var _Credits = __webpack_require__("../stylegator/lib/app/partials/Credits/Credits.js");
 
 var _Credits2 = _interopRequireDefault(_Credits);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _Credits2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Filter/Filter.js":
+/***/ "../stylegator/lib/app/partials/Filter/Filter.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77579,54 +77566,21 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _filter = __webpack_require__("../stylegator/src/app/partials/Filter/filter.scss");
+var _filter = __webpack_require__("../stylegator/lib/app/partials/Filter/filter.scss");
 
 var _filter2 = _interopRequireDefault(_filter);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var Icon = function Icon() {
-  return _react2.default.createElement(
-    'svg',
-    { width: '12px', height: '12px', viewBox: '0 0 12 12' },
-    _react2.default.createElement(
-      'g',
-      { stroke: 'none', strokeWidth: '1', fill: 'none', fillRule: 'evenodd' },
-      _react2.default.createElement(
-        'g',
-        { transform: 'translate(-279.000000, -110.000000)' },
-        _react2.default.createElement(
-          'g',
-          { transform: 'translate(73.000000, 100.000000)' },
-          _react2.default.createElement(
-            'g',
-            { transform: 'translate(204.000000, 8.000000)' },
-            _react2.default.createElement(
-              'g',
-              null,
-              _react2.default.createElement(
-                'g',
-                { transform: 'translate(2.000000, 2.000000)', stroke: '#808080' },
-                _react2.default.createElement('circle', { cx: '5', cy: '5', r: '4.5' }),
-                _react2.default.createElement('path', { d: 'M8.5,8.5 L11.5,11.5', strokeLinecap: 'square' })
-              ),
-              _react2.default.createElement('rect', { x: '0', y: '0', width: '16', height: '16' })
-            )
-          )
-        )
-      )
-    )
-  );
+  return _react2.default.createElement('svg', { width: '12px', height: '12px', viewBox: '0 0 12 12' }, _react2.default.createElement('g', { stroke: 'none', strokeWidth: '1', fill: 'none', fillRule: 'evenodd' }, _react2.default.createElement('g', { transform: 'translate(-279.000000, -110.000000)' }, _react2.default.createElement('g', { transform: 'translate(73.000000, 100.000000)' }, _react2.default.createElement('g', { transform: 'translate(204.000000, 8.000000)' }, _react2.default.createElement('g', null, _react2.default.createElement('g', { transform: 'translate(2.000000, 2.000000)', stroke: '#808080' }, _react2.default.createElement('circle', { cx: '5', cy: '5', r: '4.5' }), _react2.default.createElement('path', { d: 'M8.5,8.5 L11.5,11.5', strokeLinecap: 'square' })), _react2.default.createElement('rect', { x: '0', y: '0', width: '16', height: '16' })))))));
 };
 
 var Filter = function Filter(_ref) {
   var onInput = _ref.onInput;
-  return _react2.default.createElement(
-    'div',
-    { className: _filter2.default['filter'] },
-    _react2.default.createElement('input', { onInput: onInput, placeholder: 'Filter' }),
-    _react2.default.createElement(Icon, null)
-  );
+  return _react2.default.createElement('div', { className: _filter2.default['filter'] }, _react2.default.createElement('input', { onInput: onInput, placeholder: 'Filter' }), _react2.default.createElement(Icon, null));
 };
 
 Filter.propTypes = {};
@@ -77637,13 +77591,13 @@ exports.default = Filter;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Filter/filter.scss":
+/***/ "../stylegator/lib/app/partials/Filter/filter.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Filter/filter.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Filter/filter.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -77657,8 +77611,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Filter/filter.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Filter/filter.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Filter/filter.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Filter/filter.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -77669,7 +77623,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Filter/index.js":
+/***/ "../stylegator/lib/app/partials/Filter/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77679,27 +77633,39 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Filter = __webpack_require__("../stylegator/src/app/partials/Filter/Filter.js");
+var _Filter = __webpack_require__("../stylegator/lib/app/partials/Filter/Filter.js");
 
 var _Filter2 = _interopRequireDefault(_Filter);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _Filter2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Layout/Layout.js":
+/***/ "../stylegator/lib/app/partials/Layout/Layout.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+  };
+}();
 
 var _react = __webpack_require__("../../node_modules/react/index.js");
 
@@ -77709,17 +77675,31 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _layout = __webpack_require__("../stylegator/src/app/partials/Layout/layout.scss");
+var _layout = __webpack_require__("../stylegator/lib/app/partials/Layout/layout.scss");
 
 var _layout2 = _interopRequireDefault(_layout);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+}
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
 
 var Layout = function (_React$Component) {
   _inherits(Layout, _React$Component);
@@ -77750,38 +77730,14 @@ var Layout = function (_React$Component) {
           Sidebar = partials.Sidebar,
           SidebarToggle = partials.SidebarToggle;
 
-
-      return _react2.default.createElement(
-        'div',
-        { className: _layout2.default['layout'] + ' ' + (open ? _layout2.default['open'] : '') },
-        _react2.default.createElement(
-          'div',
-          { className: _layout2.default['layout-toggle'] },
-          _react2.default.createElement(SidebarToggle, { onClick: function onClick() {
-              return _this2.setState({ open: !open });
-            } })
-        ),
-        _react2.default.createElement('div', {
-          className: _layout2.default['layout-scrim'],
-          onClick: function onClick() {
-            return _this2.setState({ open: false });
-          }
-        }),
-        _react2.default.createElement(
-          'div',
-          { className: _layout2.default['layout-sidebar'] },
-          _react2.default.createElement(Sidebar, { logo: logo, open: open })
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: _layout2.default['layout-content'] },
-          _react2.default.createElement(
-            Content,
-            null,
-            children
-          )
-        )
-      );
+      return _react2.default.createElement('div', { className: _layout2.default['layout'] + ' ' + (open ? _layout2.default['open'] : '') }, _react2.default.createElement('div', { className: _layout2.default['layout-toggle'] }, _react2.default.createElement(SidebarToggle, { onClick: function onClick() {
+          return _this2.setState({ open: !open });
+        } })), _react2.default.createElement('div', {
+        className: _layout2.default['layout-scrim'],
+        onClick: function onClick() {
+          return _this2.setState({ open: false });
+        }
+      }), _react2.default.createElement('div', { className: _layout2.default['layout-sidebar'] }, _react2.default.createElement(Sidebar, { logo: logo, open: open })), _react2.default.createElement('div', { className: _layout2.default['layout-content'] }, _react2.default.createElement(Content, null, children)));
     }
   }]);
 
@@ -77800,7 +77756,7 @@ exports.default = Layout;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Layout/index.js":
+/***/ "../stylegator/lib/app/partials/Layout/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77810,23 +77766,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Layout = __webpack_require__("../stylegator/src/app/partials/Layout/Layout.js");
+var _Layout = __webpack_require__("../stylegator/lib/app/partials/Layout/Layout.js");
 
 var _Layout2 = _interopRequireDefault(_Layout);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _Layout2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Layout/layout.scss":
+/***/ "../stylegator/lib/app/partials/Layout/layout.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Layout/layout.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Layout/layout.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -77840,8 +77798,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Layout/layout.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Layout/layout.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Layout/layout.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Layout/layout.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -77852,17 +77810,27 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/LiveMarkdown/LiveMarkdown.js":
+/***/ "../stylegator/lib/app/partials/LiveMarkdown/LiveMarkdown.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+  };
+}();
 
 var _react = __webpack_require__("../../node_modules/react/index.js");
 
@@ -77874,17 +77842,31 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _reactLive = __webpack_require__("../../node_modules/react-live/dist/react-live.es.js");
 
-var _liveMarkdown = __webpack_require__("../stylegator/src/app/partials/LiveMarkdown/liveMarkdown.scss");
+var _liveMarkdown = __webpack_require__("../stylegator/lib/app/partials/LiveMarkdown/liveMarkdown.scss");
 
 var _liveMarkdown2 = _interopRequireDefault(_liveMarkdown);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+}
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
 
 var LiveMarkdown = function (_React$Component) {
   _inherits(LiveMarkdown, _React$Component);
@@ -77906,37 +77888,13 @@ var LiveMarkdown = function (_React$Component) {
       var content = this.props.content;
       var expanded = this.state.expanded;
 
-
-      return _react2.default.createElement(
-        'div',
-        { className: _liveMarkdown2.default['live-markdown'] },
-        _react2.default.createElement(
-          _reactLive.LiveProvider,
-          { code: content },
-          _react2.default.createElement(
-            'div',
-            {
-              className: _liveMarkdown2.default['live-markdown-editor-toggle'],
-              onClick: function onClick() {
-                return _this2.setState({ expanded: !expanded });
-              },
-              title: expanded ? 'Hide Code' : 'Show Code'
-            },
-            expanded ? '</>' : '< >'
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: _liveMarkdown2.default['live-markdown-preview'] },
-            _react2.default.createElement(_reactLive.LivePreview, null)
-          ),
-          expanded && _react2.default.createElement(
-            'div',
-            { className: _liveMarkdown2.default['live-markdown-editor'] },
-            _react2.default.createElement(_reactLive.LiveEditor, null)
-          ),
-          _react2.default.createElement(_reactLive.LiveError, null)
-        )
-      );
+      return _react2.default.createElement('div', { className: _liveMarkdown2.default['live-markdown'] }, _react2.default.createElement(_reactLive.LiveProvider, { code: content }, _react2.default.createElement('div', {
+        className: _liveMarkdown2.default['live-markdown-editor-toggle'],
+        onClick: function onClick() {
+          return _this2.setState({ expanded: !expanded });
+        },
+        title: expanded ? 'Hide Code' : 'Show Code'
+      }, expanded ? '</>' : '< >'), _react2.default.createElement('div', { className: _liveMarkdown2.default['live-markdown-preview'] }, _react2.default.createElement(_reactLive.LivePreview, null)), expanded && _react2.default.createElement('div', { className: _liveMarkdown2.default['live-markdown-editor'] }, _react2.default.createElement(_reactLive.LiveEditor, null)), _react2.default.createElement(_reactLive.LiveError, null)));
     }
   }]);
 
@@ -77955,7 +77913,7 @@ exports.default = LiveMarkdown;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/LiveMarkdown/index.js":
+/***/ "../stylegator/lib/app/partials/LiveMarkdown/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77965,23 +77923,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _LiveMarkdown = __webpack_require__("../stylegator/src/app/partials/LiveMarkdown/LiveMarkdown.js");
+var _LiveMarkdown = __webpack_require__("../stylegator/lib/app/partials/LiveMarkdown/LiveMarkdown.js");
 
 var _LiveMarkdown2 = _interopRequireDefault(_LiveMarkdown);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _LiveMarkdown2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/LiveMarkdown/liveMarkdown.scss":
+/***/ "../stylegator/lib/app/partials/LiveMarkdown/liveMarkdown.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/LiveMarkdown/liveMarkdown.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/LiveMarkdown/liveMarkdown.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -77995,8 +77955,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/LiveMarkdown/liveMarkdown.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/LiveMarkdown/liveMarkdown.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/LiveMarkdown/liveMarkdown.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/LiveMarkdown/liveMarkdown.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -78007,7 +77967,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Logo/Logo.js":
+/***/ "../stylegator/lib/app/partials/Logo/Logo.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78017,7 +77977,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }return target;
+};
 
 var _react = __webpack_require__("../../node_modules/react/index.js");
 
@@ -78027,25 +77995,23 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _logo = __webpack_require__("../stylegator/src/app/partials/Logo/logo.scss");
+var _logo = __webpack_require__("../stylegator/lib/app/partials/Logo/logo.scss");
 
 var _logo2 = _interopRequireDefault(_logo);
 
-var _logo3 = __webpack_require__("../stylegator/src/app/assets/logo.png");
+var _logo3 = __webpack_require__("../stylegator/lib/app/assets/logo.png");
 
 var _logo4 = _interopRequireDefault(_logo3);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var Logo = function Logo(_ref) {
   var src = _ref.src;
-  return _react2.default.createElement(
-    'a',
-    { className: _logo2.default['logo'], href: '#/' },
-    _react2.default.createElement('span', _extends({
-      className: _logo2.default['image']
-    }, { style: { backgroundImage: 'url(' + (src || _logo4.default) + ')' } }))
-  );
+  return _react2.default.createElement('a', { className: _logo2.default['logo'], href: '#/' }, _react2.default.createElement('span', _extends({
+    className: _logo2.default['image']
+  }, { style: { backgroundImage: 'url(' + (src || _logo4.default) + ')' } })));
 };
 
 Logo.propTypes = {};
@@ -78056,7 +78022,7 @@ exports.default = Logo;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Logo/index.js":
+/***/ "../stylegator/lib/app/partials/Logo/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78066,23 +78032,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Logo = __webpack_require__("../stylegator/src/app/partials/Logo/Logo.js");
+var _Logo = __webpack_require__("../stylegator/lib/app/partials/Logo/Logo.js");
 
 var _Logo2 = _interopRequireDefault(_Logo);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _Logo2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Logo/logo.scss":
+/***/ "../stylegator/lib/app/partials/Logo/logo.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Logo/logo.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Logo/logo.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -78096,8 +78064,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Logo/logo.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Logo/logo.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Logo/logo.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Logo/logo.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -78108,7 +78076,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Menu/Menu.js":
+/***/ "../stylegator/lib/app/partials/Menu/Menu.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78128,13 +78096,15 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _reactRouterDom = __webpack_require__("../../node_modules/react-router-dom/es/index.js");
 
-var _utils = __webpack_require__("../stylegator/src/app/utils/index.js");
+var _utils = __webpack_require__("../stylegator/lib/app/utils/index.js");
 
-var _menu = __webpack_require__("../stylegator/src/app/partials/Menu/menu.scss");
+var _menu = __webpack_require__("../stylegator/lib/app/partials/Menu/menu.scss");
 
 var _menu2 = _interopRequireDefault(_menu);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var Menu = function Menu(_ref) {
   var filter = _ref.filter,
@@ -78146,16 +78116,11 @@ var Menu = function Menu(_ref) {
   var MenuLink = partials.MenuLink,
       MenuList = partials.MenuList;
 
-
   var withAppendix = showAppendix ? sections.concat({ title: 'Appendix', path: '/appendix' }) : sections;
 
   var filteredSections = filter ? (0, _utils.filterSections)(filterColor, filter, (0, _utils.flattenSections)(withAppendix)) : withAppendix;
 
-  return _react2.default.createElement(
-    'div',
-    { className: _menu2.default['menu'] },
-    _react2.default.createElement(MenuList, { depth: 0, partials: partials, filteredSections: filteredSections })
-  );
+  return _react2.default.createElement('div', { className: _menu2.default['menu'] }, _react2.default.createElement(MenuList, { depth: 0, partials: partials, filteredSections: filteredSections }));
 };
 
 Menu.propTypes = {
@@ -78170,7 +78135,7 @@ exports.default = (0, _reactRouterDom.withRouter)(Menu);
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Menu/index.js":
+/***/ "../stylegator/lib/app/partials/Menu/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78180,23 +78145,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Menu = __webpack_require__("../stylegator/src/app/partials/Menu/Menu.js");
+var _Menu = __webpack_require__("../stylegator/lib/app/partials/Menu/Menu.js");
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _Menu2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Menu/menu.scss":
+/***/ "../stylegator/lib/app/partials/Menu/menu.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Menu/menu.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Menu/menu.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -78210,8 +78177,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Menu/menu.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Menu/menu.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Menu/menu.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Menu/menu.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -78222,7 +78189,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/MenuIcon/MenuIcon.js":
+/***/ "../stylegator/lib/app/partials/MenuIcon/MenuIcon.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78240,17 +78207,15 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-var styles = __webpack_require__("../stylegator/src/app/partials/MenuIcon/menuIcon.scss");
+var styles = __webpack_require__("../stylegator/lib/app/partials/MenuIcon/menuIcon.scss");
 
 var MenuIcon = function MenuIcon(_ref) {
   var section = _ref.section;
-  return section.icon ? _react2.default.createElement(
-    'span',
-    { className: styles['menu-icon'] },
-    _react2.default.createElement('img', { src: section.icon })
-  ) : null;
+  return section.icon ? _react2.default.createElement('span', { className: styles['menu-icon'] }, _react2.default.createElement('img', { src: section.icon })) : null;
 };
 
 MenuIcon.propTypes = {};
@@ -78261,7 +78226,7 @@ exports.default = MenuIcon;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/MenuIcon/index.js":
+/***/ "../stylegator/lib/app/partials/MenuIcon/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78271,23 +78236,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _MenuIcon = __webpack_require__("../stylegator/src/app/partials/MenuIcon/MenuIcon.js");
+var _MenuIcon = __webpack_require__("../stylegator/lib/app/partials/MenuIcon/MenuIcon.js");
 
 var _MenuIcon2 = _interopRequireDefault(_MenuIcon);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _MenuIcon2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/MenuIcon/menuIcon.scss":
+/***/ "../stylegator/lib/app/partials/MenuIcon/menuIcon.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/MenuIcon/menuIcon.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/MenuIcon/menuIcon.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -78301,8 +78268,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/MenuIcon/menuIcon.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/MenuIcon/menuIcon.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/MenuIcon/menuIcon.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/MenuIcon/menuIcon.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -78313,7 +78280,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/MenuLink/MenuLink.js":
+/***/ "../stylegator/lib/app/partials/MenuLink/MenuLink.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78333,9 +78300,11 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _reactRouterDom = __webpack_require__("../../node_modules/react-router-dom/es/index.js");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-var styles = __webpack_require__("../stylegator/src/app/partials/MenuLink/menuLink.scss");
+var styles = __webpack_require__("../stylegator/lib/app/partials/MenuLink/menuLink.scss");
 
 var MenuLink = function MenuLink(_ref) {
   var depth = _ref.depth,
@@ -78348,17 +78317,11 @@ var MenuLink = function MenuLink(_ref) {
       linkColor = _ref$theme$linkColor === undefined ? 'red' : _ref$theme$linkColor;
   var MenuIcon = partials.MenuIcon;
 
-
-  return _react2.default.createElement(
-    _reactRouterDom.NavLink,
-    {
-      className: styles['menu-link'] + ' depth-' + depth,
-      activeStyle: { background: linkBgColor, color: linkColor },
-      to: '' + section.path
-    },
-    _react2.default.createElement(MenuIcon, { section: section }),
-    _react2.default.createElement('span', { dangerouslySetInnerHTML: { __html: section.title } })
-  );
+  return _react2.default.createElement(_reactRouterDom.NavLink, {
+    className: styles['menu-link'] + ' depth-' + depth,
+    activeStyle: { background: linkBgColor, color: linkColor },
+    to: '' + section.path
+  }, _react2.default.createElement(MenuIcon, { section: section }), _react2.default.createElement('span', { dangerouslySetInnerHTML: { __html: section.title } }));
 };
 
 MenuLink.propTypes = {};
@@ -78369,7 +78332,7 @@ exports.default = MenuLink;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/MenuLink/index.js":
+/***/ "../stylegator/lib/app/partials/MenuLink/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78379,23 +78342,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _MenuLink = __webpack_require__("../stylegator/src/app/partials/MenuLink/MenuLink.js");
+var _MenuLink = __webpack_require__("../stylegator/lib/app/partials/MenuLink/MenuLink.js");
 
 var _MenuLink2 = _interopRequireDefault(_MenuLink);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _MenuLink2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/MenuLink/menuLink.scss":
+/***/ "../stylegator/lib/app/partials/MenuLink/menuLink.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/MenuLink/menuLink.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/MenuLink/menuLink.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -78409,8 +78374,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/MenuLink/menuLink.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/MenuLink/menuLink.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/MenuLink/menuLink.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/MenuLink/menuLink.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -78421,7 +78386,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/MenuList/MenuList.js":
+/***/ "../stylegator/lib/app/partials/MenuList/MenuList.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78439,13 +78404,15 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _menuList = __webpack_require__("../stylegator/src/app/partials/MenuList/menuList.scss");
+var _menuList = __webpack_require__("../stylegator/lib/app/partials/MenuList/menuList.scss");
 
 var _menuList2 = _interopRequireDefault(_menuList);
 
-var _utils = __webpack_require__("../stylegator/src/app/utils/index.js");
+var _utils = __webpack_require__("../stylegator/lib/app/utils/index.js");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var MenuList = function MenuList(_ref) {
   var depth = _ref.depth,
@@ -78454,23 +78421,13 @@ var MenuList = function MenuList(_ref) {
       filteredSections = _ref.filteredSections;
   var MenuLink = partials.MenuLink;
 
-
-  return _react2.default.createElement(
-    'ul',
-    null,
-    filteredSections.map(function (section, i) {
-      return _react2.default.createElement(
-        'li',
-        { key: i },
-        _react2.default.createElement(MenuLink, { depth: depth, section: section }),
-        (0, _utils.inPath)(section.path) && section.sections ? _react2.default.createElement(MenuList, {
-          depth: depth + 1,
-          filteredSections: section.sections,
-          partials: partials
-        }) : null
-      );
-    })
-  );
+  return _react2.default.createElement('ul', null, filteredSections.map(function (section, i) {
+    return _react2.default.createElement('li', { key: i }, _react2.default.createElement(MenuLink, { depth: depth, section: section }), (0, _utils.inPath)(section.path) && section.sections ? _react2.default.createElement(MenuList, {
+      depth: depth + 1,
+      filteredSections: section.sections,
+      partials: partials
+    }) : null);
+  }));
 };
 
 MenuList.propTypes = {
@@ -78485,7 +78442,7 @@ exports.default = MenuList;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/MenuList/index.js":
+/***/ "../stylegator/lib/app/partials/MenuList/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78495,23 +78452,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _MenuList = __webpack_require__("../stylegator/src/app/partials/MenuList/MenuList.js");
+var _MenuList = __webpack_require__("../stylegator/lib/app/partials/MenuList/MenuList.js");
 
 var _MenuList2 = _interopRequireDefault(_MenuList);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _MenuList2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/MenuList/menuList.scss":
+/***/ "../stylegator/lib/app/partials/MenuList/menuList.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/MenuList/menuList.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/MenuList/menuList.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -78525,8 +78484,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/MenuList/menuList.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/MenuList/menuList.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/MenuList/menuList.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/MenuList/menuList.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -78537,7 +78496,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Page/Page.js":
+/***/ "../stylegator/lib/app/partials/Page/Page.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78555,21 +78514,22 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _utils = __webpack_require__("../stylegator/src/app/utils/index.js");
+var _utils = __webpack_require__("../stylegator/lib/app/utils/index.js");
 
-var _ = __webpack_require__("../stylegator/src/app/partials/index.js");
+var _ = __webpack_require__("../stylegator/lib/app/partials/index.js");
 
-var _page = __webpack_require__("../stylegator/src/app/partials/Page/page.scss");
+var _page = __webpack_require__("../stylegator/lib/app/partials/Page/page.scss");
 
 var _page2 = _interopRequireDefault(_page);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var getPageSection = function getPageSection(partials, section) {
   var StaticMarkdown = partials.StaticMarkdown,
       LiveMarkdown = partials.LiveMarkdown,
       Props = partials.Props;
-
 
   var tag = section.match(/\{([a-zA-Z]*)\}/);
   var content = section.replace(/\{[a-zA-Z]*\}/, '');
@@ -78598,23 +78558,9 @@ var Page = function Page(_ref) {
       partials = _ref.partials;
   var PageHeader = partials.PageHeader;
 
-
-  return _react2.default.createElement(
-    'div',
-    { className: _page2.default['page'] },
-    _react2.default.createElement(PageHeader, { title: title }),
-    _react2.default.createElement(
-      'div',
-      { className: _page2.default['page-content'] },
-      (0, _utils.getPageSections)(content).map(function (section, i) {
-        return _react2.default.createElement(
-          'div',
-          { key: i },
-          getPageSection(partials, section)
-        );
-      })
-    )
-  );
+  return _react2.default.createElement('div', { className: _page2.default['page'] }, _react2.default.createElement(PageHeader, { title: title }), _react2.default.createElement('div', { className: _page2.default['page-content'] }, (0, _utils.getPageSections)(content).map(function (section, i) {
+    return _react2.default.createElement('div', { key: i }, getPageSection(partials, section));
+  })));
 };
 
 Page.propTypes = {
@@ -78635,7 +78581,7 @@ exports.default = Page;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Page/index.js":
+/***/ "../stylegator/lib/app/partials/Page/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78645,23 +78591,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Page = __webpack_require__("../stylegator/src/app/partials/Page/Page.js");
+var _Page = __webpack_require__("../stylegator/lib/app/partials/Page/Page.js");
 
 var _Page2 = _interopRequireDefault(_Page);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _Page2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Page/page.scss":
+/***/ "../stylegator/lib/app/partials/Page/page.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Page/page.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Page/page.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -78675,8 +78623,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Page/page.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Page/page.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Page/page.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Page/page.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -78687,7 +78635,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/PageHeader/PageHeader.js":
+/***/ "../stylegator/lib/app/partials/PageHeader/PageHeader.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78705,20 +78653,18 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _pageHeader = __webpack_require__("../stylegator/src/app/partials/PageHeader/pageHeader.scss");
+var _pageHeader = __webpack_require__("../stylegator/lib/app/partials/PageHeader/pageHeader.scss");
 
 var _pageHeader2 = _interopRequireDefault(_pageHeader);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var PageHeader = function PageHeader(_ref) {
   var title = _ref.title,
       theme = _ref.theme;
-  return _react2.default.createElement(
-    'div',
-    { className: _pageHeader2.default['page-header'] },
-    title
-  );
+  return _react2.default.createElement('div', { className: _pageHeader2.default['page-header'] }, title);
 };
 
 PageHeader.propTypes = {
@@ -78733,7 +78679,7 @@ exports.default = PageHeader;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/PageHeader/index.js":
+/***/ "../stylegator/lib/app/partials/PageHeader/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78743,23 +78689,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _PageHeader = __webpack_require__("../stylegator/src/app/partials/PageHeader/PageHeader.js");
+var _PageHeader = __webpack_require__("../stylegator/lib/app/partials/PageHeader/PageHeader.js");
 
 var _PageHeader2 = _interopRequireDefault(_PageHeader);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _PageHeader2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/PageHeader/pageHeader.scss":
+/***/ "../stylegator/lib/app/partials/PageHeader/pageHeader.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/PageHeader/pageHeader.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/PageHeader/pageHeader.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -78773,8 +78721,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/PageHeader/pageHeader.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/PageHeader/pageHeader.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/PageHeader/pageHeader.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/PageHeader/pageHeader.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -78785,7 +78733,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Props/Props.js":
+/***/ "../stylegator/lib/app/partials/Props/Props.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78795,7 +78743,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }return target;
+};
 
 var _react = __webpack_require__("../../node_modules/react/index.js");
 
@@ -78805,11 +78761,13 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _props = __webpack_require__("../stylegator/src/app/partials/Props/props.scss");
+var _props = __webpack_require__("../stylegator/lib/app/partials/Props/props.scss");
 
 var _props2 = _interopRequireDefault(_props);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var padLeft = function padLeft(depth) {
   return { paddingLeft: depth * 20 + 'px' };
@@ -78827,47 +78785,27 @@ var ColName = function ColName(_ref) {
   var children = _ref.children,
       _ref$depth = _ref.depth,
       depth = _ref$depth === undefined ? 0 : _ref$depth;
-  return _react2.default.createElement(
-    'td',
-    { className: _props2.default['name'], style: padLeft(depth) },
-    children
-  );
+  return _react2.default.createElement('td', { className: _props2.default['name'], style: padLeft(depth) }, children);
 };
 
 var ColType = function ColType(_ref2) {
   var children = _ref2.children;
-  return _react2.default.createElement(
-    'td',
-    { className: _props2.default['type'] },
-    children
-  );
+  return _react2.default.createElement('td', { className: _props2.default['type'] }, children);
 };
 
 var ColRequired = function ColRequired(_ref3) {
   var children = _ref3.children;
-  return _react2.default.createElement(
-    'td',
-    { className: _props2.default['required'] },
-    children ? 'true' : 'false'
-  );
+  return _react2.default.createElement('td', { className: _props2.default['required'] }, children ? 'true' : 'false');
 };
 
 var ColDefault = function ColDefault(_ref4) {
   var children = _ref4.children;
-  return _react2.default.createElement(
-    'td',
-    { className: _props2.default['default'] },
-    children
-  );
+  return _react2.default.createElement('td', { className: _props2.default['default'] }, children);
 };
 
 var ColDescription = function ColDescription(_ref5) {
   var children = _ref5.children;
-  return _react2.default.createElement(
-    'td',
-    { className: _props2.default['description'] },
-    children
-  );
+  return _react2.default.createElement('td', { className: _props2.default['description'] }, children);
 };
 
 var BaseColumns = function BaseColumns(_ref6) {
@@ -78875,23 +78813,7 @@ var BaseColumns = function BaseColumns(_ref6) {
       prop = _ref6.prop,
       _ref6$depth = _ref6.depth,
       depth = _ref6$depth === undefined ? 0 : _ref6$depth;
-  return [_react2.default.createElement(
-    ColName,
-    _extends({ key: 'name' }, { depth: depth }),
-    name
-  ), _react2.default.createElement(
-    ColType,
-    { key: 'type' },
-    prop.type.name
-  ), _react2.default.createElement(
-    ColRequired,
-    { key: 'required' },
-    prop.required
-  ), _react2.default.createElement(
-    ColDefault,
-    { key: 'default' },
-    prop.default
-  )];
+  return [_react2.default.createElement(ColName, _extends({ key: 'name' }, { depth: depth }), name), _react2.default.createElement(ColType, { key: 'type' }, prop.type.name), _react2.default.createElement(ColRequired, { key: 'required' }, prop.required), _react2.default.createElement(ColDefault, { key: 'default' }, prop.default)];
 };
 
 var Primitive = function Primitive(_ref7) {
@@ -78899,16 +78821,7 @@ var Primitive = function Primitive(_ref7) {
       prop = _ref7.prop,
       _ref7$depth = _ref7.depth,
       depth = _ref7$depth === undefined ? 0 : _ref7$depth;
-  return _react2.default.createElement(
-    'tr',
-    null,
-    _react2.default.createElement(BaseColumns, { name: name, prop: prop, depth: depth }),
-    _react2.default.createElement(
-      ColDescription,
-      null,
-      prop.description
-    )
-  );
+  return _react2.default.createElement('tr', null, _react2.default.createElement(BaseColumns, { name: name, prop: prop, depth: depth }), _react2.default.createElement(ColDescription, null, prop.description));
 };
 
 var OneOf = function OneOf(_ref8) {
@@ -78916,27 +78829,7 @@ var OneOf = function OneOf(_ref8) {
       prop = _ref8.prop,
       _ref8$depth = _ref8.depth,
       depth = _ref8$depth === undefined ? 0 : _ref8$depth;
-  return _react2.default.createElement(
-    'tr',
-    null,
-    _react2.default.createElement(BaseColumns, { name: name, prop: prop, depth: depth }),
-    _react2.default.createElement(
-      ColDescription,
-      null,
-      prop.description,
-      _react2.default.createElement(
-        'div',
-        { className: _props2.default['meta'] },
-        _react2.default.createElement(
-          'span',
-          null,
-          'oneOf: [',
-          prop.type.arr.map(oneOfVal).join(', '),
-          ']'
-        )
-      )
-    )
-  );
+  return _react2.default.createElement('tr', null, _react2.default.createElement(BaseColumns, { name: name, prop: prop, depth: depth }), _react2.default.createElement(ColDescription, null, prop.description, _react2.default.createElement('div', { className: _props2.default['meta'] }, _react2.default.createElement('span', null, 'oneOf: [', prop.type.arr.map(oneOfVal).join(', '), ']'))));
 };
 
 var OneOfType = function OneOfType(_ref9) {
@@ -78944,27 +78837,7 @@ var OneOfType = function OneOfType(_ref9) {
       prop = _ref9.prop,
       _ref9$depth = _ref9.depth,
       depth = _ref9$depth === undefined ? 0 : _ref9$depth;
-  return _react2.default.createElement(
-    'tr',
-    null,
-    _react2.default.createElement(BaseColumns, { name: name, prop: prop, depth: depth }),
-    _react2.default.createElement(
-      ColDescription,
-      null,
-      prop.description,
-      _react2.default.createElement(
-        'div',
-        { className: _props2.default['meta'] },
-        _react2.default.createElement(
-          'span',
-          null,
-          'oneOfType: [',
-          prop.type.types.map(oneOfTypeVal).join(', '),
-          ']'
-        )
-      )
-    )
-  );
+  return _react2.default.createElement('tr', null, _react2.default.createElement(BaseColumns, { name: name, prop: prop, depth: depth }), _react2.default.createElement(ColDescription, null, prop.description, _react2.default.createElement('div', { className: _props2.default['meta'] }, _react2.default.createElement('span', null, 'oneOfType: [', prop.type.types.map(oneOfTypeVal).join(', '), ']'))));
 };
 
 var ArrayOf = function ArrayOf(_ref10) {
@@ -78972,27 +78845,7 @@ var ArrayOf = function ArrayOf(_ref10) {
       prop = _ref10.prop,
       _ref10$depth = _ref10.depth,
       depth = _ref10$depth === undefined ? 0 : _ref10$depth;
-  return _react2.default.createElement(
-    'tr',
-    null,
-    _react2.default.createElement(BaseColumns, { name: name, prop: prop, depth: depth }),
-    _react2.default.createElement(
-      ColDescription,
-      null,
-      prop.description,
-      _react2.default.createElement(
-        'div',
-        { className: _props2.default['meta'] },
-        _react2.default.createElement(
-          'span',
-          null,
-          'arrayOf [',
-          prop.type.type.name,
-          ']'
-        )
-      )
-    )
-  );
+  return _react2.default.createElement('tr', null, _react2.default.createElement(BaseColumns, { name: name, prop: prop, depth: depth }), _react2.default.createElement(ColDescription, null, prop.description, _react2.default.createElement('div', { className: _props2.default['meta'] }, _react2.default.createElement('span', null, 'arrayOf [', prop.type.type.name, ']'))));
 };
 
 var ObjectOf = function ObjectOf(_ref11) {
@@ -79000,27 +78853,7 @@ var ObjectOf = function ObjectOf(_ref11) {
       prop = _ref11.prop,
       _ref11$depth = _ref11.depth,
       depth = _ref11$depth === undefined ? 0 : _ref11$depth;
-  return _react2.default.createElement(
-    'tr',
-    null,
-    _react2.default.createElement(BaseColumns, { name: name, prop: prop, depth: depth }),
-    _react2.default.createElement(
-      ColDescription,
-      null,
-      prop.description,
-      _react2.default.createElement(
-        'div',
-        { className: _props2.default['meta'] },
-        _react2.default.createElement(
-          'span',
-          null,
-          'objectOf [',
-          prop.type.type.name,
-          ']'
-        )
-      )
-    )
-  );
+  return _react2.default.createElement('tr', null, _react2.default.createElement(BaseColumns, { name: name, prop: prop, depth: depth }), _react2.default.createElement(ColDescription, null, prop.description, _react2.default.createElement('div', { className: _props2.default['meta'] }, _react2.default.createElement('span', null, 'objectOf [', prop.type.type.name, ']'))));
 };
 
 var Shape = function Shape(_ref12) {
@@ -79058,54 +78891,9 @@ var Row = function Row(_ref13) {
 var Props = function Props(_ref14) {
   var component = _ref14.component,
       props = _ref14.props;
-  return _react2.default.createElement(
-    'div',
-    { className: _props2.default['props'] },
-    _react2.default.createElement(
-      'table',
-      null,
-      _react2.default.createElement(
-        'thead',
-        null,
-        _react2.default.createElement(
-          'tr',
-          null,
-          _react2.default.createElement(
-            'th',
-            null,
-            'Name'
-          ),
-          _react2.default.createElement(
-            'th',
-            null,
-            'Type'
-          ),
-          _react2.default.createElement(
-            'th',
-            null,
-            'Required'
-          ),
-          _react2.default.createElement(
-            'th',
-            null,
-            'Default'
-          ),
-          _react2.default.createElement(
-            'th',
-            null,
-            'Description'
-          )
-        )
-      ),
-      _react2.default.createElement(
-        'tbody',
-        null,
-        Object.keys(props).map(function (name, i) {
-          return _react2.default.createElement(Row, { key: i, name: name, prop: props[name] });
-        })
-      )
-    )
-  );
+  return _react2.default.createElement('div', { className: _props2.default['props'] }, _react2.default.createElement('table', null, _react2.default.createElement('thead', null, _react2.default.createElement('tr', null, _react2.default.createElement('th', null, 'Name'), _react2.default.createElement('th', null, 'Type'), _react2.default.createElement('th', null, 'Required'), _react2.default.createElement('th', null, 'Default'), _react2.default.createElement('th', null, 'Description'))), _react2.default.createElement('tbody', null, Object.keys(props).map(function (name, i) {
+    return _react2.default.createElement(Row, { key: i, name: name, prop: props[name] });
+  }))));
 };
 
 Props.propTypes = {
@@ -79122,7 +78910,7 @@ exports.default = Props;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Props/index.js":
+/***/ "../stylegator/lib/app/partials/Props/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79132,23 +78920,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Props = __webpack_require__("../stylegator/src/app/partials/Props/Props.js");
+var _Props = __webpack_require__("../stylegator/lib/app/partials/Props/Props.js");
 
 var _Props2 = _interopRequireDefault(_Props);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _Props2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Props/props.scss":
+/***/ "../stylegator/lib/app/partials/Props/props.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Props/props.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Props/props.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -79162,8 +78952,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Props/props.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Props/props.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Props/props.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Props/props.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -79174,17 +78964,27 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Sidebar/Sidebar.js":
+/***/ "../stylegator/lib/app/partials/Sidebar/Sidebar.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+  };
+}();
 
 var _react = __webpack_require__("../../node_modules/react/index.js");
 
@@ -79194,17 +78994,31 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _sidebar = __webpack_require__("../stylegator/src/app/partials/Sidebar/sidebar.scss");
+var _sidebar = __webpack_require__("../stylegator/lib/app/partials/Sidebar/sidebar.scss");
 
 var _sidebar2 = _interopRequireDefault(_sidebar);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+}
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
 
 var Sidebar = function (_React$Component) {
   _inherits(Sidebar, _React$Component);
@@ -79233,17 +79047,9 @@ var Sidebar = function (_React$Component) {
           Logo = partials.Logo,
           Menu = partials.Menu;
 
-
-      return _react2.default.createElement(
-        'div',
-        { className: _sidebar2.default['sidebar'] + ' ' + (open ? _sidebar2.default['open'] : '') },
-        _react2.default.createElement(Logo, { src: logo }),
-        _react2.default.createElement(Filter, { onInput: function onInput(e) {
-            return _this2.setState({ filter: e.target.value });
-          } }),
-        _react2.default.createElement(Menu, { filter: filter }),
-        _react2.default.createElement(Credits, null)
-      );
+      return _react2.default.createElement('div', { className: _sidebar2.default['sidebar'] + ' ' + (open ? _sidebar2.default['open'] : '') }, _react2.default.createElement(Logo, { src: logo }), _react2.default.createElement(Filter, { onInput: function onInput(e) {
+          return _this2.setState({ filter: e.target.value });
+        } }), _react2.default.createElement(Menu, { filter: filter }), _react2.default.createElement(Credits, null));
     }
   }]);
 
@@ -79268,7 +79074,7 @@ exports.default = Sidebar;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Sidebar/index.js":
+/***/ "../stylegator/lib/app/partials/Sidebar/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79278,23 +79084,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Sidebar = __webpack_require__("../stylegator/src/app/partials/Sidebar/Sidebar.js");
+var _Sidebar = __webpack_require__("../stylegator/lib/app/partials/Sidebar/Sidebar.js");
 
 var _Sidebar2 = _interopRequireDefault(_Sidebar);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _Sidebar2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Sidebar/sidebar.scss":
+/***/ "../stylegator/lib/app/partials/Sidebar/sidebar.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Sidebar/sidebar.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Sidebar/sidebar.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -79308,8 +79116,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Sidebar/sidebar.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Sidebar/sidebar.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Sidebar/sidebar.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Sidebar/sidebar.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -79320,7 +79128,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/SidebarToggle/SidebarToggle.js":
+/***/ "../stylegator/lib/app/partials/SidebarToggle/SidebarToggle.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79338,22 +79146,18 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _sidebarToggle = __webpack_require__("../stylegator/src/app/partials/SidebarToggle/sidebarToggle.scss");
+var _sidebarToggle = __webpack_require__("../stylegator/lib/app/partials/SidebarToggle/sidebarToggle.scss");
 
 var _sidebarToggle2 = _interopRequireDefault(_sidebarToggle);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var SidebarToggle = function SidebarToggle(_ref) {
   var onClick = _ref.onClick;
 
-  return _react2.default.createElement(
-    'div',
-    { onClick: onClick, className: _sidebarToggle2.default['toggle'] },
-    _react2.default.createElement('div', { className: _sidebarToggle2.default['bar'] + ' ' + _sidebarToggle2.default['top'] }),
-    _react2.default.createElement('div', { className: _sidebarToggle2.default['bar'] + ' ' + _sidebarToggle2.default['middle'] }),
-    _react2.default.createElement('div', { className: _sidebarToggle2.default['bar'] + ' ' + _sidebarToggle2.default['bottom'] })
-  );
+  return _react2.default.createElement('div', { onClick: onClick, className: _sidebarToggle2.default['toggle'] }, _react2.default.createElement('div', { className: _sidebarToggle2.default['bar'] + ' ' + _sidebarToggle2.default['top'] }), _react2.default.createElement('div', { className: _sidebarToggle2.default['bar'] + ' ' + _sidebarToggle2.default['middle'] }), _react2.default.createElement('div', { className: _sidebarToggle2.default['bar'] + ' ' + _sidebarToggle2.default['bottom'] }));
 };
 
 SidebarToggle.propTypes = {};
@@ -79364,7 +79168,7 @@ exports.default = SidebarToggle;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/SidebarToggle/index.js":
+/***/ "../stylegator/lib/app/partials/SidebarToggle/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79374,23 +79178,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _SidebarToggle = __webpack_require__("../stylegator/src/app/partials/SidebarToggle/SidebarToggle.js");
+var _SidebarToggle = __webpack_require__("../stylegator/lib/app/partials/SidebarToggle/SidebarToggle.js");
 
 var _SidebarToggle2 = _interopRequireDefault(_SidebarToggle);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _SidebarToggle2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/SidebarToggle/sidebarToggle.scss":
+/***/ "../stylegator/lib/app/partials/SidebarToggle/sidebarToggle.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/SidebarToggle/sidebarToggle.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/SidebarToggle/sidebarToggle.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -79404,8 +79210,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/SidebarToggle/sidebarToggle.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/SidebarToggle/sidebarToggle.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/SidebarToggle/sidebarToggle.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/SidebarToggle/sidebarToggle.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -79416,7 +79222,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/StaticMarkdown/StaticMarkdown.js":
+/***/ "../stylegator/lib/app/partials/StaticMarkdown/StaticMarkdown.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79442,11 +79248,13 @@ var _marked = __webpack_require__("../../node_modules/marked/lib/marked.js");
 
 var _marked2 = _interopRequireDefault(_marked);
 
-var _staticMarkdown = __webpack_require__("../stylegator/src/app/partials/StaticMarkdown/staticMarkdown.scss");
+var _staticMarkdown = __webpack_require__("../stylegator/lib/app/partials/StaticMarkdown/staticMarkdown.scss");
 
 var _staticMarkdown2 = _interopRequireDefault(_staticMarkdown);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 _marked2.default.setOptions({
   highlight: function highlight(code) {
@@ -79456,11 +79264,7 @@ _marked2.default.setOptions({
 
 var StaticMarkdown = function StaticMarkdown(_ref) {
   var content = _ref.content;
-  return _react2.default.createElement(
-    'article',
-    { className: 'markdown-body' },
-    _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: (0, _marked2.default)(content) } })
-  );
+  return _react2.default.createElement('article', { className: 'markdown-body' }, _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: (0, _marked2.default)(content) } }));
 };
 
 StaticMarkdown.propTypes = {
@@ -79475,7 +79279,7 @@ exports.default = StaticMarkdown;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/StaticMarkdown/index.js":
+/***/ "../stylegator/lib/app/partials/StaticMarkdown/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79485,23 +79289,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _StaticMarkdown = __webpack_require__("../stylegator/src/app/partials/StaticMarkdown/StaticMarkdown.js");
+var _StaticMarkdown = __webpack_require__("../stylegator/lib/app/partials/StaticMarkdown/StaticMarkdown.js");
 
 var _StaticMarkdown2 = _interopRequireDefault(_StaticMarkdown);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _StaticMarkdown2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/StaticMarkdown/staticMarkdown.scss":
+/***/ "../stylegator/lib/app/partials/StaticMarkdown/staticMarkdown.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/StaticMarkdown/staticMarkdown.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/StaticMarkdown/staticMarkdown.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -79515,8 +79321,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/StaticMarkdown/staticMarkdown.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/StaticMarkdown/staticMarkdown.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/StaticMarkdown/staticMarkdown.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/StaticMarkdown/staticMarkdown.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -79527,7 +79333,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Stylegator/Stylegator.js":
+/***/ "../stylegator/lib/app/partials/Stylegator/Stylegator.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79553,13 +79359,15 @@ var _reactRouterDom = __webpack_require__("../../node_modules/react-router-dom/e
 
 var _recompose = __webpack_require__("../../node_modules/recompose/es/Recompose.js");
 
-var _stylegator = __webpack_require__("../stylegator/src/app/partials/Stylegator/stylegator.scss");
+var _stylegator = __webpack_require__("../stylegator/lib/app/partials/Stylegator/stylegator.scss");
 
 var _stylegator2 = _interopRequireDefault(_stylegator);
 
-var _utils = __webpack_require__("../stylegator/src/app/utils/index.js");
+var _utils = __webpack_require__("../stylegator/lib/app/utils/index.js");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var Stylegator = function Stylegator(_ref) {
   var logo = _ref.logo,
@@ -79567,24 +79375,7 @@ var Stylegator = function Stylegator(_ref) {
       sections = _ref.sections;
   var Layout = partials.Layout;
 
-
-  return _react2.default.createElement(
-    'div',
-    { className: _stylegator2.default['stylegator'] },
-    _react2.default.createElement(
-      _reactRouterDom.HashRouter,
-      null,
-      _react2.default.createElement(
-        _reactRouterDom.Switch,
-        null,
-        _react2.default.createElement(
-          Layout,
-          { logo: logo },
-          (0, _utils.buildRoutes)((0, _utils.setSlugs)(sections))
-        )
-      )
-    )
-  );
+  return _react2.default.createElement('div', { className: _stylegator2.default['stylegator'] }, _react2.default.createElement(_reactRouterDom.HashRouter, null, _react2.default.createElement(_reactRouterDom.Switch, null, _react2.default.createElement(Layout, { logo: logo }, (0, _utils.buildRoutes)((0, _utils.setSlugs)(sections))))));
 };
 
 Stylegator.propTypes = {
@@ -79632,7 +79423,7 @@ exports.default = (0, _recompose.withContext)({
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Stylegator/index.js":
+/***/ "../stylegator/lib/app/partials/Stylegator/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79642,23 +79433,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Stylegator = __webpack_require__("../stylegator/src/app/partials/Stylegator/Stylegator.js");
+var _Stylegator = __webpack_require__("../stylegator/lib/app/partials/Stylegator/Stylegator.js");
 
 var _Stylegator2 = _interopRequireDefault(_Stylegator);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _Stylegator2.default;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/Stylegator/stylegator.scss":
+/***/ "../stylegator/lib/app/partials/Stylegator/stylegator.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Stylegator/stylegator.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Stylegator/stylegator.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -79672,8 +79465,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Stylegator/stylegator.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/src/app/partials/Stylegator/stylegator.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Stylegator/stylegator.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../stylegator/lib/app/partials/Stylegator/stylegator.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -79684,7 +79477,7 @@ if(true) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/partials/index.js":
+/***/ "../stylegator/lib/app/partials/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79694,7 +79487,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Content = __webpack_require__("../stylegator/src/app/partials/Content/index.js");
+var _Content = __webpack_require__("../stylegator/lib/app/partials/Content/index.js");
 
 Object.defineProperty(exports, 'Content', {
   enumerable: true,
@@ -79703,7 +79496,7 @@ Object.defineProperty(exports, 'Content', {
   }
 });
 
-var _Credits = __webpack_require__("../stylegator/src/app/partials/Credits/index.js");
+var _Credits = __webpack_require__("../stylegator/lib/app/partials/Credits/index.js");
 
 Object.defineProperty(exports, 'Credits', {
   enumerable: true,
@@ -79712,7 +79505,7 @@ Object.defineProperty(exports, 'Credits', {
   }
 });
 
-var _Filter = __webpack_require__("../stylegator/src/app/partials/Filter/index.js");
+var _Filter = __webpack_require__("../stylegator/lib/app/partials/Filter/index.js");
 
 Object.defineProperty(exports, 'Filter', {
   enumerable: true,
@@ -79721,7 +79514,7 @@ Object.defineProperty(exports, 'Filter', {
   }
 });
 
-var _Layout = __webpack_require__("../stylegator/src/app/partials/Layout/index.js");
+var _Layout = __webpack_require__("../stylegator/lib/app/partials/Layout/index.js");
 
 Object.defineProperty(exports, 'Layout', {
   enumerable: true,
@@ -79730,7 +79523,7 @@ Object.defineProperty(exports, 'Layout', {
   }
 });
 
-var _LiveMarkdown = __webpack_require__("../stylegator/src/app/partials/LiveMarkdown/index.js");
+var _LiveMarkdown = __webpack_require__("../stylegator/lib/app/partials/LiveMarkdown/index.js");
 
 Object.defineProperty(exports, 'LiveMarkdown', {
   enumerable: true,
@@ -79739,7 +79532,7 @@ Object.defineProperty(exports, 'LiveMarkdown', {
   }
 });
 
-var _Logo = __webpack_require__("../stylegator/src/app/partials/Logo/index.js");
+var _Logo = __webpack_require__("../stylegator/lib/app/partials/Logo/index.js");
 
 Object.defineProperty(exports, 'Logo', {
   enumerable: true,
@@ -79748,7 +79541,7 @@ Object.defineProperty(exports, 'Logo', {
   }
 });
 
-var _Menu = __webpack_require__("../stylegator/src/app/partials/Menu/index.js");
+var _Menu = __webpack_require__("../stylegator/lib/app/partials/Menu/index.js");
 
 Object.defineProperty(exports, 'Menu', {
   enumerable: true,
@@ -79757,7 +79550,7 @@ Object.defineProperty(exports, 'Menu', {
   }
 });
 
-var _MenuIcon = __webpack_require__("../stylegator/src/app/partials/MenuIcon/index.js");
+var _MenuIcon = __webpack_require__("../stylegator/lib/app/partials/MenuIcon/index.js");
 
 Object.defineProperty(exports, 'MenuIcon', {
   enumerable: true,
@@ -79766,7 +79559,7 @@ Object.defineProperty(exports, 'MenuIcon', {
   }
 });
 
-var _MenuLink = __webpack_require__("../stylegator/src/app/partials/MenuLink/index.js");
+var _MenuLink = __webpack_require__("../stylegator/lib/app/partials/MenuLink/index.js");
 
 Object.defineProperty(exports, 'MenuLink', {
   enumerable: true,
@@ -79775,7 +79568,7 @@ Object.defineProperty(exports, 'MenuLink', {
   }
 });
 
-var _MenuList = __webpack_require__("../stylegator/src/app/partials/MenuList/index.js");
+var _MenuList = __webpack_require__("../stylegator/lib/app/partials/MenuList/index.js");
 
 Object.defineProperty(exports, 'MenuList', {
   enumerable: true,
@@ -79784,7 +79577,7 @@ Object.defineProperty(exports, 'MenuList', {
   }
 });
 
-var _Page = __webpack_require__("../stylegator/src/app/partials/Page/index.js");
+var _Page = __webpack_require__("../stylegator/lib/app/partials/Page/index.js");
 
 Object.defineProperty(exports, 'Page', {
   enumerable: true,
@@ -79793,7 +79586,7 @@ Object.defineProperty(exports, 'Page', {
   }
 });
 
-var _PageHeader = __webpack_require__("../stylegator/src/app/partials/PageHeader/index.js");
+var _PageHeader = __webpack_require__("../stylegator/lib/app/partials/PageHeader/index.js");
 
 Object.defineProperty(exports, 'PageHeader', {
   enumerable: true,
@@ -79802,7 +79595,7 @@ Object.defineProperty(exports, 'PageHeader', {
   }
 });
 
-var _Props = __webpack_require__("../stylegator/src/app/partials/Props/index.js");
+var _Props = __webpack_require__("../stylegator/lib/app/partials/Props/index.js");
 
 Object.defineProperty(exports, 'Props', {
   enumerable: true,
@@ -79811,7 +79604,7 @@ Object.defineProperty(exports, 'Props', {
   }
 });
 
-var _Sidebar = __webpack_require__("../stylegator/src/app/partials/Sidebar/index.js");
+var _Sidebar = __webpack_require__("../stylegator/lib/app/partials/Sidebar/index.js");
 
 Object.defineProperty(exports, 'Sidebar', {
   enumerable: true,
@@ -79820,7 +79613,7 @@ Object.defineProperty(exports, 'Sidebar', {
   }
 });
 
-var _SidebarToggle = __webpack_require__("../stylegator/src/app/partials/SidebarToggle/index.js");
+var _SidebarToggle = __webpack_require__("../stylegator/lib/app/partials/SidebarToggle/index.js");
 
 Object.defineProperty(exports, 'SidebarToggle', {
   enumerable: true,
@@ -79829,7 +79622,7 @@ Object.defineProperty(exports, 'SidebarToggle', {
   }
 });
 
-var _StaticMarkdown = __webpack_require__("../stylegator/src/app/partials/StaticMarkdown/index.js");
+var _StaticMarkdown = __webpack_require__("../stylegator/lib/app/partials/StaticMarkdown/index.js");
 
 Object.defineProperty(exports, 'StaticMarkdown', {
   enumerable: true,
@@ -79838,7 +79631,7 @@ Object.defineProperty(exports, 'StaticMarkdown', {
   }
 });
 
-var _Stylegator = __webpack_require__("../stylegator/src/app/partials/Stylegator/index.js");
+var _Stylegator = __webpack_require__("../stylegator/lib/app/partials/Stylegator/index.js");
 
 Object.defineProperty(exports, 'Stylegator', {
   enumerable: true,
@@ -79847,11 +79640,13 @@ Object.defineProperty(exports, 'Stylegator', {
   }
 });
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 /***/ }),
 
-/***/ "../stylegator/src/app/utils/buildRoutes.js":
+/***/ "../stylegator/lib/app/utils/buildRoutes.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79867,9 +79662,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__("../../node_modules/react-router-dom/es/index.js");
 
-var _ = __webpack_require__("../stylegator/src/app/utils/index.js");
+var _ = __webpack_require__("../stylegator/lib/app/utils/index.js");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var buildRoute = function buildRoute(_ref) {
   var title = _ref.title,
@@ -79887,7 +79684,7 @@ var buildAppendix = function buildAppendix() {
     key: 'Appendix',
     path: '/appendix',
     component: (0, _.pageLoader)(function () {
-      return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, "../stylegator/src/app/assets/__appendix.md"));
+      return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, "../stylegator/lib/app/assets/__appendix.md"));
     })('Appendix')
   });
 };
@@ -79919,7 +79716,7 @@ exports.default = function (sections) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/utils/filterSections.js":
+/***/ "../stylegator/lib/app/utils/filterSections.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79929,7 +79726,9 @@ var _fuzzy = __webpack_require__("../../node_modules/fuzzy/lib/fuzzy.js");
 
 var _fuzzy2 = _interopRequireDefault(_fuzzy);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 module.exports = function (color, filter, sections) {
   return _fuzzy2.default.filter(filter, sections, {
@@ -79945,7 +79744,7 @@ module.exports = function (color, filter, sections) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/utils/flattenSections.js":
+/***/ "../stylegator/lib/app/utils/flattenSections.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79964,7 +79763,7 @@ exports.default = flattenSections;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/utils/getAttributes.js":
+/***/ "../stylegator/lib/app/utils/getAttributes.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79974,7 +79773,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });
+  } else {
+    obj[key] = value;
+  }return obj;
+}
 
 exports.default = function (content) {
   return content.split('\n').filter(function (attr) {
@@ -79988,7 +79793,7 @@ exports.default = function (content) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/utils/getContext.js":
+/***/ "../stylegator/lib/app/utils/getContext.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80004,7 +79809,9 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = function (Component) {
   return (0, _recompose.getContext)({
@@ -80018,7 +79825,7 @@ exports.default = function (Component) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/utils/getPageSections.js":
+/***/ "../stylegator/lib/app/utils/getPageSections.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80038,7 +79845,7 @@ exports.default = function (content) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/utils/inPath.js":
+/***/ "../stylegator/lib/app/utils/inPath.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80054,7 +79861,7 @@ exports.default = function (path) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/utils/index.js":
+/***/ "../stylegator/lib/app/utils/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80064,7 +79871,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _buildRoutes = __webpack_require__("../stylegator/src/app/utils/buildRoutes.js");
+var _buildRoutes = __webpack_require__("../stylegator/lib/app/utils/buildRoutes.js");
 
 Object.defineProperty(exports, 'buildRoutes', {
   enumerable: true,
@@ -80073,7 +79880,7 @@ Object.defineProperty(exports, 'buildRoutes', {
   }
 });
 
-var _filterSections = __webpack_require__("../stylegator/src/app/utils/filterSections.js");
+var _filterSections = __webpack_require__("../stylegator/lib/app/utils/filterSections.js");
 
 Object.defineProperty(exports, 'filterSections', {
   enumerable: true,
@@ -80082,7 +79889,7 @@ Object.defineProperty(exports, 'filterSections', {
   }
 });
 
-var _flattenSections = __webpack_require__("../stylegator/src/app/utils/flattenSections.js");
+var _flattenSections = __webpack_require__("../stylegator/lib/app/utils/flattenSections.js");
 
 Object.defineProperty(exports, 'flattenSections', {
   enumerable: true,
@@ -80091,7 +79898,7 @@ Object.defineProperty(exports, 'flattenSections', {
   }
 });
 
-var _getAttributes = __webpack_require__("../stylegator/src/app/utils/getAttributes.js");
+var _getAttributes = __webpack_require__("../stylegator/lib/app/utils/getAttributes.js");
 
 Object.defineProperty(exports, 'getAttributes', {
   enumerable: true,
@@ -80100,7 +79907,7 @@ Object.defineProperty(exports, 'getAttributes', {
   }
 });
 
-var _getContext = __webpack_require__("../stylegator/src/app/utils/getContext.js");
+var _getContext = __webpack_require__("../stylegator/lib/app/utils/getContext.js");
 
 Object.defineProperty(exports, 'getContext', {
   enumerable: true,
@@ -80109,7 +79916,7 @@ Object.defineProperty(exports, 'getContext', {
   }
 });
 
-var _getPageSections = __webpack_require__("../stylegator/src/app/utils/getPageSections.js");
+var _getPageSections = __webpack_require__("../stylegator/lib/app/utils/getPageSections.js");
 
 Object.defineProperty(exports, 'getPageSections', {
   enumerable: true,
@@ -80118,7 +79925,7 @@ Object.defineProperty(exports, 'getPageSections', {
   }
 });
 
-var _inPath = __webpack_require__("../stylegator/src/app/utils/inPath.js");
+var _inPath = __webpack_require__("../stylegator/lib/app/utils/inPath.js");
 
 Object.defineProperty(exports, 'inPath', {
   enumerable: true,
@@ -80127,7 +79934,7 @@ Object.defineProperty(exports, 'inPath', {
   }
 });
 
-var _makeGlobal = __webpack_require__("../stylegator/src/app/utils/makeGlobal.js");
+var _makeGlobal = __webpack_require__("../stylegator/lib/app/utils/makeGlobal.js");
 
 Object.defineProperty(exports, 'makeGlobal', {
   enumerable: true,
@@ -80136,7 +79943,7 @@ Object.defineProperty(exports, 'makeGlobal', {
   }
 });
 
-var _pageLoader = __webpack_require__("../stylegator/src/app/utils/pageLoader.js");
+var _pageLoader = __webpack_require__("../stylegator/lib/app/utils/pageLoader.js");
 
 Object.defineProperty(exports, 'pageLoader', {
   enumerable: true,
@@ -80145,7 +79952,7 @@ Object.defineProperty(exports, 'pageLoader', {
   }
 });
 
-var _setSlugs = __webpack_require__("../stylegator/src/app/utils/setSlugs.js");
+var _setSlugs = __webpack_require__("../stylegator/lib/app/utils/setSlugs.js");
 
 Object.defineProperty(exports, 'setSlugs', {
   enumerable: true,
@@ -80154,7 +79961,7 @@ Object.defineProperty(exports, 'setSlugs', {
   }
 });
 
-var _useCustomPartials = __webpack_require__("../stylegator/src/app/utils/useCustomPartials.js");
+var _useCustomPartials = __webpack_require__("../stylegator/lib/app/utils/useCustomPartials.js");
 
 Object.defineProperty(exports, 'useCustomPartials', {
   enumerable: true,
@@ -80163,11 +79970,13 @@ Object.defineProperty(exports, 'useCustomPartials', {
   }
 });
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 /***/ }),
 
-/***/ "../stylegator/src/app/utils/makeGlobal.js":
+/***/ "../stylegator/lib/app/utils/makeGlobal.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80181,7 +79990,17 @@ var _ramda = __webpack_require__("../../node_modules/ramda/es/index.js");
 
 var R = _interopRequireWildcard(_ramda);
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+function _interopRequireWildcard(obj) {
+  if (obj && obj.__esModule) {
+    return obj;
+  } else {
+    var newObj = {};if (obj != null) {
+      for (var key in obj) {
+        if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key];
+      }
+    }newObj.default = obj;return newObj;
+  }
+}
 
 exports.default = R.mapObjIndexed(function (val, key) {
   window[key] = val;
@@ -80191,17 +80010,27 @@ exports.default = R.mapObjIndexed(function (val, key) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/utils/pageLoader.js":
+/***/ "../stylegator/lib/app/utils/pageLoader.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+  };
+}();
 
 var _react = __webpack_require__("../../node_modules/react/index.js");
 
@@ -80211,15 +80040,29 @@ var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _ = __webpack_require__("../stylegator/src/app/utils/index.js");
+var _ = __webpack_require__("../stylegator/lib/app/utils/index.js");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+}
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
 
 exports.default = function (loader) {
   return function (title) {
@@ -80251,7 +80094,6 @@ exports.default = function (loader) {
         value: function render() {
           var Page = this.props.partials.Page;
 
-
           return _react2.default.createElement(Page, { title: title, content: this.state.content });
         }
       }]);
@@ -80269,7 +80111,7 @@ exports.default = function (loader) {
 
 /***/ }),
 
-/***/ "../stylegator/src/app/utils/setSlugs.js":
+/***/ "../stylegator/lib/app/utils/setSlugs.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80283,7 +80125,9 @@ var _slugify = __webpack_require__("../../node_modules/slugify/index.js");
 
 var _slugify2 = _interopRequireDefault(_slugify);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var setSlugs = function setSlugs(sections) {
   var parentPath = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
@@ -80306,7 +80150,7 @@ exports.default = setSlugs;
 
 /***/ }),
 
-/***/ "../stylegator/src/app/utils/useCustomPartials.js":
+/***/ "../stylegator/lib/app/utils/useCustomPartials.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80320,13 +80164,23 @@ var _ramda = __webpack_require__("../../node_modules/ramda/es/index.js");
 
 var R = _interopRequireWildcard(_ramda);
 
-var _ = __webpack_require__("../stylegator/src/app/utils/index.js");
+var _ = __webpack_require__("../stylegator/lib/app/utils/index.js");
 
-var _partials = __webpack_require__("../stylegator/src/app/partials/index.js");
+var _partials = __webpack_require__("../stylegator/lib/app/partials/index.js");
 
 var defaultPartials = _interopRequireWildcard(_partials);
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+function _interopRequireWildcard(obj) {
+  if (obj && obj.__esModule) {
+    return obj;
+  } else {
+    var newObj = {};if (obj != null) {
+      for (var key in obj) {
+        if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key];
+      }
+    }newObj.default = obj;return newObj;
+  }
+}
 
 exports.default = function () {
   var customPartials = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
@@ -80335,13 +80189,13 @@ exports.default = function () {
 
 /***/ }),
 
-/***/ "../stylegator/src/index.js":
+/***/ "../stylegator/lib/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var app = __webpack_require__("../stylegator/src/app/index.js");
+var app = __webpack_require__("../stylegator/lib/app/index.js");
 
 module.exports = app;
 
@@ -80443,7 +80297,7 @@ var _reactDom = __webpack_require__("../../node_modules/react-dom/index.js");
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _stylegator = __webpack_require__("../stylegator/src/index.js");
+var _stylegator = __webpack_require__("../stylegator/lib/index.js");
 
 var _Logo = __webpack_require__("./src/partials/Logo.js");
 
