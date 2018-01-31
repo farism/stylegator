@@ -1,4 +1,13 @@
 
+## v0.6.1 (2018-01-31)
+
+#### :house: Internal
+* [#63](https://github.com/farism/stylegator/pull/63) Fix docs deploy cp path. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.6.0 (2018-01-31)
 
 #### :bug: Bug Fix
