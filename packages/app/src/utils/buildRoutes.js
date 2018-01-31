@@ -13,18 +13,6 @@ const buildRoute = ({ title, path, loader }) => (
   />
 )
 
-const buildAppendix = () => (
-  <Route
-    {...{
-      key: 'Appendix',
-      path: '/appendix',
-      component: pageLoader(() => import('../assets/__appendix.md'))(
-        'Appendix'
-      ),
-    }}
-  />
-)
-
 const buildRedirect = ({ title, path, loader, sections }) => (
   <Route
     {...{
@@ -49,6 +37,5 @@ const buildRoutes = sections =>
 
 export default sections =>
   buildRoutes(sections).concat([
-    buildAppendix(),
     buildRedirect({ title: 'home', path: '/', sections: sections }),
   ])

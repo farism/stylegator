@@ -30,7 +30,6 @@ Stylegator.propTypes = {
   logo: PropTypes.string,
   partials: partialsPropTypes,
   sections: PropTypes.array,
-  showAppendix: PropTypes.bool,
   theme: PropTypes.shape({}),
 }
 
@@ -38,7 +37,6 @@ Stylegator.defaultProps = {
   components: {},
   partials: useCustomPartials(),
   sections: [],
-  showAppendix: true,
   theme: {},
 }
 
@@ -47,20 +45,12 @@ export default withContext(
     components: PropTypes.shape({}),
     partials: partialsPropTypes,
     sections: PropTypes.array,
-    showAppendix: PropTypes.bool,
     theme: PropTypes.shape({}),
   },
-  ({
-    components = {},
-    partials = {},
-    sections = [],
-    showAppendix = true,
-    theme = {},
-  }) => ({
+  ({ components = {}, partials = {}, sections = [], theme = {} }) => ({
     components: makeGlobal(components),
     partials,
     sections: setSlugs(sections),
-    showAppendix,
     theme,
   })
 )(Stylegator)
