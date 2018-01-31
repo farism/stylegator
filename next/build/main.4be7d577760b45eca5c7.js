@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "7764515f701e92f6029d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "4be7d577760b45eca5c7"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -3021,7 +3021,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".props--139La {\n  border: 1px solid #d9d9d9;\n  box-sizing: border-box;\n  margin-bottom: 16px;\n  overflow-x: scroll;\n  padding: 15px;\n  width: 100%; }\n  .props--139La table {\n    border-collapse: collapse;\n    width: 100%; }\n  .props--139La thead {\n    border-bottom: 1px solid #d9d9d9; }\n  .props--139La th {\n    padding: 0 15px 5px 0;\n    text-align: left; }\n  .props--139La td {\n    padding: 10px 40px 10px 0;\n    vertical-align: top; }\n    .props--139La td.name--1iip3, .props--139La td.type--Cx5Wd, .props--139La td.default--1o2ZC, .props--139La td.required--1dI4e {\n      font-family: monospace;\n      font-size: 14px; }\n    .props--139La td.name--1iip3 {\n      color: #9cc223; }\n    .props--139La td.type--Cx5Wd {\n      color: #c2707e; }\n    .props--139La td.required--1dI4e {\n      color: #859cc1; }\n    .props--139La td.description--2PLv3 {\n      width: 100%;\n      min-width: 250px; }\n      .props--139La td.description--2PLv3 .meta--27TMz span {\n        border-radius: 3px;\n        background: #f3f3f3;\n        display: inline-block;\n        font-family: monospace;\n        margin-top: 20px;\n        padding: 5px; }\n", ""]);
+exports.push([module.i, ".props--139La {\n  border: 1px solid #d9d9d9;\n  box-sizing: border-box;\n  margin-bottom: 16px;\n  overflow-x: auto;\n  padding: 15px;\n  width: 100%; }\n  .props--139La table {\n    border-collapse: collapse;\n    width: 100%; }\n  .props--139La thead {\n    border-bottom: 1px solid #d9d9d9; }\n  .props--139La th {\n    padding: 0 15px 5px 0;\n    text-align: left; }\n  .props--139La td {\n    padding: 10px 40px 10px 0;\n    vertical-align: top; }\n    .props--139La td.name--1iip3, .props--139La td.type--Cx5Wd, .props--139La td.default--1o2ZC, .props--139La td.required--1dI4e {\n      font-family: monospace;\n      font-size: 14px; }\n    .props--139La td.name--1iip3 {\n      color: #9cc223; }\n    .props--139La td.type--Cx5Wd {\n      color: #c2707e; }\n    .props--139La td.required--1dI4e {\n      color: #859cc1; }\n    .props--139La td.description--2PLv3 {\n      width: 100%;\n      min-width: 250px; }\n      .props--139La td.description--2PLv3 .meta--27TMz span {\n        border-radius: 3px;\n        background: #f3f3f3;\n        display: inline-block;\n        font-family: monospace;\n        margin-top: 20px;\n        padding: 5px; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -77310,7 +77310,6 @@ Stylegator.propTypes = {
   logo: _propTypes2.default.string,
   partials: _utils.partialsPropTypes,
   sections: _propTypes2.default.array,
-  showAppendix: _propTypes2.default.bool,
   theme: _propTypes2.default.shape({})
 };
 
@@ -77318,7 +77317,6 @@ Stylegator.defaultProps = {
   components: {},
   partials: (0, _utils.useCustomPartials)(),
   sections: [],
-  showAppendix: true,
   theme: {}
 };
 
@@ -77326,7 +77324,6 @@ exports.default = (0, _recompose.withContext)({
   components: _propTypes2.default.shape({}),
   partials: _utils.partialsPropTypes,
   sections: _propTypes2.default.array,
-  showAppendix: _propTypes2.default.bool,
   theme: _propTypes2.default.shape({})
 }, function (_ref2) {
   var _ref2$components = _ref2.components,
@@ -77335,15 +77332,12 @@ exports.default = (0, _recompose.withContext)({
       partials = _ref2$partials === undefined ? {} : _ref2$partials,
       _ref2$sections = _ref2.sections,
       sections = _ref2$sections === undefined ? [] : _ref2$sections,
-      _ref2$showAppendix = _ref2.showAppendix,
-      showAppendix = _ref2$showAppendix === undefined ? true : _ref2$showAppendix,
       _ref2$theme = _ref2.theme,
       theme = _ref2$theme === undefined ? {} : _ref2$theme;
   return {
     components: (0, _utils.makeGlobal)(components),
     partials: partials,
     sections: (0, _utils.setSlugs)(sections),
-    showAppendix: showAppendix,
     theme: theme
   };
 })(Stylegator);
@@ -78195,15 +78189,12 @@ var Menu = function Menu(_ref) {
   var filter = _ref.filter,
       partials = _ref.partials,
       sections = _ref.sections,
-      showAppendix = _ref.showAppendix,
       _ref$theme$filterColo = _ref.theme.filterColor,
       filterColor = _ref$theme$filterColo === undefined ? 'red' : _ref$theme$filterColo;
   var MenuLink = partials.MenuLink,
       MenuList = partials.MenuList;
 
-  var withAppendix = showAppendix ? sections.concat({ title: 'Appendix', path: '/appendix' }) : sections;
-
-  var filteredSections = filter ? (0, _utils.filterSections)(filterColor, filter, (0, _utils.flattenSections)(withAppendix)) : withAppendix;
+  var filteredSections = filter ? (0, _utils.filterSections)(filterColor, filter, (0, _utils.flattenSections)(sections)) : sections;
 
   return _react2.default.createElement('div', { className: _menu2.default['menu'] }, _react2.default.createElement(MenuList, { depth: 0, partials: partials, filteredSections: filteredSections }));
 };
@@ -79611,16 +79602,6 @@ var buildRoute = function buildRoute(_ref) {
   });
 };
 
-var buildAppendix = function buildAppendix() {
-  return _react2.default.createElement(_reactRouterDom.Route, {
-    key: 'Appendix',
-    path: '/appendix',
-    component: (0, _.pageLoader)(function () {
-      return __webpack_require__.e/* import() */(9).then(__webpack_require__.bind(null, "../app/lib/assets/__appendix.md"));
-    })('Appendix')
-  });
-};
-
 var buildRedirect = function buildRedirect(_ref2) {
   var title = _ref2.title,
       path = _ref2.path,
@@ -79643,7 +79624,7 @@ var buildRoutes = function buildRoutes(sections) {
 };
 
 exports.default = function (sections) {
-  return buildRoutes(sections).concat([buildAppendix(), buildRedirect({ title: 'home', path: '/', sections: sections })]);
+  return buildRoutes(sections).concat([buildRedirect({ title: 'home', path: '/', sections: sections })]);
 };
 
 /***/ }),
@@ -79750,7 +79731,6 @@ exports.default = function (Component) {
     components: _propTypes2.default.shape({}),
     partials: _propTypes2.default.shape({}),
     sections: _propTypes2.default.array,
-    showAppendix: _propTypes2.default.bool,
     theme: _propTypes2.default.shape({})
   })(Component);
 };
@@ -80351,6 +80331,11 @@ var sections = [{
       return __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, "./src/sections/guides/appendix.md"));
     })
   }]
+}, {
+  title: 'Appendix',
+  loader: (0, _stylegator.pageLoader)(function () {
+    return __webpack_require__.e/* import() */(9).then(__webpack_require__.bind(null, "./src/sections/__appendix.md"));
+  })
 }];
 
 var components = { MyComponent: _MyComponent2.default };
