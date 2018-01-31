@@ -1,0 +1,17 @@
+.toggle {
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 30px;
+
+  .bar {
+    background: #fff;
+    display: block;
+    height: 4px;
+    transition: all 0.3s ease;
+    width: 30px;
+
+    + .bar {
+      margin-top: 6px;
+    }
+  }
+}

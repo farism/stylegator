@@ -1,0 +1,41 @@
+{
+  "name": "@stylegator/cli",
+  "version": "0.6.0-rc.16",
+  "description": "Stylegator CLI tool",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farism/stylegator.git"
+  },
+  "keywords": [
+    "cli",
+    "styleguide",
+    "static generator"
+  ],
+  "author": "Faris Mustafa <farismmk@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "stylegator": "./bin/cli.js"
+  },
+  "scripts": {
+    "build": "yarn clean && babel src -d lib",
+    "clean": "rimraf lib",
+    "dev": "babel src -d lib --watch",
+    "lint-staged": "lint-staged",
+    "pretty": "prettier --write --no-semi --single-quote --trailing-comma es5",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@stylegator/core": "^0.6.0-rc.16"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "husky": "0.14.3",
+    "lint-staged": "6.1.0",
+    "prettier": "1.10.2",
+    "rimraf": "2.6.2"
+  }
+}

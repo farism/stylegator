@@ -1,0 +1,17 @@
+.logo {
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  display: block;
+  flex: 0 0 auto;
+  height: 145px;
+}
+
+.image {
+  left: 50%;
+  margin-left: -100px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  z-index: 2;
+}

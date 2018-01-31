@@ -1,0 +1,23 @@
+.menu-link {
+  box-sizing: border-box;
+  color: #000;
+  display: inline-block;
+  font-size: 15px;
+  padding: 16px 36px 16px 16px;
+  text-decoration: none;
+  width: 100%;
+  transition: 0.2s background;
+
+  &:global {
+    &.depth-0 {
+      font-size: 16px;
+    }
+  }
+
+  svg {
+    path,
+    rect {
+      fill: #fff;
+    }
+  }
+}

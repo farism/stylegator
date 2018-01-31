@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "@stylegator/docs",
+  "version": "0.6.0-rc.16",
+  "description": "Stylegator main package",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farism/stylegator.git"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "Faris Mustafa <farismmk@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn clean && yarn build:stylegator && yarn build:404",
+    "build:404": "cp src/404.html build/404.html",
+    "build:stylegator": "NODE_ENV=production stylegator build",
+    "clean": "rimraf build",
+    "docs": "stylegator dev",
+    "lint-staged": "lint-staged",
+    "pretty": "prettier --write --no-semi --single-quote --trailing-comma es5",
+    "test": "jest"
+  },
+  "dependencies": {
+    "prop-types-docs": "0.1.1",
+    "stylegator": "^0.6.0-rc.16"
+  },
+  "devDependencies": {
+    "husky": "0.14.3",
+    "lint-staged": "6.1.0",
+    "prettier": "1.10.2",
+    "rimraf": "2.6.2"
+  }
+}
