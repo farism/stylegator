@@ -1,18 +1,26 @@
 # The Appendix
 
-Stylegator automatically creates an `/appendix` route. This is a concatenation of all the pages in the styleguide.
-
-By default, there will be no navigation item for this page displayed in the sidebar.
-
-If you wish to enable it in the navigation, you can pass `showAppendix: true`:
+Stylegator will recognize a special section named `__appendix.md`. In order to use this section, add it as an entry in your `sections` list:
 
 ```js
+// index.js
+
+const sections = [
+  ...,
+  {
+    title: 'Appendix',
+    loader: pageLoader(() => import('./sections/__appendix.md')),
+  }
+]
+
 ReactDOM.render(
-  <Stylegator sections={...} showAppendix={true} />,
+  <Stylegator {...{ sections }}/>,
   document.getElementById('app')
 )
 ```
 
+Under the hood, a Webpack plugin will concatenate all of the sibling sections declared in the same `index.js` file and write the result to the `__appendix` asset.
+
 **Note:**
 
-The Appendix currently relies on a Webpack plugin and it does not live reload. You will need to restart your dev server or re-build in order to see appendix updates.
+Because of the Webpack plugin usage live reload is currently not working. You will need to restart your dev server or re-build in order to see appendix updates.

@@ -6,6 +6,5 @@ export default Component =>
     components: PropTypes.shape({}),
     partials: PropTypes.shape({}),
     sections: PropTypes.array,
-    showAppendix: PropTypes.bool,
     theme: PropTypes.shape({}),
   })(Component)
