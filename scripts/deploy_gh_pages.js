@@ -4,6 +4,7 @@ const { exec, shell } = require('execa-pro')
 const { version } = require('../lerna.json')
 
 const cwd = path.join(process.cwd(), 'tmp/gh-pages')
+
 ;(async () => {
   const target = process.argv.slice(2)[0]
   const remote = await exec('git config remote.origin.url')
