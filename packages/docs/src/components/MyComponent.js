@@ -16,15 +16,28 @@ export default withPropDocs({
       name: {
         type: PropTypes.string,
         description: 'The name',
+        default: '',
+      },
+      isTrue: {
+        type: PropTypes.bool,
+        description: 'A boolean',
+        default: true,
+      },
+      isFalse: {
+        type: PropTypes.bool,
+        description: 'A boolean',
+        default: false,
       },
       age: PropTypes.shape({
         min: {
           type: PropTypes.number,
           description: 'Min age',
+          default: 0,
         },
         max: {
           type: PropTypes.number,
           description: 'Max age',
+          default: 100,
         },
       }),
     }),
@@ -39,6 +52,7 @@ export default withPropDocs({
     ping: {
       type: PropTypes.arrayOf(PropTypes.string),
       description: 'This should be a ping',
+      default: ['ping', 'pong'],
     },
     pong: {
       type: PropTypes.objectOf(PropTypes.number),
