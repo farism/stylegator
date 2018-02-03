@@ -15,27 +15,43 @@ const ColName = ({ children, depth = 0 }) => (
   </td>
 )
 
-const ColType = ({ children }) => <td className={styles['type']}>{children}</td>
+const ColType = ({ type }) => <td className={styles['type']}>{type.name}</td>
 
-const ColRequired = ({ children }) => (
-  <td className={styles['required']}>{children ? 'true' : 'false'}</td>
+const ColRequired = ({ required }) => (
+  <td className={styles['required']}>{required ? 'true' : 'false'}</td>
 )
 
-const ColDefault = ({ children }) => (
-  <td className={styles['default']}>{children}</td>
-)
+const ColDefault = ({ type, default: defaultValue }) => {
+  let renderedVal = ''
 
-const ColDescription = ({ children }) => (
-  <td className={styles['description']}>{children}</td>
+  if (typeof children === 'function') {
+    renderedVal = defaultValue.toString()
+  } else if (typeof defaultValue === 'boolean') {
+    renderedVal = defaultValue ? 'true' : 'false'
+  } else if (typeof defaultValue === 'string') {
+    renderedVal = defaultValue ? defaultValue : "''"
+  } else if (typeof defaultValue === 'number') {
+    renderedVal = defaultValue
+  } else if (Array.isArray(defaultValue)) {
+    renderedVal = `[${defaultValue.map(oneOfVal).join(', ')}]`
+  } else {
+    renderedVal = JSON.stringify(defaultValue)
+  }
+
+  return <td className={styles['default']}>{renderedVal}</td>
+}
+
+const ColDescription = ({ description }) => (
+  <td className={styles['description']}>{description}</td>
 )
 
 const BaseColumns = ({ name, prop, depth = 0 }) => [
   <ColName key="name" {...{ depth }}>
     {name}
   </ColName>,
-  <ColType key="type">{prop.type.name}</ColType>,
-  <ColRequired key="required">{prop.required}</ColRequired>,
-  <ColDefault key="default">{prop.default}</ColDefault>,
+  <ColType key="type" {...prop} />,
+  <ColRequired key="required" {...prop} />,
+  <ColDefault key="default" {...prop} />,
 ]
 
 const Primitive = ({ name, prop, depth = 0 }) => (
