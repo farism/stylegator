@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4be7d577760b45eca5c7"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a87b255bbc177bc6ca2c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -78865,23 +78865,41 @@ var ColName = function ColName(_ref) {
 };
 
 var ColType = function ColType(_ref2) {
-  var children = _ref2.children;
-  return _react2.default.createElement('td', { className: _props2.default['type'] }, children);
+  var type = _ref2.type;
+  return _react2.default.createElement('td', { className: _props2.default['type'] }, type.name);
 };
 
 var ColRequired = function ColRequired(_ref3) {
-  var children = _ref3.children;
-  return _react2.default.createElement('td', { className: _props2.default['required'] }, children ? 'true' : 'false');
+  var required = _ref3.required;
+  return _react2.default.createElement('td', { className: _props2.default['required'] }, required ? 'true' : 'false');
 };
 
 var ColDefault = function ColDefault(_ref4) {
-  var children = _ref4.children;
-  return _react2.default.createElement('td', { className: _props2.default['default'] }, children);
+  var type = _ref4.type,
+      defaultValue = _ref4.default;
+
+  var renderedVal = '';
+
+  if (typeof children === 'function') {
+    renderedVal = defaultValue.toString();
+  } else if (typeof defaultValue === 'boolean') {
+    renderedVal = defaultValue ? 'true' : 'false';
+  } else if (typeof defaultValue === 'string') {
+    renderedVal = defaultValue ? defaultValue : "''";
+  } else if (typeof defaultValue === 'number') {
+    renderedVal = defaultValue;
+  } else if (Array.isArray(defaultValue)) {
+    renderedVal = '[' + defaultValue.map(oneOfVal).join(', ') + ']';
+  } else {
+    renderedVal = JSON.stringify(defaultValue);
+  }
+
+  return _react2.default.createElement('td', { className: _props2.default['default'] }, renderedVal);
 };
 
 var ColDescription = function ColDescription(_ref5) {
-  var children = _ref5.children;
-  return _react2.default.createElement('td', { className: _props2.default['description'] }, children);
+  var description = _ref5.description;
+  return _react2.default.createElement('td', { className: _props2.default['description'] }, description);
 };
 
 var BaseColumns = function BaseColumns(_ref6) {
@@ -78889,7 +78907,7 @@ var BaseColumns = function BaseColumns(_ref6) {
       prop = _ref6.prop,
       _ref6$depth = _ref6.depth,
       depth = _ref6$depth === undefined ? 0 : _ref6$depth;
-  return [_react2.default.createElement(ColName, _extends({ key: 'name' }, { depth: depth }), name), _react2.default.createElement(ColType, { key: 'type' }, prop.type.name), _react2.default.createElement(ColRequired, { key: 'required' }, prop.required), _react2.default.createElement(ColDefault, { key: 'default' }, prop.default)];
+  return [_react2.default.createElement(ColName, _extends({ key: 'name' }, { depth: depth }), name), _react2.default.createElement(ColType, _extends({ key: 'type' }, prop)), _react2.default.createElement(ColRequired, _extends({ key: 'required' }, prop)), _react2.default.createElement(ColDefault, _extends({ key: 'default' }, prop))];
 };
 
 var Primitive = function Primitive(_ref7) {
@@ -80219,16 +80237,29 @@ exports.default = (0, _propTypesDocs.withPropDocs)({
     person: _propTypesDocs2.default.shape({
       name: {
         type: _propTypesDocs2.default.string,
-        description: 'The name'
+        description: 'The name',
+        default: ''
+      },
+      isTrue: {
+        type: _propTypesDocs2.default.bool,
+        description: 'A boolean',
+        default: true
+      },
+      isFalse: {
+        type: _propTypesDocs2.default.bool,
+        description: 'A boolean',
+        default: false
       },
       age: _propTypesDocs2.default.shape({
         min: {
           type: _propTypesDocs2.default.number,
-          description: 'Min age'
+          description: 'Min age',
+          default: 0
         },
         max: {
           type: _propTypesDocs2.default.number,
-          description: 'Max age'
+          description: 'Max age',
+          default: 100
         }
       })
     }),
@@ -80242,7 +80273,8 @@ exports.default = (0, _propTypesDocs.withPropDocs)({
     },
     ping: {
       type: _propTypesDocs2.default.arrayOf(_propTypesDocs2.default.string),
-      description: 'This should be a ping'
+      description: 'This should be a ping',
+      default: ['ping', 'pong']
     },
     pong: {
       type: _propTypesDocs2.default.objectOf(_propTypesDocs2.default.number),
