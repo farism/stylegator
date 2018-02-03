@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a87b255bbc177bc6ca2c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5e5bc34c1a053d6cd64d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -78898,8 +78898,8 @@ var ColDefault = function ColDefault(_ref4) {
 };
 
 var ColDescription = function ColDescription(_ref5) {
-  var description = _ref5.description;
-  return _react2.default.createElement('td', { className: _props2.default['description'] }, description);
+  var children = _ref5.children;
+  return _react2.default.createElement('td', { className: _props2.default['description'] }, children);
 };
 
 var BaseColumns = function BaseColumns(_ref6) {
