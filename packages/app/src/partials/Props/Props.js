@@ -41,8 +41,8 @@ const ColDefault = ({ type, default: defaultValue }) => {
   return <td className={styles['default']}>{renderedVal}</td>
 }
 
-const ColDescription = ({ description }) => (
-  <td className={styles['description']}>{description}</td>
+const ColDescription = ({ children }) => (
+  <td className={styles['description']}>{children}</td>
 )
 
 const BaseColumns = ({ name, prop, depth = 0 }) => [
