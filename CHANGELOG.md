@@ -1,4 +1,20 @@
 
+## v0.7.0 (2018-02-03)
+
+#### :bug: Bug Fix
+* `app`
+  * [#71](https://github.com/farism/stylegator/pull/71) Render out children instead of description field. ([@farism](https://github.com/farism))
+
+#### :nail_care: Enhancement
+* `app`, `docs`
+  * [#69](https://github.com/farism/stylegator/pull/69) Better rendering of different prop types. ([@farism](https://github.com/farism))
+* `app`, `core`, `docs`
+  * [#66](https://github.com/farism/stylegator/pull/66) New way of implementing Appendix. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.6.1 (2018-01-31)
 
 #### :house: Internal
