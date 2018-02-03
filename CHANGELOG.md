@@ -1,4 +1,13 @@
 
+## v0.7.1 (2018-02-03)
+
+#### :house: Internal
+* [#75](https://github.com/farism/stylegator/pull/75) Fix latest docs. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.7.0 (2018-02-03)
 
 #### :bug: Bug Fix
