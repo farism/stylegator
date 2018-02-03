@@ -15,6 +15,7 @@ const cwd = path.join(process.cwd(), 'tmp/gh-pages')
       `git remote add --fetch origin ${remote[0].stdout}`,
       `git checkout -b gh-pages`,
       `git checkout gh-pages`,
+      `rm -rf latest`,
       `rm -rf ${target}`,
       `mkdirp v`,
       `cp -r ../../packages/docs/build ${target || `v/${version}`}`,
