@@ -1,4 +1,14 @@
 
+## v0.7.2 (2018-02-04)
+
+#### :bug: Bug Fix
+* `app`, `core`
+  * [#78](https://github.com/farism/stylegator/pull/78) Context custom partials. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.7.1 (2018-02-03)
 
 #### :house: Internal
