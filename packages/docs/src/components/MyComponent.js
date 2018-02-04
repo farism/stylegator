@@ -3,7 +3,7 @@ import PropTypes, { withPropDocs } from 'prop-types-docs'
 
 const MyComponent = ({ children }) => <div>My Component!</div>
 
-export default withPropDocs({
+const myComponentDocs = withPropDocs({
   name: 'MyComponent',
   props: {
     foo: {
@@ -59,4 +59,22 @@ export default withPropDocs({
       description: 'This should be a pong',
     },
   },
-})(MyComponent)
+})
+
+const MySubComponent = ({ children }) => <div>My SubComponent!</div>
+
+const mySubComponentDocs = withPropDocs({
+  name: 'MySubComponent',
+  props: {
+    foo: {
+      type: PropTypes.string,
+      required: false,
+      default: 'bar',
+      description: 'This is a foo',
+    },
+  },
+})
+
+MyComponent.MySubComponent = mySubComponentDocs(MySubComponent)
+
+export default myComponentDocs(MyComponent)

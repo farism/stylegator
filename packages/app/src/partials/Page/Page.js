@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { getAttributes, getPageSections } from '../../utils'
+import { getAttributes, getGlobalComponent, getPageSections } from '../../utils'
 import { LiveMarkdown, Props, StaticMarkdown } from '../'
 import styles from './page.scss'
 
@@ -18,13 +18,10 @@ const getPageSection = (partials, section) => {
       case 'code':
         return <LiveMarkdown {...{ content }} />
       case 'props':
-        return (
-          <Props
-            {...{
-              props: (window[getAttributes(content).component] || {}).propInfo,
-            }}
-          />
-        )
+        const attributes = getAttributes(content)
+        const props = getGlobalComponent(attributes.component).propInfo
+
+        return <Props {...{ props }} />
       default:
         return (
           <StaticMarkdown {...{ content: `\`\`\`${tag}\n${content}\`\`\`` }} />
