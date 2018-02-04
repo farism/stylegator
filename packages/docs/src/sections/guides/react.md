@@ -31,6 +31,7 @@ Once components have been exposed, they will be added to the global context and 
  ```
 ```
 
+```
 Which will result in an interactive code sample using `react-live`:
 ```code
 <MyComponent />
@@ -48,7 +49,7 @@ import PropTypes, { withPropDocs } from 'prop-types-docs'
 
 const MyComponent = ({ children }) => <div>My Component!</div>
 
-export default withPropDocs({
+const myComponentDocs = withPropDocs({
   name: 'MyComponent',
   props: {
     foo: {
@@ -64,7 +65,25 @@ export default withPropDocs({
     },
     ...
   },
-})(MyComponent)
+})
+
+const MySubComponent = ({ children }) => <div>My SubComponent!</div>
+
+const mySubComponentDocs = withPropDocs({
+  name: 'MySubComponent',
+  props: {
+    foo: {
+      type: PropTypes.string,
+      required: false,
+      default: 'bar',
+      description: 'This is a foo',
+    },
+  },
+})
+
+MyComponent.MySubComponent = mySubComponentDocs(MySubComponent)
+
+export default myComponentDocs(MyComponent)
 ```
 
 With the component props now having full documentation, we can generate a props table in Stylegator using the "props" directive:
@@ -75,8 +94,26 @@ With the component props now having full documentation, we can generate a props 
  ```
 ```
 
+```
 will result in:
 
 ```props
 component: MyComponent
+```
+
+## SubComponent props
+
+Prop display should work for subcomponents as well:
+
+```md
+ ```props
+ component: MyComponent.MySubComponent
+ ```
+```
+
+```
+will result in:
+
+```props
+component: MyComponent.MySubComponent
 ```
