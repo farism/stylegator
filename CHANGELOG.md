@@ -1,4 +1,14 @@
 
+## v0.8.0 (2018-02-04)
+
+#### :nail_care: Enhancement
+* `app`, `docs`
+  * [#83](https://github.com/farism/stylegator/pull/83) Support subcomponents in props. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.7.2 (2018-02-04)
 
 #### :bug: Bug Fix
