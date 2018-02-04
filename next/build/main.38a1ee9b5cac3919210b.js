@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1ba626177a0e740987e0"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "38a1ee9b5cac3919210b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -78617,9 +78617,10 @@ var getPageSection = function getPageSection(partials, section) {
       case 'code':
         return _react2.default.createElement(LiveMarkdown, { content: content });
       case 'props':
-        return _react2.default.createElement(Props, {
-          props: (window[(0, _utils.getAttributes)(content).component] || {}).propInfo
-        });
+        var attributes = (0, _utils.getAttributes)(content);
+        var props = (0, _utils.getGlobalComponent)(attributes.component).propInfo;
+
+        return _react2.default.createElement(Props, { props: props });
       default:
         return _react2.default.createElement(StaticMarkdown, { content: '```' + tag + '\n' + content + '```' });
     }
@@ -79755,6 +79756,24 @@ exports.default = function (Component) {
 
 /***/ }),
 
+/***/ "../app/lib/utils/getGlobalComponent.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function (path) {
+  return path.split('.').reduce(function (context, cur) {
+    return context[cur] || {};
+  }, window);
+};
+
+/***/ }),
+
 /***/ "../app/lib/utils/getPageSections.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -79843,6 +79862,15 @@ Object.defineProperty(exports, 'getContext', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_getContext).default;
+  }
+});
+
+var _getGlobalComponent = __webpack_require__("../app/lib/utils/getGlobalComponent.js");
+
+Object.defineProperty(exports, 'getGlobalComponent', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_getGlobalComponent).default;
   }
 });
 
@@ -80225,7 +80253,7 @@ var MyComponent = function MyComponent(_ref) {
   );
 };
 
-exports.default = (0, _propTypesDocs.withPropDocs)({
+var myComponentDocs = (0, _propTypesDocs.withPropDocs)({
   name: 'MyComponent',
   props: {
     foo: {
@@ -80281,7 +80309,32 @@ exports.default = (0, _propTypesDocs.withPropDocs)({
       description: 'This should be a pong'
     }
   }
-})(MyComponent);
+});
+
+var MySubComponent = function MySubComponent(_ref2) {
+  var children = _ref2.children;
+  return _react2.default.createElement(
+    'div',
+    null,
+    'My SubComponent!'
+  );
+};
+
+var mySubComponentDocs = (0, _propTypesDocs.withPropDocs)({
+  name: 'MySubComponent',
+  props: {
+    foo: {
+      type: _propTypesDocs2.default.string,
+      required: false,
+      default: 'bar',
+      description: 'This is a foo'
+    }
+  }
+});
+
+MyComponent.MySubComponent = mySubComponentDocs(MySubComponent);
+
+exports.default = myComponentDocs(MyComponent);
 
 /***/ }),
 
