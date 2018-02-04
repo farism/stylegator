@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "5e5bc34c1a053d6cd64d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1ba626177a0e740987e0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -77329,7 +77329,7 @@ exports.default = (0, _recompose.withContext)({
   var _ref2$components = _ref2.components,
       components = _ref2$components === undefined ? {} : _ref2$components,
       _ref2$partials = _ref2.partials,
-      partials = _ref2$partials === undefined ? {} : _ref2$partials,
+      partials = _ref2$partials === undefined ? (0, _utils.useCustomPartials)() : _ref2$partials,
       _ref2$sections = _ref2.sections,
       sections = _ref2$sections === undefined ? [] : _ref2$sections,
       _ref2$theme = _ref2.theme,
