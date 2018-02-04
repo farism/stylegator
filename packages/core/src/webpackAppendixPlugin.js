@@ -30,7 +30,7 @@ const buildContent = chunks =>
     ''
   )
 
-const addContenet = chunks => appendixChunk => {
+const addContent = chunks => appendixChunk => {
   const siblings = chunks
     .reduce((acc, chunk) => {
       chunk.forEachModule(m => {
@@ -75,7 +75,7 @@ AppendixPlugin.prototype.apply = function(compiler) {
   compiler.plugin('compilation', (compilation, params) => {
     compilation.plugin('optimize-chunk-assets', (chunks, callback) => {
       findAppendixChunks(chunks)
-        .map(addContenet(chunks))
+        .map(addContent(chunks))
         .forEach(writeChunk(compilation))
 
       callback()

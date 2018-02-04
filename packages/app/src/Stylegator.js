@@ -47,7 +47,12 @@ export default withContext(
     sections: PropTypes.array,
     theme: PropTypes.shape({}),
   },
-  ({ components = {}, partials = {}, sections = [], theme = {} }) => ({
+  ({
+    components = {},
+    partials = useCustomPartials(),
+    sections = [],
+    theme = {},
+  }) => ({
     components: makeGlobal(components),
     partials,
     sections: setSlugs(sections),
