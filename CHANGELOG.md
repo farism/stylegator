@@ -1,4 +1,18 @@
 
+## v0.9.0 (2018-02-09)
+
+#### :books: Dependencies
+* `docs`
+  * [#91](https://github.com/farism/stylegator/pull/91) Update dependency prop-types-docs to v0.1.3. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :nail_care: Enhancement
+* `cli`, `core`, `docs`
+  * [#89](https://github.com/farism/stylegator/pull/89) Support IE11. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.8.0 (2018-02-04)
 
 #### :nail_care: Enhancement
