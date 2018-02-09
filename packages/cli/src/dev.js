@@ -26,7 +26,7 @@ export default {
     },
     host: {
       description: 'webserver address',
-      default: 'localhost',
+      default: '0.0.0.0',
     },
     port: {
       description: 'webserver port',
