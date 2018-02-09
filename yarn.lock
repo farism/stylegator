@@ -5782,9 +5782,9 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types-docs@0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/prop-types-docs/-/prop-types-docs-0.1.1.tgz#69f8843215a275389d1ada271b95f2e6d26697f3"
+prop-types-docs@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/prop-types-docs/-/prop-types-docs-0.1.2.tgz#3aede6a50ff89f5b974ad2267db7ac087fd84736"
 
 prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0:
   version "15.6.0"
