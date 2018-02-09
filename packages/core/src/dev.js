@@ -16,7 +16,12 @@ export default argv => {
   WebpackDevServer.addDevServerEntrypoints(compilerConfig, serverConfig)
   const compiler = webpack(compilerConfig)
   const server = new WebpackDevServer(compiler, serverConfig)
-  server.listen(8080, '127.0.0.1', () => {
-    console.log('Starting server on http://localhost:8080')
+
+  server.listen(port, host, () => {
+    console.log(
+      `Starting server on http://${
+        host === '0.0.0.0' ? 'localhost' : host
+      }:${port}`
+    )
   })
 }

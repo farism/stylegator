@@ -56,7 +56,7 @@ export default userConfig => {
   }
 
   return createConfig([
-    entryPoint(path.resolve(process.cwd(), srcDir, entry)),
+    entryPoint(['babel-polyfill', path.resolve(process.cwd(), srcDir, entry)]),
     match(['*.md'], [raw()]),
     match(['*.css'], [resolveUrl()]),
     match(['*.gif', '*.jpg', '*.jpeg', '*.png', '*.svg'], [file()]),
