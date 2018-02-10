@@ -1,9 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import * as R from 'ramda'
 
 import { getContext } from './'
 
-export default loader => title => {
+export default (loader, transform = R.identity) => title => {
   class PageLoader extends React.Component {
     constructor(props) {
       super(props)
@@ -12,9 +12,7 @@ export default loader => title => {
 
     componentDidMount() {
       loader()
-        .then(content => {
-          this.setState({ content })
-        })
+        .then(content => this.setState({ content: transform(content) }))
         .catch(e => {
           console.log('fail', e)
         })
@@ -26,10 +24,6 @@ export default loader => title => {
       return <Page {...{ title, content: this.state.content }} />
     }
   }
-
-  PageLoader.propTypes = {}
-
-  PageLoader.defaultProps = {}
 
   return getContext(PageLoader)
 }
