@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "df8943647d53ca3e0e1c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "809d5f8453e15c67634d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -89330,11 +89330,23 @@ var _react = __webpack_require__("../../node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__("../../node_modules/prop-types/index.js");
+var _ramda = __webpack_require__("../../node_modules/ramda/es/index.js");
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
+var R = _interopRequireWildcard(_ramda);
 
 var _ = __webpack_require__("../app/lib/utils/index.js");
+
+function _interopRequireWildcard(obj) {
+  if (obj && obj.__esModule) {
+    return obj;
+  } else {
+    var newObj = {};if (obj != null) {
+      for (var key in obj) {
+        if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key];
+      }
+    }newObj.default = obj;return newObj;
+  }
+}
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
@@ -89359,6 +89371,7 @@ function _inherits(subClass, superClass) {
 }
 
 exports.default = function (loader) {
+  var transform = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : R.identity;
   return function (title) {
     var PageLoader = function (_React$Component) {
       _inherits(PageLoader, _React$Component);
@@ -89378,7 +89391,7 @@ exports.default = function (loader) {
           var _this2 = this;
 
           loader().then(function (content) {
-            _this2.setState({ content: content });
+            return _this2.setState({ content: transform(content) });
           }).catch(function (e) {
             console.log('fail', e);
           });
@@ -89394,10 +89407,6 @@ exports.default = function (loader) {
 
       return PageLoader;
     }(_react2.default.Component);
-
-    PageLoader.propTypes = {};
-
-    PageLoader.defaultProps = {};
 
     return (0, _.getContext)(PageLoader);
   };
