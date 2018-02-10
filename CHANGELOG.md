@@ -1,4 +1,14 @@
 
+## v0.10.0 (2018-02-10)
+
+#### :nail_care: Enhancement
+* `app`
+  * [#94](https://github.com/farism/stylegator/pull/94) Support a transform fn on pageLoader. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.9.0 (2018-02-09)
 
 #### :books: Dependencies
