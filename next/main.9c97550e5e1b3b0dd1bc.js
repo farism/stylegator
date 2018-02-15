@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "809d5f8453e15c67634d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "9c97550e5e1b3b0dd1bc"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -736,7 +736,7 @@
 /******/ 		// start chunk loading
 /******/ 		var head = document.getElementsByTagName('head')[0];
 /******/ 		var script = document.createElement('script');
-/******/ 		script.type = 'text/javascript';
+/******/ 		script.type = "text/javascript";
 /******/ 		script.charset = 'utf-8';
 /******/ 		script.async = true;
 /******/ 		script.timeout = 120000;
@@ -11290,7 +11290,7 @@ module.exports = __webpack_require__("../../node_modules/core-js/modules/_core.j
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/index.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/index.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11305,7 +11305,7 @@ exports.push([module.i, "/*! normalize.css v7.0.0 | MIT License | github.com/nec
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Content/content.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Content/content.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11322,7 +11322,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Credits/credits.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Credits/credits.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11339,7 +11339,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Filter/filter.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Filter/filter.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11356,7 +11356,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Layout/layout.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Layout/layout.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11378,7 +11378,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/LiveMarkdown/liveMarkdown.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/LiveMarkdown/liveMarkdown.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11398,7 +11398,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Logo/logo.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Logo/logo.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11416,7 +11416,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Menu/menu.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Menu/menu.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11433,7 +11433,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/MenuIcon/menuIcon.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/MenuIcon/menuIcon.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11450,7 +11450,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/MenuLink/menuLink.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/MenuLink/menuLink.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11467,7 +11467,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/MenuList/menuList.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/MenuList/menuList.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11482,7 +11482,7 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Page/page.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Page/page.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11499,7 +11499,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/PageHeader/pageHeader.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/PageHeader/pageHeader.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11517,7 +11517,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Props/props.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Props/props.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11540,7 +11540,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Sidebar/sidebar.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Sidebar/sidebar.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11557,7 +11557,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/SidebarToggle/sidebarToggle.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/SidebarToggle/sidebarToggle.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11575,7 +11575,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/StaticMarkdown/staticMarkdown.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/StaticMarkdown/staticMarkdown.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11590,7 +11590,7 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!./src/partials/logo.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!./src/partials/logo.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -11608,7 +11608,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!./src/partials/pageHeader.scss":
+/***/ "../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!./src/partials/pageHeader.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../node_modules/css-loader/lib/css-base.js")(false);
@@ -86736,7 +86736,7 @@ function _interopRequireDefault(obj) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/index.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/index.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -86750,8 +86750,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/index.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/index.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/index.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/index.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -86807,7 +86807,7 @@ exports.default = Content;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Content/content.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Content/content.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -86821,8 +86821,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Content/content.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Content/content.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Content/content.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Content/content.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -86906,7 +86906,7 @@ exports.default = Credits;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Credits/credits.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Credits/credits.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -86920,8 +86920,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Credits/credits.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Credits/credits.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Credits/credits.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Credits/credits.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -87003,7 +87003,7 @@ exports.default = Filter;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Filter/filter.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Filter/filter.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -87017,8 +87017,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Filter/filter.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Filter/filter.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Filter/filter.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Filter/filter.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -87190,7 +87190,7 @@ exports.default = _Layout2.default;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Layout/layout.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Layout/layout.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -87204,8 +87204,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Layout/layout.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Layout/layout.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Layout/layout.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Layout/layout.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -87347,7 +87347,7 @@ exports.default = _LiveMarkdown2.default;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/LiveMarkdown/liveMarkdown.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/LiveMarkdown/liveMarkdown.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -87361,8 +87361,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/LiveMarkdown/liveMarkdown.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/LiveMarkdown/liveMarkdown.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/LiveMarkdown/liveMarkdown.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/LiveMarkdown/liveMarkdown.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -87456,7 +87456,7 @@ exports.default = _Logo2.default;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Logo/logo.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Logo/logo.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -87470,8 +87470,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Logo/logo.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Logo/logo.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Logo/logo.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Logo/logo.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -87566,7 +87566,7 @@ exports.default = _Menu2.default;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Menu/menu.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Menu/menu.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -87580,8 +87580,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Menu/menu.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Menu/menu.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Menu/menu.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Menu/menu.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -87657,7 +87657,7 @@ exports.default = _MenuIcon2.default;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/MenuIcon/menuIcon.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/MenuIcon/menuIcon.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -87671,8 +87671,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/MenuIcon/menuIcon.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/MenuIcon/menuIcon.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/MenuIcon/menuIcon.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/MenuIcon/menuIcon.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -87763,7 +87763,7 @@ exports.default = _MenuLink2.default;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/MenuLink/menuLink.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/MenuLink/menuLink.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -87777,8 +87777,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/MenuLink/menuLink.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/MenuLink/menuLink.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/MenuLink/menuLink.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/MenuLink/menuLink.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -87873,7 +87873,7 @@ exports.default = _MenuList2.default;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/MenuList/menuList.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/MenuList/menuList.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -87887,8 +87887,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/MenuList/menuList.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/MenuList/menuList.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/MenuList/menuList.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/MenuList/menuList.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -88013,7 +88013,7 @@ exports.default = _Page2.default;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Page/page.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Page/page.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -88027,8 +88027,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Page/page.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Page/page.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Page/page.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Page/page.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -88111,7 +88111,7 @@ exports.default = _PageHeader2.default;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/PageHeader/pageHeader.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/PageHeader/pageHeader.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -88125,8 +88125,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/PageHeader/pageHeader.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/PageHeader/pageHeader.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/PageHeader/pageHeader.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/PageHeader/pageHeader.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -88360,7 +88360,7 @@ exports.default = _Props2.default;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Props/props.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Props/props.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -88374,8 +88374,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Props/props.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Props/props.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Props/props.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Props/props.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -88524,7 +88524,7 @@ exports.default = _Sidebar2.default;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Sidebar/sidebar.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Sidebar/sidebar.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -88538,8 +88538,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Sidebar/sidebar.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/Sidebar/sidebar.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Sidebar/sidebar.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/Sidebar/sidebar.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -88618,7 +88618,7 @@ exports.default = _SidebarToggle2.default;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/SidebarToggle/sidebarToggle.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/SidebarToggle/sidebarToggle.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -88632,8 +88632,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/SidebarToggle/sidebarToggle.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/SidebarToggle/sidebarToggle.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/SidebarToggle/sidebarToggle.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/SidebarToggle/sidebarToggle.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -88729,7 +88729,7 @@ exports.default = _StaticMarkdown2.default;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/StaticMarkdown/staticMarkdown.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/StaticMarkdown/staticMarkdown.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -88743,8 +88743,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/StaticMarkdown/staticMarkdown.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!../app/lib/partials/StaticMarkdown/staticMarkdown.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/StaticMarkdown/staticMarkdown.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!../app/lib/partials/StaticMarkdown/staticMarkdown.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -89897,7 +89897,7 @@ exports.default = PageHeader;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!./src/partials/logo.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!./src/partials/logo.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -89911,8 +89911,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!./src/partials/logo.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!./src/partials/logo.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!./src/partials/logo.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!./src/partials/logo.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -89929,7 +89929,7 @@ if(true) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!./src/partials/pageHeader.scss");
+var content = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!./src/partials/pageHeader.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -89943,8 +89943,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!./src/partials/pageHeader.scss", function() {
-			var newContent = __webpack_require__("../../node_modules/css-loader/index.js?{\"modules\":true,\"importLoaders\":1,\"localIdentName\":\"[local]--[hash:base64:5]\",\"sourceMap\":false}!../../node_modules/sass-loader/lib/loader.js?{}!./src/partials/pageHeader.scss");
+		module.hot.accept("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!./src/partials/pageHeader.scss", function() {
+			var newContent = __webpack_require__("../../node_modules/css-loader/index.js??ref--4-1!../../node_modules/sass-loader/lib/loader.js??ref--4-2!./src/partials/pageHeader.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
