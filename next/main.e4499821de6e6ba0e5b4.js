@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9c97550e5e1b3b0dd1bc"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e4499821de6e6ba0e5b4"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -11364,7 +11364,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".layout--3ojSg {\n  height: 100%;\n  position: relative;\n  width: 100%; }\n  .layout--3ojSg .layout-content--1TI3g {\n    height: 100%;\n    margin-top: 0;\n    position: relative;\n    z-index: 1; }\n  .layout--3ojSg .layout-toggle--3YSEh {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 2; }\n  .layout--3ojSg .layout-scrim--34QTQ {\n    background: #000;\n    height: 100%;\n    left: -100%;\n    opacity: 0;\n    position: fixed;\n    top: 0;\n    width: 100%;\n    transition: 0.2s opacity;\n    z-index: 2; }\n  .layout--3ojSg .layout-sidebar--3B0IY {\n    height: 100%;\n    left: 0;\n    position: fixed;\n    top: 0;\n    transform: translateX(-250px);\n    width: 250px;\n    z-index: 3; }\n  .layout--3ojSg .layout-toggle--3YSEh,\n  .layout--3ojSg .layout-content--1TI3g,\n  .layout--3ojSg .layout-sidebar--3B0IY {\n    transition: 0.3s transform; }\n  .layout--3ojSg.open--1cLmN .layout-scrim--34QTQ {\n    left: 0;\n    opacity: 0.5; }\n  .layout--3ojSg.open--1cLmN .layout-sidebar--3B0IY {\n    transform: translateX(0); }\n  .layout--3ojSg.open--1cLmN .layout-content--1TI3g {\n    transform: translateX(250px); }\n\n@media only screen and (min-width: 768px) and (min-device-width: 768px) {\n  .layout--3ojSg .layout-content--1TI3g {\n    padding-left: 250px;\n    transform: translate(0) !important; }\n  .layout--3ojSg .layout-sidebar--3B0IY {\n    transform: translateX(0); } }\n", ""]);
+exports.push([module.i, ".layout--3ojSg {\n  height: 100%;\n  position: relative;\n  width: 100%; }\n  .layout--3ojSg .layout-content--1TI3g {\n    height: 100%;\n    margin-top: 0;\n    padding-left: 250px;\n    position: relative;\n    z-index: 1; }\n  .layout--3ojSg .layout-toggle--3YSEh {\n    position: absolute;\n    top: 0;\n    left: 0;\n    z-index: 2; }\n  .layout--3ojSg .layout-scrim--34QTQ {\n    background: #000;\n    height: 100%;\n    left: -100%;\n    opacity: 0;\n    position: fixed;\n    top: 0;\n    width: 100%;\n    transition: 0.2s opacity;\n    z-index: 2; }\n  .layout--3ojSg .layout-sidebar--3B0IY {\n    height: 100%;\n    left: 0;\n    position: fixed;\n    top: 0;\n    width: 250px;\n    z-index: 3; }\n  .layout--3ojSg .layout-toggle--3YSEh,\n  .layout--3ojSg .layout-content--1TI3g,\n  .layout--3ojSg .layout-sidebar--3B0IY {\n    transition: 0.3s transform; }\n  .layout--3ojSg.open--1cLmN .layout-scrim--34QTQ {\n    left: 0;\n    opacity: 0.5; }\n  .layout--3ojSg.open--1cLmN .layout-sidebar--3B0IY {\n    transform: translateX(0); }\n  .layout--3ojSg.open--1cLmN .layout-content--1TI3g {\n    transform: translateX(250px); }\n\n@media only screen and (min-width: 0px) and (max-width: 768px), (min-device-width: 0px) and (max-device-width: 768px) {\n  .layout--3ojSg .layout-content--1TI3g {\n    padding-left: 0; }\n  .layout--3ojSg .layout-sidebar--3B0IY {\n    transform: translateX(-250px); } }\n", ""]);
 
 // exports
 exports.locals = {
