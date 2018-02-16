@@ -8,6 +8,7 @@ $width: 250px;
   .layout-content {
     height: 100%;
     margin-top: 0;
+    padding-left: $width;
     position: relative;
     z-index: 1;
   }
@@ -36,7 +37,6 @@ $width: 250px;
     left: 0;
     position: fixed;
     top: 0;
-    transform: translateX(-$width);
     width: $width;
     z-index: 3;
   }
@@ -63,14 +63,14 @@ $width: 250px;
   }
 }
 
-@media only screen and (min-width: 768px) and (min-device-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 768px),
+  (min-device-width: 0px) and (max-device-width: 768px) {
   .layout {
     .layout-content {
-      padding-left: $width;
-      transform: translate(0) !important;
+      padding-left: 0;
     }
     .layout-sidebar {
-      transform: translateX(0);
+      transform: translateX(-$width);
     }
   }
 }
