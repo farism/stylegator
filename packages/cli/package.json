@@ -34,7 +34,7 @@
     "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1",
     "husky": "0.14.3",
-    "lint-staged": "6.1.0",
+    "lint-staged": "6.1.1",
     "prettier": "1.10.2",
     "rimraf": "2.6.2"
   }
