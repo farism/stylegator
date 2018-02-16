@@ -1,4 +1,21 @@
 
+## v0.10.1 (2018-02-16)
+
+#### :books: Dependencies
+* Other
+  * [#101](https://github.com/farism/stylegator/pull/101) Update dependency lerna to v2.9.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#99](https://github.com/farism/stylegator/pull/99) Update dependency execa-pro to v1.0.3. ([@renovate[bot]](https://github.com/apps/renovate))
+* `core`
+  * [#98](https://github.com/farism/stylegator/pull/98) Update dependency webpack to v3.11.0. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :house: Internal
+* `app`
+  * [#104](https://github.com/farism/stylegator/pull/104) Invert responsive media queries. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.10.0 (2018-02-10)
 
 #### :nail_care: Enhancement
