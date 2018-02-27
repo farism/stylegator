@@ -36,7 +36,7 @@
     "resolve-url-loader": "2.2.1",
     "webpack": "3.11.0",
     "webpack-blocks": "1.0.0-rc.2",
-    "webpack-dev-server": "2.11.1",
+    "webpack-dev-server": "3.1.0",
     "webpack-sources": "1.1.0"
   },
   "devDependencies": {
