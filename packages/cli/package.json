@@ -1,6 +1,6 @@
 {
   "name": "@stylegator/cli",
-  "version": "0.10.1",
+  "version": "0.10.2-rc.9",
   "description": "Stylegator CLI tool",
   "main": "lib/index.js",
   "repository": {
@@ -26,7 +26,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@stylegator/core": "^0.10.1"
+    "@stylegator/core": "^0.10.2-rc.9"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
@@ -34,8 +34,8 @@
     "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1",
     "husky": "0.14.3",
-    "lint-staged": "6.1.0",
-    "prettier": "1.10.2",
+    "lint-staged": "7.0.0",
+    "prettier": "1.11.0",
     "rimraf": "2.6.2"
   }
 }
