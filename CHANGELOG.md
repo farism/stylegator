@@ -1,4 +1,27 @@
 
+## v0.10.2 (2018-02-28)
+
+#### :bug: Bug Fix
+* `app`
+  * [#129](https://github.com/farism/stylegator/pull/129) Handle broken style prop in react-live. ([@farism](https://github.com/farism))
+
+#### :books: Dependencies
+* `app`, `cli`, `core`, `docs`
+  * [#123](https://github.com/farism/stylegator/pull/123) Update dependency prettier to v1.11.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#117](https://github.com/farism/stylegator/pull/117) Update dependency lint-staged to v7. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#111](https://github.com/farism/stylegator/pull/111) Update dependency lint-staged to v6.1.1. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`
+  * [#124](https://github.com/farism/stylegator/pull/124) Update dependency marked to v0.3.17. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#115](https://github.com/farism/stylegator/pull/115) Update dependency marked to v0.3.16. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#112](https://github.com/farism/stylegator/pull/112) Update dependency marked to v0.3.15. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#109](https://github.com/farism/stylegator/pull/109) Update dependency marked to v0.3.14. ([@renovate[bot]](https://github.com/apps/renovate))
+* `core`
+  * [#118](https://github.com/farism/stylegator/pull/118) Update dependency copy-webpack-plugin to v4.4.2. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.10.1 (2018-02-16)
 
 #### :books: Dependencies
