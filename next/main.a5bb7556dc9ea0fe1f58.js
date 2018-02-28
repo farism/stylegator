@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "59413a5b3d7f9656af9f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a5bb7556dc9ea0fe1f58"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -87337,6 +87337,10 @@ function _inherits(subClass, superClass) {
   }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 }
 
+var fixStyleProps = function fixStyleProps(content) {
+  return content.replace(/style(?!=\{)/g, 'style={{}}');
+};
+
 var LiveMarkdown = function (_React$Component) {
   _inherits(LiveMarkdown, _React$Component);
 
@@ -87345,17 +87349,29 @@ var LiveMarkdown = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (LiveMarkdown.__proto__ || Object.getPrototypeOf(LiveMarkdown)).call(this, props));
 
-    _this.state = { expanded: false };
+    _this.state = {
+      expanded: false,
+      content: props.content,
+      contentEditing: props.content
+    };
     return _this;
   }
 
   _createClass(LiveMarkdown, [{
+    key: 'componentDidCatch',
+    value: function componentDidCatch(error, info) {
+      this.setState({
+        content: fixStyleProps(this.state.contentEditing)
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
 
-      var content = this.props.content;
-      var expanded = this.state.expanded;
+      var _state = this.state,
+          content = _state.content,
+          expanded = _state.expanded;
 
       return _react2.default.createElement('div', { className: _liveMarkdown2.default['live-markdown'] }, _react2.default.createElement(_reactLive.LiveProvider, { code: content }, _react2.default.createElement('div', {
         className: _liveMarkdown2.default['live-markdown-editor-toggle'],
@@ -87363,7 +87379,11 @@ var LiveMarkdown = function (_React$Component) {
           return _this2.setState({ expanded: !expanded });
         },
         title: expanded ? 'Hide Code' : 'Show Code'
-      }, expanded ? '</>' : '< >'), _react2.default.createElement('div', { className: _liveMarkdown2.default['live-markdown-preview'] }, _react2.default.createElement(_reactLive.LivePreview, null)), expanded && _react2.default.createElement('div', { className: _liveMarkdown2.default['live-markdown-editor'] }, _react2.default.createElement(_reactLive.LiveEditor, null)), _react2.default.createElement(_reactLive.LiveError, null)));
+      }, expanded ? '</>' : '< >'), _react2.default.createElement('div', { className: _liveMarkdown2.default['live-markdown-preview'] }, _react2.default.createElement(_reactLive.LivePreview, null)), expanded && _react2.default.createElement('div', { className: _liveMarkdown2.default['live-markdown-editor'] }, _react2.default.createElement(_reactLive.LiveEditor, {
+        onChange: function onChange(contentEditing) {
+          return _this2.setState({ contentEditing: contentEditing });
+        }
+      })), _react2.default.createElement(_reactLive.LiveError, null)));
     }
   }]);
 
