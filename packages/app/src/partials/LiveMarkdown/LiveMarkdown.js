@@ -4,15 +4,27 @@ import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
 
 import styles from './liveMarkdown.scss'
 
+const fixStyleProps = content => content.replace(/style(?!=\{)/g, 'style={{}}')
+
 class LiveMarkdown extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { expanded: false }
+
+    this.state = {
+      expanded: false,
+      content: props.content,
+      contentEditing: props.content,
+    }
+  }
+
+  componentDidCatch(error, info) {
+    this.setState({
+      content: fixStyleProps(this.state.contentEditing),
+    })
   }
 
   render() {
-    const { content } = this.props
-    const { expanded } = this.state
+    const { content, expanded } = this.state
 
     return (
       <div className={styles['live-markdown']}>
@@ -31,7 +43,9 @@ class LiveMarkdown extends React.Component {
           </div>
           {expanded && (
             <div className={styles['live-markdown-editor']}>
-              <LiveEditor />
+              <LiveEditor
+                onChange={contentEditing => this.setState({ contentEditing })}
+              />
             </div>
           )}
           <LiveError />
