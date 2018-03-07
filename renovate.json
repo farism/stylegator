@@ -1,5 +1,5 @@
 {
   "extends": ["config:base"],
   "labels": ["Tag: Dependencies"],
-  "nvm": { "enabled": true }
+  "nvm": { "enabled": false }
 }
