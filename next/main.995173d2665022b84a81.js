@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "6e5f8b40276c77b5959c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "995173d2665022b84a81"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -52370,7 +52370,7 @@ var getComponentPropTypes = function getComponentPropTypes(props) {
 
 var getComponentDefaultProps = function getComponentDefaultProps(props) {
   return Object.keys(props).reduce(function (acc, key) {
-    return Object.assign({}, acc, _defineProperty({}, key, props[key].default));
+    return Object.assign({}, acc, _defineProperty({}, key, props[key].type.name === 'shape' ? getComponentDefaultProps(props[key].props) : props[key].default));
   }, {});
 };
 
@@ -52561,7 +52561,8 @@ var shape = function shape(props) {
       },
       req: function req() {
         return PropTypes.shape(getComponentPropTypes(props)).isRequired;
-      }
+      },
+      default: {}
     }
   };
 };
