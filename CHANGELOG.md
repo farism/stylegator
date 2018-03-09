@@ -1,4 +1,33 @@
 
+## v0.10.3 (2018-03-09)
+
+#### :books: Dependencies
+* `core`
+  * [#154](https://github.com/farism/stylegator/pull/154) Update dependency copy-webpack-plugin to v4.5.1. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#146](https://github.com/farism/stylegator/pull/146) Update dependency html-webpack-plugin to v3.0.6. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#143](https://github.com/farism/stylegator/pull/143) Update dependency resolve-url-loader to v2.3.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#140](https://github.com/farism/stylegator/pull/140) Update dependency copy-webpack-plugin to v4.5.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#139](https://github.com/farism/stylegator/pull/139) Update dependency html-webpack-plugin to v3.0.4. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#134](https://github.com/farism/stylegator/pull/134) Update dependency html-webpack-plugin to v3. ([@renovate[bot]](https://github.com/apps/renovate))
+* `docs`
+  * [#147](https://github.com/farism/stylegator/pull/147) Update dependency prop-types-docs to v0.1.4. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`, `cli`, `core`, `docs`
+  * [#135](https://github.com/farism/stylegator/pull/135) Update dependency prettier to v1.11.1. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`
+  * [#133](https://github.com/farism/stylegator/pull/133) Update dependency react-live to v1.10.1. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :house: Internal
+* `app`
+  * [#155](https://github.com/farism/stylegator/pull/155) Remove height 100 from app containers. ([@remyyounes](https://github.com/remyyounes))
+* Other
+  * [#152](https://github.com/farism/stylegator/pull/152) Actually disable renovate on nvm. ([@farism](https://github.com/farism))
+  * [#150](https://github.com/farism/stylegator/pull/150) disable nvmrc. ([@farism](https://github.com/farism))
+
+#### Committers: 2
+- Faris Mustafa ([farism](https://github.com/farism))
+- Remy Younes ([remyyounes](https://github.com/remyyounes))
+
+
 ## v0.10.2 (2018-02-28)
 
 #### :bug: Bug Fix
