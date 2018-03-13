@@ -46,6 +46,11 @@ const sections = [
         title: 'The Appendix',
         loader: pageLoader(() => import('./sections/guides/appendix.md')),
       },
+      {
+        title: 'Hidden Page',
+        loader: () => () => <div />,
+        hidden: true,
+      },
     ],
   },
   {
