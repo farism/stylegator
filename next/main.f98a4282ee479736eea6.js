@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1de8761976d4e637e31d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "f98a4282ee479736eea6"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -90217,11 +90217,12 @@ var LiveMarkdown = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
+      var attributes = this.props.attributes;
       var _state = this.state,
           content = _state.content,
           expanded = _state.expanded;
 
-      return _react2.default.createElement('div', { className: _liveMarkdown2.default['live-markdown'] }, _react2.default.createElement(_reactLive.LiveProvider, { code: content }, _react2.default.createElement('div', {
+      return _react2.default.createElement('div', { className: _liveMarkdown2.default['live-markdown'] }, _react2.default.createElement(_reactLive.LiveProvider, { code: content }, attributes.interactive === 'true' && _react2.default.createElement('div', {
         className: _liveMarkdown2.default['live-markdown-editor-toggle'],
         onClick: function onClick() {
           return _this2.setState({ expanded: !expanded });
@@ -90239,10 +90240,16 @@ var LiveMarkdown = function (_React$Component) {
 }(_react2.default.Component);
 
 LiveMarkdown.propTypes = {
+  attributes: _propTypes2.default.shape({
+    interactive: _propTypes2.default.string
+  }),
   content: _propTypes2.default.string
 };
 
 LiveMarkdown.defaultProps = {
+  attributes: {
+    interactive: 'true'
+  },
   content: ''
 };
 
@@ -90756,7 +90763,7 @@ var MenuList = function MenuList(_ref) {
   var MenuLink = partials.MenuLink;
 
   return _react2.default.createElement('ul', null, filteredSections.map(function (section, i) {
-    return _react2.default.createElement('li', { key: i }, _react2.default.createElement(MenuLink, { depth: depth, section: section }), (0, _utils.inPath)(section.path) && section.sections ? _react2.default.createElement(MenuList, {
+    return !section.hidden && _react2.default.createElement('li', { key: i }, _react2.default.createElement(MenuLink, { depth: depth, section: section }), (0, _utils.inPath)(section.path) && section.sections ? _react2.default.createElement(MenuList, {
       depth: depth + 1,
       filteredSections: section.sections,
       partials: partials
@@ -90866,25 +90873,29 @@ var getPageSection = function getPageSection(partials, section) {
       Props = partials.Props;
 
   var tag = section.match(/\{([a-zA-Z]*)\}/);
-  var content = section.replace(/\{[a-zA-Z]*\}/, '');
+  var contentWithoutTag = section.replace(/\{[a-zA-Z]*\}/, '');
 
   if (tag) {
     tag = tag[1];
 
     switch (tag) {
       case 'code':
-        return _react2.default.createElement(LiveMarkdown, { content: content });
+        var arr = contentWithoutTag.split('---');
+        var content = arr.length === 2 ? arr[1] : arr[0];
+        var attrs = arr.length === 2 ? (0, _utils.getAttributes)(arr[0]) : undefined;
+
+        return _react2.default.createElement(LiveMarkdown, { content: content, attributes: attrs });
       case 'props':
-        var attributes = (0, _utils.getAttributes)(content);
+        var attributes = (0, _utils.getAttributes)(contentWithoutTag);
         var props = (0, _utils.getGlobalComponent)(attributes.component).propInfo;
 
         return _react2.default.createElement(Props, { props: props });
       default:
-        return _react2.default.createElement(StaticMarkdown, { content: '```' + tag + '\n' + content + '```' });
+        return _react2.default.createElement(StaticMarkdown, { content: '```' + tag + '\n' + contentWithoutTag + '```' });
     }
   }
 
-  return _react2.default.createElement(StaticMarkdown, { content: content });
+  return _react2.default.createElement(StaticMarkdown, { content: contentWithoutTag });
 };
 
 var Page = function Page(_ref) {
@@ -91963,6 +91974,22 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _ramda = __webpack_require__("../../node_modules/ramda/es/index.js");
+
+var R = _interopRequireWildcard(_ramda);
+
+function _interopRequireWildcard(obj) {
+  if (obj && obj.__esModule) {
+    return obj;
+  } else {
+    var newObj = {};if (obj != null) {
+      for (var key in obj) {
+        if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key];
+      }
+    }newObj.default = obj;return newObj;
+  }
+}
+
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });
@@ -91971,15 +91998,9 @@ function _defineProperty(obj, key, value) {
   }return obj;
 }
 
-exports.default = function (content) {
-  return content.split('\n').filter(function (attr) {
-    return attr.trim();
-  }).map(function (attr) {
-    return attr.split(':');
-  }).reduce(function (acc, attr) {
-    return Object.assign({}, acc, _defineProperty({}, attr[0].trim(), attr[1].trim()));
-  }, {});
-};
+exports.default = R.pipe(R.split('\n'), R.filter(R.trim), R.map(R.split(':')), R.reduce(function (acc, attr) {
+  return Object.assign({}, acc, _defineProperty({}, attr[0].trim(), attr[1] ? attr[1].trim() : ''));
+}, {}));
 
 /***/ }),
 
@@ -92682,6 +92703,14 @@ var sections = [{
     loader: (0, _stylegator.pageLoader)(function () {
       return __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, "./src/sections/guides/appendix.md"));
     })
+  }, {
+    title: 'Hidden Page',
+    loader: function loader() {
+      return function () {
+        return _react2.default.createElement('div', null);
+      };
+    },
+    hidden: true
   }]
 }, {
   title: 'Appendix',
