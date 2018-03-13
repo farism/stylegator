@@ -9,29 +9,33 @@ const getPageSection = (partials, section) => {
   const { StaticMarkdown, LiveMarkdown, Props } = partials
 
   let tag = section.match(/\{([a-zA-Z]*)\}/)
-  const content = section.replace(/\{[a-zA-Z]*\}/, '')
-  const attributes = getAttributes(content)
-
-  console.log(attributes)
+  const contentWithoutTag = section.replace(/\{[a-zA-Z]*\}/, '')
 
   if (tag) {
     tag = tag[1]
 
     switch (tag) {
       case 'code':
-        return <LiveMarkdown {...{ content }} />
+        const arr = contentWithoutTag.split('---')
+        const content = arr.length === 2 ? arr[1] : arr[0]
+        const attrs = arr.length === 2 ? getAttributes(arr[0]) : undefined
+
+        return <LiveMarkdown {...{ content, attributes: attrs }} />
       case 'props':
+        const attributes = getAttributes(contentWithoutTag)
         const props = getGlobalComponent(attributes.component).propInfo
 
         return <Props {...{ props }} />
       default:
         return (
-          <StaticMarkdown {...{ content: `\`\`\`${tag}\n${content}\`\`\`` }} />
+          <StaticMarkdown
+            {...{ content: `\`\`\`${tag}\n${contentWithoutTag}\`\`\`` }}
+          />
         )
     }
   }
 
-  return <StaticMarkdown {...{ content }} />
+  return <StaticMarkdown {...{ content: contentWithoutTag }} />
 }
 
 const Page = ({ content, title, partials }) => {
