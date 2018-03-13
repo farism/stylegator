@@ -24,20 +24,23 @@ class LiveMarkdown extends React.Component {
   }
 
   render() {
+    const { attributes } = this.props
     const { content, expanded } = this.state
 
     return (
       <div className={styles['live-markdown']}>
         <LiveProvider code={content}>
-          <div
-            {...{
-              className: styles['live-markdown-editor-toggle'],
-              onClick: () => this.setState({ expanded: !expanded }),
-              title: expanded ? 'Hide Code' : 'Show Code',
-            }}
-          >
-            {expanded ? '</>' : '< >'}
-          </div>
+          {attributes.interactive === 'true' && (
+            <div
+              {...{
+                className: styles['live-markdown-editor-toggle'],
+                onClick: () => this.setState({ expanded: !expanded }),
+                title: expanded ? 'Hide Code' : 'Show Code',
+              }}
+            >
+              {expanded ? '</>' : '< >'}
+            </div>
+          )}
           <div className={styles['live-markdown-preview']}>
             <LivePreview />
           </div>
@@ -56,10 +59,16 @@ class LiveMarkdown extends React.Component {
 }
 
 LiveMarkdown.propTypes = {
+  attributes: PropTypes.shape({
+    interactive: PropTypes.string,
+  }),
   content: PropTypes.string,
 }
 
 LiveMarkdown.defaultProps = {
+  attributes: {
+    interactive: 'true',
+  },
   content: '',
 }
 

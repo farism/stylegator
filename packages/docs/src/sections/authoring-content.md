@@ -38,3 +38,22 @@ This will create a sandbox for a viewer to play with:
 ```code
 <button>a button</button>
 ```
+
+## Non-interactive code samples
+
+A non-interactive code sample can be created by using the `code` directive with an `interactive: false` attribute:
+
+
+    ```code
+    interactive: false
+    ---
+    <button>a button</button>
+    ```
+
+This will create a sandbox for a viewer to play with:
+
+```code
+interactive: false
+---
+<button>a button</button>
+```

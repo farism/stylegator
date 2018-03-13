@@ -11,18 +11,20 @@ const MenuList = ({ depth, partials, sections, filteredSections }) => {
     <ul>
       {filteredSections.map((section, i) => {
         return (
-          <li key={i}>
-            <MenuLink {...{ depth, section }} />
-            {inPath(section.path) && section.sections ? (
-              <MenuList
-                {...{
-                  depth: depth + 1,
-                  filteredSections: section.sections,
-                  partials,
-                }}
-              />
-            ) : null}
-          </li>
+          !section.hidden && (
+            <li key={i}>
+              <MenuLink {...{ depth, section }} />
+              {inPath(section.path) && section.sections ? (
+                <MenuList
+                  {...{
+                    depth: depth + 1,
+                    filteredSections: section.sections,
+                    partials,
+                  }}
+                />
+              ) : null}
+            </li>
+          )
         )
       })}
     </ul>
