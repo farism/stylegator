@@ -10,6 +10,9 @@ const getPageSection = (partials, section) => {
 
   let tag = section.match(/\{([a-zA-Z]*)\}/)
   const content = section.replace(/\{[a-zA-Z]*\}/, '')
+  const attributes = getAttributes(content)
+
+  console.log(attributes)
 
   if (tag) {
     tag = tag[1]
@@ -18,7 +21,6 @@ const getPageSection = (partials, section) => {
       case 'code':
         return <LiveMarkdown {...{ content }} />
       case 'props':
-        const attributes = getAttributes(content)
         const props = getGlobalComponent(attributes.component).propInfo
 
         return <Props {...{ props }} />
