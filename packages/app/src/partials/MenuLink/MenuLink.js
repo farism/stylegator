@@ -21,7 +21,7 @@ const MenuLink = ({
       }}
     >
       <MenuIcon {...{ section }} />
-      <span dangerouslySetInnerHTML={{ __html: section.title }} />
+      <div dangerouslySetInnerHTML={{ __html: section.title }} />
     </NavLink>
   )
 }
