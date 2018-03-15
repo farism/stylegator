@@ -1,4 +1,15 @@
 
+## v0.11.1 (2018-03-15)
+
+#### :house: Internal
+* `app`
+  * [#164](https://github.com/farism/stylegator/pull/164) google font import is now https. ([@troy-halpin](https://github.com/troy-halpin))
+
+#### Committers: 2
+- Faris Mustafa ([farism](https://github.com/farism))
+- Troy Halpin ([troy-halpin](https://github.com/troy-halpin))
+
+
 ## v0.11.0 (2018-03-13)
 
 #### :nail_care: Enhancement
