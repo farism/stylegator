@@ -1,4 +1,14 @@
 
+## v0.11.2 (2018-03-27)
+
+#### :books: Dependencies
+* `core`
+  * [#168](https://github.com/farism/stylegator/pull/168) Update dependency html-webpack-plugin to v3.1.0. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.11.1 (2018-03-15)
 
 #### :house: Internal
