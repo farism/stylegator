@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:9.4-stretch
+      - image: circleci/node:9.4-stretch@sha256:a7185e5ff3093e3933f922a7e9c3211f69cd91943341a4153122055b74f5e323
     steps:
       - checkout
       - run:
