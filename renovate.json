@@ -1,5 +1,5 @@
 {
-  "extends": ["config:base"],
+  "extends": ["config:base", "docker:disable", "default:pinDigestsDisabled"],
   "labels": ["Tag: Dependencies"],
   "nvm": { "enabled": false }
 }

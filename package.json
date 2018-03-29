@@ -4,7 +4,7 @@
     "execa-pro": "1.0.3",
     "husky": "0.14.3",
     "lerna": "2.9.0",
-    "lerna-git-flow-deploy": "0.5.2"
+    "lerna-git-flow-deploy": "0.5.3"
   },
   "scripts": {
     "build": "lerna run --no-parallel build",
