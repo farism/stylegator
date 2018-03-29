@@ -1,4 +1,24 @@
 
+## v0.11.3 (2018-03-29)
+
+#### :books: Dependencies
+* Other
+  * [#187](https://github.com/farism/stylegator/pull/187) Update dependency lerna-git-flow-deploy to v0.5.3. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`
+  * [#183](https://github.com/farism/stylegator/pull/183) Update react monorepo packages to v16.3.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#169](https://github.com/farism/stylegator/pull/169) Update dependency marked to v0.3.19. ([@renovate[bot]](https://github.com/apps/renovate))
+* `core`
+  * [#182](https://github.com/farism/stylegator/pull/182) Update dependency webpack-blocks to v1.0.0. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :house: Internal
+* [#179](https://github.com/farism/stylegator/pull/179) Disable docker digest. ([@farism](https://github.com/farism))
+* [#176](https://github.com/farism/stylegator/pull/176) Disable docker renovate. ([@farism](https://github.com/farism))
+
+#### Committers: 2
+- Danny Phillips ([dannyphillips](https://github.com/dannyphillips))
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.11.2 (2018-03-27)
 
 #### :books: Dependencies
