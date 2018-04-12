@@ -26,9 +26,11 @@ class LiveMarkdown extends React.Component {
   render() {
     const { attributes } = this.props
     const { content, expanded } = this.state
-
     return (
       <div className={styles['live-markdown']}>
+        <div className={styles['tab']}>Tabs</div>
+        <div className={styles['tab']}>Tabs</div>
+        <div className={styles['tab']}>Tabs</div>
         <LiveProvider code={content}>
           {attributes.interactive === 'true' && (
             <div
