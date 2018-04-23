@@ -18,7 +18,7 @@
     "build:404": "cp src/404.html build/404.html",
     "build:stylegator": "NODE_ENV=production stylegator build",
     "clean": "rimraf build",
-    "docs": "stylegator dev",
+    "dev": "stylegator dev",
     "lint-staged": "lint-staged",
     "pretty": "prettier --write --no-semi --single-quote --trailing-comma es5",
     "test": "jest"
