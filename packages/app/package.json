@@ -1,6 +1,6 @@
 {
   "name": "@stylegator/app",
-  "version": "0.11.3",
+  "version": "0.11.4-rc.5",
   "description": "styleguide static generator for html and js",
   "main": "lib/index.js",
   "repository": {
@@ -27,11 +27,11 @@
     "highlight.js": "9.12.0",
     "marked": "0.3.19",
     "ramda": "^0.25.0",
-    "react": "16.3.0",
-    "react-dom": "16.3.0",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
     "react-live": "1.10.1",
     "react-router-dom": "4.2.2",
-    "recompose": "^0.26.0",
+    "recompose": "^0.27.0",
     "slugify": "1.2.9"
   },
   "devDependencies": {
@@ -41,8 +41,8 @@
     "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1",
     "husky": "0.14.3",
-    "lint-staged": "7.0.0",
-    "prettier": "1.11.1",
+    "lint-staged": "7.0.4",
+    "prettier": "1.12.1",
     "rimraf": "2.6.2"
   }
 }
