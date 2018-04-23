@@ -12,23 +12,16 @@ import {
   useCustomPartials,
 } from './utils'
 
-const Stylegator = ({ basename, logo, partials, sections, router }) => {
+const Stylegator = ({ basename, logo, partials, sections, browserRouter }) => {
   const { Layout } = partials
-
-  if (router === 'browser') {
-    ;<BrowserRouter {...{ basename }}>
-      <Switch>
-        <Layout {...{ logo }}>{buildRoutes(setSlugs(sections))}</Layout>
-      </Switch>
-    </BrowserRouter>
-  }
+  const RouterComponent = browserRouter ? BrowserRouter : HashRouter
 
   return (
-    <HashRouter {...{ basename }}>
+    <RouterComponent {...{ basename }}>
       <Switch>
         <Layout {...{ logo }}>{buildRoutes(setSlugs(sections))}</Layout>
       </Switch>
-    </HashRouter>
+    </RouterComponent>
   )
 }
 
@@ -39,7 +32,7 @@ Stylegator.propTypes = {
   partials: partialsPropTypes,
   sections: PropTypes.array,
   theme: PropTypes.shape({}),
-  router: PropTypes.string,
+  browserRouter: PropTypes.bool,
 }
 
 Stylegator.defaultProps = {
@@ -47,7 +40,7 @@ Stylegator.defaultProps = {
   partials: useCustomPartials(),
   sections: [],
   theme: {},
-  router: 'hash',
+  browserRouter: false,
 }
 
 export default withContext(
@@ -62,7 +55,7 @@ export default withContext(
     partials = useCustomPartials(),
     sections = [],
     theme = {},
-    router = 'hash',
+    browserRouter = false,
   }) => ({
     components: makeGlobal(components),
     partials,
