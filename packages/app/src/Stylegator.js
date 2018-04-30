@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
-import { HashRouter, Switch } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Switch } from 'react-router-dom'
 import { withContext } from 'recompose'
 
 import {
@@ -12,15 +12,16 @@ import {
   useCustomPartials,
 } from './utils'
 
-const Stylegator = ({ basename, logo, partials, sections }) => {
+const Stylegator = ({ basename, logo, partials, sections, browserRouter }) => {
   const { Layout } = partials
+  const RouterComponent = browserRouter ? BrowserRouter : HashRouter
 
   return (
-    <HashRouter {...{ basename }}>
+    <RouterComponent {...{ basename }}>
       <Switch>
         <Layout {...{ logo }}>{buildRoutes(setSlugs(sections))}</Layout>
       </Switch>
-    </HashRouter>
+    </RouterComponent>
   )
 }
 
@@ -31,6 +32,7 @@ Stylegator.propTypes = {
   partials: partialsPropTypes,
   sections: PropTypes.array,
   theme: PropTypes.shape({}),
+  browserRouter: PropTypes.bool,
 }
 
 Stylegator.defaultProps = {
@@ -38,6 +40,7 @@ Stylegator.defaultProps = {
   partials: useCustomPartials(),
   sections: [],
   theme: {},
+  browserRouter: false,
 }
 
 export default withContext(
@@ -52,6 +55,7 @@ export default withContext(
     partials = useCustomPartials(),
     sections = [],
     theme = {},
+    browserRouter = false,
   }) => ({
     components: makeGlobal(components),
     partials,
