@@ -25,7 +25,7 @@ const Icon = () => (
 
 const Filter = ({ onInput }) => (
   <div className={styles['filter']}>
-    <input {...{ onInput, placeholder: 'Filter' }} />
+    <input {...{ onInput, placeholder: 'Search' }} />
     <Icon />
   </div>
 )
