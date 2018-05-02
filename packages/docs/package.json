@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@stylegator/docs",
-  "version": "0.11.3",
+  "version": "0.12.0-rc.0",
   "description": "Stylegator main package",
   "main": "lib/index.js",
   "repository": {
@@ -18,19 +18,19 @@
     "build:404": "cp src/404.html build/404.html",
     "build:stylegator": "NODE_ENV=production stylegator build",
     "clean": "rimraf build",
-    "docs": "stylegator dev",
+    "dev": "stylegator dev",
     "lint-staged": "lint-staged",
     "pretty": "prettier --write --no-semi --single-quote --trailing-comma es5",
     "test": "jest"
   },
   "dependencies": {
     "prop-types-docs": "0.1.4",
-    "stylegator": "^0.11.3"
+    "stylegator": "^0.12.0-rc.0"
   },
   "devDependencies": {
     "husky": "0.14.3",
-    "lint-staged": "7.0.0",
-    "prettier": "1.11.1",
+    "lint-staged": "7.0.5",
+    "prettier": "1.12.1",
     "rimraf": "2.6.2"
   }
 }
