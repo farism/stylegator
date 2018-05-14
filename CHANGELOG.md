@@ -1,4 +1,40 @@
 
+## v0.12.0 (2018-05-02)
+
+#### :bug: Bug Fix
+* [#216](https://github.com/farism/stylegator/pull/216) Stop deleting latest on gh_pages. ([@farism](https://github.com/farism))
+
+#### :books: Dependencies
+* `app`, `cli`, `core`, `docs`
+  * [#209](https://github.com/farism/stylegator/pull/209) Update dependency lint-staged to v7.0.5. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#198](https://github.com/farism/stylegator/pull/198) Update dependency prettier to v1.12.1. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#195](https://github.com/farism/stylegator/pull/195) Update dependency lint-staged to v7.0.4. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#191](https://github.com/farism/stylegator/pull/191) Update dependency lint-staged to v7.0.2. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`, `cli`, `core`, `stylegator`
+  * [#210](https://github.com/farism/stylegator/pull/210) Update dependency babel-core to v6.26.3. ([@renovate[bot]](https://github.com/apps/renovate))
+* Other
+  * [#208](https://github.com/farism/stylegator/pull/208) Update dependency lerna to v2.11.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#197](https://github.com/farism/stylegator/pull/197) Update dependency lerna to v2.10.2. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#190](https://github.com/farism/stylegator/pull/190) Update dependency lerna to v2.9.1. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`
+  * [#199](https://github.com/farism/stylegator/pull/199) Update dependency recompose to ^0.27.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#196](https://github.com/farism/stylegator/pull/196) Update react monorepo to v16.3.2. ([@renovate[bot]](https://github.com/apps/renovate))
+* `core`
+  * [#194](https://github.com/farism/stylegator/pull/194) Update dependency html-webpack-plugin to v3.2.0. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :nail_care: Enhancement
+* `app`
+  * [#207](https://github.com/farism/stylegator/pull/207) Update routing options. ([@danpatnate](https://github.com/danpatnate))
+
+#### :house: Internal
+* [#216](https://github.com/farism/stylegator/pull/216) Stop deleting latest on gh_pages. ([@farism](https://github.com/farism))
+
+#### Committers: 3
+- Dan Nate ([danpatnate](https://github.com/danpatnate))
+- Danny Phillips ([dannyphillips](https://github.com/dannyphillips))
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.11.3 (2018-03-29)
 
 #### :books: Dependencies
