@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "eee68151f5fa6fa147dd"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "f749f714dd524dd82f97"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -54756,7 +54756,8 @@ var getComponentPropTypes = function getComponentPropTypes(props) {
 
 var getComponentDefaultProps = function getComponentDefaultProps(props) {
   return Object.keys(props).reduce(function (acc, key) {
-    return Object.assign({}, acc, _defineProperty({}, key, props[key].type.name === 'shape' ? getComponentDefaultProps(props[key].props) : props[key].default));
+    var defaultProp = props[key].type.name === 'shape' ? getComponentDefaultProps(props[key].props) : props[key].default;
+    return defaultProp === undefined ? acc : Object.assign({}, acc, _defineProperty({}, key, defaultProp));
   }, {});
 };
 
