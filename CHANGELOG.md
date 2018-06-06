@@ -1,4 +1,30 @@
 
+## v0.13.0 (2018-06-06)
+
+#### :books: Dependencies
+* `docs`
+  * [#240](https://github.com/farism/stylegator/pull/240) Update dependency prop-types-docs to v0.2.1. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#228](https://github.com/farism/stylegator/pull/228) Update dependency prop-types-docs to v0.1.5. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`, `cli`, `core`, `docs`
+  * [#233](https://github.com/farism/stylegator/pull/233) Update dependency prettier to v1.13.4. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#237](https://github.com/farism/stylegator/pull/237) Update dependency lint-staged to v7.1.3. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#230](https://github.com/farism/stylegator/pull/230) Update dependency lint-staged to v7.1.2. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#219](https://github.com/farism/stylegator/pull/219) Update dependency lint-staged to v7.1.0. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`
+  * [#231](https://github.com/farism/stylegator/pull/231) Update dependency marked to v0.4.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#232](https://github.com/farism/stylegator/pull/232) Update react monorepo to v16.4.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#222](https://github.com/farism/stylegator/pull/222) Update dependency slugify to v1.3.0. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`, `cli`, `core`, `stylegator`
+  * [#220](https://github.com/farism/stylegator/pull/220) Update dependency babel-preset-env to v1.7.0. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :nail_care: Enhancement
+* `app`
+  * [#241](https://github.com/farism/stylegator/pull/241) Set overflow-x: auto on prism code samples. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.12.0 (2018-05-02)
 
 #### :bug: Bug Fix
