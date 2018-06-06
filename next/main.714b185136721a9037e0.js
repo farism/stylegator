@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a302c6d83793c9d19859"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "714b185136721a9037e0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -29291,7 +29291,7 @@ exports = module.exports = __webpack_require__("../../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, ".live-markdown--1mSuP {\n  margin-bottom: 46px;\n  position: relative; }\n\n.live-markdown-preview--nr4Hf {\n  border: 1px solid #d9d9d9;\n  padding: 15px; }\n\n.live-markdown-editor--27ePV {\n  position: relative; }\n  .live-markdown-editor--27ePV .prism-code {\n    padding: 15px; }\n\n.live-markdown-editor-toggle--1mZg6 {\n  align-items: center;\n  border-width: 0 1px 1px 1px;\n  border-color: #d9d9d9;\n  border-style: solid;\n  box-sizing: border-box;\n  cursor: pointer;\n  display: flex;\n  height: 30px;\n  padding: 0 10px;\n  position: absolute;\n  top: 100%;\n  transition: 0.2s;\n  right: 0; }\n  .live-markdown-editor-toggle--1mZg6:hover {\n    background: #efefef; }\n", ""]);
+exports.push([module.i, ".live-markdown--1mSuP {\n  margin-bottom: 46px;\n  position: relative; }\n\n.live-markdown-preview--nr4Hf {\n  border: 1px solid #d9d9d9;\n  padding: 15px; }\n\n.live-markdown-editor--27ePV {\n  position: relative; }\n  .live-markdown-editor--27ePV .prism-code {\n    padding: 15px;\n    overflow-x: auto; }\n\n.live-markdown-editor-toggle--1mZg6 {\n  align-items: center;\n  border-width: 0 1px 1px 1px;\n  border-color: #d9d9d9;\n  border-style: solid;\n  box-sizing: border-box;\n  cursor: pointer;\n  display: flex;\n  height: 30px;\n  padding: 0 10px;\n  position: absolute;\n  top: 100%;\n  transition: 0.2s;\n  right: 0; }\n  .live-markdown-editor-toggle--1mZg6:hover {\n    background: #efefef; }\n", ""]);
 
 // exports
 exports.locals = {
