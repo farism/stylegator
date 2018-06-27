@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@stylegator/docs",
-  "version": "0.13.1-rc.8",
+  "version": "0.13.1",
   "description": "Stylegator main package",
   "main": "lib/index.js",
   "repository": {
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "prop-types-docs": "0.2.1",
-    "stylegator": "^0.13.1-rc.8"
+    "stylegator": "^0.13.1"
   },
   "devDependencies": {
     "husky": "0.14.3",
