@@ -28,7 +28,6 @@ ReactDOM.render(
 
 An interactive code sample can be created by using the `code` directive:
 
-
     ```code
     <button>a button</button>
     ```
@@ -42,7 +41,6 @@ This will create a sandbox for a viewer to play with:
 ## Non-interactive code samples
 
 A non-interactive code sample can be created by using the `code` directive with an `interactive: false` attribute:
-
 
     ```code
     interactive: false

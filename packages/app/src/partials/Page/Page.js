@@ -5,7 +5,7 @@ import { getAttributes, getGlobalComponent, getPageSections } from '../../utils'
 import { LiveMarkdown, Props, StaticMarkdown } from '../'
 import styles from './page.scss'
 
-const getPageSection = (partials, section) => {
+const getPageSection = (partials, scope, section) => {
   const { StaticMarkdown, LiveMarkdown, Props } = partials
 
   let tag = section.match(/\{([a-zA-Z]*)\}/)
@@ -20,7 +20,7 @@ const getPageSection = (partials, section) => {
         const content = arr.length === 2 ? arr[1] : arr[0]
         const attrs = arr.length === 2 ? getAttributes(arr[0]) : undefined
 
-        return <LiveMarkdown {...{ content, attributes: attrs }} />
+        return <LiveMarkdown {...{ scope, content, attributes: attrs }} />
       case 'props':
         const attributes = getAttributes(contentWithoutTag)
         const props = getGlobalComponent(attributes.component).propInfo
@@ -38,7 +38,7 @@ const getPageSection = (partials, section) => {
   return <StaticMarkdown {...{ content: contentWithoutTag }} />
 }
 
-const Page = ({ content, title, partials }) => {
+const Page = ({ content, title, scope, partials }) => {
   const { PageHeader } = partials
 
   return (
@@ -46,7 +46,7 @@ const Page = ({ content, title, partials }) => {
       <PageHeader {...{ title }} />
       <div className={styles['page-content']}>
         {getPageSections(content).map((section, i) => (
-          <div key={i}>{getPageSection(partials, section)}</div>
+          <div key={i}>{getPageSection(partials, scope, section)}</div>
         ))}
       </div>
     </div>
@@ -61,10 +61,12 @@ Page.propTypes = {
     Props: PropTypes.func.isRequired,
     StaticMarkdown: PropTypes.func.isRequired,
   }).isRequired,
+  scope: PropTypes.object,
 }
 
 Page.defaultProps = {
   content: '',
+  scope: {},
 }
 
 export default Page
