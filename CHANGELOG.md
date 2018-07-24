@@ -1,4 +1,27 @@
 
+## v0.13.1 (2018-06-27)
+
+#### :bug: Bug Fix
+* `app`
+  * [#264](https://github.com/farism/stylegator/pull/264) Scroll on overflow-x of code preview. ([@farism](https://github.com/farism))
+
+#### :books: Dependencies
+* Other
+  * [#252](https://github.com/farism/stylegator/pull/252) Update dependency execa-pro to v1.0.6. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`, `cli`, `core`, `docs`
+  * [#259](https://github.com/farism/stylegator/pull/259) Update dependency prettier to v1.13.6. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#251](https://github.com/farism/stylegator/pull/251) Update dependency lint-staged to v7.2.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#250](https://github.com/farism/stylegator/pull/250) Update dependency prettier to v1.13.5. ([@renovate[bot]](https://github.com/apps/renovate))
+* `core`
+  * [#260](https://github.com/farism/stylegator/pull/260) Update dependency copy-webpack-plugin to v4.5.2. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`
+  * [#253](https://github.com/farism/stylegator/pull/253) Update react monorepo to v16.4.1. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#249](https://github.com/farism/stylegator/pull/249) Update dependency react-router-dom to v4.3.1. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.13.0 (2018-06-06)
 
 #### :books: Dependencies
