@@ -24,12 +24,12 @@ class LiveMarkdown extends React.Component {
   }
 
   render() {
-    const { attributes } = this.props
+    const { attributes, scope } = this.props
     const { content, expanded } = this.state
 
     return (
       <div className={styles['live-markdown']}>
-        <LiveProvider code={content}>
+        <LiveProvider code={content} scope={scope}>
           {attributes.interactive === 'true' && (
             <div
               {...{
@@ -63,6 +63,7 @@ LiveMarkdown.propTypes = {
     interactive: PropTypes.string,
   }),
   content: PropTypes.string,
+  scope: PropTypes.object,
 }
 
 LiveMarkdown.defaultProps = {
@@ -70,6 +71,7 @@ LiveMarkdown.defaultProps = {
     interactive: 'true',
   },
   content: '',
+  scope: {},
 }
 
 export default LiveMarkdown
