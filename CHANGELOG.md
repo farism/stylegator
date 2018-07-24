@@ -1,4 +1,20 @@
 
+## v0.14.0 (2018-07-24)
+
+#### :books: Dependencies
+* `app`
+  * [#268](https://github.com/farism/stylegator/pull/268) Update dependency react-live to v1.11.0. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`, `cli`, `core`, `docs`
+  * [#267](https://github.com/farism/stylegator/pull/267) Update dependency prettier to v1.13.7. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :nail_care: Enhancement
+* `app`, `docs`
+  * [#272](https://github.com/farism/stylegator/pull/272) Support defining react-live scope on sections. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.13.1 (2018-06-27)
 
 #### :bug: Bug Fix
