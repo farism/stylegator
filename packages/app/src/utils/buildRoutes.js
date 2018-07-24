@@ -3,12 +3,12 @@ import { Redirect, Route } from 'react-router-dom'
 
 import { pageLoader } from './'
 
-const buildRoute = ({ title, path, loader }) => (
+const buildRoute = ({ path, loader, ...section }) => (
   <Route
     {...{
-      key: title,
+      key: section.title,
       path,
-      component: loader(title),
+      component: loader(section),
     }}
   />
 )
