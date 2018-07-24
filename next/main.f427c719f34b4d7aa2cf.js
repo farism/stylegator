@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "3fc0c34150859a14d21e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "f427c719f34b4d7aa2cf"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -94936,12 +94936,14 @@ var LiveMarkdown = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      var attributes = this.props.attributes;
+      var _props = this.props,
+          attributes = _props.attributes,
+          scope = _props.scope;
       var _state = this.state,
           content = _state.content,
           expanded = _state.expanded;
 
-      return _react2.default.createElement('div', { className: _liveMarkdown2.default['live-markdown'] }, _react2.default.createElement(_reactLive.LiveProvider, { code: content }, attributes.interactive === 'true' && _react2.default.createElement('div', {
+      return _react2.default.createElement('div', { className: _liveMarkdown2.default['live-markdown'] }, _react2.default.createElement(_reactLive.LiveProvider, { code: content, scope: scope }, attributes.interactive === 'true' && _react2.default.createElement('div', {
         className: _liveMarkdown2.default['live-markdown-editor-toggle'],
         onClick: function onClick() {
           return _this2.setState({ expanded: !expanded });
@@ -94962,14 +94964,16 @@ LiveMarkdown.propTypes = {
   attributes: _propTypes2.default.shape({
     interactive: _propTypes2.default.string
   }),
-  content: _propTypes2.default.string
+  content: _propTypes2.default.string,
+  scope: _propTypes2.default.object
 };
 
 LiveMarkdown.defaultProps = {
   attributes: {
     interactive: 'true'
   },
-  content: ''
+  content: '',
+  scope: {}
 };
 
 exports.default = LiveMarkdown;
@@ -95586,7 +95590,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-var getPageSection = function getPageSection(partials, section) {
+var getPageSection = function getPageSection(partials, scope, section) {
   var StaticMarkdown = partials.StaticMarkdown,
       LiveMarkdown = partials.LiveMarkdown,
       Props = partials.Props;
@@ -95603,7 +95607,7 @@ var getPageSection = function getPageSection(partials, section) {
         var content = arr.length === 2 ? arr[1] : arr[0];
         var attrs = arr.length === 2 ? (0, _utils.getAttributes)(arr[0]) : undefined;
 
-        return _react2.default.createElement(LiveMarkdown, { content: content, attributes: attrs });
+        return _react2.default.createElement(LiveMarkdown, { scope: scope, content: content, attributes: attrs });
       case 'props':
         var attributes = (0, _utils.getAttributes)(contentWithoutTag);
         var props = (0, _utils.getGlobalComponent)(attributes.component).propInfo;
@@ -95620,11 +95624,12 @@ var getPageSection = function getPageSection(partials, section) {
 var Page = function Page(_ref) {
   var content = _ref.content,
       title = _ref.title,
+      scope = _ref.scope,
       partials = _ref.partials;
   var PageHeader = partials.PageHeader;
 
   return _react2.default.createElement('div', { className: _page2.default['page'] }, _react2.default.createElement(PageHeader, { title: title }), _react2.default.createElement('div', { className: _page2.default['page-content'] }, (0, _utils.getPageSections)(content).map(function (section, i) {
-    return _react2.default.createElement('div', { key: i }, getPageSection(partials, section));
+    return _react2.default.createElement('div', { key: i }, getPageSection(partials, scope, section));
   })));
 };
 
@@ -95635,11 +95640,13 @@ Page.propTypes = {
     PageHeader: _propTypes2.default.func.isRequired,
     Props: _propTypes2.default.func.isRequired,
     StaticMarkdown: _propTypes2.default.func.isRequired
-  }).isRequired
+  }).isRequired,
+  scope: _propTypes2.default.object
 };
 
 Page.defaultProps = {
-  content: ''
+  content: '',
+  scope: {}
 };
 
 exports.default = Page;
@@ -96598,14 +96605,21 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
+function _objectWithoutProperties(obj, keys) {
+  var target = {};for (var i in obj) {
+    if (keys.indexOf(i) >= 0) continue;if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;target[i] = obj[i];
+  }return target;
+}
+
 var buildRoute = function buildRoute(_ref) {
-  var title = _ref.title,
-      path = _ref.path,
-      loader = _ref.loader;
+  var path = _ref.path,
+      loader = _ref.loader,
+      section = _objectWithoutProperties(_ref, ['path', 'loader']);
+
   return _react2.default.createElement(_reactRouterDom.Route, {
-    key: title,
+    key: section.title,
     path: path,
-    component: loader(title)
+    component: loader(section)
   });
 };
 
@@ -97043,7 +97057,10 @@ function _inherits(subClass, superClass) {
 
 exports.default = function (loader) {
   var transform = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : R.identity;
-  return function (title) {
+  return function (_ref) {
+    var title = _ref.title,
+        scope = _ref.scope;
+
     var PageLoader = function (_React$Component) {
       _inherits(PageLoader, _React$Component);
 
@@ -97072,7 +97089,7 @@ exports.default = function (loader) {
         value: function render() {
           var Page = this.props.partials.Page;
 
-          return _react2.default.createElement(Page, { title: title, content: this.state.content });
+          return _react2.default.createElement(Page, { title: title, scope: scope, content: this.state.content });
         }
       }]);
 
