@@ -1,4 +1,18 @@
 
+## v0.14.1 (2018-08-01)
+
+#### :books: Dependencies
+* `app`, `cli`, `core`, `docs`
+  * [#277](https://github.com/farism/stylegator/pull/277) Update dependency prettier to v1.14.0. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :house: Internal
+* `cli`
+  * [#279](https://github.com/farism/stylegator/pull/279) Be explicit about yargs dep. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.14.0 (2018-07-24)
 
 #### :books: Dependencies
