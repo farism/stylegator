@@ -57,22 +57,18 @@ const addContentToChunk = chunks => target => {
 }
 
 const writeChunk = compilation => ({ file, content }) => {
-  compilation.assets[file] = new RawSource(
-    compilation.assets[file].source()
-    // .replace(/module.exports = \\?"\\?"/, `module.exports = \\"${content}\\"`)
-  )
+  const escaped = content.replace(/"/g, /\"/)
 
-  console.log(compilation.assets[file])
+  compilation.assets[file] = new RawSource(
+    compilation.assets[file]
+      .source()
+      .replace(`module.exports = "`, `module.exports = "${escaped}`)
+      .replace(/eval(.*)/, `module.exports = "${escaped}"`)
+  )
 }
 
 class AppendixPlugin {
-  constructor(options) {
-    this.options = options || {}
-  }
-
   apply(compiler) {
-    const options = this.options
-
     compiler.hooks.compilation.tap('AppendixPlugin', compilation => {
       compilation.hooks.optimizeChunkAssets.tap('AppendixPlugin', chunks => {
         findAppendixChunks(chunks)
