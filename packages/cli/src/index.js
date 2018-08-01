@@ -1,4 +1,3 @@
-import path from 'path'
 import yargs from 'yargs'
 import findUp from 'find-up'
 
