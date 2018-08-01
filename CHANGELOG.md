@@ -1,4 +1,14 @@
 
+## v0.14.2 (2018-08-01)
+
+#### :house: Internal
+* `cli`
+  * [#284](https://github.com/farism/stylegator/pull/284) List find-up as an explicit dep. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.14.1 (2018-08-01)
 
 #### :books: Dependencies
