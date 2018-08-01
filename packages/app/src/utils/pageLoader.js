@@ -12,7 +12,11 @@ export default (loader, transform = R.identity) => ({ title, scope }) => {
 
     componentDidMount() {
       loader()
-        .then(content => this.setState({ content: transform(content) }))
+        .then(content =>
+          this.setState({
+            content: transform(content.default),
+          })
+        )
         .catch(e => {
           console.log('fail', e)
         })
