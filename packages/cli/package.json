@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@stylegator/core": "^0.14.1",
+    "find-up": "3.0.0",
     "yargs": "12.0.1"
   },
   "devDependencies": {
