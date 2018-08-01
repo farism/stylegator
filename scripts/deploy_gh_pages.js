@@ -1,10 +1,9 @@
 const path = require('path')
-const { exec, shell } = require('execa-pro')
+const { exec } = require('execa-pro')
 
 const { version } = require('../lerna.json')
 
 const cwd = path.join(process.cwd(), 'tmp/gh-pages')
-
 ;(async () => {
   const target = process.argv.slice(2)[0]
   const remote = await exec('git config remote.origin.url')
@@ -17,9 +16,9 @@ const cwd = path.join(process.cwd(), 'tmp/gh-pages')
       `git checkout gh-pages`,
       `rm -rf ${target || 'latest'}`,
       `mkdirp v`,
-      `cp -r ../../packages/docs/build ${target || `v/${version}`}`,
-      `cp -r ../../packages/docs/build ${target || 'latest'}`,
-      `cp -r ../../packages/docs/build/404.html 404.html`,
+      `cp -r ../../packages/docs/dist ${target || `v/${version}`}`,
+      `cp -r ../../packages/docs/dist ${target || 'latest'}`,
+      `cp -r ../../packages/docs/dist/404.html 404.html`,
       `git add --all`,
       `git commit --allow-empty -m gh-pages`,
       `git push --force --quiet origin gh-pages`,

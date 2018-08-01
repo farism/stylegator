@@ -25,7 +25,7 @@ export default userConfig => {
     },
 
     output: {
-      path: path.resolve(__dirname, buildDir),
+      path: path.resolve(process.cwd(), buildDir),
       filename: '[name].js',
     },
 
