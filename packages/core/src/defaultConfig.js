@@ -1,7 +1,7 @@
 export default {
   srcDir: 'src',
   entryPoint: 'index.js',
-  buildDir: 'build',
+  buildDir: 'dist',
   contentBase: 'public',
   template: 'index.html',
   title: 'Stylegator',
