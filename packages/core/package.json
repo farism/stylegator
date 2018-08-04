@@ -39,7 +39,7 @@
     "resolve-url-loader": "2.3.0",
     "sass-loader": "7.0.3",
     "style-loader": "0.21.0",
-    "webpack": "4.16.3",
+    "webpack": "4.16.4",
     "webpack-command": "0.4.1",
     "webpack-serve": "2.0.2",
     "webpack-sources": "1.1.0"
