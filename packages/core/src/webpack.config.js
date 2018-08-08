@@ -6,6 +6,9 @@ import webpack from 'webpack'
 import defaultConfig from './defaultConfig'
 import AppendixPlugin from './webpackAppendixPlugin'
 
+const mode =
+  process.env.NODE_ENV === 'production' ? 'production' : 'development'
+
 export default userConfig => {
   const {
     srcDir,
@@ -20,6 +23,8 @@ export default userConfig => {
   }
 
   return {
+    mode,
+
     entry: {
       main: path.resolve(process.cwd(), srcDir, entry),
     },
