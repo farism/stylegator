@@ -1,6 +1,6 @@
 {
   "name": "@stylegator/cli",
-  "version": "0.14.2",
+  "version": "0.15.0-rc.10",
   "description": "Stylegator CLI tool",
   "main": "lib/index.js",
   "repository": {
@@ -26,7 +26,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@stylegator/core": "^0.14.2",
+    "@stylegator/core": "^0.15.0-rc.10",
     "find-up": "3.0.0",
     "yargs": "12.0.1"
   },
