@@ -23,7 +23,7 @@ const getPageSection = (partials, scope, section) => {
         return <LiveMarkdown {...{ scope, content, attributes: attrs }} />
       case 'props':
         const attributes = getAttributes(contentWithoutTag)
-        const props = getGlobalComponent(attributes.component).propInfo
+        const props = getGlobalComponent(attributes.component, scope).propInfo
 
         return <Props {...{ props }} />
       default:
