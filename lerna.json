@@ -1,6 +1,6 @@
 {
   "lerna": "2.7.1",
-  "version": "0.14.2",
+  "version": "0.15.0-rc.11",
   "npmClient": "yarn",
   "parallel": true,
   "message": "[ci skip] publish %s",
