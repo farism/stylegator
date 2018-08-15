@@ -1,4 +1,34 @@
 
+## v0.15.0 (2018-08-15)
+
+#### :books: Dependencies
+* `core`
+  * [#309](https://github.com/farism/stylegator/pull/309) Update dependency node-sass to v4.9.3. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#307](https://github.com/farism/stylegator/pull/307) Update dependency style-loader to v0.22.1. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#301](https://github.com/farism/stylegator/pull/301) Update dependency style-loader to v0.22.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#296](https://github.com/farism/stylegator/pull/296) Update dependency webpack to v4.16.5. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#291](https://github.com/farism/stylegator/pull/291) Update dependency sass-loader to v7.1.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#292](https://github.com/farism/stylegator/pull/292) Update dependency webpack to v4.16.4. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`, `cli`, `core`, `docs`
+  * [#308](https://github.com/farism/stylegator/pull/308) Update dependency prettier to v1.14.2. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`
+  * [#305](https://github.com/farism/stylegator/pull/305) pin some deps. ([@farism](https://github.com/farism))
+  * [#298](https://github.com/farism/stylegator/pull/298) Update dependency recompose to ^0.28.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#295](https://github.com/farism/stylegator/pull/295) Update dependency slugify to v1.3.1. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#288](https://github.com/farism/stylegator/pull/288) Update react monorepo to v16.4.2. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :nail_care: Enhancement
+* `app`
+  * [#314](https://github.com/farism/stylegator/pull/314) Support scoped components in props declarations. ([@farism](https://github.com/farism))
+* `core`, `docs`
+  * [#303](https://github.com/farism/stylegator/pull/303) Remove .babelrc requirement. ([@farism](https://github.com/farism))
+* `app`, `cli`, `core`, `docs`
+  * [#287](https://github.com/farism/stylegator/pull/287) @stylegator/core to use webpack4. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.14.2 (2018-08-01)
 
 #### :house: Internal
