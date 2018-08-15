@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@stylegator/docs",
-  "version": "0.14.2",
+  "version": "0.15.0-rc.11",
   "description": "Stylegator main package",
   "main": "lib/index.js",
   "repository": {
@@ -15,7 +15,7 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn clean && yarn build:stylegator && yarn build:404",
-    "build:404": "cp src/404.html build/404.html",
+    "build:404": "cp src/404.html dist/404.html",
     "build:stylegator": "NODE_ENV=production stylegator build",
     "clean": "rimraf build",
     "dev": "stylegator dev",
@@ -25,12 +25,12 @@
   },
   "dependencies": {
     "prop-types-docs": "0.2.1",
-    "stylegator": "^0.14.2"
+    "stylegator": "^0.15.0-rc.11"
   },
   "devDependencies": {
     "husky": "0.14.3",
     "lint-staged": "7.2.0",
-    "prettier": "1.14.0",
+    "prettier": "1.14.2",
     "rimraf": "2.6.2"
   }
 }
