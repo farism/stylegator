@@ -1,6 +1,6 @@
 {
   "name": "@stylegator/app",
-  "version": "0.16.0-rc.0",
+  "version": "0.16.0",
   "description": "styleguide static generator for html and js",
   "main": "lib/index.js",
   "repository": {
