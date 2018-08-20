@@ -1,12 +1,12 @@
+import path from 'path'
 import { RawSource } from 'webpack-sources'
+import ModuleFileHelpers from 'webpack/lib/ModuleFilenameHelpers'
 
-const findAppendixChunks = chunks => {
-  const appendices = []
-
-  for (const chunk of chunks) {
-    for (const m of chunk.getModules()) {
+const findAppendixChunks = chunks =>
+  chunks.reduce((acc, chunk) => {
+    chunk.forEachModule(m => {
       if (typeof m.id === 'string' && m.id.includes('__appendix.md')) {
-        appendices.push({
+        acc.push({
           chunk,
           id: m.id,
           issuer: m.issuer.id,
@@ -14,69 +14,73 @@ const findAppendixChunks = chunks => {
           siblings: [],
         })
       }
-    }
-  }
+    })
 
-  return appendices
-}
+    return acc
+  }, [])
 
-const buildContent = chunks => {
-  let content = ''
-
-  for (const chunk of chunks) {
-    for (const m of chunk.getModules()) {
-      content = `${content}${m._source
-        .source()
+const buildContent = chunks =>
+  chunks.reduce(
+    (acc, chunk) =>
+      `${acc}${chunk
+        .mapModules(m => m.source().source())
+        .join('')
         .replace('module.exports = "', '')
-        .replace(/"$/, '')}`
-    }
-  }
+        .replace(/"$/, '')}`,
+    ''
+  )
 
-  return content
+const addContent = chunks => appendixChunk => {
+  const siblings = chunks
+    .reduce((acc, chunk) => {
+      chunk.forEachModule(m => {
+        if (
+          typeof m.id === 'string' &&
+          m.id.includes('.md') &&
+          m.issuer &&
+          m.issuer.id === appendixChunk.issuer
+        ) {
+          acc.push(chunk)
+        }
+      })
+
+      return acc
+    }, [])
+    .sort(sortChunks)
+
+  appendixChunk.content = buildContent(siblings)
+
+  return appendixChunk
 }
 
-const addContentToChunk = chunks => target => {
-  const siblings = []
-
-  for (const chunk of chunks) {
-    for (const m of chunk.getModules()) {
-      if (
-        typeof m.id === 'string' &&
-        m.id.includes('.md') &&
-        m.issuer &&
-        m.issuer.id === target.issuer
-      ) {
-        siblings.push(chunk)
-      }
-    }
+const sortChunks = (chunk1, chunk2) => {
+  if (chunk1.mapModules && chunk2.mapModules) {
+    const a = chunk1.mapModules(m => m.index)[0]
+    const b = chunk2.mapModules(m => m.index)[0]
+    return a < b ? -1 : a > b ? 1 : 0
   }
-
-  target.content = buildContent(siblings)
-
-  return target
 }
 
 const writeChunk = compilation => ({ file, content }) => {
-  const escaped = content.replace(/"/g, /\"/)
-
   compilation.assets[file] = new RawSource(
     compilation.assets[file]
       .source()
-      .replace(`module.exports = "`, `module.exports = "${escaped}`)
-      .replace(/eval(.*)/, `module.exports = "${escaped}"`)
+      .replace(/module\.exports = "(.*)?"/, `module.exports = "$1${content}"`)
   )
 }
 
-class AppendixPlugin {
-  apply(compiler) {
-    compiler.hooks.compilation.tap('AppendixPlugin', compilation => {
-      compilation.hooks.optimizeChunkAssets.tap('AppendixPlugin', chunks => {
-        findAppendixChunks(chunks)
-          .map(addContentToChunk(chunks))
-          .forEach(writeChunk(compilation))
-      })
+function AppendixPlugin() {}
+
+AppendixPlugin.prototype.apply = function(compiler) {
+  compiler.plugin('compilation', (compilation, params) => {
+    compilation.plugin('optimize-chunk-assets', (chunks, callback) => {
+      findAppendixChunks(chunks)
+        .map(addContent(chunks))
+        .forEach(writeChunk(compilation))
+
+      callback()
     })
-  }
+  })
 }
 
-module.exports = AppendixPlugin
+export default AppendixPlugin
