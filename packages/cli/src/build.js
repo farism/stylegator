@@ -14,7 +14,7 @@ export default {
     },
     'build-dir': {
       description: 'build output directory',
-      default: 'dist',
+      default: 'build',
     },
     'content-base': {
       description: 'webpack static directory',
