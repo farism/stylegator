@@ -69,6 +69,7 @@ export default userConfig => {
       ['*.js', '*.jsx'],
       [
         babel({
+          babelrc: false,
           presets: ['env', 'react'],
           plugins: ['syntax-dynamic-import', 'transform-object-rest-spread'],
         }),
