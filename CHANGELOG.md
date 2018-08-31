@@ -1,4 +1,20 @@
 
+## v0.16.0 (2018-08-20)
+
+#### :books: Dependencies
+* Other
+  * [#318](https://github.com/farism/stylegator/pull/318) Update dependency execa-pro to v1.0.7. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`
+  * [#317](https://github.com/farism/stylegator/pull/317) Update dependency marked to v0.5.0. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :nail_care: Enhancement
+* `app`, `cli`, `core`, `docs`
+  * [#322](https://github.com/farism/stylegator/pull/322) Go back to using webpack3. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.15.0 (2018-08-15)
 
 #### :books: Dependencies
