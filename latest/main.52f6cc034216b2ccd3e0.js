@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c68325d226d2efd04448"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "52f6cc034216b2ccd3e0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -51515,7 +51515,7 @@ var func = {
     return PropTypes.func;
   },
   req: function req() {
-    return PropTypes.bool.isRequired;
+    return PropTypes.func.isRequired;
   }
 };
 
@@ -88844,14 +88844,6 @@ var withStateHandlers = function withStateHandlers(initialState, stateUpdaters) 
       }
 
       var _proto = WithStateHandlers.prototype;
-
-      _proto.shouldComponentUpdate = function shouldComponentUpdate(nextProps, nextState) {
-        var propsChanged = nextProps !== this.props; // the idea is to skip render if stateUpdater handler return undefined
-        // this allows to create no state update handlers with access to state and props
-
-        var stateChanged = !__WEBPACK_IMPORTED_MODULE_2_fbjs_lib_shallowEqual___default()(nextState, this.state);
-        return propsChanged || stateChanged;
-      };
 
       _proto.render = function render() {
         return factory(Object(__WEBPACK_IMPORTED_MODULE_1__babel_runtime_helpers_esm_extends__["a" /* default */])({}, this.props, this.state, this.stateUpdaters));
