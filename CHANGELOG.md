@@ -1,4 +1,18 @@
 
+## v0.16.1 (2018-08-31)
+
+#### :books: Dependencies
+* `app`
+  * [#328](https://github.com/farism/stylegator/pull/328) Update dependency recompose to v0.30.0. ([@renovate[bot]](https://github.com/apps/renovate))
+* Other
+  * [#327](https://github.com/farism/stylegator/pull/327) Update dependency execa-pro to v1.0.8. ([@renovate[bot]](https://github.com/apps/renovate))
+* `docs`
+  * [#326](https://github.com/farism/stylegator/pull/326) Update dependency prop-types-docs to v0.2.2. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### Committers: 0
+
+
+
 ## v0.16.0 (2018-08-20)
 
 #### :books: Dependencies
