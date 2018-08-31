@@ -1,4 +1,18 @@
 
+## v0.16.2 (2018-08-31)
+
+#### :bug: Bug Fix
+* `core`
+  * [#336](https://github.com/farism/stylegator/pull/336) Ignore babelrc. ([@farism](https://github.com/farism))
+
+#### :books: Dependencies
+* `core`
+  * [#329](https://github.com/farism/stylegator/pull/329) Update dependency webpack-sources to v1.2.0. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.16.1 (2018-08-31)
 
 #### :books: Dependencies
@@ -9,8 +23,8 @@
 * `docs`
   * [#326](https://github.com/farism/stylegator/pull/326) Update dependency prop-types-docs to v0.2.2. ([@renovate[bot]](https://github.com/apps/renovate))
 
-#### Committers: 0
-
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
 
 
 ## v0.16.0 (2018-08-20)
