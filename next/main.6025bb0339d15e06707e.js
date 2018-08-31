@@ -85,7 +85,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c68325d226d2efd04448"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "6025bb0339d15e06707e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -51515,7 +51515,7 @@ var func = {
     return PropTypes.func;
   },
   req: function req() {
-    return PropTypes.bool.isRequired;
+    return PropTypes.func.isRequired;
   }
 };
 
