@@ -14,7 +14,7 @@ export default (loader, transform = R.identity) => ({ title, scope }) => {
       loader()
         .then(content =>
           this.setState({
-            content: transform(content),
+            content: transform(content.default),
           })
         )
         .catch(e => {
