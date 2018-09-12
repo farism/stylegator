@@ -2,94 +2,85 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 import path from 'path'
 import webpack from 'webpack'
-import {
-  addPlugins,
-  babel,
-  createConfig,
-  css,
-  customConfig,
-  entryPoint,
-  env,
-  file,
-  match,
-  sass,
-  setEnv,
-  setOutput,
-  sourceMaps,
-} from 'webpack-blocks'
 
-import defaultConfig from './defaultConfig'
+import defaults from './defaults'
 import AppendixPlugin from './webpackAppendixPlugin'
 
-const raw = () => {
-  return (context, { merge }) =>
-    merge({
-      module: {
-        rules: [{ ...context.match, use: ['raw-loader'] }],
-      },
-    })
-}
-
-const resolveUrl = () => (context, { merge }) =>
-  merge({
-    module: {
-      rules: [
-        Object.assign({
-          test: context.match.test,
-          use: ['style-loader', 'css-loader', 'resolve-url-loader'],
-        }),
-      ],
-    },
-  })
+const isDev = process.env.NODE_ENV === 'development'
 
 export default userConfig => {
-  const {
-    srcDir,
-    entryPoint: entry,
-    buildDir,
-    contentBase,
-    template,
-    title,
-  } = {
-    ...defaultConfig,
+  const { srcDir, entryPoint, buildDir, contentBase, template, title } = {
+    ...defaults,
     ...userConfig,
   }
 
-  return createConfig([
-    entryPoint(['babel-polyfill', path.resolve(process.cwd(), srcDir, entry)]),
-    match(['*.md'], [raw()]),
-    match(['*.css'], [resolveUrl()]),
-    match(['*.gif', '*.jpg', '*.jpeg', '*.png', '*.svg'], [file()]),
-    match(['*.eot', '*.ttf', '*.otf', '*.woff', '*.woff2'], [file()]),
-    match(
-      ['*.scss'],
-      [css.modules({ localIdentName: '[local]--[hash:base64:5]' }), sass()]
-    ),
-    match(
-      ['*.js', '*.jsx'],
-      [
-        babel({
-          babelrc: false,
-          presets: ['env', 'react'],
-          plugins: ['syntax-dynamic-import', 'transform-object-rest-spread'],
-        }),
-      ]
-    ),
-    addPlugins([
+  return {
+    mode: isDev ? 'development' : 'production',
+    devtool: isDev ? 'eval-source-map' : 'source-map',
+    entry: {
+      index: [
+        '@babel/polyfill',
+        path.resolve(process.cwd(), srcDir, entryPoint),
+      ],
+    },
+    output: {
+      path: path.resolve(process.cwd(), buildDir),
+    },
+    module: {
+      rules: [
+        {
+          test: /\.jsx?$/,
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: 'babel-loader',
+              options: {
+                babelrc: false,
+                presets: ['@babel/preset-env', '@babel/preset-react'],
+                plugins: [
+                  '@babel/plugin-syntax-dynamic-import',
+                  '@babel/plugin-proposal-object-rest-spread',
+                ],
+              },
+            },
+          ],
+        },
+        {
+          test: /\.s?css$/,
+          exclude: /node_modules/,
+          use: [
+            'style-loader',
+            {
+              loader: `css-loader`,
+              options: {
+                modules: true,
+                localIdentName: '[local]--[hash:base64:5]',
+              },
+            },
+            'sass-loader',
+          ],
+        },
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader', 'resolve-url-loader'],
+        },
+        {
+          test: /\.md$/,
+          use: ['raw-loader'],
+        },
+        {
+          test: /\.(gif|jpe?g|png|svg|eot|ttf|otf|woff2?)$/,
+          use: ['file-loader'],
+        },
+      ],
+    },
+    plugins: [
+      new webpack.HotModuleReplacementPlugin(),
+      new webpack.NamedChunksPlugin(),
+      new webpack.NamedModulesPlugin(),
       new HtmlWebpackPlugin({ title, template: `${srcDir}/${template}` }),
       new CopyWebpackPlugin([{ from: `${srcDir}/${contentBase}`, to: `./` }]),
-      new webpack.NamedModulesPlugin(),
-      new webpack.HotModuleReplacementPlugin(),
       new AppendixPlugin(),
-    ]),
-    setOutput({
-      path: path.resolve(process.cwd(), buildDir),
-    }),
-    env('production', [
-      setOutput({
-        filename: '[name].[hash].js',
-      }),
-    ]),
-    env('development', [setOutput({ filename: '[name].js' }), sourceMaps()]),
-  ])
+    ],
+  }
 }
