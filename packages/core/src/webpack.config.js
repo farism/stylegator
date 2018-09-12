@@ -36,18 +36,20 @@ export default userConfig => {
               loader: 'babel-loader',
               options: {
                 babelrc: false,
-                presets: ['@babel/preset-env', '@babel/preset-react'],
+                presets: [
+                  require.resolve('@babel/preset-env'),
+                  require.resolve('@babel/preset-react'),
+                ],
                 plugins: [
-                  '@babel/plugin-syntax-dynamic-import',
-                  '@babel/plugin-proposal-object-rest-spread',
+                  require.resolve('@babel/plugin-syntax-dynamic-import'),
+                  require.resolve('@babel/plugin-proposal-object-rest-spread'),
                 ],
               },
             },
           ],
         },
         {
-          test: /\.s?css$/,
-          exclude: /node_modules/,
+          test: /\.scss$/,
           use: [
             'style-loader',
             {
