@@ -10,6 +10,7 @@ export default argv => {
     port,
     hot: true,
     contentBase: `${srcDir}/${contentBase}`,
+    stats: 'none',
   }
   const compilerConfig = webpackConfig(argv)
   WebpackDevServer.addDevServerEntrypoints(compilerConfig, serverConfig)
