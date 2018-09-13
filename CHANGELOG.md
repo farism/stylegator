@@ -1,4 +1,26 @@
 
+## v0.17.0 (2018-09-13)
+
+#### :bug: Bug Fix
+* `core`
+  * [#350](https://github.com/farism/stylegator/pull/350) Use require.resolve for babel presets/plugins. ([@farism](https://github.com/farism))
+
+#### :books: Dependencies
+* `app`
+  * [#340](https://github.com/farism/stylegator/pull/340) Update react monorepo to v16.5.0. ([@renovate[bot]](https://github.com/apps/renovate))
+* `core`
+  * [#342](https://github.com/farism/stylegator/pull/342) Update dependency resolve-url-loader to v2.3.1. ([@renovate[bot]](https://github.com/apps/renovate))
+* `cli`
+  * [#341](https://github.com/farism/stylegator/pull/341) Update dependency yargs to v12.0.2. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :nail_care: Enhancement
+* `app`, `cli`, `core`, `stylegator`
+  * [#345](https://github.com/farism/stylegator/pull/345) Webpack4 and Babel7. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.16.2 (2018-08-31)
 
 #### :bug: Bug Fix
