@@ -1,4 +1,14 @@
 
+## v0.17.1 (2018-09-13)
+
+#### :house: Internal
+* `core`, `docs`
+  * [#353](https://github.com/farism/stylegator/pull/353) Webpack user config. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.17.0 (2018-09-13)
 
 #### :bug: Bug Fix
