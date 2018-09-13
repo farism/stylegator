@@ -7,4 +7,5 @@ export default {
   title: 'Stylegator',
   host: '0.0.0.0',
   port: 8080,
+  webpack: (merge, config) => config,
 }
