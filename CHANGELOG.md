@@ -1,4 +1,18 @@
 
+## v0.17.2 (2018-09-13)
+
+#### :bug: Bug Fix
+* `core`
+  * [#358](https://github.com/farism/stylegator/pull/358) Make webpack-merge a prod dependency. ([@farism](https://github.com/farism))
+
+#### :house: Internal
+* `core`
+  * [#360](https://github.com/farism/stylegator/pull/360) Use stylish output for dev and prod. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.17.1 (2018-09-13)
 
 #### :house: Internal
