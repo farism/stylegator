@@ -2,6 +2,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 import path from 'path'
 import webpack from 'webpack'
+import merge from 'webpack-merge'
 
 import defaults from './defaults'
 import AppendixPlugin from './webpackAppendixPlugin'
@@ -9,12 +10,20 @@ import AppendixPlugin from './webpackAppendixPlugin'
 const isDev = process.env.NODE_ENV === 'development'
 
 export default userConfig => {
-  const { srcDir, entryPoint, buildDir, contentBase, template, title } = {
+  const {
+    srcDir,
+    entryPoint,
+    buildDir,
+    contentBase,
+    template,
+    title,
+    webpack: userWebpack,
+  } = {
     ...defaults,
     ...userConfig,
   }
 
-  return {
+  return userWebpack(merge, {
     mode: isDev ? 'development' : 'production',
     devtool: isDev ? 'eval-source-map' : 'source-map',
     entry: {
@@ -84,5 +93,5 @@ export default userConfig => {
       new CopyWebpackPlugin([{ from: `${srcDir}/${contentBase}`, to: `./` }]),
       new AppendixPlugin(),
     ],
-  }
+  })
 }
