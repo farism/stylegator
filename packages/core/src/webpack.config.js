@@ -1,8 +1,9 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
+import Stylish from 'webpack-stylish'
 import path from 'path'
-import webpack from 'webpack'
 import merge from 'webpack-merge'
+import webpack from 'webpack'
 
 import defaults from './defaults'
 import AppendixPlugin from './webpackAppendixPlugin'
@@ -26,6 +27,7 @@ export default userConfig => {
   return userWebpack(merge, {
     mode: isDev ? 'development' : 'production',
     devtool: isDev ? 'eval-source-map' : 'source-map',
+    stats: 'none',
     entry: {
       index: [
         '@babel/polyfill',
@@ -86,6 +88,7 @@ export default userConfig => {
       ],
     },
     plugins: [
+      new Stylish(),
       new webpack.HotModuleReplacementPlugin(),
       new webpack.NamedChunksPlugin(),
       new webpack.NamedModulesPlugin(),
