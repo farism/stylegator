@@ -6503,6 +6503,10 @@ tapable@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-1.0.0.tgz#cbb639d9002eed9c6b5975eb20598d7936f1f9f2"
 
+tapable@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/tapable/-/tapable-1.1.0.tgz#0d076a172e3d9ba088fd2272b2668fb8d194b78c"
+
 tar@^2.0.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/tar/-/tar-2.2.1.tgz#8e4d2a256c0e2185c6b18ad694aec968b83cb1d1"
@@ -7040,9 +7044,9 @@ webpack-stylish@0.1.8:
     text-table "^0.2.0"
     wordwrap "^1.0.0"
 
-webpack@4.18.0:
-  version "4.18.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.18.0.tgz#7dafaaf309c12e63080d3960fba7ed94afdcbe84"
+webpack@4.19.1:
+  version "4.19.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.19.1.tgz#096674bc3b573f8756c762754366e5b333d6576f"
   dependencies:
     "@webassemblyjs/ast" "1.7.6"
     "@webassemblyjs/helper-module-context" "1.7.6"
@@ -7064,7 +7068,7 @@ webpack@4.18.0:
     neo-async "^2.5.0"
     node-libs-browser "^2.0.0"
     schema-utils "^0.4.4"
-    tapable "^1.0.0"
+    tapable "^1.1.0"
     uglifyjs-webpack-plugin "^1.2.4"
     watchpack "^1.5.0"
     webpack-sources "^1.2.0"
