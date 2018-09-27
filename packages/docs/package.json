@@ -24,7 +24,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "prop-types-docs": "0.2.2",
+    "prop-types-docs": "0.3.0",
     "stylegator": "^0.17.2"
   },
   "devDependencies": {
