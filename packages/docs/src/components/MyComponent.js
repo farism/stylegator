@@ -53,6 +53,7 @@ const myComponentDocs = withPropDocs({
       type: PropTypes.arrayOf(PropTypes.string),
       description: 'This should be a ping',
       default: ['ping', 'pong'],
+      deprecated: 'Use the "pong" prop instead',
     },
     pong: {
       type: PropTypes.objectOf(PropTypes.number),
