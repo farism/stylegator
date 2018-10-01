@@ -44,6 +44,10 @@
       color: #859cc1;
     }
 
+    &.deprecated {
+      color: #ff0000;
+    }
+
     &.description {
       width: 100%;
       min-width: 250px;

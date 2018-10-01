@@ -44,6 +44,9 @@ const ColDefault = ({ type, default: defaultValue }) => {
 const ColDescription = ({ children }) => (
   <td className={styles['description']}>{children}</td>
 )
+const ColDeprecated = ({ deprecated }) => (
+  <td className={styles['deprecated']}>{deprecated}</td>
+)
 
 const BaseColumns = ({ name, prop, depth = 0 }) => [
   <ColName key="name" {...{ depth }}>
@@ -51,6 +54,7 @@ const BaseColumns = ({ name, prop, depth = 0 }) => [
   </ColName>,
   <ColType key="type" {...prop} />,
   <ColRequired key="required" {...prop} />,
+  <ColDeprecated key="deprecrated" {...prop} />,
   <ColDefault key="default" {...prop} />,
 ]
 
@@ -141,6 +145,7 @@ const Props = ({ component, props }) => (
           <th>Name</th>
           <th>Type</th>
           <th>Required</th>
+          <th>Deprecated</th>
           <th>Default</th>
           <th>Description</th>
         </tr>
