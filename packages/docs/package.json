@@ -24,12 +24,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "prop-types-docs": "0.2.2",
+    "prop-types-docs": "0.3.0",
     "stylegator": "^0.17.2"
   },
   "devDependencies": {
     "husky": "0.14.3",
-    "lint-staged": "7.2.0",
+    "lint-staged": "7.3.0",
     "prettier": "1.14.3",
     "rimraf": "2.6.2"
   }
