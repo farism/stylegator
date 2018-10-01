@@ -9,6 +9,8 @@ const oneOfVal = val => (typeof val === 'string' ? `'${val}'` : `${val}`)
 
 const oneOfTypeVal = type => type.name
 
+const metaArr = (arr, fn) => `[${arr.map(fn).join(', ')}]`
+
 const ColName = ({ children, depth = 0 }) => (
   <td className={styles['name']} style={padLeft(depth)}>
     {children}
@@ -21,7 +23,7 @@ const ColRequired = ({ required }) => (
   <td className={styles['required']}>{required ? 'true' : 'false'}</td>
 )
 
-const ColDefault = ({ type, default: defaultValue }) => {
+const ColDefault = ({ default: defaultValue }) => {
   let renderedVal = ''
 
   if (typeof children === 'function') {
@@ -41,99 +43,64 @@ const ColDefault = ({ type, default: defaultValue }) => {
   return <td className={styles['default']}>{renderedVal}</td>
 }
 
-const ColDescription = ({ children }) => (
-  <td className={styles['description']}>{children}</td>
+const ColDescription = ({ prop }) => (
+  <td className={styles['description']}>
+    {prop.deprecated && (
+      <div className={styles['deprecated']}>[DEPRECATED] {prop.deprecated}</div>
+    )}
+    <div className={styles['text']}>{prop.description}</div>
+    <Meta {...{ prop }} />
+  </td>
 )
 
-const BaseColumns = ({ name, prop, depth = 0 }) => [
-  <ColName key="name" {...{ depth }}>
-    {name}
-  </ColName>,
-  <ColType key="type" {...prop} />,
-  <ColRequired key="required" {...prop} />,
-  <ColDefault key="default" {...prop} />,
-]
-
-const Primitive = ({ name, prop, depth = 0 }) => (
-  <tr>
-    <BaseColumns {...{ name, prop, depth }} />
-    <ColDescription>{prop.description}</ColDescription>
-  </tr>
+const BaseColumns = ({ name, prop, depth = 0 }) => (
+  <React.Fragment>
+    <ColName {...{ depth }}>{name}</ColName>
+    <ColType {...prop} />
+    <ColRequired {...prop} />
+    <ColDefault {...prop} />
+  </React.Fragment>
 )
 
-const OneOf = ({ name, prop, depth = 0 }) => (
-  <tr>
-    <BaseColumns {...{ name, prop, depth }} />
-    <ColDescription>
-      {prop.description}
-      <div className={styles['meta']}>
-        <span>oneOf: [{prop.type.arr.map(oneOfVal).join(', ')}]</span>
-      </div>
-    </ColDescription>
-  </tr>
-)
+const Meta = ({ prop }) => {
+  let meta = ''
 
-const OneOfType = ({ name, prop, depth = 0 }) => (
-  <tr>
-    <BaseColumns {...{ name, prop, depth }} />
-    <ColDescription>
-      {prop.description}
-      <div className={styles['meta']}>
-        <span>oneOfType: [{prop.type.types.map(oneOfTypeVal).join(', ')}]</span>
-      </div>
-    </ColDescription>
-  </tr>
-)
-
-const ArrayOf = ({ name, prop, depth = 0 }) => (
-  <tr>
-    <BaseColumns {...{ name, prop, depth }} />
-    <ColDescription>
-      {prop.description}
-      <div className={styles['meta']}>
-        <span>arrayOf [{prop.type.type.name}]</span>
-      </div>
-    </ColDescription>
-  </tr>
-)
-
-const ObjectOf = ({ name, prop, depth = 0 }) => (
-  <tr>
-    <BaseColumns {...{ name, prop, depth }} />
-    <ColDescription>
-      {prop.description}
-      <div className={styles['meta']}>
-        <span>objectOf [{prop.type.type.name}]</span>
-      </div>
-    </ColDescription>
-  </tr>
-)
-
-const Shape = ({ name, prop, depth = 0 }) =>
-  [<Primitive key="primitive" {...{ name, prop, depth }} />].concat(
-    Object.keys(prop.props).map((name, i) => (
-      <Row key={i} depth={depth + 1} name={name} prop={prop.props[name]} />
-    ))
-  )
-
-const Row = ({ name, prop, depth = 0 }) => {
-  switch (prop.type.name) {
-    case 'oneOf':
-      return <OneOf {...{ name, prop, depth }} />
-    case 'oneOfType':
-      return <OneOfType {...{ name, prop, depth }} />
-    case 'arrayOf':
-      return <ArrayOf {...{ name, prop, depth }} />
-    case 'objectOf':
-      return <ObjectOf {...{ name, prop, depth }} />
-    case 'shape':
-      return <Shape {...{ name, prop, depth }} />
-    default:
-      return <Primitive {...{ name, prop, depth }} />
+  if (prop.type.name === 'oneOf') {
+    meta = `oneOf: ${metaArr(prop.type.arr, oneOfVal)}`
+  } else if (prop.type.name === 'oneOfType') {
+    meta = `oneOf: ${metaArr(prop.type.types, oneOfTypeVal)}`
+  } else if (prop.type.name === 'arrayOf') {
+    meta = `arrayOf: [${prop.type.type.name}]`
+  } else if (prop.type.name === 'objectOf') {
+    meta = `objectOf: ${[prop.type.type.name]}`
   }
+
+  return meta && <div className={styles['meta']}>{meta}</div>
 }
 
-const Props = ({ component, props }) => (
+const ShapeRow = ({ name, prop, depth = 0 }) => (
+  <React.Fragment>
+    <tr>
+      <BaseColumns {...{ name, prop, depth }} />
+    </tr>
+    {Object.keys(prop.props).map((name, i) => (
+      <Row key={i} depth={depth + 1} name={name} prop={prop.props[name]} />
+    ))}
+  </React.Fragment>
+)
+
+const Row = ({ name, prop, depth = 0 }) => {
+  return prop.type.name === 'shape' ? (
+    <ShapeRow {...{ name, prop, depth }} />
+  ) : (
+    <tr>
+      <BaseColumns {...{ name, prop, depth }} />
+      <ColDescription {...{ prop }} />
+    </tr>
+  )
+}
+
+const Props = ({ props }) => (
   <div className={styles['props']}>
     <table>
       <thead>
