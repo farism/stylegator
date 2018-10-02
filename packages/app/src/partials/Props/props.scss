@@ -48,15 +48,22 @@
       width: 100%;
       min-width: 250px;
 
-      .meta {
-        span {
-          border-radius: 3px;
-          background: #f3f3f3;
-          display: inline-block;
-          font-family: monospace;
-          margin-top: 20px;
-          padding: 5px;
+      .deprecated {
+        margin-bottom: 20px;
+
+        ~ * {
+          color: #ccc;
+          text-decoration: line-through;
         }
+      }
+
+      .meta {
+        border-radius: 3px;
+        background: #f3f3f3;
+        display: inline-block;
+        font-family: monospace;
+        margin-top: 20px;
+        padding: 5px;
       }
     }
   }
