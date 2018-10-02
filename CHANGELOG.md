@@ -1,4 +1,35 @@
 
+## v0.18.0 (2018-10-02)
+
+#### :books: Dependencies
+* `core`
+  * [#377](https://github.com/farism/stylegator/pull/377) Update dependency webpack to v4.20.2. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#380](https://github.com/farism/stylegator/pull/380) Update dependency babel-loader to v8.0.4. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#376](https://github.com/farism/stylegator/pull/376) Update dependency webpack-dev-server to v3.1.9. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#373](https://github.com/farism/stylegator/pull/373) Update dependency webpack-sources to v1.3.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#366](https://github.com/farism/stylegator/pull/366) Update dependency resolve-url-loader to v3. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#364](https://github.com/farism/stylegator/pull/364) Update dependency webpack to v4.19.1. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`, `cli`, `core`, `docs`
+  * [#378](https://github.com/farism/stylegator/pull/378) Update dependency husky to v1. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#372](https://github.com/farism/stylegator/pull/372) Update dependency lint-staged to v7.3.0. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#371](https://github.com/farism/stylegator/pull/371) Update dependency prettier to v1.14.3. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`, `cli`, `core`, `stylegator`
+  * [#382](https://github.com/farism/stylegator/pull/382) Update babel monorepo to v7.1.2. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#367](https://github.com/farism/stylegator/pull/367) Update babel monorepo to v7.1.0. ([@renovate[bot]](https://github.com/apps/renovate))
+* `app`
+  * [#379](https://github.com/farism/stylegator/pull/379) Update dependency marked to v0.5.1. ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#365](https://github.com/farism/stylegator/pull/365) Update react monorepo to v16.5.2. ([@renovate[bot]](https://github.com/apps/renovate))
+* `docs`
+  * [#381](https://github.com/farism/stylegator/pull/381) Update dependency prop-types-docs to v0.3.0. ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### :nail_care: Enhancement
+* `app`, `docs`
+  * [#392](https://github.com/farism/stylegator/pull/392) Refactor props table. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.17.2 (2018-09-13)
 
 #### :bug: Bug Fix
