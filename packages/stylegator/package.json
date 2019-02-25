@@ -1,6 +1,6 @@
 {
   "name": "stylegator",
-  "version": "0.18.0",
+  "version": "0.18.1-rc.47",
   "description": "styleguide static generator for html and js",
   "main": "lib/index.js",
   "repository": {
@@ -26,9 +26,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@stylegator/app": "^0.18.0",
-    "@stylegator/cli": "^0.18.0",
-    "@stylegator/core": "^0.18.0"
+    "@stylegator/app": "^0.18.1-rc.47",
+    "@stylegator/cli": "^0.18.1-rc.47",
+    "@stylegator/core": "^0.18.1-rc.47"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",
