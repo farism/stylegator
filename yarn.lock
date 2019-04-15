@@ -908,25 +908,9 @@ accepts@~1.3.4, accepts@~1.3.5:
     mime-types "~2.1.18"
     negotiator "0.6.1"
 
-acorn-dynamic-import@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/acorn-dynamic-import/-/acorn-dynamic-import-3.0.0.tgz#901ceee4c7faaef7e07ad2a47e890675da50a278"
-  dependencies:
-    acorn "^5.0.0"
-
 acorn-dynamic-import@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/acorn-dynamic-import/-/acorn-dynamic-import-4.0.0.tgz#482210140582a36b83c3e342e1cfebcaa9240948"
-
-acorn-jsx@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-4.1.1.tgz#e8e41e48ea2fe0c896740610ab6a4ffd8add225e"
-  dependencies:
-    acorn "^5.0.3"
-
-acorn@^5.0.0, acorn@^5.0.3, acorn@^5.4.1:
-  version "5.7.1"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.1.tgz#f095829297706a7c9776958c0afc8930a9b9d9d8"
 
 acorn@^6.0.5:
   version "6.0.7"
@@ -1362,17 +1346,15 @@ browserslist@^4.5.1, browserslist@^4.5.2:
     electron-to-chromium "^1.3.122"
     node-releases "^1.1.12"
 
-buble@^0.19.3:
-  version "0.19.3"
-  resolved "https://registry.yarnpkg.com/buble/-/buble-0.19.3.tgz#01e9412062cff1da6f20342b6ecd72e7bf699d02"
+buble@0.19.6:
+  version "0.19.6"
+  resolved "https://registry.yarnpkg.com/buble/-/buble-0.19.6.tgz#915909b6bd5b11ee03b1c885ec914a8b974d34d3"
   dependencies:
-    acorn "^5.4.1"
-    acorn-dynamic-import "^3.0.0"
-    acorn-jsx "^4.1.1"
-    chalk "^2.3.1"
-    magic-string "^0.22.4"
+    chalk "^2.4.1"
+    magic-string "^0.25.1"
     minimist "^1.2.0"
     os-homedir "^1.0.1"
+    regexpu-core "^4.2.0"
     vlq "^1.0.0"
 
 buffer-from@^1.0.0:
@@ -1580,7 +1562,7 @@ chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.3.1:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chalk@^2.4.2:
+chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   dependencies:
@@ -1708,14 +1690,6 @@ cli-truncate@^0.2.1:
 cli-width@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
-
-clipboard@^1.5.5:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-1.7.1.tgz#360d6d6946e99a7a1fef395e42ba92b5e9b5a16b"
-  dependencies:
-    good-listener "^1.2.2"
-    select "^1.1.2"
-    tiny-emitter "^2.0.0"
 
 cliui@^2.1.0:
   version "2.1.0"
@@ -2441,10 +2415,6 @@ del@^4.1.0:
 delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
-
-delegate@^3.1.2:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/delegate/-/delegate-3.2.0.tgz#b66b71c3158522e8ab5744f720d8ca0c2af59166"
 
 delegates@^1.0.0:
   version "1.0.0"
@@ -3383,12 +3353,6 @@ globule@^1.0.0:
     glob "~7.1.1"
     lodash "~4.17.10"
     minimatch "~3.0.2"
-
-good-listener@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/good-listener/-/good-listener-1.2.2.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
-  dependencies:
-    delegate "^3.1.2"
 
 got@^6.7.1:
   version "6.7.1"
@@ -4590,11 +4554,11 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-magic-string@^0.22.4:
-  version "0.22.5"
-  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.22.5.tgz#8e9cf5afddf44385c1da5bc2a6a0dbd10b03657e"
+magic-string@^0.25.1:
+  version "0.25.2"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.2.tgz#139c3a729515ec55e96e69e82a11fe890a293ad9"
   dependencies:
-    vlq "^0.2.2"
+    sourcemap-codec "^1.4.4"
 
 make-dir@^1.0.0:
   version "1.3.0"
@@ -5664,11 +5628,9 @@ pretty-error@^2.0.2:
     renderkid "^2.0.1"
     utila "~0.4"
 
-prismjs@1.6:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.6.0.tgz#118d95fb7a66dba2272e343b345f5236659db365"
-  optionalDependencies:
-    clipboard "^1.5.5"
+prism-react-renderer@^0.1.0:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/prism-react-renderer/-/prism-react-renderer-0.1.6.tgz#c9216baa234fab1c234209fcdaf0cd23a01c50a9"
 
 private@^0.1.6:
   version "0.1.8"
@@ -5879,16 +5841,17 @@ react-lifecycles-compat@^3.0.2:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
-react-live@1.12.0:
-  version "1.12.0"
-  resolved "https://registry.yarnpkg.com/react-live/-/react-live-1.12.0.tgz#2876d4e913331002b66dfa73cf58051376bc2518"
+react-live@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-live/-/react-live-2.0.1.tgz#cf1c1e75523073b2fba14384a465bf968c6dedc1"
   dependencies:
-    buble "^0.19.3"
+    buble "0.19.6"
     core-js "^2.4.1"
     create-react-context "^0.2.3"
     dom-iterator "^1.0.0"
-    prismjs "1.6"
+    prism-react-renderer "^0.1.0"
     prop-types "^15.5.8"
+    react-simple-code-editor "^0.9.0"
     unescape "^0.2.0"
 
 react-router-dom@5.0.0:
@@ -5917,6 +5880,10 @@ react-router@5.0.0:
     react-is "^16.6.0"
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
+
+react-simple-code-editor@^0.9.0:
+  version "0.9.10"
+  resolved "https://registry.yarnpkg.com/react-simple-code-editor/-/react-simple-code-editor-0.9.10.tgz#1ab5ea7215687ed918c6d0dae90736cf01890905"
 
 react@16.8.6:
   version "16.8.6"
@@ -6100,7 +6067,7 @@ regexp-tree@^0.1.0:
     colors "^1.1.2"
     yargs "^12.0.5"
 
-regexpu-core@^4.5.4:
+regexpu-core@^4.2.0, regexpu-core@^4.5.4:
   version "4.5.4"
   resolved "https://registry.yarnpkg.com/regexpu-core/-/regexpu-core-4.5.4.tgz#080d9d02289aa87fe1667a4f5136bc98a6aebaae"
   dependencies:
@@ -6421,10 +6388,6 @@ select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
 
-select@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
-
 selfsigned@^1.10.4:
   version "1.10.4"
   resolved "https://registry.yarnpkg.com/selfsigned/-/selfsigned-1.10.4.tgz#cdd7eccfca4ed7635d47a08bf2d5d3074092e2cd"
@@ -6692,6 +6655,10 @@ source-map@^0.4.2, source-map@^0.4.4:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.4.4.tgz#eba4f5da9c0dc999de68032d8b4f76173652036b"
   dependencies:
     amdefine ">=0.0.4"
+
+sourcemap-codec@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.4.tgz#c63ea927c029dd6bd9a2b7fa03b3fec02ad56e9f"
 
 spdx-correct@^3.0.0:
   version "3.0.0"
@@ -7078,10 +7045,6 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
-tiny-emitter@^2.0.0:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.0.2.tgz#82d27468aca5ade8e5fd1e6d22b57dd43ebdfb7c"
-
 tiny-invariant@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.0.3.tgz#91efaaa0269ccb6271f0296aeedb05fc3e067b7a"
@@ -7418,10 +7381,6 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
-
-vlq@^0.2.2:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/vlq/-/vlq-0.2.3.tgz#8f3e4328cf63b1540c0d67e1b2778386f8975b26"
 
 vlq@^1.0.0:
   version "1.0.0"
