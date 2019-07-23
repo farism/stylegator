@@ -1,4 +1,14 @@
 
+## v0.19.0 (2019-07-23)
+
+#### :rocket: New Feature
+* `app`
+  * [#561](https://github.com/farism/stylegator/pull/561) Pass section meta all the way through. ([@farism](https://github.com/farism))
+
+#### Committers: 1
+- Faris Mustafa ([farism](https://github.com/farism))
+
+
 ## v0.18.0 (2018-10-02)
 
 #### :books: Dependencies
