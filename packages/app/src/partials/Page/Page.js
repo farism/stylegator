@@ -38,15 +38,15 @@ const getPageSection = (partials, scope, section) => {
   return <StaticMarkdown {...{ content: contentWithoutTag }} />
 }
 
-const Page = ({ content, title, scope, partials }) => {
+const Page = ({ content, partials, ...props }) => {
   const { PageHeader } = partials
 
   return (
     <div className={styles['page']}>
-      <PageHeader {...{ title }} />
+      <PageHeader {...props} />
       <div className={styles['page-content']}>
         {getPageSections(content).map((section, i) => (
-          <div key={i}>{getPageSection(partials, scope, section)}</div>
+          <div key={i}>{getPageSection(partials, props.scope, section)}</div>
         ))}
       </div>
     </div>

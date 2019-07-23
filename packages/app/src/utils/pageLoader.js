@@ -3,7 +3,7 @@ import * as R from 'ramda'
 
 import { getContext } from './'
 
-export default (loader, transform = R.identity) => ({ title, scope }) => {
+export default (loader, transform = R.identity) => props => {
   class PageLoader extends React.Component {
     constructor(props) {
       super(props)
@@ -25,7 +25,7 @@ export default (loader, transform = R.identity) => ({ title, scope }) => {
     render() {
       const { Page } = this.props.partials
 
-      return <Page {...{ title, scope, content: this.state.content }} />
+      return <Page {...props} content={this.state.content} />
     }
   }
 
