@@ -4013,9 +4013,10 @@ lcid@^2.0.0:
   dependencies:
     invert-kv "^2.0.0"
 
-lerna-changelog-helpers@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/lerna-changelog-helpers/-/lerna-changelog-helpers-0.4.1.tgz#52ee6c64ca0007d568c717a1e7321fd48ca77d06"
+lerna-changelog-helpers@0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/lerna-changelog-helpers/-/lerna-changelog-helpers-0.4.2.tgz#a1aa67bba43b3cd95632e5dba09a8cd2155cf88b"
+  integrity sha512-AntsdKzMGz2zMax+D8w8XRzyndpNynIy0KjMNxCUsP1VE/GZneF4vWpvcgrFd+MSSap8TMzk/+JAVb2/oFljAg==
   dependencies:
     ramda "^0.25.0"
     yargs "^10.0.3"
@@ -4034,16 +4035,17 @@ lerna-changelog@^0.7.0:
     string.prototype.padend "^3.0.0"
     yargs "^6.6.0"
 
-lerna-git-flow-deploy@0.5.3:
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/lerna-git-flow-deploy/-/lerna-git-flow-deploy-0.5.3.tgz#739a7eac7c163a2bfe3afc53efcee4a472d09007"
+lerna-git-flow-deploy@0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/lerna-git-flow-deploy/-/lerna-git-flow-deploy-0.6.0.tgz#0e7df60b5d59e93182d8cfa05dd0ccbfeef9b4a1"
+  integrity sha512-B/EJ1EgpxSmBBbLizfW/KIRjLSd1jdPkUcgCUqYvOJiy+8cLzy0EBqw4dm6XrBszQtH9L00d8TLFXywyB2W2PQ==
   dependencies:
     "@octokit/rest" "^14.0.5"
     execa "^0.9.0"
     find-up "^2.1.0"
     fs-extra "^5.0.0"
     lerna-changelog "^0.7.0"
-    lerna-changelog-helpers "^0.4.1"
+    lerna-changelog-helpers "0.4.2"
     semver "^5.5.0"
     yargs "^10.1.1"
 
