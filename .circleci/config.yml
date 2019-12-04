@@ -29,10 +29,10 @@ jobs:
       - deploy:
           name: Deploying
           command: |
-            npm run deploy:packages
-
             if [ "${CIRCLE_BRANCH}" == "develop" ]; then
+              npm run deploy:packages
               npm run deploy:ghpages next
             elif [ "${CIRCLE_BRANCH}" == "master" ]; then
+              npm run deploy:packages
               npm run deploy:ghpages
             fi
