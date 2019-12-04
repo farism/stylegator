@@ -3347,20 +3347,6 @@ conventional-commits-parser@^3.0.3, conventional-commits-parser@^3.0.7, conventi
     through2 "^3.0.0"
     trim-off-newlines "^1.0.0"
 
-conventional-recommended-bump@6.0.4:
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/conventional-recommended-bump/-/conventional-recommended-bump-6.0.4.tgz#251d7dbd48f1afb63270e93bd4ed42c4145a46bf"
-  integrity sha512-JAcXhF+6f1BJ0WhJVHJ9sja/yd+85dZoI2PZ7c/Lpjo4yWR67/IZcnKDqRsVAR2k8iz3Sgm5lzQI3BUGB4hDJQ==
-  dependencies:
-    concat-stream "^2.0.0"
-    conventional-changelog-preset-loader "^2.3.0"
-    conventional-commits-filter "^2.0.2"
-    conventional-commits-parser "^3.0.7"
-    git-raw-commits "2.0.0"
-    git-semver-tags "^3.0.0"
-    meow "^4.0.0"
-    q "^1.5.1"
-
 conventional-recommended-bump@6.0.5:
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/conventional-recommended-bump/-/conventional-recommended-bump-6.0.5.tgz#be7ec24b43bef57108042ea1d49758b58beabc03"
@@ -4933,7 +4919,7 @@ git-semver-tags@^2.0.3:
     meow "^4.0.0"
     semver "^6.0.0"
 
-git-semver-tags@^3.0.0, git-semver-tags@^3.0.1:
+git-semver-tags@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/git-semver-tags/-/git-semver-tags-3.0.1.tgz#9cb9e4974437de1f71f32da3bfe74f4d35afb1b9"
   integrity sha512-Hzd1MOHXouITfCasrpVJbRDg9uvW7LfABk3GQmXYZByerBDrfrEMP9HXpNT7RxAbieiocP6u+xq20DkvjwxnCA==
