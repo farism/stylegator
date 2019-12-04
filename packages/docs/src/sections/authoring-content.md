@@ -22,6 +22,7 @@ ReactDOM.render(
   <Stylegator sections={sections} />,
   document.getElementById('app')
 )
+
 ```
 
 ## Interactive code samples

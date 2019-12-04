@@ -53,10 +53,10 @@ const sections = [
       },
     ],
   },
-  {
-    title: 'Appendix',
-    loader: pageLoader(() => import('./sections/__appendix.md')),
-  },
+  // {
+  //   title: 'Appendix',
+  //   loader: pageLoader(() => import('./sections/__appendix.md')),
+  // },
 ]
 
 const components = { MyComponent }

@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:9.4-stretch
+      - image: circleci/node:12.13.1-stretch
     steps:
       - checkout
       - run:
@@ -30,9 +30,9 @@ jobs:
           name: Deploying
           command: |
             if [ "${CIRCLE_BRANCH}" == "develop" ]; then
-              npm run deploy:next
+              npm run deploy:packages
               npm run deploy:ghpages next
             elif [ "${CIRCLE_BRANCH}" == "master" ]; then
-              npm run deploy:stable
+              npm run deploy:packages
               npm run deploy:ghpages
             fi

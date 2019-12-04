@@ -1,22 +1,49 @@
 {
   "private": true,
-  "devDependencies": {
-    "execa-pro": "1.0.8",
-    "husky": "1.1.0",
-    "lerna": "2.11.0",
-    "lerna-git-flow-deploy": "0.5.3"
-  },
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "build": "lerna run --no-parallel build",
     "dev": "lerna run dev",
     "precommit": "lerna run lint-staged",
-    "deploy:next": "lerna-deploy --type=next",
-    "deploy:stable": "lerna-deploy --type=stable",
-    "deploy:ghpages": "node scripts/deploy_gh_pages",
+    "deploy:ghpages": "node scripts/deploy-gh-pages",
+    "deploy:packages": "node scripts/deploy-packages.js",
     "pretty": "lerna run pretty",
     "test": "lerna run test"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lerna run lint-staged",
+      "prepare-commit-msg": "node scripts/prepare-commit-msg.js"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional",
+      "@commitlint/config-lerna-scopes"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "8.2.0",
+    "@commitlint/config-conventional": "8.2.0",
+    "@commitlint/config-lerna-scopes": "8.2.0",
+    "@octokit/rest": "16.35.0",
+    "commitizen": "4.0.3",
+    "conventional-changelog-cli": "2.0.28",
+    "conventional-recommended-bump": "6.0.5",
+    "cz-conventional-changelog": "3.0.2",
+    "cz-lerna-changelog": "2.0.2",
+    "execa": "3.4.0",
+    "fs-extra": "8.1.0",
+    "husky": "3.1.0",
+    "lerna": "3.19.0",
+    "mkdirp": "0.5.1"
+  }
 }

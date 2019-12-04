@@ -1,8 +1,6 @@
 {
-  "linters": {
-    "**/*.js": [
-      "npm run pretty",
-      "git add"
-    ]
-  }
+  "**/*.js": [
+    "npm run pretty",
+    "git add"
+  ]
 }
