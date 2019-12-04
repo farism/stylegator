@@ -1,3 +1,24 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [0.20.0](https://github.com/farism/stylegator/compare/v0.19.0...v0.20.0) (2019-12-04)
+
+
+### Bug Fixes
+
+* fix gh pages ([8704f22](https://github.com/farism/stylegator/commit/8704f222ca8e6fb1f808c888dedb29da0c55cead))
+
+
+### Features
+
+* update dependencies ([e36bc52](https://github.com/farism/stylegator/commit/e36bc52353f1f0dce9480966e51bf1ffb2bca433))
+
+
+
+
+
 
 ## v0.19.0 (2019-07-23)
 
