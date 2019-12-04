@@ -9,11 +9,14 @@ marked.setOptions({
   highlight: code => highlight.highlightAuto(code).value,
 })
 
-const StaticMarkdown = ({ content }) => (
-  <article className="markdown-body">
-    <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
-  </article>
-)
+const StaticMarkdown = ({ content }) => {
+  console.log(content)
+  return (
+    <article className="markdown-body">
+      <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
+    </article>
+  )
+}
 
 StaticMarkdown.propTypes = {
   content: PropTypes.string,

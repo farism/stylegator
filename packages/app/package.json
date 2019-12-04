@@ -22,28 +22,32 @@
     "pretty": "prettier --write --no-semi --single-quote --trailing-comma es5",
     "test": "jest"
   },
+  "peerDependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  },
   "dependencies": {
     "fuzzy": "0.1.3",
-    "highlight.js": "9.12.0",
+    "highlight.js": "9.16.2",
     "marked": "0.5.1",
-    "ramda": "0.25.0",
-    "react": "16.5.2",
-    "react-dom": "16.5.2",
-    "react-live": "1.11.0",
-    "react-router-dom": "4.3.1",
+    "ramda": "0.26.1",
+    "react-live": "2.2.2",
+    "react-router-dom": "5.1.2",
     "recompose": "0.30.0",
-    "slugify": "1.3.1"
+    "slugify": "1.3.6"
   },
   "devDependencies": {
-    "@babel/cli": "7.1.2",
-    "@babel/core": "7.1.2",
-    "@babel/plugin-proposal-object-rest-spread": "7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "7.0.0",
-    "@babel/preset-env": "7.1.0",
-    "@babel/preset-react": "7.0.0",
-    "husky": "1.1.0",
-    "lint-staged": "7.3.0",
-    "prettier": "1.14.3",
-    "rimraf": "2.6.2"
+    "@babel/cli": "7.7.4",
+    "@babel/core": "7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "7.7.4",
+    "@babel/plugin-syntax-dynamic-import": "7.7.4",
+    "@babel/preset-env": "7.7.4",
+    "@babel/preset-react": "7.7.4",
+    "husky": "3.1.0",
+    "lint-staged": "9.5.0",
+    "prettier": "1.19.1",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "rimraf": "3.0.0"
   }
 }
