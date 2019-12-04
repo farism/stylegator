@@ -2,23 +2,24 @@ const { sync } = require('execa')
 const mkdirp = require('mkdirp')
 const path = require('path')
 
+const { version } = require('../lerna.json')
+
   ; (async () => {
     const target = process.argv.slice(2)[0]
     const remote = sync('git', ['config', 'remote.origin.url']).stdout
 
-    const { version } = require('../lerna.json')
     const cwd = path.join(process.cwd(), 'tmp/gh-pages')
     mkdirp.sync(cwd)
 
     const commands =
       [
         `git init`,
-        `git remote add --fetch origin ${remote[0].stdout}`,
+        `git remote add --fetch origin ${remote}`,
         `git checkout -b gh-pages`,
         `git checkout gh-pages`,
         `rm -rf ${target || 'latest'}`,
         `mkdirp v`,
-        `cp -r ../../packages/docs/build ${target || `v/${version}`}`,
+        `cp -r ../../packages/docs/build ${target || version}`,
         `cp -r ../../packages/docs/build ${target || 'latest'}`,
         `cp -r ../../packages/docs/build/404.html 404.html`,
         `git add --all`,
