@@ -36,7 +36,7 @@
     "@commitlint/config-lerna-scopes": "8.2.0",
     "@octokit/rest": "16.35.0",
     "commitizen": "4.0.3",
-    "conventional-changelog-cli": "2.0.28",
+    "conventional-changelog-cli": "2.0.31",
     "conventional-recommended-bump": "6.0.5",
     "cz-conventional-changelog": "3.0.2",
     "cz-lerna-changelog": "2.0.2",
