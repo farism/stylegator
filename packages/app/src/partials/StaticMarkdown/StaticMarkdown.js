@@ -10,7 +10,6 @@ marked.setOptions({
 })
 
 const StaticMarkdown = ({ content }) => {
-  console.log(content)
   return (
     <article className="markdown-body">
       <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
