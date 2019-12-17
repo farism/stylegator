@@ -27,15 +27,15 @@
   },
   "dependencies": {
     "@stylegator/core": "0.20.0",
-    "conventional-changelog-cli": "2.0.28",
+    "conventional-changelog-cli": "2.0.31",
     "conventional-recommended-bump": "6.0.5",
     "find-up": "4.1.0",
     "yargs": "15.0.2"
   },
   "devDependencies": {
-    "@babel/cli": "7.7.4",
-    "@babel/core": "7.7.4",
-    "@babel/preset-env": "7.7.4",
+    "@babel/cli": "7.7.5",
+    "@babel/core": "7.7.5",
+    "@babel/preset-env": "7.7.6",
     "husky": "3.1.0",
     "lint-staged": "9.5.0",
     "prettier": "1.19.1",
