@@ -40,7 +40,7 @@
     "conventional-recommended-bump": "6.0.5",
     "cz-conventional-changelog": "3.0.2",
     "cz-lerna-changelog": "2.0.2",
-    "execa": "3.4.0",
+    "execa": "4.0.0",
     "fs-extra": "8.1.0",
     "husky": "3.1.0",
     "lerna": "3.19.0",
