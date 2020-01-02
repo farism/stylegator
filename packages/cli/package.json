@@ -30,7 +30,7 @@
     "conventional-changelog-cli": "2.0.31",
     "conventional-recommended-bump": "6.0.5",
     "find-up": "4.1.0",
-    "yargs": "15.0.2"
+    "yargs": "15.1.0"
   },
   "devDependencies": {
     "@babel/cli": "7.7.7",
