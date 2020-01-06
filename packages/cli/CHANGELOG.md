@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.2](https://github.com/farism/stylegator/compare/v0.20.1...v0.20.2) (2020-01-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency yargs to v15.1.0 ([#617](https://github.com/farism/stylegator/issues/617)) ([769417c](https://github.com/farism/stylegator/commit/769417cc04fedfb1b4f5f9442076b0537ec6c207))
+
+
+
+
+
 ## [0.20.1](https://github.com/farism/stylegator/compare/v0.20.0...v0.20.1) (2019-12-17)
 
 **Note:** Version bump only for package @stylegator/cli
