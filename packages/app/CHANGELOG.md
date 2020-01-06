@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.2](https://github.com/farism/stylegator/compare/v0.20.1...v0.20.2) (2020-01-06)
+
+
+### Bug Fixes
+
+* don't catch error to handle ie11 bugs ([9accfba](https://github.com/farism/stylegator/commit/9accfba30de01ec3605b1c4b6dc316664cbce6bb))
+
+
+
+
+
 ## [0.20.1](https://github.com/farism/stylegator/compare/v0.20.0...v0.20.1) (2019-12-17)
 
 

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.2](https://github.com/farism/stylegator/compare/v0.20.1...v0.20.2) (2020-01-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency css-loader to v3.4.0 ([#607](https://github.com/farism/stylegator/issues/607)) ([5902b77](https://github.com/farism/stylegator/commit/5902b7721365e69118d53b9311c365b4d6d0c0e2))
+* **deps:** update dependency css-loader to v3.4.1 ([#619](https://github.com/farism/stylegator/issues/619)) ([7fb348f](https://github.com/farism/stylegator/commit/7fb348f6d49e5525acb52d83d2d4af71d7456328))
+* **deps:** update dependency style-loader to v1.1.1 ([#606](https://github.com/farism/stylegator/issues/606)) ([4f67fe2](https://github.com/farism/stylegator/commit/4f67fe2bfcc389bf8aad7941c0500451399a7840))
+* **deps:** update dependency style-loader to v1.1.2 ([#614](https://github.com/farism/stylegator/issues/614)) ([d60c1b0](https://github.com/farism/stylegator/commit/d60c1b0ab7021ae243d24160b5895a48273dc76c))
+* **deps:** update dependency webpack to v4.41.4 ([#610](https://github.com/farism/stylegator/issues/610)) ([d3162d9](https://github.com/farism/stylegator/commit/d3162d9ad469fd4d3ff185ab1fc0ab0add8f98a5))
+* **deps:** update dependency webpack to v4.41.5 ([#616](https://github.com/farism/stylegator/issues/616)) ([08a458d](https://github.com/farism/stylegator/commit/08a458d5e7c50f5a94ff6e0c37405ba3c38825ba))
+* **deps:** update dependency webpack-dev-server to v3.10.1 ([#608](https://github.com/farism/stylegator/issues/608)) ([0d00575](https://github.com/farism/stylegator/commit/0d005752636db53c43822f7e668429719bf53011))
+* **deps:** update dependency yargs to v15.1.0 ([#617](https://github.com/farism/stylegator/issues/617)) ([769417c](https://github.com/farism/stylegator/commit/769417cc04fedfb1b4f5f9442076b0537ec6c207))
+* don't catch error to handle ie11 bugs ([9accfba](https://github.com/farism/stylegator/commit/9accfba30de01ec3605b1c4b6dc316664cbce6bb))
+
+
+
+
+
 ## [0.20.1](https://github.com/farism/stylegator/compare/v0.20.0...v0.20.1) (2019-12-17)
 
 
