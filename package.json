@@ -42,7 +42,7 @@
     "cz-lerna-changelog": "2.0.2",
     "execa": "4.0.0",
     "fs-extra": "8.1.0",
-    "husky": "3.1.0",
+    "husky": "4.3.8",
     "lerna": "3.20.2",
     "mkdirp": "0.5.1"
   }

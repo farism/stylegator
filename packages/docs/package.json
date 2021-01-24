@@ -28,7 +28,7 @@
     "stylegator": "0.20.2"
   },
   "devDependencies": {
-    "husky": "3.1.0",
+    "husky": "4.3.8",
     "lint-staged": "9.5.0",
     "prettier": "1.19.1",
     "rimraf": "3.0.0"
