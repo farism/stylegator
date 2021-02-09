@@ -44,7 +44,7 @@
     "@babel/preset-env": "7.7.7",
     "@babel/preset-react": "7.7.4",
     "husky": "3.1.0",
-    "lint-staged": "9.5.0",
+    "lint-staged": "10.5.4",
     "prettier": "1.19.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
