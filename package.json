@@ -31,9 +31,9 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "8.3.4",
-    "@commitlint/config-conventional": "8.3.4",
-    "@commitlint/config-lerna-scopes": "8.3.4",
+    "@commitlint/cli": "8.3.6",
+    "@commitlint/config-conventional": "8.3.6",
+    "@commitlint/config-lerna-scopes": "8.3.6",
     "@octokit/rest": "16.36.0",
     "commitizen": "4.0.3",
     "conventional-changelog-cli": "2.0.31",
