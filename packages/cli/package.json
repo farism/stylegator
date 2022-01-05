@@ -39,6 +39,6 @@
     "husky": "3.1.0",
     "lint-staged": "9.5.0",
     "prettier": "1.19.1",
-    "rimraf": "3.0.0"
+    "rimraf": "3.0.2"
   }
 }
