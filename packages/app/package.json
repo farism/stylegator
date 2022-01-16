@@ -30,7 +30,7 @@
     "fuzzy": "0.1.3",
     "highlight.js": "9.17.1",
     "marked": "0.5.1",
-    "ramda": "0.26.1",
+    "ramda": "0.28.0",
     "react-live": "2.2.2",
     "react-router-dom": "5.1.2",
     "recompose": "0.30.0",
