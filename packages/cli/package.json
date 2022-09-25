@@ -28,7 +28,7 @@
   "dependencies": {
     "@stylegator/core": "0.20.3",
     "conventional-changelog-cli": "2.0.31",
-    "conventional-recommended-bump": "6.0.5",
+    "conventional-recommended-bump": "6.1.0",
     "find-up": "4.1.0",
     "yargs": "15.1.0"
   },
