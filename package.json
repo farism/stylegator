@@ -38,7 +38,7 @@
     "commitizen": "4.0.3",
     "conventional-changelog-cli": "2.0.31",
     "conventional-recommended-bump": "6.0.5",
-    "cz-conventional-changelog": "3.0.2",
+    "cz-conventional-changelog": "3.3.0",
     "cz-lerna-changelog": "2.0.2",
     "execa": "4.0.0",
     "fs-extra": "8.1.0",
