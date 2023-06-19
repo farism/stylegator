@@ -51,7 +51,7 @@
     "@babel/cli": "7.7.7",
     "@babel/core": "7.7.7",
     "@babel/preset-env": "7.7.7",
-    "conventional-changelog-cli": "2.0.31",
+    "conventional-changelog-cli": "2.2.2",
     "conventional-recommended-bump": "6.0.5",
     "husky": "3.1.0",
     "lint-staged": "9.5.0",
